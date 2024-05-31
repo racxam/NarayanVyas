@@ -1,0 +1,27 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  12. faq CSS START
+/*----------------------------------------*/
+.faq{
+    &__plr{
+        padding: 0 200px;
+        padding-top:100px;
+        padding-bottom:40px;
+            @media #{$xxxl}{
+                padding: 0 100px;
+                padding-top:100px;
+                padding-bottom:40px;
+            }
+            @media #{$xxl,$xl,$lg}{
+                padding:0 30px;
+                padding-top:100px;
+                padding-bottom:40px;
+            }
+            @media #{$md,$xs}{
+                padding:0;
+                padding-top:100px;
+                padding-bottom:40px;
+            }
+        }
+}

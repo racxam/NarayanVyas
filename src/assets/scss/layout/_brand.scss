@@ -1,0 +1,134 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  5. brand CSS START
+/*----------------------------------------*/
+.brand{
+    &__mlr{
+        margin: 0 200px;
+        @media #{$xl}{
+            margin: 0 150px;
+        }
+        @media #{$lg,$md}{
+            margin: 0 30px;
+        }
+        @media #{$xs}{
+            margin: 0;
+        }
+    }
+    &__white-bg{
+        background-color: var(--it-common-white);
+        padding: 70px 130px;
+        box-shadow: 3px 5.196px 51px 0px rgba(255, 114, 94, 0.08);
+        margin-top: -100px;
+        position: relative;
+        z-index: 2;
+        @media #{$xxxl}{
+            padding: 70px 90px;
+        }
+        @media #{$xxl}{
+            padding: 70px 70px;
+        }
+        @media #{$xl}{
+            padding: 70px 50px;
+        }
+        @media #{$lg,$md}{
+            padding: 70px 30px;
+        }
+        @media #{$xs}{
+            padding: 50px 15px;
+        }
+    }
+    &__white-bg-2{
+        background-color: var(--it-common-white);
+        padding: 70px 130px;
+        box-shadow: 3px 5.196px 51px 0px rgba(255, 114, 94, 0.08);
+        position: relative;
+        z-index: 2;
+        margin-bottom: -120px;
+        border-radius: 10px;
+        @media #{$xxxl}{
+            padding: 70px 90px;
+        }
+        @media #{$xxl}{
+            padding: 70px 70px;
+        }
+        @media #{$xl}{
+            padding: 70px 50px;
+        }
+        @media #{$lg,$md}{
+            padding: 70px 30px;
+        }
+        @media #{$xs}{
+            padding: 50px 15px;
+        }
+    }
+    &__white-bg-3{
+        background-color: var(--it-common-white);
+        padding: 70px 130px;
+        box-shadow: 3px 5.196px 51px 0px rgba(255, 114, 94, 0.08);
+        position: relative;
+        z-index: 2;
+        border-radius: 10px;
+        @media #{$xxxl}{
+            padding: 70px 90px;
+        }
+        @media #{$xxl}{
+            padding: 70px 70px;
+        }
+        @media #{$xl}{
+            padding: 70px 50px;
+        }
+        @media #{$lg,$md}{
+            padding: 70px 30px;
+        }
+        @media #{$xs}{
+            padding: 50px 15px;
+        }
+    }
+    &__img{
+        text-align: center;
+    }
+}
+.brand-2{
+    &__space{
+        padding: 80px 0;
+        border-bottom: 1px solid var(--it-border-1);
+        @media #{$xs}{
+            padding: 60px 0;
+        }
+    }
+}
+.brand-3{
+    &__space{
+        padding: 80px 0;
+    }
+    &__plr{
+        padding: 0 200px;
+        padding-bottom: 120px;
+        @media #{$xxxl}{
+            padding:0 100px;
+            padding-bottom: 120px;
+        }
+        @media #{$xxl}{
+            padding:0 100px;
+            padding-bottom: 120px;
+        }
+        @media #{$xl,$lg,$md}{
+            padding: 0 30px;
+            padding-bottom: 120px;
+        }
+        @media #{$xs}{
+            padding: 0;
+            padding-bottom: 120px;
+        } 
+    }
+    &__img-color{
+        background-color: #1d1d25;
+        padding: 30px 45px;
+        border-radius: 15px;
+        & img{
+            height: 40px;
+        }
+    }
+}

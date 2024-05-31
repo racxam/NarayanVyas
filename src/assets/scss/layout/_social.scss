@@ -1,0 +1,198 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  23. social CSS START
+/*----------------------------------------*/
+.social{
+    &__shape-1 {
+        position: absolute;
+        top: 30%;
+        left: 9%;
+        z-index: -1;
+        animation: moving 9s linear infinite;
+        @media #{$xl}{
+            top: 11%;
+        }
+    }
+    &__mlr{
+        margin: 0 200px;
+        @media #{$xxxl}{
+            margin: 0 100px;
+        }
+        @media #{$xxl}{
+            margin: 0 30px;
+        }
+        @media #{$xl,$lg,$md}{
+            margin: 0 30px;
+        }
+        @media #{$xs}{
+            margin: 0;
+        }
+    }
+    &__plr {
+        padding: 0 200px;
+        padding-top: 100px;
+        padding-bottom: 70px;
+        @media #{$xxxl}{
+            padding: 0 100px;
+            padding-top: 100px;
+            padding-bottom: 70px;
+        }
+        @media #{$xxl}{
+            padding: 0 30px;
+            padding-top: 100px;
+            padding-bottom: 70px;
+        }
+        @media #{$xl,$lg,$md}{
+            padding: 0 30px;
+            padding-top: 100px;
+            padding-bottom: 70px;
+        }
+        @media #{$xs}{
+            padding: 0;
+            padding-top: 100px;
+            padding-bottom: 70px;
+        }        
+    }
+    &__item{
+        padding: 30px 25px;
+        box-shadow: 2.5px 4.33px 70px 0px rgba(0, 0, 0, 0.03);
+        border: 2px dashed transparent;
+        transition: .3s;
+        background-color: var(--it-common-white);
+        @media #{$xs}{
+            padding: 20px 15px;
+        }
+        &:hover{
+            border: 2px dashed var(--it-common-blue-3);
+            transform: translateY(-10px);
+            &.border-none{
+                border: 2px dashed transparent;
+            }
+            & .social__link{
+                & span{
+                    & i{
+                        color: var(--it-common-black);
+                    }
+                }
+            }
+        }
+    }
+    &__border-color-2{
+        &:hover{
+            border-color:var(--it-theme-1);
+        }
+        & .social__text{
+            & .social__title{
+                &:hover{
+                    color: var(--it-theme-1);
+                }
+            }
+        }
+    }
+    &__border-color-3{
+        &:hover{
+            border-color:var(--it-common-paste);
+        }
+        & .social__text{
+            & .social__title{
+                &:hover{
+                    color: var(--it-common-paste);
+                }
+            }
+        }
+    }
+    &__border-color-4{
+        &:hover{
+            border-color:var(--it-common-red);
+        }
+        & .social__text{
+            & .social__title{
+                &:hover{
+                    color: var(--it-common-red);
+                }
+            }
+        }
+    }
+    &__icon{
+        padding-right: 20px;
+        & img{
+            min-width:62px;
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 22px;
+        transition: .3s;
+        &:hover{
+            color: var(--it-common-blue-3);
+        }
+        @media #{$xxl}{
+            font-size: 18px;
+        }
+        @media #{$xs}{
+            font-size: 20px;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 12px;
+    }
+    &__link{
+        & span{
+            width: 50px;
+            height: 50px;
+            background-color: var(--it-common-blue-2);
+            display: inline-block;
+            border-radius: 50%;
+            line-height: 55px;
+            text-align: center;
+            & i{
+                transition: .3s;
+                font-size: 17px;
+                color: var(--it-common-blue-3);
+            }
+        }
+    }
+    &__color-2{
+        & span{
+            background-color: var(--it-theme-1);
+        }
+    }
+    &__color-3{
+        & span{
+            background-color: var(--it-common-paste-2);
+            & i{
+                color: var(--it-common-paste-3);
+            }
+        }
+    }
+    &__color-4{
+        & span{
+            background-color: var(--it-common-red-2);
+            & i{
+                color: var(--it-common-red);
+            }
+        }
+    }
+    &__plr-2 {
+        padding: 0 200px;
+        padding-bottom: 70px;
+        @media #{$xxxl}{
+            padding: 0 100px;
+            padding-bottom: 70px;
+        }
+        @media #{$xxl}{
+            padding: 0 30px;
+            padding-bottom: 70px;
+        }
+        @media #{$xl,$lg,$md}{
+            padding: 0 30px;
+            padding-bottom: 70px;
+        }
+        @media #{$xs}{
+            padding: 0;
+            padding-bottom: 70px;
+        }        
+    }
+}

@@ -1,0 +1,657 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  8. contact CSS START
+/*----------------------------------------*/
+.contact{
+    &__plr{
+        padding: 0 30px;
+        padding-top: 120px;
+        padding-bottom: 100px;
+        @media #{$xs}{                
+            padding: 0 ;
+            padding-top: 120px;           
+        }
+    }
+    &__mlr{
+        margin: 0 200px;
+        @media #{$xxxl}{
+            margin:0 100px;
+        }
+        @media #{$xxl}{
+            margin:0 100px;
+        }
+        @media #{$xl,$lg,$md}{
+            margin: 0 30px;
+        }
+        @media #{$xs}{
+            margin: 0;
+        } 
+    }
+    &__shape-1{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: tptranslateX2 4s infinite alternate;
+        @media #{$lg}{                
+            top: -4%;
+        }
+    }
+    &__shape-2{
+        position: absolute;
+        bottom: -4%;
+        left: 0%;
+        animation: jumpTwo 4s infinite linear;
+        @media #{$xl}{                
+            bottom: -4%;
+            left: -2%;
+        }
+        @media #{$md}{
+            bottom: -1%;
+            left: -4%;
+        }
+    }
+    &__shape-3{
+        position: absolute;
+        bottom: 6%;
+        right: 0%;
+        animation: tpupdown 0.8s infinite alternate;
+        @media #{$md}{
+            bottom: 2%;
+            right: -2%;
+        }
+    }
+    &__shape-4{
+        position: absolute;
+        bottom:0;
+        right: 54%;
+        animation: moving 9s linear infinite;
+    }
+    &__text{
+        padding-bottom: 30px;
+        & p{
+            padding-right: 235px;
+            font-weight: 400;
+            @media #{$xxxl}{                
+                padding-right: 130px;
+            }
+            @media #{$xxxl}{                
+                padding-right: 130px;
+            }
+            @media #{$xl}{                
+                padding-right: 25px;
+            }
+            @media #{$lg}{                
+                padding-right: 45px;
+            }
+            @media #{$md}{
+                padding-right: 0;
+            }
+            @media #{$xs}{                
+                padding-right:0;
+                font-size: 15px;
+            }
+            
+        }
+        &.text-color{
+            & p{
+                color: var(--it-common-white-2);
+                padding-right: 312px;
+                @media #{$xxl}{
+                    padding-right: 280px;
+                }
+                @media #{$lg,$md}{
+                    padding-right:0;
+                }
+                @media #{$xs}{
+                    padding-right:0;
+                }
+            }
+        }
+    }
+    &__text-2{
+        padding-bottom: 10px;
+        & p{
+            padding-right: 235px;
+            font-weight: 400;
+            @media #{$xxxl}{                
+                padding-right: 200px;
+            }
+            @media #{$xxl}{    
+                padding-right: 120px;
+            }
+            @media #{$xl}{    
+                padding-right: 50px;
+            }
+            @media #{$lg}{                
+                padding-right: 45px;
+                font-size: 14px;
+            }
+            @media #{$md}{
+                padding-right: 0;
+            }
+            @media #{$xs}{                
+                padding-right:0;
+                font-size: 15px;
+            }
+            
+        }
+    }
+    &__form{
+        margin-right: 70px;
+        margin-bottom: 50px;
+        @media #{$lg,$md,$xs}{  
+            margin-right: 0;
+        }
+    }
+    &__form-input{
+        & input{
+            border: none;
+            background-color: #f7f9fa;
+            width: 100%;
+            height: 45px;
+            padding: 25px;
+            border-radius: 5px;
+            font-weight: 400;
+            font-size: 17px;
+            margin-bottom: 30px;
+            border: 1px solid transparent;
+            @media #{$lg}{                
+                font-size: 12px;
+            }
+            @media #{$md}{
+                font-size: 14px;
+            } 
+            @media #{$xs}{
+                font-size: 14px;
+            } 
+            &:focus{
+                border-color: var(--it-theme-1);
+            }
+        }
+        & textarea{
+            font-weight: 400;
+            font-size: 17px;
+            width: 100%;
+            resize: none;
+            border: none;
+            height: 160px;
+            display: inline-block;
+            padding: 20px;
+            background-color: #f7f9fa;
+            border: 1px solid transparent;
+            @media #{$lg}{                
+                padding-right: 45px;
+                font-size: 14px;
+            }
+            @media #{$md}{
+                font-size: 14px;
+            } 
+            @media #{$xs}{
+                font-size: 14px;
+            } 
+            &:focus{
+                border-color: var(--it-theme-1);
+            }
+        }
+    }
+    &__item{
+        border: 1px solid var(--it-theme-1);
+        border-radius: 10px;
+        padding: 27px 35px;
+        transition: .3s;
+        margin-bottom: 30px;
+        background-color: transparent;
+        @media #{$xs}{  
+            padding: 27px 20px;
+        }
+        &:hover{
+            background-color: var(--it-theme-1);
+            & .contact__icon{
+                & span {
+                    background-color: var(--it-common-white);                    
+                }
+            }
+        }
+    }
+    &__button{
+        @media #{$md,$xs}{  
+            margin-bottom: 50px;
+        }
+    }
+    &__icon{
+        margin-right: 30px;
+        @media #{$xs}{  
+            margin-right: 22px;
+        }
+        & span {
+            font-size: 45px;
+            color: var(--it-common-black);
+            height: 85px;
+            width: 85px;
+            line-height: 85px;
+            border-radius: 50%;
+            background-color: var(--it-theme-1);
+            text-align: center;
+            display: inline-block;
+            transition: .3s;
+        }
+    }
+    &__title-sm{
+        font-size: 22px;
+        font-weight: 700;
+        padding-bottom: 3px;
+        @media #{$md}{  
+            font-size: 20px;
+        }
+        @media #{$xs}{  
+            font-size: 18px;
+        }
+        &.title-color-1{
+            color: var(--it-common-white);
+            transition: .3s;
+            &:hover{
+                color: var(--it-common-blue);
+            }
+        }
+        &.title-color-2{
+            color: var(--it-common-white);
+            transition: .3s;
+            &:hover{
+                color: var(--it-theme-1);
+            }
+        }
+        &.title-color-3{
+            color: var(--it-common-white);
+            transition: .3s;
+            &:hover{
+                color: var(--it-common-red);
+            }
+        }
+    }
+    &__content{
+        & span{
+            font-weight: 400;
+            font-size: 17px;
+            color: var(--it-common-black);
+            @media #{$xs}{  
+                font-size: 14px;
+            }
+        }
+    }
+    &__form-2{
+        margin-bottom: 50px;
+        @media #{$md,$xs}{  
+            margin-right: 0;
+        }
+    }
+    &__from-2-input{
+        & input{
+            border: none;
+            background-color: #f7f9fa;
+            width: 100%;
+            height: 45px;
+            padding: 25px;
+            border-radius: 5px;
+            font-weight: 400;
+            font-size: 17px;
+            margin-bottom: 30px;
+            border: 1px solid transparent;
+            @media #{$lg}{                
+                font-size: 14px;
+            }
+            @media #{$md}{                
+                font-size: 14px;
+            }
+            @media #{$xs}{                
+                font-size: 13px;
+            }
+            &:focus{
+                border-color: var(--it-theme-1);
+            }
+        }
+        & textarea{
+            font-weight: 400;
+            font-size: 17px;
+            width: 100%;
+            resize: none;
+            border: none;
+            height: 160px;
+            display: inline-block;
+            padding: 20px;
+            background-color: #f7f9fa;
+            border: 1px solid transparent;
+            @media #{$lg}{                
+                padding-right: 45px;
+                font-size: 14px;
+            }
+            @media #{$md}{                
+                font-size: 14px;
+            }
+            @media #{$xs}{                
+                font-size: 13px;
+            }
+            &:focus{
+                border-color: var(--it-theme-1);
+            }
+        }
+    }
+    &__bg{
+        padding: 115px 120px;
+        border-radius: 10px;
+        @media #{$xxxl}{
+            padding: 115px 60px;
+        } 
+        @media #{$xxl}{
+            padding: 115px 30px;
+        } 
+        @media #{$xl}{
+            padding: 115px 20px;
+        } 
+        @media #{$lg}{
+            padding: 115px 0;
+        } 
+        @media #{$md}{
+            padding: 115px 20px;
+        } 
+        @media #{$xs}{
+            padding: 115px 0;
+        } 
+    }
+    &__plr-2{
+        padding: 0 200px;
+        @media #{$xxxl}{
+            padding:0 100px;
+        }
+        @media #{$xxl}{
+            padding:0 100px;
+        }
+        @media #{$xl,$lg,$md}{
+            padding: 0 30px;
+        }
+        @media #{$xs}{
+            padding: 0;
+        }    
+    }
+    &__form-3{
+        & .contact__form-input{
+            & input{
+                background-color: var(--it-common-black-6);
+                border: 1px solid var(--it-border-2);
+                color: var(--it-common-white);
+                @media #{$md}{
+                    font-size: 14px;
+                } 
+                @media #{$xs}{
+                    font-size: 14px;
+                } 
+                &::placeholder{                  
+                    color: var(--it-common-white-2);
+                }
+                &:focus{
+                    border-color: var(--it-theme-1);
+                }
+            }
+            & textarea{
+                background-color: var(--it-common-black-6);
+                border: 1px solid var(--it-border-2);
+                color: var(--it-common-white);
+                border-radius: 5px;
+                @media #{$md}{
+                    font-size: 14px;
+                } 
+                @media #{$xs}{
+                    font-size: 14px;
+                } 
+                &::placeholder{                  
+                    color: var(--it-common-white-2);
+                }
+                &:focus{
+                    border-color: var(--it-theme-1);
+                }
+            }
+        }
+
+    }
+    &__wrapper{
+        background-color: var(--it-common-black-5);
+        border-radius: 20px;
+        padding:10px;
+    }
+    &__item-box{
+        border-radius: 20px;
+        border: 1px dashed var(--it-border-2);
+    }
+    &__icon-color-1{
+        & span{
+            background-color: var(--it-common-blue);
+
+        }
+    }
+    &__icon-color-2{
+        & span{
+            background-color: var(--it-theme-1);
+        }
+    }
+    &__icon-color-3{
+        & span{
+            background-color: var(--it-common-pink-2);
+        }
+    }
+    &__shape-5{
+        position: absolute;
+        bottom: 81%;
+        right: 41%;
+        animation: moving 9s linear infinite;
+        @media #{$xxl}{
+            bottom: 81%;
+            right: 41%;
+        }
+    }
+    &__right-side{
+        @media #{$md}{
+            margin-bottom: 90px;
+        }
+    }
+    &__main-img {
+        margin-left: 89px;
+        & img{
+            max-width: 100%;
+        }
+        @media #{$xxl}{
+            margin-left: 40px;
+        }
+        @media #{$xl}{
+            margin-left: 15px;
+        }
+        @media #{$lg}{
+            margin-left:0;
+        }
+        @media #{$xs}{
+            margin-left:0;
+        }
+    }
+}
+.contact{
+    &__border{
+        border: 1px solid var(--it-theme-1);
+        padding: 100px;
+        border-radius: 10px;
+        @media #{$xxl}{
+            padding: 100px 30px;
+        }
+        @media #{$xl}{
+            padding: 60px 20px;
+        }
+        @media #{$lg}{
+            padding: 60px 20px;
+        }
+        @media #{$md}{
+            padding: 70px 20px;
+        }
+        @media #{$xs}{
+            padding:30px 15px;
+        }
+        & .contact__item{
+            padding: 27px 21px;
+        }
+        & .contact__title-sm{
+            @media #{$lg}{
+               font-size: 20px;
+            }
+        }
+        & .contact__text{
+            & p{
+                @media #{$xs}{
+                    font-size: 13px;
+                 }
+            }
+        }
+        & .contact__icon{
+            & span {
+                @media #{$xs}{
+                    font-size: 34px;
+                    height: 65px;
+                    width: 65px;
+                    line-height: 65px;
+                }
+            }
+        }
+    }
+}
+.contact__box-2{
+    & .contact__item {
+        border: none;
+        padding: 27px 26px;
+        @media #{$lg}{
+            margin-bottom: 15px;
+        }
+        &:hover{
+            background-color:unset;
+        }
+    }
+    & .contact__icon{
+        @media #{$xl}{
+            margin-right: 20px;
+        }
+        @media #{$lg}{
+            margin-right: 20px;
+        }
+        & span{
+            font-size: 35px;
+            height: 70px;
+            width: 70px;
+            line-height: 70px;
+        }
+    }
+    & .contact__content{
+        & .contact__title-sm{
+            @media #{$xl}{
+                font-size: 20px;
+            }
+            @media #{$lg}{
+                font-size: 20px;
+            }
+        }
+        & span{
+            @media #{$lg}{
+                font-size: 16px;
+            }
+        }
+    }
+}
+.Register{
+    &__box{
+        background-color: #f8f9fe;
+        padding: 50px 45px;
+        @media #{$xs}{                
+            padding: 40px 20px;         
+        }
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 17px;
+        padding-bottom: 25px;
+    }
+    &__form{
+        & input{
+            width: 100%;
+            border:1px solid var(--it-border-1);
+            background-color: var(--it-common-white);
+            border-radius: 5px;
+            margin-bottom: 30px;
+            padding:18px 40px;
+            transition: .3s;
+            @media #{$xs}{                
+                margin-bottom: 20px;
+                padding: 12px 20px;
+                font-size: 14px;      
+            }
+            &:focus{
+                border-color: var(--it-theme-1);
+            }
+        }
+    }
+    &__checkbox{
+        @media #{$xs}{                
+            margin-bottom: 20px;     
+        }
+        & input{
+            width: 4%;
+        }
+        &.login{
+             & input{
+                width: 20px;
+                height: 20px;
+                margin-bottom: 0;
+                margin-right: 13px;
+                @media #{$xs}{                
+                    width: 13px;
+                    height: 13px; 
+                }
+            }
+            & label {
+                @media #{$xs}{                
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    &__forgot{
+        & a{
+            color: var(--it-common-blue-3);
+            @media #{$xs}{                
+                font-size: 13px;
+            }
+        }
+    }
+    &__box-2{
+        @media #{$xs}{                
+            flex-wrap: wrap;       
+        }
+    }
+}
+.contact{
+    &__wrapper{
+        & .contact__item{
+            &:hover{
+                & .contact__icon-color-1{
+                    & span{
+                        background-color:var(--it-common-blue);
+                    }
+                }
+                & .contact__icon-color-2{
+                    & span{
+                        background-color:var(--it-theme-1);
+                    }
+                }
+                & .contact__icon-color-3{
+                    & span{
+                        background-color:var(--it-common-red);
+                    }
+                }
+            }
+        }
+    }
+}

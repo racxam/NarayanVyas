@@ -1,0 +1,186 @@
+@use '../utils' as *;
+
+
+.it-custom-accordion .accordion-buttons {
+	color: var(--it-common-black);
+	font-weight: 600;
+	font-size: 22px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    padding: 20px;
+    @media #{$xl}{                
+        font-size: 19px;
+    }
+    @media #{$lg,$md}{                
+        font-size: 17px;
+    }
+    @media #{$xs}{                
+        font-size: 14px;
+        padding: 20px 10px;
+    }
+    @media #{$sm}{                
+        font-size: 17px;
+        padding: 20px;
+    }
+    &[aria-expanded="true"]{
+        background-color: var(--it-theme-1);
+        &::after {
+            content:"\f068" ;
+        }
+        & span{
+            background-color: var(--it-common-white);
+            & i{
+                color: var(--it-common-blue-4);
+            }
+        }
+    }
+    &::after{
+        position: absolute;
+        content: "\f067";
+        font-family: "Font Awesome 5 Pro";
+        background-image: none;
+        top: 50%;
+        right: 3%;
+        color: var(--tp-theme-1);
+        width: auto;
+        height: auto;
+        font-weight: 700;
+        font-size: 16px;
+        opacity: 1;
+        transform: translateY(-50%);
+        @media #{$xs}{                
+            right: 5%;
+            font-size: 13px;
+        }
+    }
+    & span {
+        margin-right: 15px;
+        height: 30px;
+        width: 30px;
+        background-color: var(--it-common-blue-4);
+        display: inline-block;
+        line-height: 28px;
+        text-align: center;
+        border-radius: 50%;
+        @media #{$xs}{                
+            margin-right: 6px;
+            height: 25px;
+            width: 25px;
+        }
+        @media #{$sm}{                
+            margin-right:12px;
+        }
+        & i{
+            font-size: 16px;
+            color: var(--it-common-white);
+            font-weight: 700;
+            @media #{$xs}{                
+                font-size: 14px;
+            }
+        }
+    }
+}
+.it-custom-accordion .accordion-body {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+    padding:30px 25px;
+    @media #{$lg,$md}{                
+        font-size: 14px;
+    }
+    @media #{$xs}{                
+        font-size: 14px;
+    }
+}
+.it-custom-accordion .accordion-items {
+	margin-bottom: 40px;
+    border: 1px solid var(--it-border-1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.it-custom-accordion-2 {
+    & .accordion-items {
+        margin-bottom: 20px;
+    }
+
+    & .accordion-buttons {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 40px 45px;
+        background-color: var(--tp-common-white);
+        color: #212121;
+        border-radius: 10px 10px 0 0;
+
+        @media #{$xs} {
+            font-size: 17px;
+            padding: 28px 20px
+        }
+
+        &::after {
+            position: absolute;
+            content: "\f062";
+            font-family: 'Font Awesome 5 Pro';
+            background-image: none;
+            top: 45px;
+            right: 45px;
+            color: #B8BCC8;
+            width: auto;
+            height: auto;
+            font-weight: 500;
+            font-size: 14px;
+
+            @media #{$xs} {
+                top: 33px;
+                right: 18px;
+            }
+        }
+
+        &[aria-expanded="true"] {
+            &::after {
+                content: '\f063';
+            }
+        }
+    }
+
+    & [aria-expanded="true"] {
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    & .accordion-body {
+        background-color: var(--tp-common-white);
+        padding: 20px 45px;
+        box-shadow: 0px 25px 32px 0px rgba(0, 0, 0, 0.06);
+        position: relative;
+        z-index: 1;
+        border-radius: 0 0px 10px 10px;
+        font-size: 16px;
+
+        @media #{$xs} {
+            padding: 20px 25px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            height: 2px;
+            background-color: var(--tp-grey-1);
+            top: 0;
+            left: 45px;
+            right: 45px;
+        }
+    }
+}
+
+.faq-accordion-border {
+    & .accordion-items {
+        background-color: var(--tp-common-white);
+        border: 1px solid #F5F5F5;
+        border-radius: 10px;
+    }
+
+}

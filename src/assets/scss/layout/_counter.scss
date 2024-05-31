@@ -1,0 +1,204 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  9. counter CSS START
+/*----------------------------------------*/
+.counter{
+    &__shape-1{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &__shape-2{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &__black-bg{
+        background-color: var(--it-common-black);
+        padding:100px 125px;
+        border-radius: 15px;
+        @media #{$xxxl}{
+            padding:100px 50px;
+        }
+        @media #{$xxl}{
+            padding:100px 50px;
+        }
+        @media #{$xl}{
+            padding:100px 30px;
+        }
+        @media #{$lg,$md}{
+            padding:100px 30px;
+        }
+        @media #{$xs}{
+            padding:100px 10px;
+        }
+    }
+    &__mlr{
+        margin: 0 200px;
+        @media #{$xxxl}{
+            margin: 0 100px;
+        }
+        @media #{$xxl}{
+            margin: 0 50px;
+        }
+        @media #{$xl}{
+            margin: 0 50px;
+        }
+        @media #{$lg,$md}{
+            margin: 0 30px;
+        }
+        @media #{$xs}{
+            margin: 0 15px;
+        }
+    }
+    &__item{
+        background-color: var(--it-common-blue);
+        padding:55px 0;
+        border-radius: 5px;
+        position: relative;
+        z-index: 2;
+    }
+    &__color-2{
+        background-color: var(--it-theme-1);
+    }
+    &__color-3{
+        background-color: var(--it-common-paste);
+    }
+    &__color-4{
+        background-color: var(--it-common-pink-2);
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 22px;
+        color: var(--it-common-black);
+        padding-bottom: 10px;
+        @media #{$xl}{
+            font-size: 20px;
+        }
+    }
+    &__icon{
+        padding-bottom: 10px;
+        & span{
+            font-size: 60px;
+            color: var(--it-common-black);
+            display: inline-block;
+        }
+    }
+    &__text{
+        & span{
+            font-weight: 700;
+            font-size: 50px;
+            color: var(--it-common-black);
+            line-height: 1;
+            & i{
+                font-style: normal;
+            }
+        }
+    }
+}
+.counter-2{
+    &__plr{
+        padding: 0 200px;
+        @media #{$xxxl}{
+            padding:0 100px;
+        }
+        @media #{$xxl}{
+            padding:0 100px;
+        }
+        @media #{$xl,$lg,$md}{
+            padding: 0 30px;
+        }
+        @media #{$xs}{
+            padding: 0;
+        }
+    }
+    &__black-bg{
+        background-color: var(--it-common-black-7);
+        border-radius: 15px;
+        padding: 70px 25px;
+        position: relative;
+        @media #{$xs}{
+            padding-bottom: 30px;
+        }
+        @media #{$sm}{
+            padding-bottom: 30px;
+        }
+        
+    }
+    &__shape{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+    &__item{
+        position: relative;
+        z-index: 2;
+        border-right: 1px solid var(--it-border-2);
+        &.item-border{
+            border-right: none;
+        }
+        @media #{$xxl,$xxl,$xl,$lg}{
+            border-right: none;
+        }
+        @media #{$md,$xs}{
+            border-right: none;
+            margin-bottom: 50px;
+        }
+        @media #{$sm}{
+            border-right: none;
+        }
+    }
+
+    &__text{
+        & span{
+            font-size: 50px;
+            font-weight: 700;
+            color: var(--it-common-white);
+            @media #{$xl}{
+                font-size: 45px;
+            }
+            @media #{$lg}{
+                font-size: 37px;
+            }
+            @media #{$md}{
+                font-size: 37px;
+            }
+            @media #{$xs}{
+                font-size: 35px;
+            }
+            & i{
+                font-style: normal;
+            }
+        }
+
+    }
+    &__title{
+        font-size: 22px;
+        color: var(--it-common-white);
+        @media #{$xl}{
+            font-size: 20px;
+        }
+        @media #{$lg}{
+            font-size: 17px;
+        }
+        @media #{$md}{
+            font-size: 17px;
+        }
+        @media #{$xs}{
+            font-size: 17px;
+        }
+    }
+    &__icon{
+        & img{
+            width: 65px;
+            @media #{$lg,$md}{
+                width: 45px;
+            }
+            @media #{$xs}{
+                width: 60px;
+            }
+        }
+    }
+}

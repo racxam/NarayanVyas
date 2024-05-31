@@ -1,0 +1,639 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  25. testimonial CSS START
+/*----------------------------------------*/
+.testimonial{
+    &__shape-1{
+        position: absolute;
+        left: 3%;
+        top: 11%;
+        animation: rotate2 15s linear infinite;
+        @media #{$lg}{
+            top: 4%;
+        }
+        @media #{$md}{
+            top: 3%;
+        }
+        @media #{$xs}{
+            left: -12%;
+            top: 0%;
+        }
+    }
+    &__shape-2{
+        position: absolute;
+        right: 3%;
+        bottom:2%;
+        animation: moving 9s linear infinite;
+    }
+    &__shape-3{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+    }
+    &__item-shape{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &__plr{
+        padding: 120px 200px;
+        @media #{$xxxl}{
+            padding:120px 150px;
+        }
+        @media #{$xxl}{
+            padding:120px 80px;
+        }
+        @media #{$xl}{
+            padding:120px 40px;
+        }
+        @media #{$lg}{
+            padding:120px 80px;
+        }
+        @media #{$md}{
+            padding:120px 30px;
+        }
+        @media #{$xs}{
+            padding:120px 0;
+        }
+    }
+    &__item{
+        background-color: #3a3a42;
+        padding: 30px;
+        @media #{$xs}{
+            flex-wrap: wrap;
+            padding: 30px 15px;
+        }
+    }
+    &__main-img{        
+        flex: 0 0 auto;
+        @media #{$xs}{
+            max-width: 100%;
+        }
+        & img{
+            @media #{$xs}{
+                max-width: 100%;
+            }
+        }
+    }
+    &__content{
+        padding-left: 20px;
+        @media #{$xxl,$xl,$xs}{
+            padding-left: 0;
+        }        
+    }
+    &__author-name{
+        font-weight: 700;
+        font-size: 22px;
+        color: var(--it-common-white);
+        transition: .3s;
+        &:hover{
+            color: var(--it-theme-1);
+        }
+    }
+    &__author-info{
+        padding-bottom: 10px;
+        & span{
+            color: var(--it-common-white);
+        }
+    }
+    &__content-text{
+        @media #{$xs}{
+            padding-bottom: 30px;
+        }  
+        & p{
+            color: var(--it-common-white);
+            padding-bottom: 5px;
+            font-style: italic;
+            padding-right: 35px;
+            @media #{$xxl}{
+                padding-right: 20px;
+            }
+            @media #{$xxl}{
+                padding-right: 18px;
+            }
+            @media #{$xs}{
+                padding-right: 0;
+            } 
+        }
+        & i {
+            color: var(--it-theme-1);
+            font-size: 25px;
+            padding-right: 5px;
+            &.star-color{
+                color: var(--it-common-white);                
+            }
+        }
+    }
+}
+.testimonial-slider-dots {
+	text-align: center;
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+    & .swiper-pagination-bullet {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 2px solid var(--it-theme-1);
+        background-color: transparent;
+        opacity: 1;
+        margin: 0 5px;
+        transition: .3s;
+    }
+    & .swiper-pagination-bullet-active {
+        background-color: var(--it-theme-1);
+    }
+}
+.testimonial-2{
+    &__shape-1{
+        position: absolute;
+        top: 73%;
+        left: 24%;
+        @media #{$lg}{  
+            left: 20%;
+        }
+        @media #{$md}{  
+            left: 10%;
+        }
+        @media #{$sm}{  
+            left: 0%;
+        }
+    }
+    &__shape-2{
+        position: absolute;
+        top: 85%;
+        right: 25%;
+        @media #{$lg}{  
+            right: 21%;
+        }
+        @media #{$md}{  
+            right: 11%;
+        }
+        @media #{$sm}{  
+            right: 0%;
+        }
+    }
+    &__shape-3{
+        position: absolute;
+        top: 36%;
+        left: 16%;
+        animation: tpupdown 0.8s infinite alternate;
+    }
+    &__shape-4{
+        position: absolute;
+        top: 43%;
+        right: 1%;
+        animation: tptranslateX2 4s infinite alternate;
+    }
+    &__shape-5{
+        position: absolute;
+        top: 66%;
+        right: 11%;
+        animation: moving 7s linear infinite;
+    }
+    &__shape-6{
+        position: absolute;
+        top: 17%;
+        left: 0;
+        animation: jumpTwo 4s infinite linear;
+    }
+    &__shape-7{
+        position: absolute;
+        bottom: 8%;
+        right: 0;
+        animation: tpupdown 0.8s infinite alternate;
+    }
+    &__shape-8{
+        position:absolute;
+        left: 2%;
+        bottom: 20%;
+        animation: moving 9s linear infinite;
+    }
+    &__space{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    &__main-thumb {
+        padding-bottom: 15px;
+    }    
+    &__author-info{
+        padding-bottom: 15px;
+    }
+    &__author-name{
+        font-weight: 700;
+        font-size: 22px;
+        transition: .3s;
+        &:hover{
+            color: var(--it-common-blue);
+        }
+    }
+    &__star{
+        padding-bottom: 10px;
+        & i{
+            color: var(--it-theme-1);
+            font-size: 20px;
+            padding: 0 2px;
+            &.star-color{
+                color: #dddddd;
+            }
+        }
+    }
+    &__text{
+        & p{
+            padding: 0 390px;
+            font-style: italic;
+            @media #{$xl}{                
+                padding: 0 360px;
+            }
+            @media #{$lg}{                
+                padding: 0 270px;
+            }
+            @media #{$md}{                
+                padding: 0 150px;
+            }
+            @media #{$xs}{                
+                padding: 0 ;
+                & br{
+                    display: none;
+                }
+            }
+            @media #{$sm}{                
+                padding: 0 70px ;
+            }
+        }
+    }
+}
+.testimonial-3{
+    &__space{
+        padding: 120px 0;
+    }
+    &__main-img{
+        @media #{$md}{
+            margin-bottom: 60px;
+        }
+        @media #{$xs}{
+            margin-bottom: 50px;
+        }
+    }
+    &__icon{
+        position: absolute;
+        left: 8%;
+        bottom: -2%;
+        @media #{$md}{
+            left: 14%;
+        }
+        @media #{$xs}{
+            left: 0%;;
+            bottom: -5%;
+        }
+        @media #{$sm}{
+            left: 3%;
+            bottom: -3%;
+        }
+        & span{
+            font-size: 40px;
+            color: var(--it-common-white);
+            height: 105px;
+            width: 105px;
+            border-radius: 50%;
+            line-height: 101px;
+            background-color: var(--it-theme-1);
+            text-align: center;
+            display: inline-block;
+            border: 7px solid var(--it-common-white);
+            @media #{$xs}{
+                font-size: 20px;
+                height: 70px;
+                width: 70px;
+                line-height: 70px;
+                border: 4px solid var(--it-common-white);
+            }
+            @media #{$sm}{
+                font-size: 40px;
+                height: 105px;
+                width: 105px;
+                line-height: 101px;
+                border: 5px solid var(--it-common-white);
+            }
+        }
+    }
+    &__content-icon{
+        padding-bottom: 5px;
+        & span{
+            font-size: 60px;
+            color: var(--it-theme-1);
+            @media #{$xs}{
+                font-size: 50px;
+            }
+            @media #{$sm}{
+                font-size: 56px;
+            }
+        }
+    }
+    &__text{
+        padding-bottom: 20px;
+        & p{
+            font-size: 21px;
+            font-style: italic;
+            padding-right: 95px;
+            line-height: 31px;
+            margin-bottom: 0;
+            @media #{$lg}{
+                font-size: 18px;
+                padding-right: 53px;
+            }
+            @media #{$md}{
+                padding: 0 55px;
+                font-size: 19px;
+            }
+            @media #{$xs}{
+                padding: 0 6px;
+                font-size: 15px;
+            }
+            @media #{$sm}{
+                padding: 0 15px;
+                font-size: 17px;
+            }
+        }
+    }
+    &__author-name{
+        font-weight: 700;
+        font-size: 22px;
+        transition: .3s;
+        &:hover{
+            color: var(--it-common-paste);
+        }
+        @media #{$xs}{
+            font-size: 19px;
+        }
+        @media #{$sm}{
+            font-size: 21px;
+        }
+        &::before{
+            content: '';
+            height: 4px;
+            width: 32px;
+            background-color: var(--it-theme-1);
+            display: inline-block;
+            transform: translateY(-6px);
+            margin-right: 10px;
+        }
+    }
+    &__star{
+        & i{
+            color: var(--it-theme-1);
+            font-size: 20px;
+            padding-right: 6px;
+            &.star-color{
+                color: #dddddd;
+            }
+        }
+    }
+    &__shape-1{
+        position: absolute;
+        right: 4%;
+        bottom: 0;
+        z-index: -1;
+        @media #{$xxxl,$xxl,$xl}{
+            right: 0;
+        }
+    }
+    &__shape-2{
+        position: absolute;
+        left: 12%;
+        top: 26%;
+        z-index: -1;
+        animation: zoom 7s infinite;
+        @media #{$xxxl}{
+            left: 8%;
+            top: 21%;
+        }
+        @media #{$xxl}{
+            left: -2%;
+            top: 21%;
+        }
+        @media #{$xl}{
+            left: -2%;
+            top: 3%;
+        }
+        @media #{$lg}{
+            left: -4%;
+            top: 2%;
+        }
+    }
+    &__shape-3{
+        position: absolute;
+        left: 14%;
+        top: 58%;
+        z-index: -1;
+        animation: moving 9s linear infinite;
+        @media #{$xxxl}{
+            left: 7%;
+        }
+        @media #{$xxl}{
+            left: 0%;
+            top: 62%;
+        }
+        @media #{$xl}{
+            left: -1%;
+        }
+    }
+
+    &__shape-4{
+        position: absolute;
+        left: 3%;
+        bottom: 8%;
+        z-index: -1;
+        animation: moving 9s linear infinite;
+        @media #{$xl}{
+            left: 6%;
+            bottom: 5%;
+        }
+        @media #{$lg}{
+            left: 5%;
+            bottom: 6%;
+        }
+    }
+}
+.testimonial-4-slider-dots {
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+    & .swiper-pagination-bullet {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 2px solid var(--it-theme-1);
+        background-color: transparent;
+        opacity: 1;
+        margin: 0 5px;
+        transition: .3s;
+    }
+    & .swiper-pagination-bullet-active {
+        background-color: var(--it-theme-1);
+    }
+}
+.testimonial-3-slider-dots {
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+    & .swiper-pagination-bullet {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid var(--it-theme-1);
+        background-color: transparent;
+        opacity: 1;
+        margin: 0 5px;
+        transition: .3s;
+    }
+    & .swiper-pagination-bullet-active {
+        background-color: var(--it-theme-1);
+    }
+}
+.testimonial-4{
+    &__slider-wrapper {
+        & .swiper-wrapper {
+            padding-bottom: 50px;
+        }
+    }
+    &__plr{
+        padding: 0 200px;
+        @media #{$xxxl}{
+            padding:0 100px;
+        }
+        @media #{$xxl}{
+            padding:0 100px;
+        }
+        @media #{$xl,$lg,$md}{
+            padding: 0 30px;
+        }
+        @media #{$xs}{
+            padding: 0;
+        }
+    }
+    &__space{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    &__section-box{
+        padding-bottom: 40px;
+    }
+    &__item{
+        background-color: var(--it-common-black-7);
+        padding: 30px 55px;
+        padding-bottom: 60px;
+        position: relative;
+        border-bottom-right-radius: 140px;
+        border-bottom-left-radius: 140px;
+        z-index: 2;
+        border: 1px dashed transparent;
+        transition: .3s;
+        @media #{$xxxl}{
+            padding: 30px 44px;            
+            padding-bottom: 60px;
+        }
+        @media #{$lg}{
+            padding: 30px 22px;                      
+            padding-bottom: 60px;
+        }
+        @media #{$md}{
+            border-bottom-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+        }
+        @media #{$xs}{
+            padding: 30px 35px;
+            padding-bottom: 30px;
+            padding-bottom: 60px;
+        }
+        &:hover{
+            border: 1px dashed var(--it-theme-1);
+        }
+    }
+    &__icon{
+        padding-bottom: 20px;
+        & i{
+            color: var(--it-theme-1);
+            padding: 0 4px;
+            font-size: 23px;
+            &.star-color{
+                color: var(--it-common-white);
+            }
+        }
+    }
+    &__text{
+        padding-bottom: 10px;
+        & p{
+            font-style: italic;
+            color: var(--it-common-white);
+            line-height: 1.8;
+        }
+    }
+    &__author-info{
+        padding-bottom: 15px;
+        & span{
+            color: var(--it-common-white);
+        }
+    }
+    &__author-name{
+        font-size: 22px;
+        color: var(--it-common-white);
+        padding-bottom: 5px;
+        transition: .3s;
+        &:hover {
+            color: var(--it-theme-1);
+        }
+    }
+    &__author-img{
+        position: absolute;
+        bottom: -13%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__item-shape{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #292728;
+        font-size: 120px;
+        z-index: -1;
+    }
+    &__shape-1{
+        position: absolute;
+        top: 6%;
+        left: 3%;
+        animation: rotate2 15s linear infinite;
+        @media #{$lg}{
+            top: 3%;
+        }
+    }
+    &__shape-2{
+        position: absolute;
+        bottom: 13%;
+        right: 6%;
+        animation: tpupdown 0.8s infinite alternate;
+        @media #{$xxxl}{
+            bottom: 8%;
+            right: 3%;
+        }
+        @media #{$xxl}{
+            bottom: 7%;
+            right: 3%;
+        }
+        @media #{$xl}{
+            bottom: 7%;
+            right: 2%;
+        }
+        @media #{$lg}{
+            bottom: 5%;
+            right: 2%;
+        }
+    }
+}

@@ -1,0 +1,582 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  16. job CSS START
+/*----------------------------------------*/
+.job{
+    &__plr{
+        padding: 0 200px;
+        @media #{$xxxl,$xxl} {
+            padding: 0 100px;
+        }
+        @media #{$xl,$lg,$md} {
+            padding: 0 30px;
+        }
+        @media #{$xs} {
+            padding: 0;
+        }
+    }
+
+    &__list {
+        padding-bottom: 5px;
+        & ul {
+            display: inline-block;
+            padding-bottom: 5px;
+
+            & li {
+                list-style-type: none;
+                position: relative;
+                padding-left: 25px;
+                margin-bottom: 10px;
+                width: 50%;
+                float: left;
+                transition: .3s;
+                text-decoration: transparent;
+                &:hover{
+                    text-decoration: underline;
+                }
+                @media #{$xs} {
+                    width: 100%;
+                }
+
+                @media #{$sm} {
+                    width: 50%;
+                }
+                @media only screen and (min-width: 440px) and (max-width:575px){
+                    width: 50%;
+                }
+                & i {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    font-weight: 500;
+                    color: var(--it-common-blue-3);
+                    font-size: 16px;
+                }
+
+                & span {
+                    font-weight: 400;
+                    font-size: 17px;
+                    @media #{$md}{
+                        font-size: 15px;
+                    }
+                    @media #{$lg,$xs} {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &__item{
+        padding: 45px 55px;
+        border: 1px solid var(--it-border-1);
+        border-radius: 5px;
+        @media #{$xxl}{
+            padding: 45px 33px;
+        }
+        @media #{$xl}{
+            padding: 45px 30px;
+        }
+        @media #{$lg}{
+            padding: 45px 48px;
+        }
+        @media #{$md}{
+            padding: 35px 18px;
+        }
+        @media #{$xs}{
+            padding: 35px 22px;
+        }
+        @media #{$sm}{
+            padding: 45px 55px;
+        }
+    }
+    &__title-sm{
+        font-weight: 700;
+        font-size: 17px;
+    }
+    &__meta{
+        padding-bottom: 20px;
+        & span {
+            margin-right: 54px;
+            font-size: 15px;
+            @media #{$xxxl}{
+                margin-right: 28px;
+            }
+            @media #{$xxl}{
+                margin-right: 15px;
+            }
+            @media #{$xl}{
+                font-size: 14px;
+                margin-right: 15px;
+            }
+            @media #{$md}{
+                font-size: 13px;
+                margin-right: 24px;
+            }
+            @media #{$lg}{
+                margin-right: 41px;
+            }
+            @media #{$xs}{
+                display: block;
+                margin-bottom: 10px;
+            }
+            @media #{$sm}{
+                display: inline-block;
+                margin-right: 81px;
+            }
+            @media only screen and (min-width: 440px) and (max-width:575px){
+                display: inline-block;
+            }
+            &.clock{
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+            & i{
+                padding-right: 10px;
+                @media #{$xxl,$xl}{
+                    padding-right:5px;
+                }
+            }
+        }
+    }
+    &__salary{
+        padding-bottom: 30px;
+        & span {
+            font-size: 600px;
+            font-size: 17px;
+            & i{
+                font-size: 12px;
+                font-style: normal;
+            }
+        }
+    }
+    &__img{
+        & img{
+            width: 54px;
+            height: 54px;
+        }
+    }
+}
+.job-details{
+    &__mlr{
+        margin: 0 200px;
+        @media #{$xxxl,$xxl} {
+            margin: 0 100px;
+        }
+        @media #{$xl,$lg,$md} {
+            margin: 0 30px;
+        }
+        @media #{$xs} {
+            margin: 0;
+        }
+    }
+    &__author-info{
+        & h4{
+            font-size: 22px;
+        }
+    }
+    &__list{
+        & span {
+            display: inline-block;
+            padding-bottom: 25px;
+            text-transform: uppercase;
+        }
+        & p{
+            padding-right: 74px;
+            @media #{$xl,$lg,$md,$xs} {
+                padding-right: 0;
+            }
+            @media #{$xs} {
+                padding-right: 0;
+                font-size: 14px;
+            }
+        }
+        & ul {
+            padding-right: 188px;
+            @media #{$xl,$lg,$md,$xs} {
+                padding-right: 0;
+            }
+            & li {
+                @media #{$xs} {
+                    font-size: 14px;
+                }
+                font-size: 17px;
+                list-style: none;
+                padding-bottom: 20px;
+                position: relative;
+                margin-left: 30px;
+                position: relative;
+                &::before{
+                position: absolute;
+                content: '';
+                top: 2px;
+                left: -28px;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                background-color: var(--it-common-black);
+                border: 4px solid var(--it-theme-1);
+                }                
+            }
+        }
+    }
+    &__summary{
+        margin-right: 170px;
+        @media #{$lg,$md,$xs} {
+            margin-right: 0;
+        }
+        & h4{
+            font-size: 22px;
+            font-size: 700;
+            padding-bottom: 20px;
+            @media #{$xs} {
+                font-size: 18px;
+            }
+        }
+        & ul{
+            display: inline-block;
+            & li{
+                width: 50%;
+                float: left;
+                list-style-type: none;
+                padding-bottom: 20px;
+                @media #{$xs} {
+                    width: 100%;
+                }
+                @media #{$sm} {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    &__text{
+        & span {
+            font-weight: 600;
+            font-size: 20px;
+            display: block;
+            @media #{$xs} {
+                font-size: 17px;
+            }
+        }
+        & i {
+            font-size:15px;
+            display: block;
+            font-style: normal;
+            @media #{$xs} {
+                font-size: 14px;
+            }
+        }
+    }
+    &__icon{
+        padding-right: 20px;
+        & i{
+            font-size: 25px;
+            color: var(--it-common-blue-4);
+        }
+    }
+    &__text-2 {
+        padding-right: 80px;
+        @media #{$xxl,$xl,$lg,$md,$xs} {
+            padding-right: 0;
+        }
+        @media #{$md,$xs} {
+            margin-bottom: 70px;
+        }
+    }
+    &__author-info{
+        & h5 {
+            @media #{$xs} {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
+.career-details-title-xs {
+    @media #{$xs} {
+        font-size: 18px;
+    }
+}
+
+
+
+.postbox{
+    &__select{
+        display: inline-block;
+        width: 100%;
+        & .nice-select{
+            width: 100%;
+            border: 1px solid #E5E5E5;
+            border-radius: 12px;
+            height: 55px;
+            line-height: 55px;
+            padding: 0px 20px;
+            position: relative;
+            &::after{
+                border: none;
+                background-color: transparent;
+                transform: translateY(-45%);
+                margin-top: 0;
+                right: 20px;
+                content: "\f107";
+                font-family: 'Font Awesome 5 Pro';
+                transform-origin: center;
+                color: var(--it-common-black);
+                font-weight: 500;
+                height: auto;
+                width: auto;
+                color:#5F6168;
+            }
+            & span{
+                font-weight: 500;
+                font-size: 15px;
+                color: #5F6168;
+            }
+            &.open::after {
+                transform: translateY(-45%) rotate(-180deg);
+            }
+            & .list{
+                width: 100%;
+                & li{
+                    &:last-child{
+                        border-bottom: 0;
+                    }
+                }
+            }
+            & .selected{
+                color: var(--it-common-blue-4);
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.postbox__authorization{
+    margin-bottom: 40px;
+    & .switcher label {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    & .switcher label * {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px; 
+        color: #5F6168;
+        position: relative;
+        @media #{$lg}{
+            font-size: 13px;
+        }
+        & svg{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    & .switcher label .switcher-icon {
+        position: relative;
+        padding-left: 25px;
+        cursor: pointer;
+        & svg{
+            position: absolute;
+            top: 6px;
+            left: 0;
+        }
+    }
+    & .switcher label input {
+        display: none;
+    }
+    & .switcher label input + span {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 24px;
+        background: #E6E8EB;;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        flex:  0 0 auto;
+    }
+    & .switcher label input + span small {
+        position: absolute;
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        left: 4px;
+        top: 3px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #E7E2F0 100%);
+        box-shadow: 1px 2px 3px rgba(18, 20, 32, 0.3);
+    }
+    & .switcher label input:checked + span {
+        background: var(--it-common-blue-3);
+    }
+    & .switcher label input:checked + span small {
+        left: 56%;
+    }    
+}
+.career-border-bottom{
+    border-bottom: 1px solid #EBEBEB;
+}
+.postbox{
+    &__resume{
+        & label{
+            width: 100%;
+            height: 130px;
+            border: 2px dashed #C1C4CE;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & span{
+                background-color:#F3F3F3;
+                border-radius: 8px;
+                padding: 10px 20px;
+                font-weight: 500;
+                font-size: 14px;
+                color: var(--it-common-black);
+                @media #{$xs}{
+                    padding: 10px 10px;
+                    font-size: 12px; 
+                }
+                & svg{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+.career-details{
+    &-social-box{
+        text-align: center;
+        & a{
+            padding: 15px 45px;
+            display: inline-block;
+            border: 1px solid #EBEBEB;
+            border-radius: 12px;
+            margin: 0px 3px;
+            font-size: 18px;
+            font-weight: 400;
+            @media #{$xl}{
+                padding: 15px 40px;
+            }
+            @media #{$lg}{
+                padding: 15px 30px;
+            }
+            @media #{$xs}{
+                margin-bottom: 10px;
+            }
+            &.facebook{
+                color: #1B74E4;
+                transition: .3s;
+                &:hover{
+                    background-color:#1B74E4;
+                    color: var(--it-common-white);
+                    border-color: #1B74E4;
+                }
+            }
+            &.twitter{
+                color: #1D9BF0;
+                transition: .3s;
+                &:hover{
+                    background-color:#1D9BF0;
+                    color: var(--it-common-white);
+                    border-color: #1D9BF0;
+                }
+            }
+            &.instagram{
+                position: relative;
+                & i{
+                    background: linear-gradient(261.91deg, #B900B4 0%, #F50000 40%, #FFD723 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: .3s;
+                    font-weight: 500;
+                    font-size: 19px;
+                }
+                & .insta-bg{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(266.81deg, #D500BF -6.56%, #F80095 34.02%, #FF005D 60.87%, #FFC300 103.55%);
+                    -webkit-transition: all 0.3s ease-out 0s;
+                    -moz-transition: all 0.3s ease-out 0s;
+                    -ms-transition: all 0.3s ease-out 0s;
+                    -o-transition: all 0.3s ease-out 0s;
+                    transition: all 0.3s ease-out 0s;
+                    border-radius: 12px;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &:hover{
+                    & i{
+                        -webkit-text-fill-color: inherit;
+                        color: var(--it-common-white);
+                        position: relative;
+                        z-index: 99;
+                    }
+                    & .insta-bg{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+            &.linkedin{
+                color: #0A66C2;
+                transition: .3s;
+                &:hover{
+                    background-color:#0A66C2;
+                    color: var(--it-common-white);
+                    border-color: #0A66C2;
+                }
+            }
+        }
+    }
+}
+
+.postbox__apply-btn-border{
+    position: relative;
+    &::after{
+        content: "";
+        top: 0px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        width: 100%;
+        background-color: var(--it-common-blue-4);
+        position: absolute;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.career-details-hide-wrapper{
+    & .postbox__comment-form{
+        @media #{$md}{
+            margin-bottom:0px;
+        }
+    }
+}
+.job-section-box{
+    & p{
+        @media #{$xs}{
+            & br{
+                display: none;
+            }
+        }
+    }
+}
+
+
+.job-right-box{
+    position: sticky;
+    top: 50px;
+}

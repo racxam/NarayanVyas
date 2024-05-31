@@ -1,0 +1,185 @@
+@use '../utils' as *;
+
+.breadcrumb{
+    &__title{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 1.1; 
+        color: var(--it-common-black); 
+        padding-bottom: 15px;   
+        @media #{$xxl} {
+            font-size: 41px;
+        }         
+        @media #{$lg} {
+            font-size: 40px;
+         }
+        @media #{$md} {
+            font-size: 45px;
+         }
+        @media #{$xs} {
+            font-size: 32px;
+            margin-bottom: 0;
+        }
+    }
+    &__plr{
+        padding: 0 200px; 
+        @media #{$xxxl}{
+            padding:0 100px;
+        }
+        @media #{$xxl}{
+            padding:0 100px;
+        }
+        @media #{$xl,$lg,$md}{
+            padding: 0 30px;
+        }
+        @media #{$xs}{
+            padding: 0;
+        }
+    }
+    &__space{
+        padding-top: 200px;
+        padding-bottom: 130px;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        @media #{$xs}{
+            padding-top: 200px;
+            padding-bottom: 80px;
+        }
+    }
+    &__subtitle{
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--tp-common-black);
+        text-transform: uppercase;
+        @media #{$xs} {
+            font-size: 15px;
+        }
+    }
+    &__button{
+        & a{
+            font-size: 16px;
+            font-weight: 400;
+            color: #636363;
+            background-color: var(--it-common-white);    
+            border: 1px solid var(--it-theme-1); 
+            padding: 11px 28px;   
+            display: inline-block;  
+            border-radius: 30px;
+            & i{
+                padding: 0px 8px;
+                transform: translateY(2px);
+            }
+        }
+    }
+    &__shape-1{
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media #{$xxxl} {
+            right: -2%;
+            top: -2%;
+        }
+        @media #{$xxl} {
+            right: -2%;
+            top: -2%;
+        }
+        @media #{$xl} {
+            right: -5%;
+            top: -5%;
+        }
+    }
+    &__shape-2{
+        position: absolute;
+        right: 78%;
+        top: 2%;
+    }
+    &__shape-3{
+        position: absolute;
+        top: 13%;
+        left: 2%;
+        animation: zoom 5s infinite;
+        @media #{$xxxl} {
+            top: 25%;
+            left: 1%;
+        }
+        @media #{$xxl} {
+            top: 25%;
+            left: 1%;
+        }
+    }
+    &__shape-4{
+        position: absolute;
+        bottom: 0;
+        left:0;
+    }
+    &__shape-5{
+        position: absolute;
+        bottom: 68%;
+        right: 6%;
+        animation: moving 9s linear infinite;
+    }
+    &__shape-6{
+        position: absolute;
+        bottom: 12%;
+        right: 1%;
+        animation: tptranslateX2 4s infinite alternate;
+    }
+    &__main-img{
+        animation: tpupdown 0.8s infinite alternate
+    }
+    &__big-text{
+        position: absolute;
+        left: 43%;
+        top: 54%;
+        transform: translate(-50%,-50%);
+        @media #{$xxxl} {
+            left: 40%;
+        }
+        @media #{$xxl} {
+            left: 37%;
+            top: 51%;
+        }
+        @media #{$xl} {
+            left: 39%;
+            top: 51%;
+        }
+        @media #{$lg} {
+            left: 40%;
+            top: 51%;
+        }
+        & h2{
+            font-size: 176px;
+            -webkit-text-stroke: 2px #ebebf1;
+            color: transparent;
+            @media #{$xxxl} {
+                font-size: 165px;
+            }
+            @media #{$xxl} {
+                font-size: 120px;
+            }
+            @media #{$xl} {
+                font-size: 100px;
+            }
+            @media #{$lg} {
+                font-size: 76px;
+            }
+        }
+    }
+}
+
+
+.breadcrumb__button {
+    @media #{$xs} {
+        margin-bottom: 30px;
+    }
+}
+
+.breadcrumb__bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    object-fit: cover;
+}
+
+

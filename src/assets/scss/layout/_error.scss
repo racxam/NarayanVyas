@@ -1,0 +1,32 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  11. error CSS START
+/*----------------------------------------*/
+.error{
+    &__text{
+        & h4{
+            font-size: 32px;
+            padding-bottom: 10px;
+            @media #{$xl,$lg}{
+                font-size: 30px;
+            }
+            @media #{$md}{
+                font-size: 24px;
+            }
+            @media #{$xs}{
+                font-size: 19px;
+            }
+            @media #{$sm}{
+                font-size: 24px;
+            }
+        }
+        & span {
+            display: inline-block;
+            padding-bottom: 30px;
+            @media #{$xs}{
+                font-size: 14px;
+            }
+        }
+    }
+}

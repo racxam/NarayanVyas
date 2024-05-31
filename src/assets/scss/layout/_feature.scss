@@ -1,0 +1,335 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  13. feature CSS START
+/*----------------------------------------*/
+.feature{
+    &__mlr{
+        margin: 0 200px;
+        @media #{$xxxl}{
+            margin:0 100px;
+        }
+        @media #{$xxl}{
+            margin:0 100px;
+        }
+        @media #{$xl,$lg,$md}{
+            margin: 0 30px;
+        }
+        @media #{$xs}{
+            margin: 0;
+        }       
+    }
+    &__item{
+        padding: 60px 30px;
+        box-shadow: 0px 0px 92px 0px rgba(255, 114, 94, 0.05);
+        position: relative;
+        &.item-space{
+            padding:50px 30px;
+            position: relative;
+            transition: .3s;
+            border: 2px dashed transparent;
+            @media #{$xxl}{          
+                padding: 50px 20px;
+            }
+            @media #{$xl}{          
+                padding: 50px 15px;
+            }
+            @media #{$lg}{          
+                padding:50px 60px;
+            }
+            @media #{$lg,$md,$xs}{          
+                margin-bottom: 90px;
+            }
+            @media #{$sm}{          
+                margin-bottom: 90px;
+            }
+            &:hover{
+                border: 2px dashed var(--it-theme-1);
+                &::after{
+                    background-color: var(--it-theme-1);
+                }
+                & .feature__icon{
+                    & span {
+                        border: 2px dashed var(--it-theme-1);
+                    }
+                }
+                & .feature__title{
+                    &.title-border{
+                        &::after{
+                            width: 100%;
+                            opacity: 1;
+                            visibility:visible;
+                        }
+                    }
+                }
+            }
+            &::after{
+                content: '';
+                height: 100px;
+                width: 120px;
+                background-color: var(--it-common-yellow-2);
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+                clip-path: polygon(52% 100%, 0 0, 100% 0);
+                transition: .3s;
+            }
+        }
+        @media #{$md}{
+            padding: 60px 28px;
+        }
+        @media #{$xs}{
+            padding: 60px 18px;
+        }
+        &::after{
+            content: '';
+            height: 160px;
+            width: 165px;
+            background-color: var(--it-common-sky);
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            clip-path: polygon(53% 100%, 0 0, 100% 0);
+        }
+    }
+    &__color-2{
+        &::after{
+            background-color: var(--it-theme-1);
+        }
+    }
+    &__color-3{
+        &::after{
+            background-color: var(--it-common-pink);
+        }
+    }
+    &__color-4{
+        &::after{
+            background-color:#e8f0fd;
+        }
+    }
+    &__icon{
+        margin-bottom: 30px;
+        &.icon-space{
+            margin-top: -121px;
+            margin-bottom: 0;
+            & span {
+                border: 2px dashed transparent;
+                transition: .3s;
+            }
+        }
+        & span{
+            height: 125px;
+            width: 125px;
+            background-color: var(--it-common-white);
+            border-radius: 50%;
+            line-height: 125px;
+            display: inline-block;
+            box-shadow: 3px 5.196px 51px 0px rgba(255, 114, 94, 0.08);
+        }
+    }
+    &__content{
+        & p{
+            padding-bottom: 10px;
+            @media #{$xl}{
+                font-size: 15px;   
+            }
+            @media #{$sm}{
+                padding: 0 30px;    
+            }
+            @media #{$xs}{
+                font-size: 14px;
+            }
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 22px;
+        padding-bottom: 10px;
+        @media #{$xs}{
+            font-size: 19px;
+        }
+        &.title-border{
+            position: relative;
+            display: inline-block;
+            &::after{
+                position: absolute;
+                content: '';
+                bottom:8px;
+                left: 0;
+                background-color: var(--it-common-black);
+                height: 1px;
+                width:0;
+                opacity: 0;
+                visibility: hidden;
+                transition: .5s;
+            }
+        }
+    }
+    &__link{
+        & a{
+            font-weight: 500;
+            font-size: 18px;
+            color: var(--it-common-black);
+            transition: .3s;
+            @media #{$xs}{
+                font-size: 15px;
+            }
+            & i{
+                font-size: 15px;
+                margin-left: 10px;
+                font-weight: 500;
+            }
+            &:hover{
+                color: var(--it-common-paste);
+                & i{
+                    animation: tfLeftToRight 0.4s forwards;
+                }
+            }
+        }
+    }
+    &__text{
+        & p{
+            padding-right: 106px;
+        }
+    }
+    &__item-shape{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -2px;
+    }
+    &__top-text{
+        & p {
+            padding-right: 106px;
+            @media #{$xxxl}{          
+                padding-right: 85px;
+            }
+            @media #{$xxl}{          
+                padding-right:7px;
+            }
+            @media #{$xl}{          
+                padding-right:0;
+            }
+            @media #{$lg,$md}{          
+                padding-right:0;
+                font-size: 15px;
+            }
+            @media #{$xs}{          
+                padding-right:0;
+                font-size: 14px;
+            }
+            @media #{$sm}{          
+                padding-right:0;
+            }
+        }
+    }
+    &__section-box {
+        @media #{$xs}{
+            padding-bottom: 20px;
+        }
+    }
+
+}
+.feature-2{
+    &__mlr{
+        margin: 0 200px;
+        @media #{$xxxl}{
+            margin:0 100px;
+        }
+        @media #{$xxl}{
+            margin:0 100px;
+        }
+        @media #{$xl,$lg,$md}{
+            margin: 0 30px;
+        }
+        @media #{$xs}{
+            margin: 0;
+        }       
+    }
+    &__item{        
+        box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.05);
+        padding: 40px 15px;   
+        border-radius: 5px;  
+        position: relative;  
+        transition: .5s;
+        background-color: var(--it-common-white);  
+        &:hover{
+            transform: translateY(-25px);
+            & .feature-2__item-overly{
+                opacity: 1;
+                visibility:visible;
+                transform: scale(1)
+            }
+            & .feature-2__title-sm{
+                color: var(--it-common-white);
+            }
+        }   
+    }
+    &__item-overly{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #2b2b32;
+        border-radius: 5px; 
+        transform: scale(.6);
+        transition: .3s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &__icon{        
+        & span{
+            background-color: #88e3f1;  
+            height: 105px;
+            width: 105px;
+            line-height: 105px; 
+            border-radius: 50%;         
+            box-shadow: 3px 5.196px 43px 0px rgba(32, 32, 32, 0.07);
+            margin-bottom: 25px;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    &__icon-color-2{
+        & span{
+            background-color: var(--it-common-pink-5);
+        }
+    }
+    &__icon-color-3{
+        & span{
+            background-color:var(--it-theme-1);
+        }
+    }
+    &__icon-color-4{
+        & span{
+            background-color: #a9c7ff;
+        }
+    }
+    &__icon-color-5{
+        & span{
+            background-color: #6bf89c;
+        }
+    }
+    &__title-sm{
+        font-size: 22px;
+        font-weight: 700;
+        transition: .3s;
+        @media #{$lg}{
+            font-size: 20px;
+        }
+        @media #{$md}{
+            font-size: 19px;
+        }
+        @media #{$xs}{
+            font-size: 18px;
+        }
+        @media #{$xs}{
+            font-size: 20px;
+        }
+    }
+}
+

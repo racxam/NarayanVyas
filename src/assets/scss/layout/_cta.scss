@@ -1,0 +1,106 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  10. cta CSS START
+/*----------------------------------------*/
+
+.cta{
+    &__plr{
+        margin:0 200px;
+        @media #{$xxxl}{
+            margin:0 100px;
+        }
+        @media #{$xxl}{
+            margin:0 100px;
+        }
+        @media #{$xl,$lg,$md}{
+            margin: 0 30px;
+        }
+        @media #{$xs}{
+            margin: 0;
+        } 
+    }
+    &__bg{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        border-radius: 100px;
+        margin-bottom: -165px;
+        padding: 70px;
+        @media #{$xs}{
+            padding: 50px 30px;
+            border-radius: 0;
+        } 
+        @media #{$xxs}{
+            padding: 50px 15px;
+        } 
+    }
+    &__title{
+        font-size: 35px;
+        font-weight: 700;
+        color: var(--it-common-black);
+        padding-bottom: 15px;
+        @media #{$md}{
+            font-size: 27px;
+        }
+        @media #{$xs}{
+            font-size: 25px;
+        }
+    }
+    &__section-box{
+        & p{
+            padding-bottom: 15px;
+            @media #{$xs}{
+                font-size: 14px;
+                & br{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__shape-icon{
+        position: absolute;
+        top: -76px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__btn{
+        & .white-btn{
+            @media #{$md}{
+                height: 47px;
+                line-height: 49px;
+                padding: 0 30px;
+                font-size: 16px;
+            }
+            @media #{$xs}{
+                height: 47px;
+                line-height: 49px;
+                padding: 0 30px;
+                font-size: 16px;
+            }
+        }
+    }
+    &__section-wrapper {
+        padding-top: 30px;
+        @media #{$md,$xs}{
+            padding-top: 0;
+        }
+        @media #{$sm}{
+            padding-top: 0;
+        }
+    }
+}
+.cta{
+    &__bg-2{
+        border-radius: 40px;
+        @media #{$md}{
+            padding: 20px;
+        }
+    }
+}
+
+.cta__section-box {
+    @media #{$md}{
+        margin-top: 30px;
+    }
+}

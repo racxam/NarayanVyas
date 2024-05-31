@@ -1,0 +1,103 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  7. company CSS START
+/*----------------------------------------*/
+.company{
+    &__left-img{
+        & img{
+            max-width: inherit;
+            margin-left: -225px;
+            @media #{$xxxl}{
+                max-width: 100%;
+                margin-left: -50px;
+            }
+            @media #{$xxl}{
+                max-width: 100%;
+                margin-left: -50px;
+            }
+            @media #{$xl}{
+                max-width: 100%;
+                margin-left: -10px;
+            }
+            @media #{$lg,$md}{
+                max-width: 100%;
+                margin-left: 0;
+                margin-bottom: 70px;
+            }
+            @media #{$xs}{
+                max-width: 100%;
+                margin-left: 0;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    &__service-tab{
+        & ul{
+            padding-bottom: 30px;
+            & li{
+                &.react-tabs__tab--selected {
+                   & button {
+                        & span {
+                            border-bottom: 1px solid var(--it-common-black);
+                        }
+                    }
+                }
+                & button{
+                    padding: 4px 8px;
+                    &::before{
+                        content: '';
+                        margin-right: 10px;
+                        display: inline-block;
+                        height: 12px;
+                        width: 12px;
+                        background-color: var(--it-theme-1);
+                        border-radius: 50%;
+                    }
+                    &.btn-color-3{
+                        &::before{
+                            background-color: var(--it-common-pink-2);
+                        }
+                    }
+                    &.btn-color-2{
+                        &::before{
+                            background-color: var(--it-common-blue);
+                        }
+                    }
+                    & span{
+                        font-weight: 500;
+                        font-size: 17px;
+                        color: var(--it-common-black);
+                        transition: .3s;
+                        @media only screen and (min-width:450px) and (max-width: 575px){
+                            font-size: 15px;
+                        }
+                         
+                    }
+                }
+            }
+        }
+    }
+    &__tab-icon{
+       & span {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: var(--it-common-yellow);
+        line-height: 70px;
+        margin-right: 30px;
+        text-align: center;
+        display: inline-block;
+       }
+    }
+    &__tab-text{
+        & h4{
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 22px;
+        }
+    }
+    &__tab-content-wrapper{
+        padding-bottom: 40px;
+    }
+}
