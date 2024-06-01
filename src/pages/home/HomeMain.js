@@ -3,7 +3,7 @@ import About from './AboutSection';
 import Blog from './BlogSection';
 import Brand from '../../components/Brand';
 import Company from './CompanySection';
-import Counter from './CounterSection';
+import Counter from '../home-5/CounterSection';
 import CTA from './CtaSection';
 import Feature from './FeatureSection';
 import Banner from './HomeBanner';
@@ -28,15 +28,15 @@ const HomeMain = () => {
 			
 			<Service />
 			
-			<Project />
+			{/* <Project /> */}
 			
-			<Social />
+			{/* <Social /> */}
 			
-			<Company />
+			{/* <Company /> */}
 			
 			<Testimonial />
 			 
-			<Blog />
+			{/* <Blog /> */}
 			
 			<CTA />
 

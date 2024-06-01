@@ -99,15 +99,15 @@
 }
 .counter-2{
     &__plr{
-        padding: 0 200px;
+        padding: 30px 200px;
         @media #{$xxxl}{
-            padding:0 100px;
+            padding:30px 100px;
         }
         @media #{$xxl}{
-            padding:0 100px;
+            padding:30px 100px;
         }
         @media #{$xl,$lg,$md}{
-            padding: 0 30px;
+            padding: 30px 30px;
         }
         @media #{$xs}{
             padding: 0;
@@ -130,7 +130,7 @@
         position: absolute;
         left: 0;
         top: 0;
-        z-index: 1;
+        z-index: 10;
     }
     &__item{
         position: relative;

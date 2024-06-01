@@ -5,9 +5,9 @@ import VisibilitySensor from 'react-visibility-sensor';
 import shapeImg1 from '../../assets/img/brand/brand-shape-1.png';
 
 import countImg1 from '../../assets/img/brand/brand-8.png';
-import countImg2 from '../../assets/img/brand/brand-9.png';
-import countImg3 from '../../assets/img/brand/brand-10.png';
-import countImg4 from '../../assets/img/brand/brand-11.png';
+import countImg2 from '../../assets/img/brand/verified.png';
+import countImg3 from '../../assets/img/brand/chat.png';
+import countImg4 from '../../assets/img/brand/five-stars.png';
 
 const Counter = () => {
 
@@ -15,34 +15,36 @@ const Counter = () => {
 
     const counters = [
         {
-            countNum: 12,
-            countSubtext: 'K+',
-            countTitle: 'Work Per Week',
+            countNum: 8,
+            countSubtext: '+',
+            countTitle: 'Years of Experience',
             countImg: countImg1,
         },
         {
-            countNum: 99,
+            countNum: 95,
             countSubtext: '+',
-            countTitle: 'Keywords Updated',
+            countTitle: 'Projects completed',
             countImg: countImg2,
         },
         {
-            countNum: 87,
+            countNum: 200,
             countSubtext: '+',
-            countTitle: 'Google Search',
+            countTitle: 'Happy Customers',
             countImg: countImg3,
         },
         {
-            countNum: 5,
-            countSubtext: 'K',
-            countTitle: 'Indexed Google',
+            countNum: 45,
+            countSubtext: '+',
+            countTitle: '5 Star Rating',
             countImg: countImg4,
         }
 
     ];
 
+   
+
     return (
-        <div className="counter-2__area counter-2__plr black-bg-2">
+        <div className="counter-2__area counter-2__plr ">
             <div className="container-fluid">
                <div className="counter-2__black-bg fix">
                     <div className="counter-2__shape">

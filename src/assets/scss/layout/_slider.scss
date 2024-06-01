@@ -42,12 +42,12 @@
         padding-bottom: 20px;
         & p{
             line-height: 1.6;
-            padding-right: 170px;
+            padding-right: 50px;
             @media #{$xxxl,$xxl}{
-                padding-right: 160px;
+                padding-right: 50px;
             }
             @media #{$xl}{
-                padding-right: 100px;
+                padding-right: 40px;
             }
             @media #{$lg,$md}{
                 padding-right:0;

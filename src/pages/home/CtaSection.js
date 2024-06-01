@@ -21,7 +21,7 @@ const CTA = () => {
                 Lorem Ipsum Fasts injecte.</p>
               </div>
               <div className="cta__btn wow animate__fadeInUp" data-wow-duration="1.1s">
-                <Link to="/about-us" className="white-btn tp-btn-hover alt-color"><span>Book Appointment</span><b></b>
+                <Link to="/appointments" className="white-btn tp-btn-hover alt-color"><span>Book Appointment</span><b></b>
                 </Link>
               </div>
             </div>

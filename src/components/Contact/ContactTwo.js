@@ -36,9 +36,10 @@ const ContactTwo = (props) => {
             <div className="contact__shape-4 d-none d-md-block">
                 <img src={shapeImg4} alt="" />
             </div>
-            <div className="contact__border">
+            {/* <div className="contact__border"> */}
+            <div className="">
                 <div className="container">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center justify-content-center">
                         <div className="col-xl-8 col-lg-7">
                             <div className="contact__section-title pb-10">
                                 <h4 className="section-subtitle char-anim">Get In Contact</h4>
@@ -74,7 +75,7 @@ const ContactTwo = (props) => {
                                 <a className="main-btn-sm  tp-btn-hover alt-color" href="#"><span>Send Message</span><b></b></a>
                             </div>
                         </div>
-                        <div className="col-xl-4 col-lg-5">
+                        {/* <div className="col-xl-4 col-lg-5">
                             <div className="contact__left-side">
                                 <div className="contact__item d-flex align-items-center wow animate__fadeInUp" data-wow-duration="1.1s">
                                     <div className="contact__icon">
@@ -105,7 +106,7 @@ const ContactTwo = (props) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

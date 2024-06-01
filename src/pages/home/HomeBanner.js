@@ -62,11 +62,11 @@ const Banner = () => {
                         <div className="slider__section-box">
                             <h4 className="section-subtitle char-anim wow animate__fadeInUp" data-wow-duration="1.1s"
             >I am Narayan Vyas!</h4>
-                            <h3 className="hero-title char-anim wow animate__fadeInUp" data-wow-duration="1.1s"
-            >Sr. Flutter Developer & Teacher</h3>
+                            <h3 className="hero-title-2 char-anim wow animate__fadeInUp" data-wow-duration="1.1s"
+            >Researcher by Profession, Developer by Passion </h3>
                         </div>
                         <div className="slider__content wow animate__fadeInUp" data-wow-duration="1.1s">
-                            <p className="char-anim-2">Narayan Vyas, a proficient Web and App Developer, excels in Arduino, IoT, Robotics, HTML5, CSS3, WordPress, Flutter, JavaScript, and SEO. With 50+ projects completed in seven years, he leads as the Founder & CEO of Web Dev Fusion and serves as a Senior Developer at Flexxited. </p>
+                            <p className="char-anim-2">Narayan Vyas is an accomplished academician at Chandigarh University, Punjab, India, specializing in computer science research and development. He achieved NTA UGC NET & JRF qualification on his first attempt, demonstrating his academic prowess. With extensive expertise in the Internet of Things and Mobile Application Development, Narayan has trained students globally. He has published numerous articles in peer-reviewed national and international Scopus journals and conferences. As an IEEE member, he actively participates in societies like IEEE Young Professional, IEEE GRSS, IEEE Sensors Council, and ISPRS. His research areas encompass Remote Sensing, Machine Learning, Deep Learning, and Computer Vision. Narayan has also served as a keynote speaker and resource person for several workshops and webinars across India. With over 30 publications and 9+ edited books with publishers like Wiley, De Gruyter, and IGI Global, he continues to make significant contributions to the field. </p>
                         </div>
                         <div className="slider__btn wow animate__fadeInUp" data-wow-duration="1.1s">
                             <Link to="/about-us" className="main-btn tp-btn-hover alt-color">

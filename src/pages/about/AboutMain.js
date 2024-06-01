@@ -1,7 +1,7 @@
 import React from 'react';
 import Testimonial from './TestimonialSection';
 import Breadcrumb from '../../components/Breadcrumb';
-import Contact from '../../components/Contact';
+import Contact from '../../components/Contact/ContactTwo';
 import CTA from '../../components/CTA';
 import Brand from '../../components/Brand';
 
