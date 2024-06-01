@@ -170,15 +170,16 @@
         & a {
             font-weight: 500;
             color: var(--it-common-black);
-            font-size: 18px;
+            font-size: 17px;
             display: block;
+            margin: -10px;
 
             &:hover {
                 color: var(--it-common-paste);
             }
 
             @media #{$lg} {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     }
@@ -224,7 +225,7 @@
     &__video-text {
         & a {
             font-weight: 500;
-            font-size: 18px;
+            font-size: 17px;
             color: var(--it-common-black);
 
             &:hover {

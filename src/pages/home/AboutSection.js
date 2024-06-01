@@ -39,18 +39,6 @@ const About = () => {
                             <ul>
                                 <li>
                                     <i className="far fa-check"></i>
-                                    <span>8 h-index in Scopus</span>
-                                </li>
-                                <li>
-                                    <i className="far fa-check"></i>
-                                    <span>Taught students from 12+ countries</span>
-                                </li>
-                                <li>
-                                    <i className="far fa-check"></i>
-                                    <span>6+ Workshops conducted</span>
-                                </li>
-                                <li>
-                                    <i className="far fa-check"></i>
                                     <span>36 Publications indexed in Scopus</span>
                                 </li>
                                 <li>
@@ -61,16 +49,28 @@ const About = () => {
                                     <i className="far fa-check"></i>
                                     <span>170 Citations in academic research</span>
                                 </li>
+                                <li>
+                                    <i className="far fa-check"></i>
+                                    <span>8 h-index in Scopus</span>
+                                </li>
+                                <li>
+                                    <i className="far fa-check"></i>
+                                    <span>Taught students from 12+ countries</span>
+                                </li>
+                                <li>
+                                    <i className="far fa-check"></i>
+                                    <span>6+ Workshops conducted</span>
+                                </li>
                             </ul>
                         </div>
-                        <div className="row gx-0">
-                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 about__border-right">
-                                <div className="about__contact-box d-flex align-items-center">
-                                    <div className="about__contact-icon">
-                                        <span><i className="fas fa-phone-alt"></i></span>
+                        <div className="row gx-1">
+                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 about__border-right pr-10" > 
+                                <div className="about__contact-box d-flex align-items-center" >
+                                    <div className="about__contact-icon "  >
+                                        <span><i className="fas fa-phone-alt " ></i></span>
                                     </div>
-                                    <div className="about__contact-number">
-                                        <a href="mailto:contact@narayanvyas.com">contact@narayanvyas.com</a>
+                                    <div className="about__contact-number" >
+                                        <a href="mailto:contact@narayanvyas.com" className='mr-10 pr-20' >contact@narayanvyas.com</a>
                                     </div>
                                 </div>
                             </div>

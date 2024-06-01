@@ -29,9 +29,9 @@ const HomeMain = () => {
 			
 			<Service />
 			
-			{/* <Project /> */}
+			<Project />
 			
-			{/* <Social /> */}
+			<Social />
 			
 			{/* <Company /> */}
 			
