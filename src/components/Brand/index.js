@@ -1,6 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { Autoplay, Pagination, Navigation } from 'swiper';
+
 import brandImg1 from '../../assets/img/brand/fiverr.png';
 import brandImg2 from '../../assets/img/brand/gitHub.png';
 import brandImg3 from '../../assets/img/brand/googleScholar.png';
@@ -10,12 +12,18 @@ import brandImg6 from '../../assets/img/brand/researchGate.png';
 import brandImg7 from '../../assets/img/brand/teacheron.png';
 import brandImg8 from '../../assets/img/brand/vidwan.png';
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+
 const Brand = (props) => {
 	const {itemClass} = props;
     const sliderOption = {
         loop: true,
         spaceBetween: 38,
-        slidesPerView: '6',
+        slidesPerView: '5',
         breakpoints: {
             0: {
               slidesPerView: 1,
@@ -27,17 +35,35 @@ const Brand = (props) => {
               slidesPerView: 4,
             },
             1200: {
-              slidesPerView: 6,
+              slidesPerView: 5,
             },
-        }
+        },
+        autoplay:{
+            delay: 1000,
+            disableOnInteraction: false,
+          }
     }
     return (
         <div className={itemClass ? itemClass : 'brand__area brand__mlr brand__white-bg'}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <div className="swiper-container brand__active">
-                            <Swiper {...sliderOption} className="swiper-wrapper">
+                        <div className="swiper-container brand__active ">
+                            <Swiper {...sliderOption} className="swiper-wrapper mySwiper"
+
+
+                           centeredSlides={true}
+                       
+                        //    pagination={{
+                        //      clickable: true,
+                        //    }}
+                        //    navigation={true}
+                           modules={[Autoplay, Pagination, Navigation]}
+
+
+    
+                              
+                            >
                                 <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration=".7s">
                                     <div className="brand__img">
                                         <a href="https://www.fiverr.com/narayanvyas" target='_blank'>

@@ -30,7 +30,7 @@
 		"react-visibility-sensor": "^5.1.1",
 		"sass": "^1.77.3",
 		"split-text": "^1.0.0",
-		"swiper": "^9.1.0",
+		"swiper": "^9.4.1",
 		"web-vitals": "^2.1.4",
 		"wowjs": "^1.1.3"
 	},
