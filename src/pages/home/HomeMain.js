@@ -31,11 +31,11 @@ const HomeMain = () => {
 			
 			<Project />
 			
-			<Social />
+			{/* <Social /> */}
 			
 			{/* <Company /> */}
 			
-			<Testimonial />
+			{/* <Testimonial /> */}
 			<Contact/>
 			 
 			{/* <Blog /> */}

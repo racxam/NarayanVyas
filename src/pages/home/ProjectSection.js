@@ -49,8 +49,8 @@ const Project = () => {
                             sectionClass= "project__section-box wow itfadeUp"
                             subTitleClass= "section-subtitle char-anim"
                             titleClass= "section-title char-anim"
-                            subTitle= "Our Projects Work"
-                            Title= "We Are the Best Software Company Manage."
+                            subTitle= "My Projects"
+                            Title= "Showcasing Excellence in Technology and Innovation"
                         />
 					</div>
 					<div className="col-lg-6 col-md-3">

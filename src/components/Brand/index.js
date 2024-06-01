@@ -39,7 +39,7 @@ const Brand = (props) => {
             },
         },
         autoplay:{
-            delay: 1000,
+            delay: 1500,
             disableOnInteraction: false,
           }
     }
@@ -54,10 +54,7 @@ const Brand = (props) => {
 
                            centeredSlides={true}
                        
-                        //    pagination={{
-                        //      clickable: true,
-                        //    }}
-                        //    navigation={true}
+                        
                            modules={[Autoplay, Pagination, Navigation]}
 
 
@@ -93,9 +90,11 @@ const Brand = (props) => {
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.3s">
 
-                                    <div className="brand__img">
-                                      <a href="https://www.scopus.com/authid/detail.uri?authorId=57221967474" target='_blank'></a>
+                                    <div className="brand__img" >
+                                      <a href="https://www.scopus.com/authid/detail.uri?authorId=57221967474" target='_blank'>
+
                                         <img src={brandImg4} alt="" style={{cursor:'pointer'}}/>
+                                      </a>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.5s">
@@ -132,6 +131,7 @@ const Brand = (props) => {
                                     </div>
                                 </SwiperSlide>
                             </Swiper>
+
                         </div>
                     </div>
                 </div>
