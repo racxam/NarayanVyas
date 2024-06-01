@@ -11,6 +11,7 @@ import Project from './ProjectSection';
 import Service from './ServiceSection';
 import Testimonial from './TestimonialSection';
 import Social from './SocialSection';
+import Contact from '../../components/Contact/ContactTwo'
 
 const HomeMain = () => {
 	return (
@@ -35,10 +36,13 @@ const HomeMain = () => {
 			{/* <Company /> */}
 			
 			<Testimonial />
+			<Contact/>
 			 
 			{/* <Blog /> */}
 			
 			<CTA />
+
+
 
 		</main>
 	);
