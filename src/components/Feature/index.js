@@ -18,7 +18,7 @@ const SingleFeature = (props) => {
 				<p>{Description ? Description : 'Business is the knowledge or master event. Identify the error of the we website coding page speed.'}</p>
 			</div>
 			<div className="feature__link">
-				<Link to={`/ ${btnURL ? btnURL : 'service-details'}`}>{btnText ? btnText : 'See More'}<i className="far fa-arrow-right"></i></Link>
+				<Link to={`/${btnURL ? btnURL : 'service-details'}`}>{btnText ? btnText : 'See More'}<i className="far fa-arrow-right"></i></Link>
 			</div>
 		</div>
 	);

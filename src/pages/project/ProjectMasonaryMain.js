@@ -4,48 +4,54 @@ import Masonry from 'react-masonry-css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
-
 import SingleProject from '../../components/Project';
-// achievemetns certi
-import projectImg1 from '../../assets/img/certificates/Acheivements/0001-3-min.jpg';
-import projectImg2 from '../../assets/img/certificates/Acheivements/IEEE-Conference-Certificate.jpg';
-import projectImg3 from '../../assets/img/certificates/Acheivements/IEEE-Membership-Certificate.jpg';
-// ai certificates
-import projectImg4 from '../../assets/img/certificates/AI Certificates/0001-min.jpg';
-import projectImg5 from '../../assets/img/certificates/AI Certificates/Arduino-min.jpg';
-import projectImg6 from '../../assets/img/certificates/AI Certificates/UC-47FU85S3-min.jpg';
-import projectImg7 from '../../assets/img/certificates/AI Certificates/UC-TKC2KR19-min.jpg';
-import projectImg8 from '../../assets/img/certificates/AI Certificates/UC-TRGOH7JJ-min.jpg';
-//web certificates
-import projectImg9 from '../../assets/img/certificates/Web Certificates/CCA-Certificate-HTML-Level-1_2-1-min.jpg';
-import projectImg10 from '../../assets/img/certificates/Web Certificates/CCA-Certificate-Javascript-Level-1_2-1-min.jpg';
-import projectImg11 from '../../assets/img/certificates/Web Certificates/Narayan_Vyas__Certificate_2-1-min.jpg';
-import projectImg12 from '../../assets/img/certificates/Web Certificates/Sololearn-HTML-Fundamental-min.jpg';
-import projectImg13 from '../../assets/img/certificates/Web Certificates/Sololearn-HTML.jpg';
 
+// awards certificates
+import projectImg1 from '../../assets/img/certificates/awards/icaiihi_2023_session_chair.jpg';
+import projectImg2 from '../../assets/img/certificates/awards/ssn_college_workshop_2021.jpg';
+import projectImg3 from '../../assets/img/certificates/awards/icdsns_2023_reviewer.jpg';
+import projectImg4 from '../../assets/img/certificates/awards/nimitcon_2023_reviewer.jpg';
+import projectImg5 from '../../assets/img/certificates/awards/ieeextream_proctor.jpg';
+// membership certificates
+import projectImg6 from '../../assets/img/certificates/memberships/ieee_membership.jpg';
+import projectImg7 from '../../assets/img/certificates/memberships/acm_membership.jpg';
+import projectImg8 from '../../assets/img/certificates/memberships/grss_membership.jpg';
+import projectImg9 from '../../assets/img/certificates/memberships/ieee_young_professional.jpg';
+import projectImg10 from '../../assets/img/certificates/memberships/ieee_consultant_network.jpg';
+// course certificates
+import projectImg11 from '../../assets/img/certificates/courses/coursera_blockchain.jpg';
+import projectImg12 from '../../assets/img/certificates/courses/innobuzz_ceh.jpg';
+import projectImg13 from '../../assets/img/certificates/courses/udemy_arduino.jpg';
+import projectImg14 from '../../assets/img/certificates/courses/udemy_ethereum_solidity.jpg';
+import projectImg15 from '../../assets/img/certificates/courses/udemy_flutter.jpg';
+import projectImg16 from '../../assets/img/certificates/courses/sololearn_html.jpg';
+import projectImg17 from '../../assets/img/certificates/courses/sololearn_css.jpg';
+import projectImg18 from '../../assets/img/certificates/courses/udemy_kicad.jpg';
+import projectImg19 from '../../assets/img/certificates/courses/udemy_respberry_pi.jpg';
+import projectImg20 from '../../assets/img/certificates/courses/vskills_html5.jpg';
 
 import bgImg from '../../assets/img/cta/cta-bg-2.png';
 
 const ProjectMasonaryMain = () => {
-  const breakpointColumnsObj = {
-    default: 3,
-    1200: 3,
-    992: 2,
-    576: 1
-  };
+	const breakpointColumnsObj = {
+		default: 4,
+		1200: 4,
+		992: 3,
+		576: 2
+	};
 
 	let tab1 = "All",
-	tab2 = "Achievements",
-	tab3 = "Web Certificates",
-	tab4 = "AI  Certificates"
-  const tabStyle = 'nav justify-content-center project-2__button-box masonary-menu';
+		tab2 = "Awards",
+		tab3 = "Memberships",
+		tab4 = "Courses"
+	const tabStyle = 'nav justify-content-center project-2__button-box masonary-menu';
 
- 	return (
-	 	<main>
+	return (
+		<main>
 			<Breadcrumb
-				pageTitle= "My Certificates"
+				pageTitle="My Certificates"
 			/>
-			
+
 			<div className="project-2__area project-2__plr-3 project-2__space p-relative fix">
 				<div className="container-fluid">
 					<Tabs>
@@ -67,101 +73,165 @@ const ProjectMasonaryMain = () => {
 								<div>
 									<SingleProject
 										Image={projectImg1}
-										Title="2021 Certificate of IEEE Membership"
-										categoryOne="ACHIEVEMENT"
+										Title="ICAIHI 2023 Session Chair"
+										categoryOne="AWARD"
 										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg2}
-										Title="CERTIFICATE OF PRESENTATION"
-										categoryOne="ACHIEVEMENT"
+										Title="SSN College Workshop 2021"
+										categoryOne="AWARD"
 										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg3}
-										Title="2020 Certificate of Membership"
-										categoryOne="ACHIEVEMENT"
+										Title="ICDSNS 2023 Reviewer"
+										categoryOne="AWARD"
 										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg4}
-										Title="HTML Fundamentals course"
-										categoryOne=" "
+										Title="NimitCon 2023 Reviewer"
+										categoryOne="AWARD"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg5}
-										Title="Javascript Level 1"
-										categoryOne=" "
+										Title="IEEE Xtreme Proctor"
+										categoryOne="AWARD"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg6}
-										Title="HTML Level 1"
-										categoryOne=" "
+										Title="IEEE Membership"
+										categoryOne="MEMBERSHIP"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg7}
-										Title="HTML Fundamentals course"
-										categoryOne=" "
-										
+										Title="ACM Membership"
+										categoryOne="MEMBERSHIP"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg8}
-										Title="HTMLS Developer"
-										categoryOne=" "
+										Title="GRSS Membership"
+										categoryOne="MEMBERSHIP"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg9}
-										Title="Tech Explorations™ KiCad"
-										categoryOne=" "
+										Title="IEEE Young Professional"
+										categoryOne="MEMBERSHIP"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg10}
-										Title="Tech Explorations ™ Basic electronics for Arduino Makers"
-										categoryOne=" "
+										Title="IEEE Consultant Network"
+										categoryOne="MEMBERSHIP"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg11}
-										Title="Tech Explorations ™ Arduino Steps"
-										categoryOne=" "
+										Title="Coursera Blockchain"
+										categoryOne="COURSE"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg12}
-										Title="Certfied Information Security Expert"
-										categoryOne=" "
+										Title="Innobuzz CEH"
+										categoryOne="COURSE"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg13}
-										Title="Flutter & Dart"
-										categoryOne=" "
+										Title="Udemy Arduino"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg14}
+										Title="Udemy Ethereum & Solidity"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg15}
+										Title="Udemy Flutter"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg16}
+										Title="Sololearn HTML"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg17}
+										Title="Sololearn CSS"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg18}
+										Title="Udemy KiCad"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg19}
+										Title="Udemy Raspberry Pi"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg20}
+										Title="Vskills HTML5"
+										categoryOne="COURSE"
+										categoryTwo=" "
 									/>
 								</div>
 							</Masonry>
 						</TabPanel>
-						{/* //achievemetns */}
 						<TabPanel>
 							<Masonry
 								breakpointCols={breakpointColumnsObj}
@@ -170,80 +240,43 @@ const ProjectMasonaryMain = () => {
 								<div>
 									<SingleProject
 										Image={projectImg1}
-										Title="2021 Certificate of IEEE Membership"
-										categoryOne="ACHIEVEMENT"
+										Title="ICAIHI 2023 Session Chair"
+										categoryOne="AWARD"
 										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg2}
-										Title="CERTIFICATE OF PRESENTATION"
-										categoryOne="ACHIEVEMENT"
+										Title="SSN College Workshop 2021"
+										categoryOne="AWARD"
 										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg3}
-										Title="2020 Certificate of Membership"
-										categoryOne="ACHIEVEMENT"
+										Title="ICDSNS 2023 Reviewer"
+										categoryOne="AWARD"
 										categoryTwo=" "
 									/>
 								</div>
-								
-							</Masonry>
-						</TabPanel>
-						{/* //ai certificates */}
-						<TabPanel>
-							<Masonry
-								breakpointCols={breakpointColumnsObj}
-								className="my-masonry-grid"
-								columnClassName="my-masonry-grid_column">
 								<div>
 									<SingleProject
 										Image={projectImg4}
-										Title="HTML Fundamentals course"
-										categoryOne=" "
+										Title="NimitCon 2023 Reviewer"
+										categoryOne="AWARD"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg5}
-										Title="Javascript Level 1"
-										categoryOne=" "
+										Title="IEEE Xtreme Proctor"
+										categoryOne="AWARD"
+										categoryTwo=" "
 									/>
 								</div>
-								<div>
-									<SingleProject
-										Image={projectImg6}
-										Title="HTML Level 1"
-										categoryOne=" "
-									/>
-								</div>
-								<div>
-									<SingleProject
-										Image={projectImg7}
-										Title="HTML Fundamentals course"
-										categoryOne=" "
-										
-									/>
-								</div>
-								<div>
-									<SingleProject
-										Image={projectImg8}
-										Title="HTMLS Developer"
-										categoryOne=" "
-									/>
-								</div>
-								<div>
-									<SingleProject
-										Image={projectImg9}
-										Title="Tech Explorations™ KiCad"
-										categoryOne=" "
-									/>
-								</div>
-								
 							</Masonry>
 						</TabPanel>
 						<TabPanel>
@@ -253,44 +286,141 @@ const ProjectMasonaryMain = () => {
 								columnClassName="my-masonry-grid_column">
 								<div>
 									<SingleProject
-										Image={projectImg10}
-										Title="Tech Explorations ™ Basic electronics for Arduino Makers"
-										categoryOne=" "
+										Image={projectImg6}
+										Title="IEEE Membership"
+										categoryOne="MEMBERSHIP"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
+										Image={projectImg7}
+										Title="ACM Membership"
+										categoryOne="MEMBERSHIP"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg8}
+										Title="GRSS Membership"
+										categoryOne="MEMBERSHIP"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg9}
+										Title="IEEE Young Professional"
+										categoryOne="MEMBERSHIP"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg10}
+										Title="IEEE Consultant Network"
+										categoryOne="MEMBERSHIP"
+										categoryTwo=" "
+									/>
+								</div>
+							</Masonry>
+						</TabPanel>
+						<TabPanel>
+							<Masonry
+								breakpointCols={breakpointColumnsObj}
+								className="my-masonry-grid"
+								columnClassName="my-masonry-grid_column">
+								<div>
+									<SingleProject
 										Image={projectImg11}
-										Title="Tech Explorations ™ Arduino Steps"
-										categoryOne=" "
+										Title="Coursera Blockchain"
+										categoryOne="COURSE"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg12}
-										Title="Certfied Information Security Expert"
-										categoryOne=" "
+										Title="Innobuzz CEH"
+										categoryOne="COURSE"
+										categoryTwo=" "
 									/>
 								</div>
 								<div>
 									<SingleProject
 										Image={projectImg13}
-										Title="Flutter & Dart"
-										categoryOne=" "
+										Title="Udemy Arduino"
+										categoryOne="COURSE"
+										categoryTwo=" "
 									/>
 								</div>
-								
-								
+								<div>
+									<SingleProject
+										Image={projectImg14}
+										Title="Udemy Ethereum & Solidity"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg15}
+										Title="Udemy Flutter"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg16}
+										Title="Sololearn HTML"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg17}
+										Title="Sololearn CSS"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg18}
+										Title="Udemy KiCad"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg19}
+										Title="Udemy Raspberry Pi"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
+								<div>
+									<SingleProject
+										Image={projectImg20}
+										Title="Vskills HTML5"
+										categoryOne="COURSE"
+										categoryTwo=" "
+									/>
+								</div>
 							</Masonry>
 						</TabPanel>
 					</Tabs>
 				</div>
 			</div>
-			
-      <CTA
-        ctaBG={bgImg}
-      />
-    </main>
+
+			<CTA
+				ctaBG={bgImg}
+			/>
+		</main>
 	);
 }
 

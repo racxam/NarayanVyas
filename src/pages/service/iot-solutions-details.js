@@ -1,9 +1,9 @@
 import React from 'react';
-import MobileAppDevelopmentService from './ServiceDetailsMain';
+import IoTSolutionsService from './IoTSolutionsServiceMain';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-const ServiceDetails = () => {
+const IoTSolutionsDetails = () => {
   return (
     <>
       <Header
@@ -12,7 +12,7 @@ const ServiceDetails = () => {
       />
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <MobileAppDevelopmentService />
+          <IoTSolutionsService />
           <Footer />
         </div>
       </div>
@@ -21,4 +21,4 @@ const ServiceDetails = () => {
   );
 }
 
-export default ServiceDetails;
+export default IoTSolutionsDetails;

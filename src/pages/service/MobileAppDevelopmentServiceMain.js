@@ -5,10 +5,9 @@ import Breadcrumb from '../../components/Breadcrumb';
 
 import bgImg from '../../assets/img/cta/cta-bg-2.png';
 
-import serviceImg1 from '../../assets/img/service/service-details-1.jpg';
-import serviceImg2 from '../../assets/img/service/service-details-2.jpg';
+import serviceImg1 from '../../assets/img/service/mobile-app-development.jpg';
 
-const ServiceDetailsMain = () => {
+const MobileAppDevelopmentService = () => {
 	return (
 		<main>
 			<Breadcrumb
@@ -141,4 +140,4 @@ const ServiceDetailsMain = () => {
 	);
 }
 
-export default ServiceDetailsMain;
+export default MobileAppDevelopmentService;

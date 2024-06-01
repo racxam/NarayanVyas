@@ -1,9 +1,9 @@
 import React from 'react';
-import MobileAppDevelopmentService from './ServiceDetailsMain';
+import ResearchAndDevelopmentService from './ResearchAndDevelopmentServiceMain';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-const ServiceDetails = () => {
+const ResearchAndDevelopmentDetails = () => {
   return (
     <>
       <Header
@@ -12,7 +12,7 @@ const ServiceDetails = () => {
       />
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <MobileAppDevelopmentService />
+          <ResearchAndDevelopmentService />
           <Footer />
         </div>
       </div>
@@ -21,4 +21,4 @@ const ServiceDetails = () => {
   );
 }
 
-export default ServiceDetails;
+export default ResearchAndDevelopmentDetails;

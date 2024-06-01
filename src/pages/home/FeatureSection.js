@@ -25,7 +25,7 @@ const Feature = () => {
               Title='Mobile Application Development'
               Description='Receive expert guidance on developing high-quality, user-friendly mobile applications. My experience ensures your app performs excellently and meets business goals.'
               btnText='See More'
-              btnURL='/service-details'
+              btnURL='services/mobile-app-development'
             />
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
@@ -34,7 +34,7 @@ const Feature = () => {
               Title='Research and Development'
               Description='Benefit from my extensive research background in computer science, including Machine Learning, Deep Learning, and Computer Vision. Enhance your projects with my expertise.'
               btnText='See More'
-              btnURL='/service-details'
+              btnURL='services/research-and-development'
             />
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
@@ -43,7 +43,7 @@ const Feature = () => {
               Title='Internet of Things (IoT) Solutions'
               Description='Utilize my deep knowledge in IoT to create smart, efficient systems. I provide tailored solutions to help you harness the power of connected devices'
               btnText='See More'
-              btnURL='/service-details'
+              btnURL='services/iot-solutions'
             />
           </div>
         </div>

@@ -16,6 +16,12 @@ import Service from '../pages/service';
 import ServiceTwo from '../pages/service/service-2';
 import ServiceThree from '../pages/service/service-3';
 import ServiceDetails from '../pages/service/service-details';
+import MobileAppDevelopmentDetails from '../pages/service/mobile-app-development-details';
+import IoTSolutionsDetails from '../pages/service/iot-solutions-details';
+import ResearchAndDevelopmentDetails from '../pages/service/research-and-development-details';
+import ProjectConsultancyDetails from '../pages/service/project-consultancy-details';
+import PublicationAssistanceDetails from '../pages/service/publication-assistance-details';
+import TrainingAndWorkshopsDetails from '../pages/service/training-and-workshops-details';
 import Project from '../pages/project';
 import ProjectOne from '../pages/project/project-1';
 import ProjectTwo from '../pages/project/project-2';
@@ -40,6 +46,7 @@ import Contact from '../pages/contact';
 import Preloader from "../components/Preloader";
 import ScrollToTop from '../components/ScrollTop';
 import LoadTop from '../components/ScrollTop/LoadTop'
+import MobileAppDevelopmentService from "../pages/service/ServiceDetailsMain";
 
 
 const App = () => {
@@ -86,6 +93,12 @@ const App = () => {
                     <Route path="/service-2" element={<ServiceTwo />} />
                     <Route path="/service-3" element={<ServiceThree />} />
                     <Route path="/service-details" element={<ServiceDetails />} />
+                    <Route path="/services/mobile-app-development" element={<MobileAppDevelopmentDetails />} />
+                    <Route path="/services/iot-solutions" element={<IoTSolutionsDetails />} />
+                    <Route path="/services/research-and-development" element={<ResearchAndDevelopmentDetails />} />
+                    <Route path="/services/project-consultancy" element={<ProjectConsultancyDetails />} />
+                    <Route path="/services/publication-assistance" element={<PublicationAssistanceDetails />} />
+                    <Route path="/services/training-and-workshops" element={<TrainingAndWorkshopsDetails />} />
                     <Route path="/project" element={<Project />} />
                     <Route path="/project-1" element={<ProjectOne />} />
                     <Route path="/project-2" element={<ProjectTwo />} />

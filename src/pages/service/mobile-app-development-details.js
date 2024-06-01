@@ -1,9 +1,9 @@
 import React from 'react';
-import MobileAppDevelopmentService from './ServiceDetailsMain';
+import MobileAppDevelopmentService from './MobileAppDevelopmentServiceMain';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-const ServiceDetails = () => {
+const MobileAppDevelopmentDetails = () => {
   return (
     <>
       <Header
@@ -21,4 +21,4 @@ const ServiceDetails = () => {
   );
 }
 
-export default ServiceDetails;
+export default MobileAppDevelopmentDetails;

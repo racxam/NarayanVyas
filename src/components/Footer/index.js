@@ -43,12 +43,12 @@ const Footer = (props) => {
                                 <h4 className="footer__title"><Link to="/service">Services</Link></h4>
                                 <div className="footer__menu-list">
                                     <ul>
-                                        <li><a href="#">Mobile Application Development</a></li>
-                                        <li><a href="#">IoT Solutions</a></li>
-                                        <li><a href="#">Research & Development</a></li>
-                                        <li><a href="#">Project Consultancy</a></li>
-                                        <li><a href="#">Training & Workshops</a></li>
-                                        <li><a href="#">Publication Assistance</a></li>
+                                        <li><a href="/services/mobile-app-development">Mobile Application Development</a></li>
+                                        <li><a href="/services/iot-solutions">IoT Solutions</a></li>
+                                        <li><a href="/services/research-and-development">Research & Development</a></li>
+                                        <li><a href="/services/project-consultancy">Project Consultancy</a></li>
+                                        <li><a href="/services/training-and-workshops">Training & Workshops</a></li>
+                                        <li><a href="/services/publication-assistance">Publication Assistance</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -61,12 +61,12 @@ const Footer = (props) => {
                                 </h4>
                                 <div className="footer__menu-list">
                                     <ul>
-                                        <li><a href="#">Fiverr</a></li>
-                                        <li><a href="#">TeacherOn</a></li>
-                                        <li><a href="#">Github</a></li>
-                                        <li><a href="#">Scopus</a></li>
-                                        <li><a href="#">ResearchGate</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="https://www.fiverr.com/narayanvyas" target='_blank'>Fiverr</a></li>
+                                        <li><a href="https://www.teacheron.com/tutor/3CgM" target='_blank'>TeacherOn</a></li>
+                                        <li><a href="https://github.com/narayanvyas/" target='_blank'>Github</a></li>
+                                        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57221967474" target='_blank'>Scopus</a></li>
+                                        <li><a href="https://www.researchgate.net/profile/Narayan-Vyas" target='_blank'>ResearchGate</a></li>
+                                        <li><a href="/contact">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
