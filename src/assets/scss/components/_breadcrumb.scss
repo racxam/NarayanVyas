@@ -126,8 +126,49 @@
         animation: tptranslateX2 4s infinite alternate;
     }
     &__main-img{
-        animation: tpupdown 0.8s infinite alternate
+
+
+       
+
+        animation: tpupdown 0.8s infinite alternate;
+        &__inside-img{
+            @media #{$xxxl} {
+                height:250px;
+            }
+            @media #{$xxl} {
+                height:300px;
+    
+            }
+            @media #{$xl} {
+                height:250px;
+    
+            }
+            @media #{$lg} {
+                height:200px;
+    
+                
+            }
+            @media #{$md} {
+                height:250px;
+    
+
+            }
+            @media #{$sm} {
+                height:250px;
+    
+
+            }
+            @media #{$xs} {
+
+                height:100px;
+    
+
+            }
+        }
+
     }
+    
+
     &__big-text{
         position: absolute;
         left: 43%;

@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SocialFeed from '../../components/SocialFeed';
-import Breadcrumb from '../../components/Breadcrumb';
+import Breadcrumbnew from '../../components/Breadcrumb/Breadcrumnew';
 import CTA from '../../components/CTA';
+
+
+
 
 import bgImg from '../../assets/img/cta/cta-bg-2.png';
 
@@ -14,7 +17,7 @@ const ProjectDetailsMain = () => {
 
 	return (
 		<main>
-     <Breadcrumb
+     <Breadcrumbnew
       pageTitle= "Project Details"
      />
 		 
@@ -117,5 +120,6 @@ const ProjectDetailsMain = () => {
    </main>
 	);
 }
+
 
 export default ProjectDetailsMain;

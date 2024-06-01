@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import Breadcrumb from '../../components/Breadcrumb';
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumnew';
 import CTA from '../../components/CTA';
 import SingleProduct from '../../components/Product';
 import FaqTwo from '../../components/Faq/FaqTwo';
