@@ -304,6 +304,7 @@ const ProductDetailsMain = () => {
 		 
      <CTA
       ctaBG={bgImg}
+      btnText={"Book Appointment"}
      />
 
    </main>

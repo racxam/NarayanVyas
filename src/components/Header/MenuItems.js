@@ -68,26 +68,25 @@ const MenuItems = (props) => {
                 <ul className={about ? "submenu submenu-open" : "submenu"}>
                     <li className={location.pathname === "/about-me" ? "active" : ""}><Link to="/about-me">Projects</Link></li>
                     <li className={location.pathname === "/about-us" ? "active" : ""}><Link to="/appointments">Publications</Link></li>
-                    <li className={location.pathname === "/about-us" ? "active" : ""}><Link to="/appointments">Certificates</Link></li>
+                    <li className={location.pathname === "/project-masonary" ? "active" : ""}><Link to="/project-masonary">Certificates</Link></li>
                 </ul>
                 <a href="#" onClick={() => { openMobileMenu('about'); }}></a>
             </li>
 
-            <li className={parentMenu === 'books' ? 'has-dropdown active' : 'has-dropdown'}><Link to="/service-2">Books</Link>
+            <li className={parentMenu === 'books' ? 'has-dropdown active' : 'has-dropdown'}><Link to="/product-details">Books</Link>
                 <ul className={service ? "submenu submenu-open" : "submenu"}>
-                    <li className={location.pathname === "/service-1" ? "active" : ""}><Link to="/service-1">Pubilshed Books</Link></li>
-                    <li className={location.pathname === "/service-2" ? "active" : ""}><Link to="/service-2">Upcoming Books</Link></li>
-                    <li className={location.pathname === "/service-3" ? "active" : ""}><Link to="/service-3">Call for Chapters</Link></li>
-                    <li className={location.pathname === "/service-details" ? "active" : ""}><Link to="/service-details">Service Details</Link></li>
+                    <li className={location.pathname === "/product-details" ? "active" : ""}><Link to="/product-details">Upcoming Books</Link></li>
+                    <li className={location.pathname === "/product-details" ? "active" : ""}><Link to="/product-details">Call for Chapters</Link></li>
+                    <li className={location.pathname === "/product-details" ? "active" : ""}><Link to="/product-details">Service Details</Link></li>
                 </ul>
                 <a href="#" onClick={() => { openMobileMenu('service'); }}></a>
             </li>
             
-            <li className={parentMenu === 'page' ? 'has-dropdown active' : 'has-dropdown'}><Link to="/project">Services</Link>
+            <li className={parentMenu === 'Services' ? 'has-dropdown active' : 'has-dropdown'}><Link to="/project">Services</Link>
                 <ul className={page ? "submenu has-megamenu submenu-open" : "submenu has-megamenu"}>
                     <li className={location.pathname === "/project" ? "active" : ""}><Link to="/project">Mobile App Development</Link></li>
                     <li className={location.pathname === "/project-2" ? "active" : ""}><Link to="/project-2">Research and Development</Link></li>
-                    <li className={location.pathname === "/project-1" ? "active" : ""}><Link to="/project-1">IoT Solutions</Link></li>
+                    <li className={location.pathname === "/project-1" ? "active" : ""}><Link to="/project-1">Internet of Things(IOT) Solutions</Link></li>
                     <li className={location.pathname === "/project-masonary" ? "active" : ""}><Link to="/project-masonary">Project Consultancy</Link></li>
                     <li className={location.pathname === "/project-details" ? "active" : ""}><Link to="/project-details">Training & Workshops</Link></li>
                     <li className={location.pathname === "/product" ? "active" : ""}><Link to="/product"> Publication Assistance</Link></li>
