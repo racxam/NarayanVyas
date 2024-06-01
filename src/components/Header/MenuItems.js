@@ -76,7 +76,7 @@ const MenuItems = (props) => {
             <li className={parentMenu === 'books' ? 'has-dropdown active' : 'has-dropdown'}><Link to="/product-details">Books</Link>
                 <ul className={service ? "submenu submenu-open" : "submenu"}>
                     <li className={location.pathname === "/product-details" ? "active" : ""}><Link to="/product-details">Upcoming Books</Link></li>
-                    <li className={location.pathname === "/product-details" ? "active" : ""}><Link to="/product-details">Call for Chapters</Link></li>
+                    <li className={location.pathname === "/product" ? "active" : ""}><Link to="/product">Call for Chapters</Link></li>
                     <li className={location.pathname === "/product-details" ? "active" : ""}><Link to="/product-details">Service Details</Link></li>
                 </ul>
                 <a href="#" onClick={() => { openMobileMenu('service'); }}></a>

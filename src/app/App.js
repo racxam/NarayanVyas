@@ -82,7 +82,7 @@ const App = () => {
                 <ScrollToTop />
                 <LoadTop />
                 <Routes>
-                    <Route path="/" exact element={<Home />} />
+                    <Route path="/" exact element={<Home/>} />
                     <Route path="/home-2" element={<HomeTwo />} />
                     <Route path="/about-me" element={<AboutMe />} />
                     <Route path="/home-3" element={<HomeThree />} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import Breadcrumb from '../../components/Breadcrumb';
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumnew';
 import CTA from '../../components/CTA';
 import SingleProduct from '../../components/Product';
 
@@ -13,13 +13,15 @@ import productImg7 from '../../assets/img/product/product-7.jpg';
 import productImg8 from '../../assets/img/product/product-8.jpg';
 import productImg9 from '../../assets/img/product/product-9.jpg';
 
+import Project from '../home/ProjectSection';
+
 import bgImg from '../../assets/img/cta/cta-bg-2.png';
 
 const ProductMain = () => {
 	return (
 		<main>
 			<Breadcrumb
-			pageTitle= "Product"
+			pageTitle= "Call for Chapters"
 			/>
 
 			<div className="product__area product__plr mt-100 mb-70">
@@ -27,11 +29,12 @@ const ProductMain = () => {
 					<div className="row">
 						<div className="col-xl-12">
 							<div className="product__title-sm wow animate__fadeInUp" data-wow-duration="1.1s">
-								<h4>Showing all All Products:</h4>
+								<h4>Showing all Call for Chapters</h4>
 							</div>
 						</div>
 					</div>
-					<div className="row">
+
+					{/* <div className="row">
 						<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
 							<SingleProduct
 								Image={productImg1}
@@ -72,7 +75,18 @@ const ProductMain = () => {
 								Image={productImg8}
 							/>
 						</div>
-					</div>
+					</div> */}
+
+					<Project
+					title={"Call for Chapters"}
+					subTitle={"List of Call for Chapters"}
+					slidesToShow={"4"}
+					/>
+					
+
+
+
+
 				</div>
 			</div>
 			

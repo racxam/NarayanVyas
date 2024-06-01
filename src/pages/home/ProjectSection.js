@@ -14,7 +14,8 @@ import projectImg6 from '../../assets/img/project/pro-2.jpg';
 
 SwiperCore.use([Mousewheel]);
 
-const Project = () => {
+const Project = ({subTitle,title,slidesToShow}) => {
+
     const sliderOption = {
         pagination: {
           el: '.project-slider-dots',
@@ -26,7 +27,7 @@ const Project = () => {
         },
         loop: true,
         spaceBetween: 30,
-        slidesPerView: '3',
+        slidesPerView:slidesToShow?slidesToShow:'3',
         breakpoints: {
             0: {
               slidesPerView: 1,
@@ -49,8 +50,8 @@ const Project = () => {
                             sectionClass= "project__section-box wow itfadeUp"
                             subTitleClass= "section-subtitle char-anim"
                             titleClass= "section-title char-anim"
-                            subTitle= "My Projects"
-                            Title= "Showcasing Excellence in Technology and Innovation"
+                            subTitle= {subTitle?subTitle:"My Projects"}
+                            Title= {title?title:"Showcasing Excellence in Technology and Innovation"}
                         />
 					</div>
 					<div className="col-lg-6 col-md-3">
