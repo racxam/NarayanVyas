@@ -7,7 +7,7 @@ import ctaBG from '../../assets/img/cta/cta-bg.png';
 const CTA = () => {
 
   return (
-    <div className="cta__area cta__bg cta__plr p-relative wow animate__fadeInUp" data-wow-duration="1.1s" style={{backgroundImage: `url(${ctaBG})`}}>
+    <div className="cta__area cta__bg cta__plr p-relative wow animate__fadeInUp" data-wow-duration="1.1s" style={{ backgroundImage: `url(${ctaBG})` }}>
       <div className="cta__shape-icon d-none d-md-block">
         <img src={ctaIcon} alt="" />
       </div>
@@ -16,9 +16,8 @@ const CTA = () => {
           <div className="col-12">
             <div className="cta__section-wrapper text-center">
               <div className="cta__section-box">
-                <h4 className="cta__title wow animate__fadeInUp" data-wow-duration="1.1s">Let’s Business Something Agency</h4>
-                <p className="wow animate__fadeInUp" data-wow-duration="1.1s">There are many variations of passages of agency <br/>
-                Lorem Ipsum Fasts injecte.</p>
+                <h4 className="cta__title wow animate__fadeInUp" data-wow-duration="1.1s">Need Help?</h4>
+                <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Book an Appointment for Expert Consultancy Schedule a session for Mobile App Development consultancy or Research Guidance tailored to your needs.</p>
               </div>
               <div className="cta__btn wow animate__fadeInUp" data-wow-duration="1.1s">
                 <Link to="/appointments" className="white-btn tp-btn-hover alt-color"><span>Book Appointment</span><b></b>

@@ -15,22 +15,22 @@ import testimonialImg4 from '../../assets/img/testimonial/testi-2.jpg';
 const Testimonial = () => {
     const sliderOption = {
         pagination: {
-          el: '.testimonial-slider-dots',
-          clickable: true
+            el: '.testimonial-slider-dots',
+            clickable: true
         },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
         },
         loop: true,
         spaceBetween: 30,
         slidesPerView: '2',
         breakpoints: {
             0: {
-              slidesPerView: 1,
+                slidesPerView: 1,
             },
             1200: {
-              slidesPerView: 2,
+                slidesPerView: 2,
             },
         }
     }
@@ -50,11 +50,11 @@ const Testimonial = () => {
                 <div className="row justify-content-center">
                     <div className="col-xl-7 col-xxl-9 wow animate__fadeInUp" data-wow-duration="1.1s">
                         <SectionTitle
-                            sectionClass= "testimonial__section-box text-center z-index pb-40 section-title-fixed-width"
-                            subTitleClass= "section-subtitle section-white-bg"
-                            titleClass= "section-title text-white"
-                            subTitle= "Client Testimonial"
-                            Title= "Perfect Contact This Software Company Manage."
+                            sectionClass="testimonial__section-box text-center z-index pb-40 section-title-fixed-width"
+                            subTitleClass="section-subtitle section-white-bg"
+                            titleClass="section-title text-white"
+                            subTitle="Testimonials"
+                            Title="What people says about me"
                         />
                     </div>
                 </div>
@@ -64,27 +64,27 @@ const Testimonial = () => {
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonial
                                     authorImg={testimonialImg1}
-                                />   
+                                />
                             </SwiperSlide>
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonial
                                     authorImg={testimonialImg2}
-                                />   
+                                />
                             </SwiperSlide>
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonial
                                     authorImg={testimonialImg3}
-                                />   
+                                />
                             </SwiperSlide>
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonial
                                     authorImg={testimonialImg4}
-                                />   
+                                />
                             </SwiperSlide>
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonial
                                     authorImg={testimonialImg2}
-                                />   
+                                />
                             </SwiperSlide>
                         </Swiper>
                         <div className="testimonial-slider-dots wow animate__fadeInUp"></div>

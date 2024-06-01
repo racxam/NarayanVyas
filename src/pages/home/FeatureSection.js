@@ -21,29 +21,29 @@ const Feature = () => {
         <div className="row">
           <div className="col-xl-4 col-lg-6 col-md-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
             <SingleFeature
-              Image= {featureImg1}
-              Title= 'Creative Design'
-              Description= 'Business is the knowledge or master event. Identify the error of the we ebsite coding page speed.'
-              btnText= 'See More'
-              btnURL= '/service-details'
+              Image={featureImg1}
+              Title='Mobile Application Development'
+              Description='Receive expert guidance on developing high-quality, user-friendly mobile applications. My experience ensures your app performs excellently and meets business goals.'
+              btnText='See More'
+              btnURL='/service-details'
             />
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
             <SingleFeature
-              Image= {featureImg3}
-              Title= 'Online Marketing'
-              Description= 'Business is the knowledge or master event. Identify the error of the we ebsite coding page speed.'
-              btnText= 'See More'
-              btnURL= '/service-details'
+              Image={featureImg3}
+              Title='Research and Development'
+              Description='Benefit from my extensive research background in computer science, including Machine Learning, Deep Learning, and Computer Vision. Enhance your projects with my expertise.'
+              btnText='See More'
+              btnURL='/service-details'
             />
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
             <SingleFeature
-              Image= {featureImg2}
-              Title= 'Digital Marketing'
-              Description= 'Business is the knowledge or master event. Identify the error of the we ebsite coding page speed.'
-              btnText= 'See More'
-              btnURL= '/service-details'
+              Image={featureImg2}
+              Title='Internet of Things (IoT) Solutions'
+              Description='Utilize my deep knowledge in IoT to create smart, efficient systems. I provide tailored solutions to help you harness the power of connected devices'
+              btnText='See More'
+              btnURL='/service-details'
             />
           </div>
         </div>

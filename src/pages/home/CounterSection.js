@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor'; 
+import VisibilitySensor from 'react-visibility-sensor';
 
 import SectionTitle from '../../components/SectionTitle'
 
@@ -20,23 +20,23 @@ const Counter = () => {
             countClass: 'counter__item counter__color-1 text-center',
         },
         {
-            countNum: 95,
+            countNum: 40,
             countSubtext: '+',
             countTitle: 'Projects completed',
             countIcon: 'fal fa-comments-alt',
             countClass: 'counter__item counter__color-2 text-center',
         },
         {
-            countNum: 200,
+            countNum: 35,
             countSubtext: '+',
-            countTitle: 'Happy Customers',
+            countTitle: 'Publications',
             countIcon: 'far fa-cogs',
             countClass: 'counter__item counter__color-3 text-center',
         },
         {
-            countNum: 45,
+            countNum: 10,
             countSubtext: '+',
-            countTitle: '5 Star Rating',
+            countTitle: 'Books',
             countIcon: 'fal fa-regular fa-star size="xl"',
             countClass: 'counter__item counter__color-4 text-center',
         }
@@ -56,17 +56,17 @@ const Counter = () => {
                     <div className="row justify-content-center">
                         <div className="col-xl-8 wow animate__fadeInUp" data-wow-duration="1.1s">
                             <SectionTitle
-                                sectionClass= "counter__section-box text-center pb-35"
-                                subTitleClass= "section-subtitle section-white-bg title-anim"
-                                titleClass= "section-title text-white  title-anim"
-                                subTitle= "We Best Counter"
-                                Title= "Counter Industries server"
+                                sectionClass="counter__section-box text-center pb-35"
+                                subTitleClass="section-subtitle section-white-bg title-anim"
+                                titleClass="section-title text-white  title-anim"
+                                subTitle="We Best Counter"
+                                Title="Counter Industries server"
                             />
                         </div>
                     </div>
                     {counters &&
                         <div className="row">
-                            {counters.map( (counter, num) => (
+                            {counters.map((counter, num) => (
                                 <div key={num} className="col-xl-3 col-lg-6 col-md-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
                                     <div className={` ${counter.countClass} ? ${counter.countClass} : 'counter__item counter__color-1 text-center`}>
                                         <div className="counter__text">
@@ -78,7 +78,7 @@ const Counter = () => {
                                         <div className="counter__text">
                                             <span>
                                                 <span className="counter">
-                                                    <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd= {()=> setState(false)} />
+                                                    <CountUp start={state ? 0 : counter.countNum} end={counter.countNum} duration={10} onEnd={() => setState(false)} />
                                                     {({ countUpRef, start }) => (
                                                         <VisibilitySensor onChange={start} delayedCall>
                                                             <span ref={countUpRef} />
@@ -95,7 +95,7 @@ const Counter = () => {
                 </div>
             </div>
         </div>
-        
+
     );
 }
 export default Counter;
