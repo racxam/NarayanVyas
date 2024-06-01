@@ -69,7 +69,7 @@ const Banner = () => {
                             <p className="char-anim-2">Narayan Vyas is an accomplished academician at Chandigarh University, specializing in computer science research. He qualified for NTA UGC NET & JRF on his first attempt. With expertise in IoT and Mobile Application Development, he has trained students globally and published extensively in Scopus journals and conferences. An active IEEE member, Narayan engages with IEEE Young Professional, IEEE GRSS, IEEE Sensors Council, and ISPRS. His research focuses on Remote Sensing, Machine Learning, Deep Learning, and Computer Vision. He has served as a keynote speaker and resource person for numerous workshops and webinars and has over 30 publications and 9+ edited books with publishers like Wiley, De Gruyter, and IGI Global.</p>
                         </div>
                         <div className="slider__btn wow animate__fadeInUp" data-wow-duration="1.1s">
-                            <Link to="/about-us" className="main-btn tp-btn-hover alt-color">
+                            <Link to="/appointments" className="main-btn tp-btn-hover alt-color">
                                 <span>Get Started</span>
                                 <b></b>
                             </Link>

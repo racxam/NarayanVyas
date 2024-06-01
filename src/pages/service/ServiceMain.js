@@ -22,7 +22,7 @@ const ServiceMain = () => {
 		<main>
 
 			<Breadcrumb
-				pageTitle= "Service One"
+				pageTitle= "Books"
 			/>
 			
 			<div className="service__area service__plr mt-100 mb-20 p-relative">
