@@ -44,7 +44,7 @@ const Brand = (props) => {
           }
     }
     return (
-        <div className={itemClass ? itemClass : 'brand__area brand__mlr brand__white-bg'}>
+        <div className={itemClass ? itemClass : 'brand__area brand__mlr brand__white-bg'} >
             <div className="container">
                 <div className="row">
                     <div className="col-12">
