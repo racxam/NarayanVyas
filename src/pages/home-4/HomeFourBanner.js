@@ -55,29 +55,29 @@ const Banner = () => {
                     <div className="col-xl-6 col-lg-6">
                         <div className="slider-4__item">
                             <div className="slider-4__section-title">
-                            <h4 className="hero-3-title char-anim wow animate__fadeInUp" data-wow-duration="1.1s">Agency
-                                Digital <span>Business</span> <br/> Design of Culture & Best Digital Agency.</h4>
+                                <h4 className="hero-3-title char-anim wow animate__fadeInUp" data-wow-duration="1.1s">Agency
+                                    Digital <span>Business</span> <br /> Design of Culture & Best Digital Agency.</h4>
                             </div>
                             <div className="slider-4__content">
-                            <div className="slider-4__text wow animate__fadeInUp" data-wow-duration="1.1s">
-                                <p className="char-anim-2">Business agency best right tailored it design, managementDuis Cras ante massa,<br/>
-                                    consectetur feugiat auctor.nec enim luctus, feugiat arcuelob</p>
-                            </div>
-                            <div className="slider-4__button">
-                                <Link className="main-btn tp-btn-hover alt-color-black mr-20 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s"  to="/contact">
-                                    <span>Get A Quote</span>
-                                    <b></b>
-                                </Link>
-                                <Link to="/contact" className="main-btn white-bg tp-btn-hover alt-color-black mr-20 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
-                                    <span>Contact Us</span>
-                                    <b></b>
-                                </Link>
-                            </div>
-                            <div className="slider-4__social  wow animate__fadeInUp" data-wow-duration="1.1s">
-                                <h5>Available For:</h5>
-                                <i className="fab fa-windows"></i>
-                                <i className="fab fa-apple apple"></i>
-                            </div>
+                                <div className="slider-4__text wow animate__fadeInUp" data-wow-duration="1.1s">
+                                    <p className="char-anim-2">Business agency best right tailored it design, managementDuis Cras ante massa,<br />
+                                        consectetur feugiat auctor.nec enim luctus, feugiat arcuelob</p>
+                                </div>
+                                <div className="slider-4__button">
+                                    <Link className="main-btn tp-btn-hover alt-color-black mr-20 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s" to="/contact">
+                                        <span>Book Appointment</span>
+                                        <b></b>
+                                    </Link>
+                                    <Link to="/contact" className="main-btn white-bg tp-btn-hover alt-color-black mr-20 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
+                                        <span>Contact Us</span>
+                                        <b></b>
+                                    </Link>
+                                </div>
+                                <div className="slider-4__social  wow animate__fadeInUp" data-wow-duration="1.1s">
+                                    <h5>Available For:</h5>
+                                    <i className="fab fa-windows"></i>
+                                    <i className="fab fa-apple apple"></i>
+                                </div>
                             </div>
                         </div>
                     </div>

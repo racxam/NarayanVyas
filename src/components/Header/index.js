@@ -115,7 +115,7 @@ const Header = (props) => {
 							<div className="col-xl-3 col-lg-2 col-5 col-md-6">
 								<div className="header__action d-flex justify-content-end">
 									<Link className="main-btn-sm d-none d-xl-block tp-btn-hover alt-color" to="/appointments">
-										<span>Get A Quote</span>
+										<span>Book Appointment</span>
 										<b></b>
 									</Link>
 									<div className="header__menu-bar">

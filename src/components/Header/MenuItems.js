@@ -7,50 +7,50 @@ const MenuItems = (props) => {
     const location = useLocation();
 
     const [home, setHome] = useState(false)
-	const [about, setAbout] = useState(false)
-	const [service, setService] = useState(false)
-	const [page, setPage] = useState(false)
-	const [blog, setBlog] = useState(false)
+    const [about, setAbout] = useState(false)
+    const [service, setService] = useState(false)
+    const [page, setPage] = useState(false)
+    const [blog, setBlog] = useState(false)
 
-	const openMobileMenu = menu => {
+    const openMobileMenu = menu => {
 
-		if (menu === 'home') {
-			setHome(!home)
-			setAbout(false)
-			setService(false)
-			setPage(false)
-			setBlog(false)
-		}
-		else if (menu === 'about') {
-			setHome(false)
-			setAbout(!about)
-			setService(false)
-			setPage(false)
-			setBlog(false)
-		}
-		else if (menu === 'service') {
-			setHome(false)
-			setAbout(false)
-			setService(!service)
-			setPage(false)
-			setBlog(false)
-		}
-		else if (menu === 'page') {
-			setHome(false)
-			setAbout(false)
-			setService(false)
-			setPage(!page)
-			setBlog(false)
-		}
-		else if (menu === 'blog') {
-			setHome(false)
-			setAbout(false)
-			setService(false)
-			setPage(false)
-			setBlog(!blog)
-		}
-	};
-    
+        if (menu === 'home') {
+            setHome(!home)
+            setAbout(false)
+            setService(false)
+            setPage(false)
+            setBlog(false)
+        }
+        else if (menu === 'about') {
+            setHome(false)
+            setAbout(!about)
+            setService(false)
+            setPage(false)
+            setBlog(false)
+        }
+        else if (menu === 'service') {
+            setHome(false)
+            setAbout(false)
+            setService(!service)
+            setPage(false)
+            setBlog(false)
+        }
+        else if (menu === 'page') {
+            setHome(false)
+            setAbout(false)
+            setService(false)
+            setPage(!page)
+            setBlog(false)
+        }
+        else if (menu === 'blog') {
+            setHome(false)
+            setAbout(false)
+            setService(false)
+            setPage(false)
+            setBlog(!blog)
+        }
+    };
+
     return (
         <>
             {/* <li className={parentMenu === 'home' ? 'has-dropdown active' : 'has-dropdown'}><Link to="/">Home</Link> */}
@@ -66,46 +66,34 @@ const MenuItems = (props) => {
             </li>
             <li className={parentMenu === 'about-me' ? 'has-dropdown active' : 'has-dropdown'}><Link to="/about-me">About</Link>
                 <ul className={about ? "submenu submenu-open" : "submenu"}>
-                    <li className={location.pathname === "/about-me" ? "active" : ""}><Link to="/about-me">Projects</Link></li>
-                    <li className={location.pathname === "/about-us" ? "active" : ""}><Link to="/appointments">Publications</Link></li>
-                    <li className={location.pathname === "/project-masonary" ? "active" : ""}><Link to="/project-masonary">Certificates</Link></li>
+                    <li className={location.pathname === "/projects" ? "active" : ""}><Link to="/projects">Projects</Link></li>
+                    <li className={location.pathname === "/publications" ? "active" : ""}><Link to="/publications">Publications</Link></li>
+                    <li className={location.pathname === "/certificates" ? "active" : ""}><Link to="/certificates">Certificates</Link></li>
+                    <li className={location.pathname === "/study-notes" ? "active" : ""}><Link to="/study-notes">Study Notes</Link></li>
                 </ul>
                 <a href="#" onClick={() => { openMobileMenu('about'); }}></a>
             </li>
 
-            <li className={parentMenu === 'books' ? 'has-dropdown active' : 'has-dropdown'}><Link to="/product-details">Books</Link>
+            <li className={parentMenu === 'books' ? 'has-dropdown active' : 'has-dropdown'}><Link to="/books">Books</Link>
                 <ul className={service ? "submenu submenu-open" : "submenu"}>
-                    <li className={location.pathname === "/product-details" ? "active" : ""}><Link to="/product-details">Upcoming Books</Link></li>
-                    <li className={location.pathname === "/product" ? "active" : ""}><Link to="/product">Call for Chapters</Link></li>
-                    <li className={location.pathname === "/product-details" ? "active" : ""}><Link to="/product-details">Service Details</Link></li>
+                    <li className={location.pathname === "/cfc" ? "active" : ""}><Link to="/cfc">Call for Chapters</Link></li>
                 </ul>
                 <a href="#" onClick={() => { openMobileMenu('service'); }}></a>
             </li>
-            
+
             <li className={parentMenu === 'Services' ? 'has-dropdown active' : 'has-dropdown'}><Link to="/project">Services</Link>
-                <ul className={page ? "submenu has-megamenu submenu-open" : "submenu has-megamenu"}>
-                    <li className={location.pathname === "/project" ? "active" : ""}><Link to="/project">Mobile App Development</Link></li>
-                    <li className={location.pathname === "/project-2" ? "active" : ""}><Link to="/project-2">Research and Development</Link></li>
-                    <li className={location.pathname === "/project-1" ? "active" : ""}><Link to="/project-1">Internet of Things(IOT) Solutions</Link></li>
-                    <li className={location.pathname === "/project-masonary" ? "active" : ""}><Link to="/project-masonary">Project Consultancy</Link></li>
-                    <li className={location.pathname === "/project-details" ? "active" : ""}><Link to="/project-details">Training & Workshops</Link></li>
-                    <li className={location.pathname === "/product" ? "active" : ""}><Link to="/product"> Publication Assistance</Link></li>
-                    <li className={location.pathname === "/product-details" ? "active" : ""}><Link to="/product-details">Study Notes</Link></li>
-                    <li className={location.pathname === "/testimonial" ? "active" : ""}><Link to="/testimonial">Testimonial</Link></li>
-                    <li className={location.pathname === "/job" ? "active" : ""}><Link to="/job">Job</Link></li>
-                    <li className={location.pathname === "/job-details" ? "active" : ""}><Link to="/job-details">Job Details</Link></li>
-                    <li className={location.pathname === "/faq" ? "active" : ""}><Link to="/faq">Faq</Link></li>
-                    <li className={location.pathname === "/price" ? "active" : ""}><Link to="/price">Price</Link></li>
-                    <li className={location.pathname === "/cart" ? "active" : ""}><Link to="/cart">Cart</Link></li>
-                    <li className={location.pathname === "/checkout" ? "active" : ""}><Link to="/checkout">Checkout</Link></li>
-                    <li className={location.pathname === "/login" ? "active" : ""}><Link to="/login">Login</Link></li>
-                    <li className={location.pathname === "/register" ? "active" : ""}><Link to="/register">Register</Link></li>
-                    <li className={location.pathname === "*" ? "active" : ""}><Link to="/404">404</Link></li>
+                <ul className={page ? "submenu submenu-open" : "submenu"}>
+                    <li className={location.pathname === "/services/mobile-app-development" ? "active" : ""}><Link to="/services/mobile-app-development">Mobile App Development</Link></li>
+                    <li className={location.pathname === "/services/iot-solutions" ? "active" : ""}><Link to="/services/iot-solutions">IoT Solutions</Link></li>
+                    <li className={location.pathname === "/services/research-and-development" ? "active" : ""}><Link to="/services/research-and-development">Research and Development</Link></li>
+                    <li className={location.pathname === "/services/project-consultancy" ? "active" : ""}><Link to="/services/project-consultancy">Project Consultancy</Link></li>
+                    <li className={location.pathname === "/services/publication-assistance" ? "active" : ""}><Link to="/services/publication-assistance"> Publication Assistance</Link></li>
+                    <li className={location.pathname === "/services/training-and-workshops" ? "active" : ""}><Link to="/services/training-and-workshops">Training & Workshops</Link></li>
                 </ul>
                 <a className={page ? 'mean-expand mean-expand mean-clicked' : 'mean-expand'} href="#" onClick={() => { openMobileMenu('page'); }}><i className="fal fa-plus"></i></a>
-                
+
             </li>
-            
+
             {/* <li className={parentMenu === 'blog' ? 'has-dropdown active' : 'has-dropdown'}><Link to="/blog-details">Blog</Link>
                 <ul className={blog ? "submenu submenu-open" : "submenu"}>
                     <li className={location.pathname === "/blog" ? "active" : ""}><Link to="/blog">Blog Sidebar</Link></li>
@@ -113,7 +101,7 @@ const MenuItems = (props) => {
                 </ul>
                 <a className={blog ? 'mean-expand mean-expand mean-clicked' : 'mean-expand'} href="#" onClick={() => { openMobileMenu('blog'); }}><i className="fal fa-plus"></i></a>
             </li> */}
-           
+
             <li className={location.pathname === "/contact" ? "active" : ""}><Link to="/contact">Contact</Link></li>
         </>
     );

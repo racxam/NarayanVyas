@@ -39,6 +39,7 @@ import Job from '../pages/job';
 import JobDetails from '../pages/job/job-details';
 import Product from '../pages/product';
 import ProductDetails from '../pages/product/product-details';
+import Certificates from '../pages/certificates/certificates-masonary';
 import ApplyingMLInBioinformaticsIGIDetails from '../pages/books/applying-ml-in-bioinformatics-igi-details';
 import InnovationsInMLIoTWaterManagementIGIDetails from '../pages/books/innovations-in-ml-iot-water-management-igi-details';
 import QuantumInBiomedicalIGIDetails from '../pages/books/quantum-in-biomedical-igi-details';
@@ -113,6 +114,7 @@ const App = () => {
                     <Route path="/project-details" element={<ProjectDetails />} />
                     <Route path="/product" element={<Product />} />
                     <Route path="/product-details" element={<ProductDetails />} />
+                    <Route path="/certificates" element={<Certificates />} />
                     <Route path="/books/applying-ml-in-bioinformatics-igi" element={<ApplyingMLInBioinformaticsIGIDetails />} />
                     <Route path="/books/innovation-in-ml-iot-water-management-igi" element={<InnovationsInMLIoTWaterManagementIGIDetails />} />
                     <Route path="/books/quantum-in-biomedical-igi" element={<QuantumInBiomedicalIGIDetails />} />
