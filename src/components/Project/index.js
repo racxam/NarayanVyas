@@ -128,18 +128,18 @@ const SingleProject = (props) => {
 
 
   return (
-    <div className={itemClass ? itemClass : 'project-2__item'}>
+    <div className={itemClass ? itemClass : 'project-2__item' } >
       <div className="project-2__thumb">
-        <Link to="/project-details">
+        <Link to="/project-details" >
           <img src={Image ? Image : projectImg} alt="" />
 
         </Link>
-        <div className="project-2__img-icon">
+        <div className="project-2__img-icon"   >
 
           <Link className="popup-image" to="#" onClick={() => { lightBoxHandler(true, dataImages.find(obj => obj.image === Image).id) }}><i className="fal fa-search-plus"></i></Link>
         </div>
         <div className="project-2__img-text">
-          <h4><Link to="#" onClick={() => { lightBoxHandler(true, 1); }}>{Title ? Title : 'Certificates'}</Link></h4>
+          <h5><Link to="#" onClick={() => { lightBoxHandler(true, 1); }}>{Title ? Title : 'Certificates'}</Link></h5>
           <i>{categoryOne ? categoryOne : 'ACHIEVEMENT'}   <span>{categoryTwo ? categoryTwo : 'CERTIFICATION'}</span></i>
         </div>
         <LightBox
@@ -152,6 +152,7 @@ const SingleProject = (props) => {
           thumbnailWidth={50}
           setImageIndex={setSIndex}
           imageIndex={sIndex}
+          
         />
       </div>
     </div>
