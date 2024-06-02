@@ -4,6 +4,7 @@ import productImg2 from '../../assets/img/cfc/iomt-wiley.jpg';
 import productImg3 from '../../assets/img/cfc/multimodal-wiley.jpg';
 import SingleProduct from '../../components/Product';
 import SectionTitle from '../../components/SectionTitle/index'
+import SingleProductWithImageOnly from '../Product/single_product_with_image_only';
 
 const index = () => {
 	return (
@@ -23,8 +24,8 @@ const index = () => {
 						<div className="col-xl-6 col-lg-6 wow animate__fadeInUp" data-wow-duration="1.1s">
 							<SectionTitle
 								sectionClass="service__section-box text-center pb-35 section-title-fixed-width"
-								subTitle="My Certificates"
-								Title="Experts in Every Aspect of Technology and Research"
+								subTitle="Call For Chapters"
+								Title="Submit Your Quality Chapter"
 							/>
 						</div>
 					</div>
@@ -33,7 +34,7 @@ const index = () => {
 				</div>
 				<div className="row">
 					<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
-						<SingleProduct
+						<SingleProductWithImageOnly
 							Image={productImg1}
 							Title='Secure Energy Optimization: Leveraging IoT And AI For Enhanced Efficiency'
 							Publisher='Wiley'
@@ -42,7 +43,7 @@ const index = () => {
 						/>
 					</div>
 					<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
-						<SingleProduct
+						<SingleProductWithImageOnly
 							Image={productImg2}
 							Title='Internet of Medicine (IoM) For Smart Healthcare'
 							Publisher='Wiley'
@@ -51,7 +52,7 @@ const index = () => {
 						/>
 					</div>
 					<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
-						<SingleProduct
+						<SingleProductWithImageOnly
 							Image={productImg3}
 							Title='Multimodal Data Fusion for Bioinformatics AI'
 							Publisher='Wiley'
@@ -60,7 +61,7 @@ const index = () => {
 						/>
 					</div>
 					<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
-						<SingleProduct
+						<SingleProductWithImageOnly
 							Image={productImg3}
 							Title='Multimodal Data Fusion for Bioinformatics AI'
 							Publisher='Wiley'
@@ -68,7 +69,7 @@ const index = () => {
 							Url='/cfc/quantum-in-biomedical-igi'
 						/>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
