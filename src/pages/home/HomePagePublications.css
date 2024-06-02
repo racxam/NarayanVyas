@@ -12,18 +12,47 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    /* Reduced gap for grid items */
+}
+
+@media (max-width: 1450px) {
+    .publications-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .publication-card {
     background: #fff;
-    padding: 15px;
-    /* Reduced padding */
+    display: flex;
     border: 1px solid #ddd;
     border-radius: 8px;
+    overflow: hidden;
+    align-items: stretch;
+    position: relative;
+}
+
+.publication-number-box {
+    background-color: #f39c12;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.publication-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+}
+
+.publication-content {
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .publication-title {
@@ -50,8 +79,19 @@
 .publication-contributors i,
 .publication-date-type-publisher i {
     margin-right: 5px;
-    color: #9e9e9e;
-    /* Light material color */
+    font-size: 0.9em;
+}
+
+.publication-contributors strong {
+    margin-right: 5px;
+}
+
+.publication-contributors {
+    margin-bottom: 5px;
+}
+
+.publication-date-type-publisher {
+    margin-top: 5px;
 }
 
 .publication-details {
@@ -75,4 +115,8 @@
 
 .view-more-btn:hover {
     background-color: #0056b3;
+}
+
+.contact__button {
+    text-align: center;
 }
