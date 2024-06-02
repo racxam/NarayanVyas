@@ -7,12 +7,12 @@ import SingleProduct from '../../components/Product';
 
 import productSingleImg1 from '../../assets/img/books/few-shot-zero-shot-igi.jpg';
 
-import productImg1 from '../../assets/img/product/product-1.jpg';
-import productImg2 from '../../assets/img/product/product-2.jpg';
-import productImg3 from '../../assets/img/product/product-3.jpg';
-import productImg4 from '../../assets/img/product/product-4.jpg';
-import productImg5 from '../../assets/img/product/product-5.jpg';
-import productImg6 from '../../assets/img/product/product-6.jpg';
+import productImg1 from '../../assets/img/books/few-shot-zero-shot-igi.jpg';
+import productImg2 from '../../assets/img/books/ai-driven-alzheimer-igi.jpg';
+import productImg3 from '../../assets/img/books/quantam-for-biomedical-igi.jpg';
+import productImg4 from '../../assets/img/books/water-management-igi.jpg';
+import productImg5 from '../../assets/img/books/quantum-machine-learning-degruyter.jpg';
+import productImg6 from '../../assets/img/cfc/iomt-wiley.jpg';
 
 import bgImg from '../../assets/img/cta/cta-bg-2.png';
 
@@ -37,7 +37,7 @@ const InnovationsInMLIoTWaterManagementIGIDetailsMain = () => {
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="product-details__left-side">
-                <h4 className="product-details__left-title wow animate__fadeInUp" data-wow-duration="1.1s">Applying Machine Learning Techniques to Bioinformatics: Few-Shot and Zero-Shot Methods
+                <h4 className="product-details__left-title wow animate__fadeInUp" data-wow-duration="1.1s">Innovations in Machine Learning and IoT for Water Management
                 </h4>
                 <h5 className=" wow animate__fadeInUp" data-wow-duration="1.1s">Price: <span>$300.00</span> | Publisher: <span><a href='https://www.igi-global.com/book/innovations-machine-learning-iot-water/326935' target='_blank'>IGI Global</a></span></h5>
                 <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Editors: <a href='#' target='_blank'>Abhishek Kumar</a>, <a href='#' target='_blank'>Arun Lal Srivastav</a>, <a href='#' target='_blank'>Ashutosh Kumar Dubey</a>, <a href='#' target='_blank'>Vishal Dutt</a>, <a href='#' target='_blank'>Narayan Vyas</a></p>
@@ -152,31 +152,55 @@ const InnovationsInMLIoTWaterManagementIGIDetailsMain = () => {
             <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
               <SingleProduct
                 Image={productImg1}
+                Title='Applying Machine Learning Techniques to Bioinformatics: Few-Shot and Zero-Shot Methods'
+                Publisher='IGI Global'
+                Price='$340'
+                Url='/books/applying-ml-in-bioinformatics-igi'
               />
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
               <SingleProduct
                 Image={productImg2}
+                Title='AI-Driven Alzheimers Disease Detection and Prediction'
+                Publisher='IGI Global'
+                Price='$425'
+                Url='/books/ai-driven-alzheimer-disease-prediction-igi'
               />
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
               <SingleProduct
                 Image={productImg3}
+                Title='Quantum Innovations at the Nexus of Biomedical Intelligence'
+                Publisher='IGI Global'
+                Price='$330'
+                Url='/books/quantum-in-biomedical-igi'
               />
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
               <SingleProduct
                 Image={productImg4}
+                Title='Innovations in Machine Learning and IoT for Water Management'
+                Publisher='IGI Global'
+                Price='$300'
+                Url='innovation-in-ml-iot-water-management-igi'
               />
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
               <SingleProduct
                 Image={productImg5}
+                Title='Quantum Machine Learning: Quantum Algorithms and Neural Networks'
+                Publisher='De Gruyter'
+                Price='144,95 €'
+                Url='/books/quantum-machine-learning-degruyter'
               />
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
               <SingleProduct
                 Image={productImg6}
+                Title='Secure Energy Optimization: Leveraging IoT And AI For Enhanced Efficiency'
+                Publisher='Wiley'
+                Price='Not Released'
+                Url='/cfc/secure-energy-wiley'
               />
             </div>
           </div>
