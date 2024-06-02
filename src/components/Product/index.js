@@ -7,18 +7,22 @@ const SingleProduct = (props) => {
     return (
         <div className={itemClass ? itemClass : 'product__item text-center'}>
             <div className="product__img">
-                <img src={Image ? Image : productImg} alt="" />
-                <div className="product__img-text">
+                <img src={Image ? Image : productImg} alt="" />  
+                
+                {/* It was for the name of the publisher  */}
+                {/* <div className="product__img-text">
                     <span>{Publisher ? Publisher : ''}</span>
-                </div>
-                <div className="product__icon">
+                </div> */}
+
+
+                {/* <div className="product__icon">
                     <Link to={Url ? Url : ''}><i className="fal fa-shopping-basket"></i></Link>
                     <Link to={Url ? Url : ''}><i className="fal fa-heart"></i></Link>
-                </div>
+                </div> */}
             </div>
             <div className="product__content">
                 <div className="product__content-text">
-                    <h4><Link to={Url ? Url : ''}>{Title ? Title : 'Creative for mukap'}</Link></h4>
+                    <h6><Link to={Url ? Url : ''}>{Title ? Title : 'Creative for mukap'}</Link></h6>
                     <span>{Price ? Price : '$555'}</span>
                 </div>
                 <div className="product__button">

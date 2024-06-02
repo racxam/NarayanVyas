@@ -17,7 +17,7 @@ import serviceIconBg6 from '../../assets/img/service/sv-icon-shape-6.png'
 const Service = () => { 
 
     return (
-        <div className="service__area service__space service__mlr grey-bg pt-195 pb-70 p-relative mt-1">
+        <div className="service__area service__space service__mlr grey-bg pt-100 pb-70 p-relative mt-1">
             <div className="service__shape-1">
                 <img src={shapeImg1} alt="" />
             </div>
