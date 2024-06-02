@@ -36,7 +36,7 @@ const ContactTwo = (props) => {
             <div className="contact__shape-4 d-none d-md-block">
                 <img src={shapeImg4} alt="" />
             </div>
-            {/* <div className="contact__border"> */}
+            <div className="contact__border">
             <div className="">
                 <div className="container">
                     <div className="row align-items-center justify-content-center">
@@ -63,7 +63,7 @@ const ContactTwo = (props) => {
                                                 <input type="email" placeholder="Your Email address" />
                                             </div>
                                         </div>
-                                        <div className="col-sm-12">
+                                        <div className="col-sm-12"> 
                                             <div className="postbox__contact-textarea">
                                                 <textarea placeholder="Your Message"></textarea>
                                             </div>
@@ -71,8 +71,8 @@ const ContactTwo = (props) => {
                                     </div>
                                 </form>
                             </div>
-                            <div className="contact__button wow animate__fadeInUp" data-wow-duration="1.1s">
-                                <a className="main-btn-sm  tp-btn-hover alt-color" href="#"><span>Send Message</span><b></b></a>
+                            <div className="contact__button wow animate__fadeInUp d-flex col justify-content-start" data-wow-duration="1.1s">
+                                <a className="main-btn-sm  tp-btn-hover alt-color" href="#"><span>Send Message</span></a>
                             </div>
                         </div>
                         {/* <div className="col-xl-4 col-lg-5">
@@ -109,6 +109,7 @@ const ContactTwo = (props) => {
                         </div> */}
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );
