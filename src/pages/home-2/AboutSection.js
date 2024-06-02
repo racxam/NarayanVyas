@@ -7,7 +7,7 @@ import shapeImg1 from '../../assets/img/about/about-shape-3.png';
 import shapeImg2 from '../../assets/img/about/about-shape-4.png';
 import shapeImg3 from '../../assets/img/about/about-shape-5.png';
 
-const About = () => {
+const About = () => {  
 
     return (
         <div className="about-2__area pt-5 pb-10 p-relative fix">
@@ -34,7 +34,7 @@ const About = () => {
                                     <span>Complete Projects</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <div className="col-xl-6 col-lg-6 wow animate__fadeInRight" data-wow-duration="1.1s">
                         <div className="about-2__item">

@@ -51,7 +51,7 @@ import Appointments from '../pages/appointments';
 import ApplyingMLInBioinformaticsIGIDetails from '../pages/books/applying-ml-in-bioinformatics-igi-details';
 import InnovationsInMLIoTWaterManagementIGIDetails from '../pages/books/innovations-in-ml-iot-water-management-igi-details';
 import QuantumInBiomedicalIGIDetails from '../pages/books/quantum-in-biomedical-igi-details';
-import AIDrivenAlzheimerIGIDetails from '../pages/books/ai-driven-alzheimer-igi-details';
+import AIDrivenAlzheimerIGIDetails from '../pages/books/AIDrivenAlzheimerIGIDetails';
 import QuantumMachineLearningDeGruyterDetails from '../pages/books/quantum-machine-learning-degruyter-details';
 import CFC from '../pages/cfc';
 import SecureEnergyWileyCFCDetails from '../pages/cfc/secure-energy-wiley-cfc-details';

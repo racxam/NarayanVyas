@@ -445,8 +445,10 @@
     }
 
     &__list-item {
-        margin-right: 100px;
+        width: 116%;
         padding-bottom: 44px;
+        padding-right: 40px;
+
 
 
         @media #{$lg,$md,$xs} {
@@ -454,12 +456,17 @@
         }
 
         & ul {
+            position: relative;
+
+            width: 106%;
             padding: 20px;
+            padding-right: 40px;
             background-color: #f3f3f3;
             border-top-right-radius: 2%;
             border-bottom-right-radius: 2%;
             border-bottom-left-radius: 2%;
             display: inline-block;
+            z-index: -1;
             // border: 1px solid red;
 
             & li {
