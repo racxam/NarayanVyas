@@ -191,22 +191,22 @@
         @media #{$lg}{
             margin: 15px;
         }
-        & h4{
+        & h5{
             color: var(--it-common-white);
             font-weight: 700;
-            font-size: 22px;
+            font-size: 1.2rem;
             transition: .3s;
             @media #{$lg}{
-                font-size: 18px;
+                font-size: 1.2rem;
             }
             @media #{$md}{
-                font-size: 20px;
+                font-size: 1rem;
             }
             @media #{$xs}{
-                font-size: 19px;
+                font-size: 0.7rem;
             }
             @media #{$sm}{
-                font-size: 21px;
+                font-size:0.5rem;
             }
             &:hover{
                 color: var(--it-theme-1);
@@ -240,20 +240,45 @@
         opacity: 0;
         visibility: hidden;
         transition: .3s;
+       
+
+;
         & a {
-            height: 55px;
-            width: 55px;
+
+            height: 40px;
+            width: 40px;
+            @media #{$lg}{
+                height: 40px;
+                width: 40px;
+            }
+            @media #{$xs}{
+                height: 20px;
+                width: 25px;
+                line-height: 25px;
+            }
+            @media #{$sm}{
+                height: 20px;
+                width: 20px;
+
+            }
+
             background-color: var(--it-theme-1);
             display: inline-block;
-            line-height: 58px;
+            line-height: 45px;
             text-align: center;
             border-radius: 5px;
             @media #{$lg}{
                 height: 40px;
                 width: 40px;
-                line-height: 46px;
+                line-height: 40px;
             }
             & i {
+                @media #{$xs}{
+
+                    font-size: 15px;
+    
+                }
+
                 font-weight: 500;
                 font-size: 20px;
                 color: var(--it-common-black);

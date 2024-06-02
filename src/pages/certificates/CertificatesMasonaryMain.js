@@ -70,7 +70,7 @@ const CertificatesMasonaryMain = () => {
 								breakpointCols={breakpointColumnsObj}
 								className="my-masonry-grid"
 								columnClassName="my-masonry-grid_column">
-								<div>
+								<div >
 									<SingleProject
 										Image={projectImg1}
 										Title="ICAIHI 2023 Session Chair"
