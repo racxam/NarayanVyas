@@ -80,7 +80,7 @@ const ProductMain = () => {
 					<Project
 					title={"Call for Chapters"}
 					subTitle={"List of Call for Chapters"}
-					slidesToShow={"4"}
+					slidesToShow={'4'}
 					/>
 					
 
@@ -92,6 +92,7 @@ const ProductMain = () => {
 			
 			<CTA
 				ctaBG={bgImg}
+				btnText={"Book Appointment"}
 			/>
 
     </main>

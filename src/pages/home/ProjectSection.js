@@ -33,10 +33,10 @@ const Project = ({subTitle,title,slidesToShow}) => {
               slidesPerView: 1,
             },
             576: {
-              slidesPerView: 2,
+              slidesPerView: slidesToShow?slidesToShow-1:'2',
             },
             991: {
-              slidesPerView: 3,
+              slidesPerView: slidesToShow?slidesToShow:'3',
             },
         }
     }
