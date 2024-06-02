@@ -440,11 +440,14 @@
         padding: 11px 23px;
         display: inline-block;
         margin-bottom: 0;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
     }
 
     &__list-item {
         margin-right: 100px;
         padding-bottom: 44px;
+
 
         @media #{$lg,$md,$xs} {
             margin-right: 0;
@@ -453,25 +456,28 @@
         & ul {
             padding: 30px;
             background-color: #f3f3f3;
+            border-top-right-radius: 2%;
+            border-bottom-right-radius: 2%;
+            border-bottom-left-radius: 2%;
             display: inline-block;
 
             & li {
-                width: 50%;
+                width: 90%;
                 float: left;
                 list-style: none;
-                padding-bottom: 15px;
+                padding-bottom: 10px;
 
                 @media #{$xs} {
                     width: 100%;
                 }
 
-                &:nth-child(2n+1) {
-                    padding-bottom: 0;
+                // &:nth-child(2n+1) {
+                //     padding-bottom: 0;
 
-                    @media #{$xs} {
-                        padding-bottom: 15px;
-                    }
-                }
+                //     @media #{$xs} {
+                //         padding-bottom: 15px;
+                //     }
+                // }
 
                 &:last-child {
                     padding-bottom: 0;

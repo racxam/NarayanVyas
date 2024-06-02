@@ -1,5 +1,5 @@
 import React from 'react';
-import About from './AboutSection';
+import About from '../home-2/AboutSection';
 import Blog from './BlogSection';
 import Brand from '../../components/Brand';
 import Company from './CompanySection';
@@ -19,9 +19,12 @@ const HomeMain = () => {
 
 			<Banner />
 			
-			<Brand />
+			{/* Currently hiding the Brands menu as it might cause copyright related issues */}
+			{/* <Brand /> */}
 			
-			<Feature />
+
+			{/* Hiding this seciton also coz it is same as the project section  */}
+			{/* <Feature /> */}
 
 			<About />
 			
@@ -29,7 +32,9 @@ const HomeMain = () => {
 			
 			<Service />
 			
-			<Project />
+			<Project 
+			slidesToShow={"4"}
+			/>
 			
 			{/* <Social /> */}
 			

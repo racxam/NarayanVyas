@@ -23,7 +23,7 @@ const SingleService = (props) => {
                 <h4 className={titleClass ? titleClass : 'service__title title-color-1'}>
                     <Link to={`/${btnURL ? btnURL : 'service-details'}`}>{Title ? Title : 'Get Latest Updates'} </Link>
                 </h4>
-                <p className={descClass ? descClass : ''}>{Description ? Description : 'Business building it before the tab providet management, Payroll & Worksite Services full-fledged.'}</p>
+                <p className={descClass ? descClass : 'para-justi'}>{Description ? Description : 'Business building it before the tab providet management, Payroll & Worksite Services full-fledged.'}</p>
             </div>
             <div className={btnClass ? btnClass : 'service__link service__link-color-1'}>
                 <Link to={`/${btnURL ? btnURL : 'service-details'}`}>

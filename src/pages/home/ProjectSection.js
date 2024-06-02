@@ -37,7 +37,7 @@ const Project = ({ subTitle, title, slidesToShow }) => {
             },
             576: {
 
-              slidesPerView: slidesToShow?slidesToShow-1:'2',
+              slidesPerView: slidesToShow?slidesToShow-2:'2',
             },
             991: {
               slidesPerView: slidesToShow?slidesToShow:'3',
@@ -72,7 +72,7 @@ const Project = ({ subTitle, title, slidesToShow }) => {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid">
+            <div className="container-fluid" style={{width:"90vw"}}>
                 <div className="swiper-container project__active">
                     <Swiper {...sliderOption} mousewheel={true} className="swiper-wrapper">
                         <SwiperSlide className="swiper-slide">

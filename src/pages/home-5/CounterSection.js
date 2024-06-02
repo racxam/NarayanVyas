@@ -15,7 +15,7 @@ const Counter = () => {
 
     const counters = [
         {
-            countNum: 8,
+            countNum: 8, 
             countSubtext: '+',
             countTitle: 'Years of Experience',
             countImg: countImg1,

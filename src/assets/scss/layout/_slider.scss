@@ -145,6 +145,8 @@
         position: absolute;
         left: 37%;
         bottom: 40%;
+        z-index: -1;
+        opacity: 0.6;
     }
     &__shape-top-10{
         position: absolute;

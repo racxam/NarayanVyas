@@ -8,7 +8,7 @@ import shapeImg4 from '../../assets/img/contact/ct-shape-4.png';
 
 const ContactTwo = (props) => {
     const { itemClass } = props;
-
+ 
     function sendEmail(e) {
         e.preventDefault();
 
@@ -23,7 +23,7 @@ const ContactTwo = (props) => {
     }
 
     return (
-        <div className={itemClass ? itemClass : 'contact__area contact__plr-2 mt-100 mb-100 p-relative fix'}>
+        <div className={itemClass ? itemClass : 'contact__area contact__plr-2 mt-200 mb-100 p-relative fix'} >
             <div className="contact__shape-1 d-none d-lg-block">
                 <img src={shapeImg1} alt="" />
             </div>

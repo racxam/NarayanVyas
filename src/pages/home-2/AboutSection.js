@@ -30,7 +30,7 @@ const About = () => {
                                     <span><i className="fal fa-check-circle"></i></span>
                                 </div>
                                 <div className="about-2__img-text">
-                                    <h5>1283k+</h5>
+                                    <h5>40+</h5>
                                     <span>Complete Projects</span>
                                 </div>
                             </div>
@@ -39,23 +39,21 @@ const About = () => {
                     <div className="col-xl-6 col-lg-6 wow animate__fadeInRight" data-wow-duration="1.1s">
                         <div className="about-2__item">
                             <div className="about-2__section-title">
-                                <h4 className="section-subtitle char-anim">Our About Now</h4>
-                                <h3 className="section-title char-anim">We This Managing About
-                                    Media For Business</h3>
+                                <h4 className="section-subtitle char-anim">About me</h4>
+                                <h3 className="section-title char-anim">Delivering Excellence in Technology and Research</h3>
                             </div>
                             <div className="about-2__text">
-                                <p className="char-anim-2">Business tailored it design, management & support services
-                                business agency elit, sed do eiusmod tempor. </p>
+                                <p className="char-anim-2">With 8+ years of professional experience, I have great contribution in research and development</p>
                             </div>
                             <div className="about-2__list-item wow animate__fadeInUp" data-wow-duration="1.1s">
-                                <h4 className="about-2__list-title">Personal Infos:</h4>
+                                <h4 className="about-2__list-title">Key Highlights:</h4>
                                 <ul>
-                                    <li><span>First Name: Boran</span></li>
-                                    <li><span>Address: Dubai</span></li>
-                                    <li><span>Age: 24 Years</span></li>
-                                    <li><span>Nationality: Tunisian</span></li>
-                                    <li><span>Freelance: Available</span></li>
-                                    <li><span>Email: you@mail.com</span></li>
+                                    <li><span>36 Publications indexed in Scopus</span></li>
+                                    <li><span>170 Citations in academic research</span></li>
+                                    <li><span>Taught students from 12+ countries</span></li>
+                                    <li><span>9 Books authored and edited</span></li>
+                                    <li><span>8 h-index in Scopus</span></li>
+                                    <li><span>6+ Workshops conducted</span></li>
                                 </ul>
                             </div>
                             <div className="about-2__button wow animate__fadeInUp" data-wow-duration="1.1s">
