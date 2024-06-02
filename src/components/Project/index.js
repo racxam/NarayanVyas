@@ -106,7 +106,7 @@ const dataImages = [
     image: projectImg19,
   },
   {
-    id: 20,
+    id: 20,   
     image: projectImg20,
   },
 ];
@@ -140,7 +140,6 @@ const SingleProject = (props) => {
         </div>
         <div className="project-2__img-text">
           <h5><Link to="#" onClick={() => { lightBoxHandler(true, 1); }}>{Title ? Title : 'Certificates'}</Link></h5>
-          <i>{categoryOne ? categoryOne : 'ACHIEVEMENT'}   <span>{categoryTwo ? categoryTwo : 'CERTIFICATION'}</span></i>
         </div>
         <LightBox
           state={toggle}

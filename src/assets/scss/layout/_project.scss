@@ -194,16 +194,16 @@
         & h5{
             color: var(--it-common-white);
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1rem;
             transition: .3s;
             @media #{$lg}{
-                font-size: 1.2rem;
-            }
-            @media #{$md}{
                 font-size: 1rem;
             }
+            @media #{$md}{
+                font-size: 0.8rem;
+            }
             @media #{$xs}{
-                font-size: 0.7rem;
+                font-size: 0.6rem;
             }
             @media #{$sm}{
                 font-size:0.5rem;
