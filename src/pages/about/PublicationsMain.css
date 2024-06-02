@@ -26,6 +26,8 @@
     align-items: center;
     justify-content: center;
     margin-right: 15px;
+    line-height: 40px;
+    /* Ensure text is vertically centered */
 }
 
 .publication-details {
@@ -37,7 +39,6 @@
     font-weight: bold;
     margin: 0;
     color: #000;
-    /* Set title color to black */
     text-decoration: none;
 }
 
@@ -53,9 +54,10 @@
     border-radius: 5px;
 }
 
-.publication-authors,
+.publication-contributors,
 .publication-type,
 .publication-venue,
+.publication-publisher,
 .publication-date,
 .publication-doi {
     margin: 5px 0;

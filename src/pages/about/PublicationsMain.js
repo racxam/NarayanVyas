@@ -14,16 +14,16 @@ const parseDate = (dateString) => {
 // Sort publications by date, latest first
 publications.sort((a, b) => parseDate(b.date) - parseDate(a.date));
 
-// Function to bold "N. Vyas" in the authors' string
-const highlightAuthors = (authors) => {
-	return authors.replace(/N\. Vyas/g, '<strong>N. Vyas</strong>');
+// Function to highlight "N. Vyas" in the contributors' string using dangerouslySetInnerHTML
+const highlightContributors = (contributors) => {
+	return contributors.replace(/N\. Vyas/g, '<strong>N. Vyas</strong>');
 };
 
 const PublicationsMain = () => {
 	return (
 		<main>
 			<Breadcrumb pageTitle="Publications" />
-			<div className='container'>
+			<div className='container mt-100 mb-100'>
 				{publications.map((pub, index) => (
 					<div key={index} className='publication-entry mb-4 p-3 border rounded'>
 						<div className='publication-number'>{index + 1}</div>
@@ -34,9 +34,12 @@ const PublicationsMain = () => {
 								</a>
 								{pub.scopusIndexed && <span className='badge badge-success'>Scopus Indexed</span>}
 							</div>
-							<p className='publication-authors'><strong>Authors:</strong> <span dangerouslySetInnerHTML={{ __html: highlightAuthors(pub.authors) }} /></p>
+							<p className='publication-contributors'>
+								<strong>{pub.type === 'Book' ? 'Editors' : 'Authors'}:</strong> <span dangerouslySetInnerHTML={{ __html: highlightContributors(pub.contributors) }} />
+							</p>
 							<p className='publication-type'><strong>Type:</strong> {pub.type}</p>
-							<p className='publication-venue'><strong>Venue:</strong> {pub.venue}</p>
+							{pub.venue && <p className='publication-venue'><strong>Venue:</strong> {pub.venue}</p>}
+							{pub.publisher && <p className='publication-publisher'><strong>Publisher:</strong> {pub.publisher}</p>}
 							<p className='publication-date'><strong>Date:</strong> {pub.date}</p>
 							<p className='publication-doi'>
 								<strong>DOI:</strong> <a href={pub.link} target="_blank" rel="noopener noreferrer">{pub.doiText}</a>
