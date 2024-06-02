@@ -25,8 +25,10 @@ const PublicationsMain = () => {
 			<Breadcrumb pageTitle="Publications" />
 			<div className='container mt-100 mb-100'>
 				{publications.map((pub, index) => (
-					<div key={index} className='publication-entry mb-4 p-3 border rounded'>
-						<div className='publication-number'>{index + 1}</div>
+					<div key={index} className='publication-entry'>
+						<div className='publication-number-box'>
+							<div className='publication-number'>{index + 1}</div>
+						</div>
 						<div className='publication-details'>
 							<div className='d-flex justify-content-between align-items-center'>
 								<a href={pub.link} target="_blank" rel="noopener noreferrer" className='publication-title'>
@@ -35,14 +37,16 @@ const PublicationsMain = () => {
 								{pub.scopusIndexed && <span className='badge badge-success'>Scopus Indexed</span>}
 							</div>
 							<p className='publication-contributors'>
-								<strong>{pub.type === 'Book' ? 'Editors' : 'Authors'}:</strong> <span dangerouslySetInnerHTML={{ __html: highlightContributors(pub.contributors) }} />
+								<i className="fas fa-user" style={{ color: '#c0392b' }}></i> <strong>{pub.type === 'Book' ? 'Editors' : 'Authors'}:</strong> <span dangerouslySetInnerHTML={{ __html: highlightContributors(pub.contributors) }} />
 							</p>
-							<p className='publication-type'><strong>Type:</strong> {pub.type}</p>
-							{pub.venue && <p className='publication-venue'><strong>Venue:</strong> {pub.venue}</p>}
-							{pub.publisher && <p className='publication-publisher'><strong>Publisher:</strong> {pub.publisher}</p>}
-							<p className='publication-date'><strong>Date:</strong> {pub.date}</p>
-							<p className='publication-doi'>
-								<strong>DOI:</strong> <a href={pub.link} target="_blank" rel="noopener noreferrer">{pub.doiText}</a>
+							<p className='publication-info'>
+								<i className="far fa-calendar-alt" style={{ color: '#f39c12' }}></i> {pub.date}
+								<span className="separator">|</span>
+								<i className="fas fa-book" style={{ color: '#27ae60' }}></i> {pub.type}
+								<span className="separator">|</span>
+								<i className="far fa-building" style={{ color: '#2980b9' }}></i> {pub.publisher}
+								<span className="separator">|</span>
+								<strong>DOI:</strong><a href={pub.link} target="_blank" rel="noopener noreferrer">{pub.doiText}</a>
 							</p>
 						</div>
 					</div>
