@@ -370,7 +370,7 @@ const publications = [
         venue: 'Neural Computing and Applications, vol. 34, no. 9, pp. 2907-2916, 2022',
         doi: '10.14704/nq.2022.20.9.NQ44681',
         doiText: '10.14704/nq.2022.20.9.NQ44681',
-        scopusIndexed: true,
+        scopusIndexed: false,
         link: 'https://dx.doi.org/10.14704/nq.2022.20.9.NQ44681'
     },
     {
