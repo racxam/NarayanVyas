@@ -48,7 +48,7 @@ const Project = ({ subTitle, title, slidesToShow }) => {
     }
 
     return (
-        <div className="project__area project-height pt-90">
+        <div className="project__area project-height pt-10">
             <div className="container">
                 <div className="row align-items-end pb-60">
                     <div className="col-lg-6 col-md-9">

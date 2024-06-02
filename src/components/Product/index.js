@@ -4,12 +4,16 @@ import productImg from '../../assets/img/product/product-3.jpg';
 const SingleProduct = (props) => {
     const { itemClass, Image, Title, Price, Publisher, Url, btnText } = props;
     return (
+
+        
+
         <div className={itemClass ? itemClass : 'product__item text-center'}>
             <div className="product__img-container">
                 <Link to={Url ? Url : ''}>
                     <img src={Image ? Image : productImg} alt={Title ? Title : 'Book Image'} className="product__img" />
                 </Link>
                 {/* {Publisher && <div className="product__img-text"><span>{Publisher}</span></div>} */}
+
             </div>
             <div className="product__content">
                 <div className="product__content-text">
