@@ -40,11 +40,13 @@ import JobDetails from '../pages/job/job-details';
 import Product from '../pages/product';
 import ProductDetails from '../pages/product/product-details';
 import Certificates from '../pages/certificates/certificates-masonary';
+import Books from '../pages/books';
 import ApplyingMLInBioinformaticsIGIDetails from '../pages/books/applying-ml-in-bioinformatics-igi-details';
 import InnovationsInMLIoTWaterManagementIGIDetails from '../pages/books/innovations-in-ml-iot-water-management-igi-details';
 import QuantumInBiomedicalIGIDetails from '../pages/books/quantum-in-biomedical-igi-details';
 import AIDrivenAlzheimerIGIDetails from '../pages/books/aI-driven-alzheimer-igi-details';
 import QuantumMachineLearningDeGruyterDetails from '../pages/books/quantum-machine-learning-degruyter-details';
+import CFC from '../pages/cfc';
 import SecureEnergyWileyCFCDetails from '../pages/cfc/secure-energy-wiley-cfc-details';
 import MultimodalDataFusionCFCDetails from '../pages/cfc/multimodal-data-fusion-wiley-cfc-details';
 import IoMForHealthcareCFCDetails from '../pages/cfc/iom-for-healthcare-wiley-cfc-details';
@@ -116,11 +118,13 @@ const App = () => {
                     <Route path="/product" element={<Product />} />
                     <Route path="/product-details" element={<ProductDetails />} />
                     <Route path="/certificates" element={<Certificates />} />
+                    <Route path="/books" element={<Books />} />
                     <Route path="/books/applying-ml-in-bioinformatics-igi" element={<ApplyingMLInBioinformaticsIGIDetails />} />
                     <Route path="/books/innovation-in-ml-iot-water-management-igi" element={<InnovationsInMLIoTWaterManagementIGIDetails />} />
                     <Route path="/books/quantum-in-biomedical-igi" element={<QuantumInBiomedicalIGIDetails />} />
                     <Route path="/books/ai-driven-alzheimer-disease-prediction-igi" element={<AIDrivenAlzheimerIGIDetails />} />
                     <Route path="/books/quantum-machine-learning-degruyter" element={<QuantumMachineLearningDeGruyterDetails />} />
+                    <Route path="/call-for-chapters" element={<CFC />} />
                     <Route path="/cfc/secure-energy-wiley" element={<SecureEnergyWileyCFCDetails />} />
                     <Route path="/cfc/multimodal-data-fusion-wiley" element={<MultimodalDataFusionCFCDetails />} />
                     <Route path="/cfc/iom-for-healthcare-wiley" element={<IoMForHealthcareCFCDetails />} />
