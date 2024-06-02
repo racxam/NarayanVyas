@@ -18,9 +18,9 @@ const SingleProduct = (props) => {
             <div className="product__content">
                 <div className="product__content-text">
                     <p className="product__title"><Link to={Url ? Url : ''}>{Title ? Title : 'Creative for mukap'}</Link></p>
-                    <span className="product__price" style={{fontWeight:"bold"}} >{Price ? Price : '$555'}</span>
+                    <div className="product__price" style={{fontWeight:"bold"}} >{Price ? Price : '$555'}</div>
                 </div>
-                <div className="contact__button wow animate__fadeInUp" data-wow-duration="1.1s">
+                <div className="contact__button wow animate__fadeInUp" data-wow-duration="1.1s" style={{marginBottom:"1px"}}>
                     <a className="main-btn-sm  tp-btn-hover alt-color" href={Url ? Url : ''}><span>View Details</span><b></b></a>
                 </div>
             </div>
