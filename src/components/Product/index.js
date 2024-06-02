@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import productImg from '../../assets/img/product/product-3.jpg';
 
 const SingleProduct = (props) => {
-    const { itemClass, Image, Title, Price, Publisher, Url, btnText } = props;
+    const { itemClass, Image, Title, Price, Publisher, Url, btnText } = props;  
     return (
 
         

@@ -174,18 +174,25 @@
     }
 
     &__content {
-        height: 250px;
-        padding: 30px 15px;
+        height: 220px;
+
+        padding: 30px 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+
         box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+
+
     }
-
+    
     &__content-text {
-        padding-bottom: 20px;
-        & p{
 
-            margin-bottom: 1px;
-            height: vh;
-        }
+        padding-bottom: 20px;
+        height:130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
 
         & span {
             font-size: 17px;
@@ -193,9 +200,10 @@
             padding-bottom: 7px;
         }
 
-        & h4 {
-            font-size: 22px;
+        & p {
+            font-size: 16px;
             transition: .3s;
+            
 
             &:hover {
                 color: #642cce;
