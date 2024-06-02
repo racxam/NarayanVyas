@@ -23,7 +23,7 @@ const ContactTwo = (props) => {
     }
 
     return (
-        <div className={itemClass ? itemClass : 'contact__area contact__plr-2 mb-100 p-relative fix'} >
+        <div className={itemClass ? itemClass : 'contact__area contact__plr-2 mb-10 p-relative fix'} >
             <div className="contact__shape-1 d-none d-lg-block">
                 <img src={shapeImg1} alt="" />
             </div>

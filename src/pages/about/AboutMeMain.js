@@ -17,8 +17,8 @@ const HomeMain = () => {
 			<Breadcrumb
 				pageTitle="About Me"
 			/>
-
-			<div className="about-5__area about-5__plr">
+  
+			<div className="about-5__area about-5__plr" >
 				<div className="container-fluid">
 					<div className="about-5__border">
 						<div className="row align-items-center">

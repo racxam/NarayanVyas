@@ -10,7 +10,7 @@ import shapeImg3 from '../../assets/img/about/about-shape-5.png';
 const About = () => {
 
     return (
-        <div className="about-2__area pt-5 pb-130 p-relative fix">
+        <div className="about-2__area pt-5 pb-10 p-relative fix">
             <div className="about-2__shape-1 d-none d-xl-block">
                 <img src={shapeImg1} alt="" />
             </div>
