@@ -47,6 +47,7 @@ import Product from '../pages/product';
 import ProductDetails from '../pages/product/product-details';
 import Certificates from '../pages/certificates/certificates-masonary';
 import Books from '../pages/books';
+import Appointments from '../pages/appointments';
 import ApplyingMLInBioinformaticsIGIDetails from '../pages/books/applying-ml-in-bioinformatics-igi-details';
 import InnovationsInMLIoTWaterManagementIGIDetails from '../pages/books/innovations-in-ml-iot-water-management-igi-details';
 import QuantumInBiomedicalIGIDetails from '../pages/books/quantum-in-biomedical-igi-details';
@@ -107,7 +108,7 @@ const App = () => {
                     <Route path="/home-3" element={<HomeThree />} />
                     <Route path="/home-4" element={<HomeFour />} />
                     <Route path="/home-5" element={<HomeFive />} />
-                    <Route path="/appointments" element={<About />} />
+                    <Route path="/appointments" element={<Appointments />} />
                     <Route path="/service-1" element={<Service />} />
                     <Route path="/service-2" element={<ServiceTwo />} />
                     <Route path="/service-3" element={<ServiceThree />} />
