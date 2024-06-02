@@ -14,6 +14,12 @@
     gap: 10px;
 }
 
+@media (max-width: 1450px) {
+    .publications-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .publication-card {
     background: #fff;
     display: flex;
@@ -38,6 +44,7 @@
     font-weight: bold;
     color: #fff;
     background-color: transparent;
+    text-align: center;
 }
 
 .publication-content {
@@ -46,7 +53,6 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    /* Ensure the content fills the remaining space */
 }
 
 .publication-title {
