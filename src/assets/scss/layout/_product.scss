@@ -26,6 +26,7 @@
 
     &__title-sm {
         & h4 {
+
             font-size: 22px;
             font-weight: 700;
             padding-bottom: 40px;
@@ -149,7 +150,7 @@
         }
 
         & span {
-            font-weight: 500;
+            font-weight: 500;  
             font-size: 17px;
             text-transform: uppercase;
             color: var(--it-common-white);
@@ -173,13 +174,18 @@
     }
 
     &__content {
-        height: 20vh;
+        height: 250px;
         padding: 30px 15px;
         box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
     }
 
     &__content-text {
         padding-bottom: 20px;
+        & p{
+
+            margin-bottom: 1px;
+            height: vh;
+        }
 
         & span {
             font-size: 17px;

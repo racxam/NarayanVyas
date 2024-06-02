@@ -34,7 +34,7 @@ const Service = () => {
                         />
                     </div>
                 </div>
-                <div className="row">
+                <div className="row" >
                     <div className="col-xl-4 col-lg-6 col-md-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s"
                     >
                         <SingleService

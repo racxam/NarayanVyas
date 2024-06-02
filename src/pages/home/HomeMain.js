@@ -9,10 +9,11 @@ import Feature from './FeatureSection';
 import Banner from './HomeBanner';
 import Project from './ProjectSection';
 import Service from './ServiceSection';
-import Testimonial from './TestimonialSection';
+import Testimonial from '../home-2/TestimonialSection';
 import Social from './SocialSection';
 import HomePagePublications from './HomePagePublications';
 import Contact from '../../components/Contact/ContactTwo'
+import Books from '../../components/Books/index'
 
 import CertificationSection from './CertificationSection';
 import CFCComponent from '../../components/CallForChapters/index'
@@ -46,13 +47,13 @@ const HomeMain = () => {
 			<Project
 				slidesToShow={"4"}
 			/>
-
+			<Books/>
 
 			{/* <Social /> */}
 
 			{/* <Company /> */}
 
-			{/* <Testimonial /> */}
+			<Testimonial />
 			<Contact />
 
 

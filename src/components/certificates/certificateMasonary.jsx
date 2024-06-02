@@ -35,7 +35,7 @@ const certificateMasonary = () => {
 		default: 5,
 		1200: 5,
 		992: 3,
-		576: 2
+		576: 2 
 	};
 
 	let tab1 = "All",
@@ -45,7 +45,7 @@ const certificateMasonary = () => {
 	const tabStyle = 'nav justify-content-center project-2__button-box masonary-menu';
 
   return (
-    <div className="project-2__area project-2__plr-3 project-2__space p-relative fix">
+    <div className="project-2__area project-2__plr-3 project-2__space p-relative fix wow animate__fadeInUp" data-wow-duration="1.1s" style={{paddingTop:"10px"}}>
 				<div className="container-fluid">
 					<Tabs>
 						<div className="row">

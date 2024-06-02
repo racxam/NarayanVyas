@@ -10,7 +10,7 @@ import shapeImg3 from '../../assets/img/about/about-shape-5.png';
 const About = () => {
 
     return (
-        <div className="about-2__area pt-100 pb-130 p-relative fix">
+        <div className="about-2__area pt-5 pb-10 p-relative fix">
             <div className="about-2__shape-1 d-none d-xl-block">
                 <img src={shapeImg1} alt="" />
             </div>
@@ -45,7 +45,7 @@ const About = () => {
                             <div className="about-2__text">
                                 <p className="char-anim-2">With 8+ years of professional experience, I have great contribution in research and development</p>
                             </div>
-                            <div className="about-2__list-item wow animate__fadeInUp" data-wow-duration="1.1s">
+                           <div className="about-2__list-item wow animate__fadeInUp" data-wow-duration="1.1s">
                                 <h4 className="about-2__list-title">Key Highlights:</h4>
                                 <ul>
                                     <li><span>36 Publications indexed in Scopus</span></li>
@@ -57,9 +57,9 @@ const About = () => {
                                 </ul>
                             </div>
                             <div className="about-2__button wow animate__fadeInUp" data-wow-duration="1.1s">
-                                <Link to="/job-details" className="it-btn tp-btn-hover alt-color">
+                                <Link to="/appointments" className="it-btn tp-btn-hover alt-color">
                                     <span>
-                                        Download CV<i className="fal fa-arrow-to-bottom"></i>
+                                        Book Appointment
                                     </span>
                                     <b></b>
                                 </Link>
