@@ -180,6 +180,10 @@
 
     &__content-text {
         padding-bottom: 20px;
+        & p{
+
+            height: 5vh;
+        }
 
         & span {
             font-size: 17px;
