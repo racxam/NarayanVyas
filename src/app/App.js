@@ -44,6 +44,9 @@ import InnovationsInMLIoTWaterManagementIGIDetails from '../pages/books/innovati
 import QuantumInBiomedicalIGIDetails from '../pages/books/quantum-in-biomedical-igi-details';
 import AIDrivenAlzheimerIGIDetails from '../pages/books/aI-driven-alzheimer-igi-details';
 import QuantumMachineLearningDeGruyterDetails from '../pages/books/quantum-machine-learning-degruyter-details';
+import SecureEnergyWileyCFCDetails from '../pages/cfc/secure-energy-wiley-cfc-details';
+import MultimodalDataFusionCFCDetails from '../pages/cfc/multimodal-data-fusion-wiley-cfc-details';
+import IoMForHealthcareCFCDetails from '../pages/cfc/iom-for-healthcare-wiley-cfc-details';
 import Blog from '../pages/blog';
 import BlogDetails from '../pages/blog/blog-details';
 import Contact from '../pages/contact';
@@ -115,6 +118,9 @@ const App = () => {
                     <Route path="/books/quantum-in-biomedical-igi" element={<QuantumInBiomedicalIGIDetails />} />
                     <Route path="/books/ai-driven-alzheimer-disease-prediction-igi" element={<AIDrivenAlzheimerIGIDetails />} />
                     <Route path="/books/quantum-machine-learning-degruyter" element={<QuantumMachineLearningDeGruyterDetails />} />
+                    <Route path="/cfc/secure-energy-wiley" element={<SecureEnergyWileyCFCDetails />} />
+                    <Route path="/cfc/multimodal-data-fusion-wiley" element={<MultimodalDataFusionCFCDetails />} />
+                    <Route path="/cfc/iom-for-healthcare-wiley" element={<IoMForHealthcareCFCDetails />} />
                     <Route path="/job" element={<Job />} />
                     <Route path="/job-details" element={<JobDetails />} />
                     <Route path="/faq" element={<Faq />} />
