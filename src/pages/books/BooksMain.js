@@ -4,7 +4,7 @@ import React from 'react';
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumnew';
 import CTA from '../../components/CTA';
 import SingleProduct from '../../components/Product';
-import booksData from '../../data/booksData'; // Import the books data array
+import booksData from '../../data/booksData';
 
 import bgImg from '../../assets/img/cta/cta-bg-2.png';
 
