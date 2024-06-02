@@ -1,0 +1,71 @@
+.container {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.publication-entry {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.publication-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.publication-details {
+    flex-grow: 1;
+}
+
+.publication-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+    /* Set title color to black */
+    text-decoration: none;
+}
+
+.publication-title:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.badge-success {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.publication-authors,
+.publication-type,
+.publication-venue,
+.publication-date,
+.publication-doi {
+    margin: 5px 0;
+}
+
+.publication-doi a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.publication-doi a:hover {
+    text-decoration: underline;
+}

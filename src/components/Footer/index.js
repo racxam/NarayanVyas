@@ -91,10 +91,11 @@ const Footer = (props) => {
                         </div>
                         <div className="col-md-6 wow animate__fadeInUp" data-wow-duration="1.1s">
                             <div className="copyright__item text-start text-md-end">
-                                <span><a href="#">Home</a></span>
-                                <span><a href="#">About</a></span>
-                                <span><a href="#">Privacy Policy</a></span>
-                                <span><a href="#">Terms & Conditions</a></span>
+                                <span><a href="/">Home</a></span>
+                                <span><a href="/about-me">About</a></span>
+                                <span><a href="privacy-policy">Privacy Policy</a></span>
+                                <span><a href="/terms-of-service">Terms of Service</a></span>
+                                <span><a href="/disclaimer">Disclaimer</a></span>
                             </div>
                         </div>
                     </div>
