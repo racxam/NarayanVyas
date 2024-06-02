@@ -79,7 +79,7 @@ const index = ({
                                                 <ul>
                                                     {chapters.map((chapter, index) => (
                                                         <li key={index}>
-                                                            <h6><a href={chapter.link} target='_blank'>{chapter.title}</a></h6>
+                                                            <h6>{chapter.title}</h6>
                                                             <p>Authors: {chapter.authors.join(', ')}</p>
                                                         </li>
                                                     ))}
