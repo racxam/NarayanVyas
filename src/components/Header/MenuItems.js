@@ -70,6 +70,8 @@ const MenuItems = (props) => {
                     <li className={location.pathname === "/publications" ? "active" : ""}><Link to="/publications">Publications</Link></li>
                     <li className={location.pathname === "/certificates" ? "active" : ""}><Link to="/certificates">Certificates</Link></li>
                     <li className={location.pathname === "/study-notes" ? "active" : ""}><Link to="/study-notes">Study Notes</Link></li>
+                    <li className={location.pathname === "/machine-learning-notes" ? "active" : ""}><Link to="/machine-learning-notes">ML Notes</Link></li>
+                    <li className={location.pathname === "/java-notes" ? "active" : ""}><Link to="/java-notes">Java Notes</Link></li>
                 </ul>
                 <a href="#" onClick={() => { openMobileMenu('about'); }}></a>
             </li>

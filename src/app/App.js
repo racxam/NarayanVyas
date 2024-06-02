@@ -22,11 +22,17 @@ import ResearchAndDevelopmentDetails from '../pages/service/research-and-develop
 import ProjectConsultancyDetails from '../pages/service/project-consultancy-details';
 import PublicationAssistanceDetails from '../pages/service/publication-assistance-details';
 import TrainingAndWorkshopsDetails from '../pages/service/training-and-workshops-details';
-import Project from '../pages/project';
-import ProjectOne from '../pages/project/project-1';
-import ProjectTwo from '../pages/project/project-2';
-import ProjectMasonary from '../pages/project/project-masonary';
-import ProjectDetails from '../pages/project/project-details';
+import StudyNotes from '../pages/notes/study-notes';
+import MLNotes from '../pages/notes/ml-notes';
+import JavaNotes from '../pages/notes/java-notes';
+import TermsOfService from '../pages/misc/terms-of-service';
+import PrivacyPolicy from '../pages/misc/privacy-policy';
+import Disclaimer from '../pages/misc/disclaimer';
+import Projects from '../pages/projects';
+import ProjectOne from '../pages/projects/project-1';
+import ProjectTwo from '../pages/projects/project-2';
+import ProjectMasonary from '../pages/projects/project-masonary';
+import ProjectDetails from '../pages/projects/project-details';
 import Cart from '../pages/cart';
 import Checkout from '../pages/checkout';
 import Faq from '../pages/faq';
@@ -50,10 +56,11 @@ import CFC from '../pages/cfc';
 import SecureEnergyWileyCFCDetails from '../pages/cfc/secure-energy-wiley-cfc-details';
 import MultimodalDataFusionCFCDetails from '../pages/cfc/multimodal-data-fusion-wiley-cfc-details';
 import IoMForHealthcareCFCDetails from '../pages/cfc/iom-for-healthcare-wiley-cfc-details';
-import KwizzleMobileAppDetailsDetails from '../pages/project/kwizzle-mobile-app-details';
+import KwizzleMobileAppDetailsDetails from '../pages/projects/kwizzle-mobile-app-details';
 import Blog from '../pages/blog';
 import BlogDetails from '../pages/blog/blog-details';
 import Contact from '../pages/contact';
+import Publications from '../pages/about/publications';
 
 import Preloader from "../components/Preloader";
 import ScrollToTop from '../components/ScrollTop';
@@ -96,6 +103,7 @@ const App = () => {
                     <Route path="/" exact element={<Home />} />
                     <Route path="/home-2" element={<HomeTwo />} />
                     <Route path="/about-me" element={<AboutMe />} />
+                    <Route path="/publications" element={<Publications />} />
                     <Route path="/home-3" element={<HomeThree />} />
                     <Route path="/home-4" element={<HomeFour />} />
                     <Route path="/home-5" element={<HomeFive />} />
@@ -110,7 +118,7 @@ const App = () => {
                     <Route path="/services/project-consultancy" element={<ProjectConsultancyDetails />} />
                     <Route path="/services/publication-assistance" element={<PublicationAssistanceDetails />} />
                     <Route path="/services/training-and-workshops" element={<TrainingAndWorkshopsDetails />} />
-                    <Route path="/project" element={<Project />} />
+                    <Route path="/projects" element={<Projects />} />
                     <Route path="/project-1" element={<ProjectOne />} />
                     <Route path="/project-2" element={<ProjectTwo />} />
                     <Route path="/project-masonary" element={<ProjectMasonary />} />
@@ -118,6 +126,12 @@ const App = () => {
                     <Route path="/product" element={<Product />} />
                     <Route path="/product-details" element={<ProductDetails />} />
                     <Route path="/certificates" element={<Certificates />} />
+                    <Route path="/study-notes" element={<StudyNotes />} />
+                    <Route path="/machine-learning-notes" element={<MLNotes />} />
+                    <Route path="/java-notes" element={<JavaNotes />} />
+                    <Route path="/terms-of-service" element={<TermsOfService />} />
+                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                    <Route path="/disclaimer" element={<Disclaimer />} />
                     <Route path="/books" element={<Books />} />
                     <Route path="/books/applying-ml-in-bioinformatics-igi" element={<ApplyingMLInBioinformaticsIGIDetails />} />
                     <Route path="/books/innovation-in-ml-iot-water-management-igi" element={<InnovationsInMLIoTWaterManagementIGIDetails />} />
