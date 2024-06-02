@@ -7,7 +7,7 @@ import SectionTitle from '../../components/SectionTitle/index'
 
 const index = () => {
 	return (
-		<div className="product__area product__plr mt-100 mb-70">
+		<div className="product__area product__plr mt-100 mb-10">
 			<div className="container-fluid">
 				{/* <div className="row">
 						<div className="col-xl-12">
@@ -23,7 +23,7 @@ const index = () => {
 						<div className="col-xl-6 col-lg-6 wow animate__fadeInUp" data-wow-duration="1.1s">
 							<SectionTitle
 								sectionClass="service__section-box text-center pb-35 section-title-fixed-width"
-								subTitle="My Certificates"
+								subTitle="Call for Chapters"
 								Title="Experts in Every Aspect of Technology and Research"
 							/>
 						</div>
@@ -50,7 +50,7 @@ const index = () => {
 							Url='/cfc/ai-driven-alzheimer-disease-prediction-igi'
 						/>
 					</div>
-					<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s">
+					<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s" >
 						<SingleProduct
 							Image={productImg3}
 							Title='Multimodal Data Fusion for Bioinformatics AI'
