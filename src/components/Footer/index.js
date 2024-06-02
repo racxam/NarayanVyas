@@ -25,14 +25,11 @@ const Footer = (props) => {
                                     <div className="footer__text">
                                         <p>Empowering Innovation in Mobile Development, IoT, and Research</p>
                                     </div>
-                                    <div className="footer__number-wrapper d-flex align-items-center">
-                                        <div className="footer__number-icon">
-                                            <span><i className="fal fa-phone-alt"></i></span>
-                                        </div>
-                                        <div className="footer__number-info">
-                                            <span>Have Any Questions?</span>
-                                            <a href="mailto:contact@narayanvyas.com">contact@narayanvyas.com</a>
-                                        </div>
+                                    <div className="footer-3__social-box">
+                                        <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i className="fab fa-twitter"></i></a>
+                                        <a href="#"><i className="fab fa-google-plus-g"></i></a>
+                                        <a href="#"><i className="fab fa-pinterest-p"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -43,12 +40,12 @@ const Footer = (props) => {
                                 <h4 className="footer__title"><Link to="/service">Services</Link></h4>
                                 <div className="footer__menu-list">
                                     <ul>
-                                        <li><a href="/services/mobile-app-development">Mobile Application Development</a></li>
-                                        <li><a href="/services/iot-solutions">IoT Solutions</a></li>
-                                        <li><a href="/services/research-and-development">Research & Development</a></li>
-                                        <li><a href="/services/project-consultancy">Project Consultancy</a></li>
-                                        <li><a href="/services/training-and-workshops">Training & Workshops</a></li>
-                                        <li><a href="/services/publication-assistance">Publication Assistance</a></li>
+                                        <li><a href="/services/mobile-app-development"><i className="fal fa-angle-right"></i>&ensp;Mobile Application Development</a></li>
+                                        <li><a href="/services/iot-solutions"><i className="fal fa-angle-right"></i>&ensp;IoT Solutions</a></li>
+                                        <li><a href="/services/research-and-development"><i className="fal fa-angle-right"></i>&ensp;Research & Development</a></li>
+                                        <li><a href="/services/project-consultancy"><i className="fal fa-angle-right"></i>&ensp;Project Consultancy</a></li>
+                                        <li><a href="/services/training-and-workshops"><i className="fal fa-angle-right"></i>&ensp;Training & Workshops</a></li>
+                                        <li><a href="/services/publication-assistance"><i className="fal fa-angle-right"></i>&ensp;Publication Assistance</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -61,12 +58,12 @@ const Footer = (props) => {
                                 </h4>
                                 <div className="footer__menu-list">
                                     <ul>
-                                        <li><a href="https://www.fiverr.com/narayanvyas" target='_blank'>Fiverr</a></li>
-                                        <li><a href="https://www.teacheron.com/tutor/3CgM" target='_blank'>TeacherOn</a></li>
-                                        <li><a href="https://github.com/narayanvyas/" target='_blank'>Github</a></li>
-                                        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57221967474" target='_blank'>Scopus</a></li>
-                                        <li><a href="https://www.researchgate.net/profile/Narayan-Vyas" target='_blank'>ResearchGate</a></li>
-                                        <li><a href="/contact">Contact</a></li>
+                                        <li><a href="https://www.fiverr.com/narayanvyas" target='_blank'><i className="fal fa-angle-right"></i>&ensp;Fiverr</a></li>
+                                        <li><a href="https://www.teacheron.com/tutor/3CgM" target='_blank'><i className="fal fa-angle-right"></i>&ensp;TeacherOn</a></li>
+                                        <li><a href="https://github.com/narayanvyas/" target='_blank'><i className="fal fa-angle-right"></i>&ensp;Github</a></li>
+                                        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57221967474" target='_blank'><i className="fal fa-angle-right"></i>&ensp;Scopus</a></li>
+                                        <li><a href="https://www.researchgate.net/profile/Narayan-Vyas" target='_blank'><i className="fal fa-angle-right"></i>&ensp;ResearchGate</a></li>
+                                        <li><a href="/contact"><i className="fal fa-angle-right"></i>&ensp;Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -74,23 +71,9 @@ const Footer = (props) => {
                         <div className="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-7 mb-70 wow animate__fadeInUp"
                             data-wow-duration="1.1s">
                             <div className="footer__widget footer-col-4">
-                                <h4 className="footer__title"><a href="#">Newslatter</a></h4>
-                                <div className="footer__content">
-                                    <p>Our approach to itis unique around
-                                        know work an we know.</p>
-                                </div>
-                                <div className="footer__input">
-                                    <form action="#">
-                                        <input type="email" placeholder="Your email" />
-                                        <button className="subscribe-btn">Subscribe </button>
-                                    </form>
-                                </div>
-                                <div className="footer__social-box">
-                                    <span>Social Media:</span>
-                                    <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i className="fab fa-twitter"></i></a>
-                                    <a href="#"><i className="fab fa-google-plus-g"></i></a>
-                                    <a href="#"><i className="fab fa-pinterest-p"></i></a>
+                                <h4 className="footer__title"><a href="#">Need Consultancy?</a></h4>
+                                <div className="footer__text">
+                                    <p>Empowering Innovation in Mobile Development, IoT, and Research</p>
                                 </div>
                             </div>
                         </div>

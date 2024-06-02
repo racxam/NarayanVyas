@@ -14,10 +14,10 @@ import bgImg from '../../assets/img/cta/cta-bg-2.png';
 const HomeMain = () => {
 	return (
 		<main>
-      <Breadcrumb
-				pageTitle= "About Me"
+			<Breadcrumb
+				pageTitle="About Me"
 			/>
-			  
+
 			<div className="about-5__area about-5__plr">
 				<div className="container-fluid">
 					<div className="about-5__border">
@@ -31,25 +31,25 @@ const HomeMain = () => {
 								<div className="about-5__content-box">
 									<h4 className="about-5__content-title wow tpfadeUp" data-wow-duration="1.1s">About Me:</h4>
 									<div className="about-5__content">
-									<div className="about-5__text wow tpfadeUp" data-wow-duration="1.1s">
-										<p>About : My name is Narayan Vyas, I am a professional Web Developer, Android / iOS App Developer and a Teacher. I have good experience in Arduino, Electronics, Internet of Things, Robotics, HTML5, CSS3, BootStrap, WordPress, Flutter, JavaScript, jQuery and SEO. I have completed more than 50 projects for my clients in past 7 years. I am currently Founder & CEO of Web Dev Fusion. </p>
-									</div>
-									<div className="about-5__content-list wow tpfadeUp" data-wow-duration="1.1s">
-										<ul>
-											<li><i className="fal fa-check-circle"></i><span>Name: 	Narayan Vyas</span></li>
-											<li><i className="fal fa-check-circle"></i><span>Address: Bhilwara</span></li>
-											<li><i className="fal fa-check-circle"></i><span>Age: 24 Years</span></li>
-											<li><i className="fal fa-check-circle"></i><span>Nationality: Indian</span></li>
-											<li><i className="fal fa-check-circle"></i><span> Freelance: Available</span></li>
-											<li><i className="fal fa-check-circle"></i><span>Email: contact@narayanvyas.com</span></li>
-										</ul>
-									</div>
-									<div className="about-5__button wow tpfadeUp" data-wow-duration="1.1s">
-										<Link className="main-btn tp-btn-hover alt-color" to="/about-us">
-											<span>About More</span>
-											<b></b>
-										</Link>
-									</div>
+										<div className="about-5__text wow tpfadeUp" data-wow-duration="1.1s">
+											<p>About : My name is Narayan Vyas, I am a professional Web Developer, Android / iOS App Developer and a Teacher. I have good experience in Arduino, Electronics, Internet of Things, Robotics, HTML5, CSS3, BootStrap, WordPress, Flutter, JavaScript, jQuery and SEO. I have completed more than 50 projects for my clients in past 7 years. I am currently Founder & CEO of Web Dev Fusion. </p>
+										</div>
+										<div className="about-5__content-list wow tpfadeUp" data-wow-duration="1.1s">
+											<ul>
+												<li><i className="fal fa-check-circle"></i><span>Name: 	Narayan Vyas</span></li>
+												<li><i className="fal fa-check-circle"></i><span>Address: Bhilwara</span></li>
+												<li><i className="fal fa-check-circle"></i><span>Age: 24 Years</span></li>
+												<li><i className="fal fa-check-circle"></i><span>Nationality: Indian</span></li>
+												<li><i className="fal fa-check-circle"></i><span>Freelance: Available</span></li>
+												<li><i className="fal fa-check-circle"></i><span>Email: contact@narayanvyas.com</span></li>
+											</ul>
+										</div>
+										<div className="about-5__button wow tpfadeUp" data-wow-duration="1.1s">
+											<Link className="main-btn tp-btn-hover alt-color" to="/about-us">
+												<span>About More</span>
+												<b></b>
+											</Link>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -57,14 +57,14 @@ const HomeMain = () => {
 					</div>
 				</div>
 			</div>
-			
+
 			<div className="social__area social__plr-2 p-relative z-index">
 				<div className="container-fluid">
 					<SocialFeed />
 				</div>
 			</div>
-			  
-      {/* <div className="about-details__area about-details__plr">
+
+			{/* <div className="about-details__area about-details__plr">
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration="1.1s">
@@ -103,14 +103,14 @@ const HomeMain = () => {
           </div>
 				</div>
 			</div> */}
-			  
+
 			<ContactTwo />
-			
+
 			<CTA
 				ctaBG={bgImg}
 				btnText="Book Appointment"
 			/>
-    </main>
+		</main>
 	);
 }
 

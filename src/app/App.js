@@ -39,6 +39,18 @@ import Job from '../pages/job';
 import JobDetails from '../pages/job/job-details';
 import Product from '../pages/product';
 import ProductDetails from '../pages/product/product-details';
+import Certificates from '../pages/certificates/certificates-masonary';
+import Books from '../pages/books';
+import ApplyingMLInBioinformaticsIGIDetails from '../pages/books/applying-ml-in-bioinformatics-igi-details';
+import InnovationsInMLIoTWaterManagementIGIDetails from '../pages/books/innovations-in-ml-iot-water-management-igi-details';
+import QuantumInBiomedicalIGIDetails from '../pages/books/quantum-in-biomedical-igi-details';
+import AIDrivenAlzheimerIGIDetails from '../pages/books/aI-driven-alzheimer-igi-details';
+import QuantumMachineLearningDeGruyterDetails from '../pages/books/quantum-machine-learning-degruyter-details';
+import CFC from '../pages/cfc';
+import SecureEnergyWileyCFCDetails from '../pages/cfc/secure-energy-wiley-cfc-details';
+import MultimodalDataFusionCFCDetails from '../pages/cfc/multimodal-data-fusion-wiley-cfc-details';
+import IoMForHealthcareCFCDetails from '../pages/cfc/iom-for-healthcare-wiley-cfc-details';
+import KwizzleMobileAppDetailsDetails from '../pages/project/kwizzle-mobile-app-details';
 import Blog from '../pages/blog';
 import BlogDetails from '../pages/blog/blog-details';
 import Contact from '../pages/contact';
@@ -46,7 +58,6 @@ import Contact from '../pages/contact';
 import Preloader from "../components/Preloader";
 import ScrollToTop from '../components/ScrollTop';
 import LoadTop from '../components/ScrollTop/LoadTop'
-import MobileAppDevelopmentService from "../pages/service/ServiceDetailsMain";
 
 
 const App = () => {
@@ -82,7 +93,7 @@ const App = () => {
                 <ScrollToTop />
                 <LoadTop />
                 <Routes>
-                    <Route path="/" exact element={<Home/>} />
+                    <Route path="/" exact element={<Home />} />
                     <Route path="/home-2" element={<HomeTwo />} />
                     <Route path="/about-me" element={<AboutMe />} />
                     <Route path="/home-3" element={<HomeThree />} />
@@ -106,6 +117,18 @@ const App = () => {
                     <Route path="/project-details" element={<ProjectDetails />} />
                     <Route path="/product" element={<Product />} />
                     <Route path="/product-details" element={<ProductDetails />} />
+                    <Route path="/certificates" element={<Certificates />} />
+                    <Route path="/books" element={<Books />} />
+                    <Route path="/books/applying-ml-in-bioinformatics-igi" element={<ApplyingMLInBioinformaticsIGIDetails />} />
+                    <Route path="/books/innovation-in-ml-iot-water-management-igi" element={<InnovationsInMLIoTWaterManagementIGIDetails />} />
+                    <Route path="/books/quantum-in-biomedical-igi" element={<QuantumInBiomedicalIGIDetails />} />
+                    <Route path="/books/ai-driven-alzheimer-disease-prediction-igi" element={<AIDrivenAlzheimerIGIDetails />} />
+                    <Route path="/books/quantum-machine-learning-degruyter" element={<QuantumMachineLearningDeGruyterDetails />} />
+                    <Route path="/call-for-chapters" element={<CFC />} />
+                    <Route path="/cfc/secure-energy-wiley" element={<SecureEnergyWileyCFCDetails />} />
+                    <Route path="/cfc/multimodal-data-fusion-wiley" element={<MultimodalDataFusionCFCDetails />} />
+                    <Route path="/cfc/iom-for-healthcare-wiley" element={<IoMForHealthcareCFCDetails />} />
+                    <Route path="/projects/kwizzle-mobile-app" element={<KwizzleMobileAppDetailsDetails />} />
                     <Route path="/job" element={<Job />} />
                     <Route path="/job-details" element={<JobDetails />} />
                     <Route path="/faq" element={<Faq />} />

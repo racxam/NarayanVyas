@@ -34,29 +34,29 @@ const Banner = () => {
                             <div className="slider-3__section-title">
                                 <h5 className="section-blue-subtitle char-anim">We Are Business Agency!</h5>
                                 <h4 className="hero-2-title char-anim">We Are Best <span>Agency </span>
-                                Startup Business.</h4>
+                                    Startup Business.</h4>
                             </div>
                             <div className="slider-3__content">
                                 <div className="slider-3__text wow animate__fadeInUp" data-wow-duration="1.1s">
-                                <p className="char-anim-2">Business tailored it design, management & support services <br/>
-                                    business agency elit, sed do eiusmod tempor.</p>
+                                    <p className="char-anim-2">Business tailored it design, management & support services <br />
+                                        business agency elit, sed do eiusmod tempor.</p>
                                 </div>
                                 <div className="slider-3__content-list wow animate__fadeInUp" data-wow-duration="1.1s">
-                                <ul>
-                                    <li><i className="fal fa-check-square"></i><span>Business ndisse suscipit sagittis leo.</span>
-                                    </li>
-                                    <li><i className="fal fa-check-square"></i><span>We gives employer management</span></li>
-                                </ul>
+                                    <ul>
+                                        <li><i className="fal fa-check-square"></i><span>Business ndisse suscipit sagittis leo.</span>
+                                        </li>
+                                        <li><i className="fal fa-check-square"></i><span>We gives employer management</span></li>
+                                    </ul>
                                 </div>
                                 <div className="slider-3__button">
-                                <Link to="/contact" className="main-btn-sm mr-20 mb-20 wow animate__fadeInUp tp-btn-hover alt-color" data-wow-duration="1.1s">
-                                    <span>Get A Quote</span>
-                                    <b></b>
-                                </Link>
-                                <Link to="/contact" className="border-btn mb-20 wow animate__fadeInUp tp-btn-hover alt-color" data-wow-duration="1.1s">
-                                    <span>Contact Us</span>
-                                    <b></b>
-                                </Link>
+                                    <Link to="/contact" className="main-btn-sm mr-20 mb-20 wow animate__fadeInUp tp-btn-hover alt-color" data-wow-duration="1.1s">
+                                        <span>Book Appointment</span>
+                                        <b></b>
+                                    </Link>
+                                    <Link to="/contact" className="border-btn mb-20 wow animate__fadeInUp tp-btn-hover alt-color" data-wow-duration="1.1s">
+                                        <span>Contact Us</span>
+                                        <b></b>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

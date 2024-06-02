@@ -12,7 +12,7 @@ const HeaderStyleTwo = (props) => {
 
 	const [menuOpen, setMenuOpen] = useState(false)
 	const [offCanvasOpen, setOffCanvasOpen] = useState(false)
-	const [isVisible, setIsVisible] = useState(false);	
+	const [isVisible, setIsVisible] = useState(false);
 	const [innerWidth, setInnerWidth] = useState(window.innerWidth);
 
 	const [home, setHome] = useState(false)
@@ -30,7 +30,7 @@ const HeaderStyleTwo = (props) => {
 		}
 	};
 
-    const location = useLocation();
+	const location = useLocation();
 
 	useEffect(() => {
 		// Sticky is displayed after scrolling for 100 pixels
@@ -75,8 +75,8 @@ const HeaderStyleTwo = (props) => {
 									<div className="header__main-menu header__white-menu text-center">
 										<nav id="mobile-menu">
 											<ul>
-												<MenuItems 
-													parentMenu = {parentMenu}
+												<MenuItems
+													parentMenu={parentMenu}
 												/>
 											</ul>
 										</nav>
@@ -85,10 +85,10 @@ const HeaderStyleTwo = (props) => {
 								<div className="col-xxxl-4 col-xxl-3 col-xl-3 col-lg-2 col-5 col-md-6">
 									<div className="header__action header__action-border d-flex justify-content-end align-items-center">
 										<div className="header__menu-bar">
-											<button onClick={() => {setOffCanvasOpen(true)}} className={menuOpen ? "it-menu-bar bars-color open" : "it-menu-bar bars-color"}><i className="far fa-bars"></i></button>
+											<button onClick={() => { setOffCanvasOpen(true) }} className={menuOpen ? "it-menu-bar bars-color open" : "it-menu-bar bars-color"}><i className="far fa-bars"></i></button>
 										</div>
-										<Link  to="/contact" className="main-btn-sm tp-btn-hover alt-color-white d-none d-xxl-block">
-											<span>Get A Quote</span>
+										<Link to="/contact" className="main-btn-sm tp-btn-hover alt-color-white d-none d-xxl-block">
+											<span>Book Appointment</span>
 											<b></b>
 										</Link>
 									</div>
@@ -100,12 +100,12 @@ const HeaderStyleTwo = (props) => {
 			</header>
 
 			<div className="it-offcanvas-area">
-				<div className={ offCanvasOpen ? 'itoffcanvas opened' : 'itoffcanvas' }>
+				<div className={offCanvasOpen ? 'itoffcanvas opened' : 'itoffcanvas'}>
 					<div className="it-offcanva-bottom-shape d-none d-xxl-block">
 						<img src={Shape} alt="" />
 					</div>
 					<div className="itoffcanvas__close-btn">
-						<button onClick={() => {setOffCanvasOpen(false)}} className="close-btn"><i className="fal fa-times"></i></button>
+						<button onClick={() => { setOffCanvasOpen(false) }} className="close-btn"><i className="fal fa-times"></i></button>
 					</div>
 					<div className="itoffcanvas__logo">
 						<Link to="/">
@@ -122,27 +122,27 @@ const HeaderStyleTwo = (props) => {
 								<ul>
 									<MenuItems />
 								</ul>
-                           </nav>
+							</nav>
 						</div>
 					</div>
 					<div className="itoffcanvas__info">
 						<h3 className="offcanva-title">Get In Touch</h3>
 						<div className="it-info-wrapper mb-20 d-flex align-items-center">
 							<div className="itoffcanvas__info-icon">
-							<a href="#"><i className="fal fa-envelope"></i></a>
+								<a href="#"><i className="fal fa-envelope"></i></a>
 							</div>
 							<div className="itoffcanvas__info-address">
-							<span>Email</span>
-							<a href="maito:hello@yourmail.com">hello@yourmail.com</a>
+								<span>Email</span>
+								<a href="maito:hello@yourmail.com">hello@yourmail.com</a>
 							</div>
 						</div>
 						<div className="it-info-wrapper mb-20 d-flex align-items-center">
 							<div className="itoffcanvas__info-icon">
-							<a href="#"><i className="fal fa-phone-alt"></i></a>
+								<a href="#"><i className="fal fa-phone-alt"></i></a>
 							</div>
 							<div className="itoffcanvas__info-address">
-							<span>Phone</span>
-							<a href="tel:(00)45611227890">(00) 456 1122 7890</a>
+								<span>Phone</span>
+								<a href="tel:(00)45611227890">(00) 456 1122 7890</a>
 							</div>
 						</div>
 						<div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -152,7 +152,7 @@ const HeaderStyleTwo = (props) => {
 							<div className="itoffcanvas__info-address">
 								<span>Location</span>
 								<a href="htits://www.google.com/maps/@37.4801311,22.8928877,3z" target="_blank">Riverside 255,
-								San Francisco, USA </a>
+									San Francisco, USA </a>
 							</div>
 						</div>
 					</div>
@@ -166,9 +166,9 @@ const HeaderStyleTwo = (props) => {
 					</div>
 				</div>
 			</div>
-			
-			{ offCanvasOpen ?
-				<div className="body-overlay apply" onClick={() => {setOffCanvasOpen(false)}}></div> :
+
+			{offCanvasOpen ?
+				<div className="body-overlay apply" onClick={() => { setOffCanvasOpen(false) }}></div> :
 				<div className="body-overlay"></div>
 			}
 		</>
