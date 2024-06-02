@@ -15,6 +15,7 @@ import HomePagePublications from './HomePagePublications';
 import Contact from '../../components/Contact/ContactTwo'
 
 import CertificationSection from './CertificationSection';
+import CFCComponent from '../../components/CallForChapters/index'
 
 const HomeMain = () => {
 	return (
@@ -40,6 +41,8 @@ const HomeMain = () => {
 
 			<HomePagePublications />
 
+			<CFCComponent/>
+			
 			<Project
 				slidesToShow={"4"}
 			/>
@@ -56,6 +59,7 @@ const HomeMain = () => {
 			{/* <Blog /> */}
 
 			<CTA />
+			
 
 
 
