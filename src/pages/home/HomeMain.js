@@ -11,6 +11,7 @@ import Project from './ProjectSection';
 import Service from './ServiceSection';
 import Testimonial from './TestimonialSection';
 import Social from './SocialSection';
+import HomePagePublications from './HomePagePublications';
 import Contact from '../../components/Contact/ContactTwo'
 
 import CertificationSection from './CertificationSection';
@@ -20,37 +21,40 @@ const HomeMain = () => {
 		<main>
 
 			<Banner />
-			
+
 			{/* Currently hiding the Brands menu as it might cause copyright related issues */}
 			{/* <Brand /> */}
-			
+
 
 			{/* Hiding this seciton also coz it is same as the project section  */}
 			{/* <Feature /> */}
 
 			<About />
-			
+
 			<Counter />
-			
+
 			<Service />
-			
-			<CertificationSection/>
-			
-			<Project 
-			slidesToShow={"4"}
+
+
+			<CertificationSection />
+
+			<HomePagePublications />
+
+			<Project
+				slidesToShow={"4"}
 			/>
-			
-			
+
+
 			{/* <Social /> */}
-			
+
 			{/* <Company /> */}
-			
+
 			{/* <Testimonial /> */}
-			<Contact/>
-			
-			 
+			<Contact />
+
+
 			{/* <Blog /> */}
-			
+
 			<CTA />
 
 
