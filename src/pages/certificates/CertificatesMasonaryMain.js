@@ -34,8 +34,8 @@ import bgImg from '../../assets/img/cta/cta-bg-2.png';
 
 const CertificatesMasonaryMain = () => {
 	const breakpointColumnsObj = {
-		default: 4,
-		1200: 4,
+		default: 5,
+		1200: 5,
 		992: 3,
 		576: 2
 	};
