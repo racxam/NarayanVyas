@@ -9,7 +9,6 @@ import quantumMachineLearningDeGruyterImg from '../assets/img/books/quantum-mach
 const booksData = [
     {
         id: 'ai-driven-alzheimer-disease-detection',
-        permalink: 'ai-driven-alzheimer-disease-prediction-igi',
         title: {
             text: "AI-Driven Alzheimer's Disease Detection and Prediction",
             image: aiDrivenAlzheimerImg
@@ -67,8 +66,7 @@ const booksData = [
         ]
     },
     {
-        id: 'applying-ml-techniques-to-bioinformatics',
-        permalink: 'applying-ml-in-bioinformatics-igi',
+        id: 'applying-ml-techniques-in-bioinformatics',
         title: {
             text: "Applying Machine Learning Techniques to Bioinformatics",
             image: applyingMLInBioinformaticsImg
@@ -117,7 +115,6 @@ const booksData = [
     },
     {
         id: 'innovations-in-ml-iot-for-water-management',
-        permalink: 'innovations-in-ml-iot-water-management-igi',
         title: {
             text: "Innovations in Machine Learning and IoT for Water Management",
             image: innovationsInMLIoTWaterManagementImg
@@ -162,7 +159,6 @@ const booksData = [
     },
     {
         id: 'quantum-machine-learning-quantum-algorithms-neural-networks',
-        permalink: 'quantum-machine-learning-degruyter',
         title: {
             text: "Quantum Machine Learning: Quantum Algorithms and Neural Networks",
             image: quantumMachineLearningDeGruyterImg
@@ -189,7 +185,6 @@ const booksData = [
         ]
     }, {
         id: 'quantum-innovations-nexus-biomedical-intelligence',
-        permalink: 'quantum-in-biomedical-igi',
         title: {
             text: "Quantum Innovations at the Nexus of Biomedical Intelligence",
             image: quantumInBiomedicalIGIImg

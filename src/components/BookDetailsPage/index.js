@@ -1,9 +1,8 @@
-// src/components/CallForChapterDetails.js
 
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
-const index = ({
+const BookDetailsPage = ({
     title,
     price,
     publisher,
@@ -104,4 +103,4 @@ const index = ({
     );
 }
 
-export default index;
+export default BookDetailsPage;

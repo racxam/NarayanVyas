@@ -36,7 +36,7 @@ const BooksMain = () => {
 									Title={book.title.text}
 									Publisher={book.publisher}
 									Price={book.price}
-									Url={book.permalink}
+									Url={book.id}
 								/>
 							</div>
 						))}
