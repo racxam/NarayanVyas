@@ -2,7 +2,7 @@ import React from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
 import bgImg from '../../assets/img/cta/cta-bg-2.png';
-import publications from './publicationsData'; // Import the publications data
+import publications from '../../data/publicationsData';
 import './PublicationsMain.css'; // Import the CSS file
 
 // Function to parse date in MM/YYYY format

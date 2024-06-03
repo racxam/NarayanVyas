@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import publications from '../about/publicationsData'; // Import the publications data
+import publications from '../../data/publicationsData'; // Import the publications data
 import './HomePagePublications.css'; // Import the CSS file
 
 import SectionTitle from '../../components/SectionTitle';
