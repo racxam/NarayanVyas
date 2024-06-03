@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Logo from '../../assets/img/logo/footer-logo.png';
+import PublicationStatsCard from '../../components/PublicationStatsCard';
 import footerBG from '../../assets/img/footer/footer-bg.jpg';
 
 const Footer = (props) => {
@@ -71,9 +71,8 @@ const Footer = (props) => {
                         <div className="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-7 mb-70 wow animate__fadeInUp"
                             data-wow-duration="1.1s">
                             <div className="footer__widget footer-col-4">
-                                <h4 className="footer__title"><a href="#">Need Consultancy?</a></h4>
                                 <div className="footer__text">
-                                    <p>Empowering Innovation in Mobile Development, IoT, and Research</p>
+                                    <PublicationStatsCard />
                                 </div>
                             </div>
                         </div>
