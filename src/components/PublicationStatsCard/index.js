@@ -3,6 +3,8 @@ import { Card, CardContent, Typography, Box, Table, TableBody, TableCell, TableR
 import { Book, Article, LibraryBooks, Person, Star } from '@mui/icons-material';
 import { fetchScopusStats } from './scopusApi';
 
+// Scopus Page 
+
 const PublicationStatsCard = () => {
     const [stats, setStats] = useState([
         { icon: <Star style={{ color: '#FFDC60' }} />, heading: 'Author ID', text: '57221967474', link: 'https://www.scopus.com/authid/detail.uri?authorId=57221967474' },
