@@ -29,7 +29,7 @@ const ProjectMain = () => {
 			<div class='container mt-100 mb-100'>
 			</div>
 			<CTA
-				ctaBG={bgImg}
+				btnText={"Book Appointment"}
 			/>
 
 		</main>

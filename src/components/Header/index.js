@@ -164,34 +164,35 @@ const Header = (props) => {
 							</div>
 							<div className="itoffcanvas__info-address">
 								<span>Email</span>
-								<a href="maito:contact@narayanvyas.com">contact@narayanvyas.com</a>
+								<a href="maito:contact@narayanvyas.com" target="_blank">contact@narayanvyas.com</a>
 							</div>
 						</div>
 						<div className="it-info-wrapper mb-20 d-flex align-items-center">
 							<div className="itoffcanvas__info-icon">
-								<a href="#"><i className="fal fa-phone-alt"></i></a>
+								<a href="#"><i class="fab fa-brands fa-github"></i></a>
 							</div>
 							<div className="itoffcanvas__info-address">
-								<span>Phone</span>
-								<a href="tel:+918560014421">+918560014421</a>
+								<span>Github</span>
+								<a href="https://github.com/narayanvyas" target="_blank">narayanvyas</a>
 							</div>
 						</div>
 						<div className="it-info-wrapper mb-20 d-flex align-items-center">
 							<div className="itoffcanvas__info-icon">
-								<a href="#"><i className="fas fa-map-marker-alt"></i></a>
+								<a href="#"><i className="fab fa-brands fa-linkedin"></i></a>
 							</div>
 							<div className="itoffcanvas__info-address">
-								<span>Location</span>
-								<a href="htits://www.google.com/maps/@37.4801311,22.8928877,3z" target="_blank">Bhilwara</a>
+								<span>LinkedIn</span>
+								<a href="https://www.linkedin.com/in/narayanvyas87/" target="_blank">Narayan Vyas</a>
 							</div>
 						</div>
 					</div>
 					<div className="itoffcanvas__social">
 						<div className="social-icon">
-							<a href="#"><i className="fab fa-twitter"></i></a>
-							<a href="#"><i className="fab fa-instagram"></i></a>
-							<a href="#"><i className="fab fa-facebook-square"></i></a>
-							<a href="#"><i className="fab fa-dribbble"></i></a>
+							<a href="https://www.twitter.com/narayanvyas87" target="_blank"><i className="fab fa-twitter"></i></a>
+							<a href="https://www.facebook.com/narayanvyas87" target="_blank"><i className="fab fa-facebook-square"></i></a>
+							<a href="https://www.linkedin.com/in/narayanvyas87/" target="_blank"><i className="fab fa-brands fa-linkedin"></i></a>
+							<a href="https://www.instagram.com/narayanvyas87" target="_blank"><i class="fab fa-brands fa-instagram"></i></a>
+
 						</div>
 					</div>
 				</div>

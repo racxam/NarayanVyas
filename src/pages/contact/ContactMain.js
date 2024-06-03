@@ -15,7 +15,7 @@ const ContactMain = () => {
 			<ContactTwo />
 			
 			<CTA
-				ctaBG={bgImg}
+
 				btnText="Book Appointment"
 			/>
 

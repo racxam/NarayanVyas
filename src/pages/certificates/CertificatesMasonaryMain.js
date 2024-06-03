@@ -23,7 +23,7 @@ const CertificatesMasonaryMain = () => {
 
 			<CertificationSection />
 			<CTA
-				ctaBG={bgImg}
+				btnText={"Book Appointment"}
 			/>
 		</main>
 	);

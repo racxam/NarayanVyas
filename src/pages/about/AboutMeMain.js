@@ -105,11 +105,7 @@ const HomeMain = () => {
 			</div> */}
 
 			<ContactTwo />
-
-			<CTA
-				ctaBG={bgImg}
-				btnText="Book Appointment"
-			/>
+			<CTA />
 		</main>
 	);
 }

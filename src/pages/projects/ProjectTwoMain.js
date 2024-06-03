@@ -311,9 +311,9 @@ const ProjectTwoMain = () => {
 				</div>
 			</div>
 			
-      <CTA
-        ctaBG={bgImg}
-      />
+			<CTA
+				btnText={"Book Appointment"}
+			/>
 
     </main>
 	);

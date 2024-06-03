@@ -53,7 +53,9 @@ const PrivacyPolicyMain = () => {
 				<h5>Conclusion</h5>
 				<p>We are committed to protecting your privacy and ensuring that your personal data is handled securely. If you have any further questions or require additional information, please do not hesitate to reach out to us.</p>
 			</div>
-			<CTA ctaBG={bgImg} />
+			<CTA
+				btnText={"Book Appointment"}
+			/>
 		</main>
 	);
 }

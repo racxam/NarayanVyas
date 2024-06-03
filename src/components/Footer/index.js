@@ -26,10 +26,10 @@ const Footer = (props) => {
                                         <p>Empowering Innovation in Mobile Development, IoT, and Research</p>
                                     </div>
                                     <div className="footer-3__social-box">
-                                        <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i className="fab fa-twitter"></i></a>
-                                        <a href="#"><i className="fab fa-google-plus-g"></i></a>
-                                        <a href="#"><i className="fab fa-pinterest-p"></i></a>
+                                        <a href="https://www.facebook.com/narayanvyas87"><i className="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.twitter.com/narayanvyas87"><i className="fab fa-twitter"></i></a>
+                                        <a href="https://www.instagram.com/narayanvyas87"><i className="fab fa-brands fa-instagram"></i></a>
+                                        <a href="https://github.com/narayanvyas"><i className="fab fa-brands fa-github"></i></a>
                                     </div>
                                 </div>
                             </div>

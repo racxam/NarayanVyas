@@ -49,7 +49,9 @@ const TermsOfServiceMain = () => {
 				<h5>Breaches of these terms and conditions</h5>
 				<p>If you breach these terms, we may take appropriate action, including suspending your access to the website.</p>
 			</div>
-			<CTA ctaBG={bgImg} />
+			<CTA
+				btnText={"Book Appointment"}
+			/>
 		</main>
 	);
 }

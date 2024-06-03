@@ -15,12 +15,12 @@ const SocialFeed = (props) => {
                             <img src={socialImg1} alt="" />
                         </div>
                         <div className="social__text">
-                            <h4 className="social__title"><a href="#">Slack Best</a></h4>
+                            <h4 className="social__title"><a href="https://github.com/narayanvyas">GitHub</a></h4>
                             <span>MESSAGING</span>
                         </div>
                     </div>
                     <div className="social__link contact__color-1">
-                        <a href="#"><span><i className="fal fa-arrow-right"></i></span></a>
+                        <a href="https://github.com/narayanvyas"><span><i className="fal fa-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -31,12 +31,12 @@ const SocialFeed = (props) => {
                             <img src={socialImg2} alt="" />
                         </div>
                         <div className="social__text">
-                            <h4 className="social__title"><a href="#">Instagram</a></h4>
+                            <h4 className="social__title"><a href="https://www.instagram.com/narayanvyas87">Instagram</a></h4>
                             <span>MESSAGING</span>
                         </div>
                     </div>
                     <div className="social__link social__color-2">
-                        <a href="#"><span><i className="fal fa-arrow-right"></i></span></a>
+                        <a href="https://www.instagram.com/narayanvyas87"><span><i className="fal fa-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -47,12 +47,12 @@ const SocialFeed = (props) => {
                             <img src={socialImg3} alt="" />
                         </div>
                         <div className="social__text">
-                            <h4 className="social__title"><a href="#">Twitter</a></h4>
+                            <h4 className="social__title"><a href="https://www.twitter.com/narayanvyas87">Twitter</a></h4>
                             <span>MESSAGING</span>
                         </div>
                     </div>
                     <div className="social__link social__color-3">
-                        <a href="#"><span><i className="fal fa-arrow-right"></i></span></a>
+                        <a href="https://www.twitter.com/narayanvyas87"><span><i className="fal fa-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -63,12 +63,12 @@ const SocialFeed = (props) => {
                             <img src={socialImg4} alt="" />
                         </div>
                         <div className="social__text">
-                            <h4 className="social__title"><a href="#">Pinterest</a></h4>
+                            <h4 className="social__title"><a href="https://www.linkedin.com/in/narayanvyas87/" target='_blank'>Linkedin </a></h4>
                             <span>MESSAGING</span>
                         </div>
                     </div>
                     <div className="social__link social__color-4">
-                        <a href="#"><span><i className="fal fa-arrow-right"></i></span></a>
+                        <a href="https://www.linkedin.com/in/narayanvyas87/"><span><i className="fal fa-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>

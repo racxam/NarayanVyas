@@ -2,6 +2,7 @@ import React from 'react';
 import InnovationsInMLIoTWaterManagementIGIDetailsMain from './InnovationsInMLIoTWaterManagementIGIDetailsMain';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import CTA from '../../components/CTA/index';
 
 const InnovationsInMLIoTWaterManagementIGIDetails = () => {
   return (
@@ -16,6 +17,9 @@ const InnovationsInMLIoTWaterManagementIGIDetails = () => {
           <Footer />
         </div>
       </div>
+      <CTA
+				btnText={"Book Appointment"}
+			/>
 
     </>
   );

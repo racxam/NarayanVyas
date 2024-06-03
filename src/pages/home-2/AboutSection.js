@@ -41,7 +41,7 @@ const About = () => {
                             <div className="about-2__section-title">
                                 <h4 className="section-subtitle char-anim">About me</h4>
                                 <h3 className="section-title char-anim">Delivering Excellence in Technology and Research</h3>
-                            </div>
+                            </div> 
                             <div className="about-2__text">
                                 <p className="char-anim-2">With 8+ years of professional experience, I have great contribution in research and development</p>
                             </div>

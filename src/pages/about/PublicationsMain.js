@@ -52,7 +52,7 @@ const PublicationsMain = () => {
 					</div>
 				))}
 			</div>
-			<CTA ctaBG={bgImg} />
+			<CTA />
 		</main>
 	);
 }
