@@ -4,7 +4,7 @@ import CertificatesMasonaryMain from '../../components/certificates/certificateM
 
 const CertificationSection = () => {
     return (
-        <div className="col-xl-12 col-lg-8 wow animate__fadeIn mt-100" data-wow-duration="1.1s">
+        <div className="col-xl-12 col-lg-8 wow animate__fadeIn mt-70" data-wow-duration="1.1s">
             <div className="row justify-content-center">
                 <div className="col-xl-6 col-lg-6 wow animate__fadeInUp" data-wow-duration="1.1s">
                     <SectionTitle
