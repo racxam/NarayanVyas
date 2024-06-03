@@ -21,7 +21,7 @@ const PublicationStatsCard = () => {
             setError(null);
 
             try {
-                const authorId = 'your_author_id';
+                const authorId = 'your_author_id';  // Replace with actual author ID
                 const data = await fetchScopusStats(authorId);
 
                 console.log('Scopus data fetched:', data);
