@@ -133,7 +133,7 @@ const ResearchAndDevelopmentService = () => {
 			</div>
 
 			<CTA
-				ctaBG={bgImg}
+
 			/>
 
 		</main>

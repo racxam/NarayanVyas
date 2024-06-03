@@ -133,7 +133,7 @@ const TrainingAndWorkshopsService = () => {
 			</div>
 
 			<CTA
-				ctaBG={bgImg}
+
 			/>
 
 		</main>

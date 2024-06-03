@@ -12,7 +12,7 @@ const CTA = () => {
         <img src={ctaIcon} alt="" />
       </div>
       <div className="container">
-        <div className="row">
+        <div className="row"> 
           <div className="col-12">
             <div className="cta__section-wrapper text-center">
               <div className="cta__section-box">

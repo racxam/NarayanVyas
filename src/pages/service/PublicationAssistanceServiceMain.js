@@ -134,7 +134,7 @@ const PublicationAssistanceService = () => {
 			</div>
 
 			<CTA
-				ctaBG={bgImg}
+
 			/>
 
 		</main>

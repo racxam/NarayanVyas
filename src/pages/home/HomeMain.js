@@ -33,12 +33,12 @@ const HomeMain = () => {
 
 			<About />
 
-			<Counter />
 
 			<Service />
 
 
 			<CertificationSection />
+			<Counter />
 
 			<HomePagePublications />
 

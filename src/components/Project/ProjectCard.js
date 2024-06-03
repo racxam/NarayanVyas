@@ -7,7 +7,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 const ProjectCard = ({ project }) => {
     return (
-        <Card sx={{ margin:'auto', boxShadow: 3, borderRadius: 2 ,width:"360px"}}>
+        <Card sx={{ margin:'auto', boxShadow: 3, borderRadius: 2 ,width:"360px" ,marginBottom:"3px"}}>
             <Link to={project.link}>
                 <CardMedia
                     component="img"

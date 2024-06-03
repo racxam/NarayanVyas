@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import bgImg from '../../assets/img/slider/slider-bg-3.png';
 import Image from '../../assets/img/about/about-5.png';
 
-import shapeImg1 from '../../assets/img/slider/shape-32.png';
+import shapeImg1 from '../../assets/img/slider/shape-32.png'; 
 import shapeImg2 from '../../assets/img/slider/shape-33.png';
 import shapeImg3 from '../../assets/img/slider/shape-34.png';
 import shapeImg4 from '../../assets/img/slider/shape-35.png';
@@ -47,7 +47,7 @@ const Breadcrumb = (props) => {
 					</div>
 					<div className="col-xxl-6 col-xl-6 col-lg-6">
 						<div className="breadcrumb__main-img text-end">
-						<img src={breadcrumbsImg ? breadcrumbsImg : Image} alt="" />
+						<img src={breadcrumbsImg ? breadcrumbsImg : Image} alt="" style={{maxWidth:"50%"}} />
 						</div>
 					</div>
 				</div>

@@ -135,7 +135,7 @@ const IoTSolutionsService = () => {
 			</div>
 
 			<CTA
-				ctaBG={bgImg}
+
 			/>
 
 		</main>

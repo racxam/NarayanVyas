@@ -24,7 +24,9 @@ const DisclaimerMain = () => {
 				<h5>Update</h5>
 				<p>This site disclaimer was last updated on: June 2, 2024. Should we update, amend, or make any changes to this document, those changes will be prominently posted here.</p>
 			</div>
-			<CTA ctaBG={bgImg} />
+			<CTA 
+			btnText={"Book Appointment"}
+			 />
 		</main>
 	);
 }

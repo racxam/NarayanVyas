@@ -111,7 +111,7 @@ const ServiceMain = () => {
 			</div>
 
 			<CTA
-				ctaBG={bgImg}
+
 			/>
 
 		</main>

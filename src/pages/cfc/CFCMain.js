@@ -40,7 +40,7 @@ const CFCMain = () => {
 					</div>
 				</div>
 			</div>
-			<CTA ctaBG={bgImg} />
+			<CTA />
 		</main>
 	);
 }

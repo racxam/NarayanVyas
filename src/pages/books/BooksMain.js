@@ -43,7 +43,9 @@ const BooksMain = () => {
 					</div>
 				</div>
 			</div>
-			<CTA ctaBG={bgImg} />
+			<CTA 
+
+			/>
 		</main>
 	);
 }

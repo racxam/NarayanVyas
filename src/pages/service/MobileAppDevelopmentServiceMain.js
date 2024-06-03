@@ -133,7 +133,7 @@ const MobileAppDevelopmentService = () => {
 			</div>
 
 			<CTA
-				ctaBG={bgImg}
+
 			/>
 
 		</main>
