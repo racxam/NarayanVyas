@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const sendEmail = async (formData) => {
-    const apiKey = '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'; // Use your Brevo API key
+    const apiKey = ''; // Use your Brevo API key
     const url = 'https://api.brevo.com/v3/smtp/email';
 
     const emailData = {
