@@ -5,8 +5,8 @@ import Shape from '../../assets/img/service/sv-item-shape-1.png'
 import Image from '../../assets/img/service/sv-icon-shape-1.png'
 
 const SingleService = (props) => {
-	const { itemClass, titleClass, descClass, shapeImg, serviceIcon, serviceIconBg, Title, Description, btnText, btnURL, btnClass } = props;
-	return(
+    const { itemClass, titleClass, descClass, shapeImg, serviceIcon, serviceIconBg, Title, Description, btnText, btnURL, btnClass } = props;
+    return (
         <div className={itemClass ? itemClass : 'service__item service__border-1  p-relative fix'}>
             <div className="service__shape">
                 <img src={Shape ? Shape : shapeImg} alt="" />
@@ -31,7 +31,7 @@ const SingleService = (props) => {
                 </Link>
             </div>
         </div>
-	)
+    )
 }
 
 export default SingleService

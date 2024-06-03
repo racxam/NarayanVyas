@@ -1,21 +1,15 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Mousewheel } from 'swiper';
-
-import { Link } from 'react-router-dom';
 import SectionTitle from '../../components/SectionTitle';
-
-import projectImg1 from '../../assets/img/project/pro-1.jpg';
-import projectImg2 from '../../assets/img/project/pro-2.jpg';
-import projectImg3 from '../../assets/img/project/pro-3.jpg';
-import projectImg4 from '../../assets/img/project/pro-1.jpg';
-import projectImg5 from '../../assets/img/project/pro-3.jpg';
-import projectImg6 from '../../assets/img/project/pro-2.jpg';
+import { Card, CardContent, CardMedia, Typography, Box, Divider } from '@mui/material';
+import projects from '../../data/projectsData';
+import ProjectCard from '../../components/Project/ProjectCard';
 
 SwiperCore.use([Mousewheel]);
 
-const Project = ({ subTitle, title, slidesToShow }) => {
 
+const Project = ({ subTitle, title, slidesToShow = 4 }) => {
     const sliderOption = {
         pagination: {
             el: '.project-slider-dots',
@@ -30,26 +24,26 @@ const Project = ({ subTitle, title, slidesToShow }) => {
         },
         loop: true,
         spaceBetween: 30,
-        slidesPerView: slidesToShow ? slidesToShow : '3',
+        slidesPerView: slidesToShow,
         breakpoints: {
             0: {
                 slidesPerView: 1,
             },
             576: {
-
-                slidesPerView: slidesToShow ? slidesToShow - 2 : '2',
+                slidesPerView: 2,
             },
             991: {
-                slidesPerView: slidesToShow ? slidesToShow : '3',
-
-
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: slidesToShow,
             },
         },
-    }
+    };
 
     return (
-        <div className="project__area project-height pt-10">
-            <div className="container">
+        <div className="product__area product__plr mt-100 mb-70">
+            <div className="container-fluid">
                 <div className="row align-items-end pb-60">
                     <div className="col-lg-6 col-md-9">
                         <SectionTitle
@@ -71,51 +65,21 @@ const Project = ({ subTitle, title, slidesToShow }) => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="container-fluid" style={{ width: "83vw" }}>
                 <div className="swiper-container project__active">
-                    <Swiper {...sliderOption} mousewheel={true} className="swiper-wrapper">
-                        <SwiperSlide className="swiper-slide">
-                            <div className="project__item">
-                                <Link to="/project-details"><img src={projectImg1} alt="" /></Link>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <div className="project__item">
-                                <Link to="/project-details"><img src={projectImg2} alt="" /></Link>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <div className="project__item">
-                                <Link to="/project-details"><img src={projectImg3} alt="" /></Link>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <div className="project__item">
-                                <Link to="/project-details"><img src={projectImg4} alt="" /></Link>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <div className="project__item">
-                                <Link to="/project-details"><img src={projectImg5} alt="" /></Link>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <div className="project__item">
-                                <Link to="/project-details"><img src={projectImg6} alt="" /></Link>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                            <div className="project__item">
-                                <Link to="/project-details"><img src={projectImg3} alt="" /></Link>
-                            </div>
-                        </SwiperSlide>
+                    <Swiper {...sliderOption} className="swiper-wrapper">
+                        {projects.map(project => (
+                            <SwiperSlide key={project.id} className="swiper-slide">
+                                <div className="project__item" style={{ width: '100%' }}>
+                                    <ProjectCard project={project} />
+                                </div>
+                            </SwiperSlide>
+                        ))}
                     </Swiper>
                     <div className="project-slider-dots"></div>
                 </div>
             </div>
         </div>
     );
-}
+};
 
 export default Project;
