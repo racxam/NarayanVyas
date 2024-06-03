@@ -133,7 +133,7 @@ const TrainingAndWorkshopsService = () => {
 			</div>
 
 			<CTA
-
+				btnText={"Book Appointment"}
 			/>
 
 		</main>

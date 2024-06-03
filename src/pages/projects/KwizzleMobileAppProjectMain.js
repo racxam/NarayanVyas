@@ -51,7 +51,7 @@ const KwizzleMobileAppProjectMain = () => {
 			</div>
 
 			<CTA
-
+				btnText={"Book Appointment"}
 			/>
 
 		</main>

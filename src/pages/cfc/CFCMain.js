@@ -40,7 +40,9 @@ const CFCMain = () => {
 					</div>
 				</div>
 			</div>
-			<CTA />
+			<CTA
+				btnText={"Book Appointment"}
+			/>
 		</main>
 	);
 }

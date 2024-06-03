@@ -111,7 +111,7 @@ const ServiceMain = () => {
 			</div>
 
 			<CTA
-
+				btnText={"Book Appointment"}
 			/>
 
 		</main>

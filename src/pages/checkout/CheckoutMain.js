@@ -382,7 +382,7 @@ const HomeMain = () => {
 			</section>
 			
 			<CTA
-				ctaBG={bgImg}
+				btnText={"Book Appointment"}
 			/>
 
 		</main>

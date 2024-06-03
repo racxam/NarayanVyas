@@ -44,6 +44,7 @@ const IoMSmartHealthcareWileyDetailsMain = () => {
           ))}
         </div>
       </div>
+      
       <CTA 
       btnText={"Book Appointment"} />
     </main>

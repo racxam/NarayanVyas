@@ -43,8 +43,8 @@ const BooksMain = () => {
 					</div>
 				</div>
 			</div>
-			<CTA 
-
+			<CTA
+				btnText={"Book Appointment"}
 			/>
 		</main>
 	);

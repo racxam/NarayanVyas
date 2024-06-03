@@ -44,7 +44,9 @@ const AIDrivenAlzheimerIGIDetailsMain = () => {
           ))}
         </div>
       </div>
-      <CTA  btnText={"Book Appointment"} />
+      <CTA
+				btnText={"Book Appointment"}
+			/>
     </main>
   );
 }

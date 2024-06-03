@@ -134,7 +134,7 @@ const PublicationAssistanceService = () => {
 			</div>
 
 			<CTA
-
+				btnText={"Book Appointment"}
 			/>
 
 		</main>

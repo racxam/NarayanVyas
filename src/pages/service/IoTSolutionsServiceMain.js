@@ -135,7 +135,7 @@ const IoTSolutionsService = () => {
 			</div>
 
 			<CTA
-
+				btnText={"Book Appointment"}
 			/>
 
 		</main>

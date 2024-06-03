@@ -133,7 +133,7 @@ const MobileAppDevelopmentService = () => {
 			</div>
 
 			<CTA
-
+				btnText={"Book Appointment"}
 			/>
 
 		</main>

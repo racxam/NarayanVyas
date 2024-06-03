@@ -157,7 +157,7 @@ const JobDetailsMain = () => {
 			</div>
 			
 			<CTA
-				ctaBG={bgImg}
+				btnText={"Book Appointment"}
 			/>
 		</main>
 	);

@@ -100,7 +100,7 @@ const CartMain = () => {
 			</section>
 			
 			<CTA
-				ctaBG={bgImg}
+				btnText={"Book Appointment"}
 			/>
 
 		</main>

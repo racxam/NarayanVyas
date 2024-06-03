@@ -114,8 +114,8 @@ const ProjectDetailsMain = () => {
      </div>
 
      <CTA
-      ctaBG={bgImg}
-     />
+				btnText={"Book Appointment"}
+			/>
 
    </main>
 	);

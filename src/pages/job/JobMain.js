@@ -59,8 +59,8 @@ const JobMain = () => {
 			</div>
 
 				 
-			<Brand
-				itemClass="brand-2__area brand-2__space"
+			<CTA
+				btnText={"Book Appointment"}
 			/>
 
     </main>

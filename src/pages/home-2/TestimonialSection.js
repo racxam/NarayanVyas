@@ -9,10 +9,10 @@ import shapeImg3 from '../../assets/img/testimonial/testi-shape-9.png';
 import shapeImg4 from '../../assets/img/testimonial/testi-shape-10.png';
 import shapeImg5 from '../../assets/img/testimonial/testi-shape-11.png';
 
-import abidImg from '../../assets/img/testimonial/abid.png';
-import chahilImg from '../../assets/img/testimonial/chahil.jpg';
-import hardikImg from '../../assets/img/testimonial/hardik.jpeg';
-import emilImg from '../../assets/img/testimonial/emil.jpg';
+import client1 from '../../assets/img/testimonial/client1.png';
+import client2 from '../../assets/img/testimonial/client2.png';
+import client3 from '../../assets/img/testimonial/client1.png';
+import client4 from '../../assets/img/testimonial/client2.png';
 
 const Testimonial = () => {
     const sliderOption = {
@@ -64,7 +64,7 @@ const Testimonial = () => {
                         <Swiper {...sliderOption} className="swiper-wrapper">
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonialTwo
-                                    authorImg={hardikImg}
+                                    authorImg={client1}
                                     Title="Hardik Dhiman"
                                     Designation="Research Consultant"
                                     Description="Mr. Narayan Vyas is an exceptional mentor in app development, IoT, and machine learning. His guidance has helped me excel in various projects, including IoT innovations and research papers. His patient and expert approach has greatly shaped my skills as a researcher. I highly recommend him to anyone seeking mentorship in technology. Thank you, Sir, for your invaluable support."
@@ -72,7 +72,7 @@ const Testimonial = () => {
                             </SwiperSlide>
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonialTwo
-                                    authorImg={abidImg}
+                                    authorImg={client2}
                                     Title="Abid Hussain"
                                     Designation="Certified Gym Trainer"
                                     Description="Every time I need something fixed with my websites, Narayan is my “go to” guy. He does great and gets everything done in a timely manner. Great communication. Thank you Narayan!"
@@ -80,7 +80,7 @@ const Testimonial = () => {
                             </SwiperSlide>
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonialTwo
-                                    authorImg={chahilImg}
+                                    authorImg={client3}
                                     Title="Chahil Choudhary"
                                     Designation="Student"
                                     Description="I highly recommend Narayan Vyas, a cooperative and knowledgeable assistant professor in computer science. His technical expertise, dedication, and ability to explain complex concepts clearly make him an invaluable asset. Narayan sir's willingness to support students and colleagues is commendable, making him an outstanding contributor to any academic institution."
@@ -88,7 +88,7 @@ const Testimonial = () => {
                             </SwiperSlide>
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonialTwo
-                                    authorImg={emilImg}
+                                    authorImg={client4}
                                     Title="Emil Zając"
                                     Designation="Mobile App Developer"
                                     Description="Narayan has extensive experience in developing mobile applications in Flutter. He always responded quickly and gave a new perspective on how to solve the problem. He knows how to explain even the most difficult issues in a simple and quick way."

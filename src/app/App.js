@@ -105,9 +105,9 @@ const App = () => {
                     <Route path="/home-2" element={<HomeTwo />} />
                     <Route path="/about-me" element={<AboutMe />} />
                     <Route path="/publications" element={<Publications />} />
-                    <Route path="/home-3" element={<HomeThree />} />
+                    {/* <Route path="/home-3" element={<HomeThree />} />
                     <Route path="/home-4" element={<HomeFour />} />
-                    <Route path="/home-5" element={<HomeFive />} />
+                    <Route path="/home-5" element={<HomeFive />} /> */}
                     <Route path="/appointments" element={<Appointments />} />
                     <Route path="/service-details" element={<ServiceDetails />} />
                     <Route path="/services" element={<Services />} />
@@ -142,13 +142,13 @@ const App = () => {
                     <Route path="/call-for-chapters/multimodal-data-fusion-wiley" element={<MultimodalDataFusionCFCDetails />} />
                     <Route path="/call-for-chapters/iom-for-healthcare-wiley" element={<IoMForHealthcareCFCDetails />} />
                     <Route path="/projects/kwizzle-mobile-app" element={<KwizzleMobileAppDetailsDetails />} />
-                    <Route path="/job" element={<Job />} />
+                    {/* <Route path="/job" element={<Job />} />
                     <Route path="/job-details" element={<JobDetails />} />
                     <Route path="/faq" element={<Faq />} />
-                    <Route path="/price" element={<Price />} />
+                    <Route path="/price" element={<Price />} /> */}
                     <Route path="/testimonial" element={<Testimonial />} />
-                    <Route path="/blog" element={<Blog />} />
-                    <Route path="/blog-details" element={<BlogDetails />} />
+                    {/* <Route path="/blog" element={<Blog />} /> */}
+                    {/* <Route path="/blog-details" element={<BlogDetails />} /> */}
                     <Route path="/cart" element={<Cart />} />
                     <Route path="/checkout" element={<Checkout />} />
                     <Route path="/login" element={<Login />} />

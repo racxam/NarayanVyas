@@ -56,7 +56,7 @@ const CertificatesMasonaryMain = () => {
 			
 			<CertificationSection/>
 			<CTA
-
+				btnText={"Book Appointment"}
 			/>
 		</main>
 	);
