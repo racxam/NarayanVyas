@@ -1,29 +1,28 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
-
 import shapeImg1 from '../../assets/img/contact/ct-shape-1.png';
 import shapeImg2 from '../../assets/img/contact/ct-shape-2.png';
 import shapeImg3 from '../../assets/img/contact/ct-shape-3.png';
 import shapeImg4 from '../../assets/img/contact/ct-shape-4.png';
+import sendEmail from './emailService'; // Adjust the path as needed
 
 const ContactTwo = (props) => {
     const { itemClass } = props;
- 
-    function sendEmail(e) {
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('', '', e.target, '')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        const formData = {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            message: e.target.message.value,
+        };
 
-        e.target.reset()
-    }
+        await sendEmail(formData);
+        e.target.reset();
+    };
 
     return (
-        <div className={itemClass ? itemClass : 'contact__area contact__plr-2 mb-10 p-relative fix'} >
+        <div className={itemClass ? itemClass : 'contact__area contact__plr-2 mb-10 p-relative fix'}>
             <div className="contact__shape-1 d-none d-lg-block">
                 <img src={shapeImg1} alt="" />
             </div>
@@ -36,7 +35,6 @@ const ContactTwo = (props) => {
             <div className="contact__shape-4 d-none d-md-block">
                 <img src={shapeImg4} alt="" />
             </div>
-            {/* <div className="contact__border"> */}
             <div className="">
                 <div className="container">
                     <div className="row align-items-center justify-content-center">
@@ -47,76 +45,39 @@ const ContactTwo = (props) => {
                             </div>
                             <div className="contact__text">
                                 <p className="char-anim-2">
-
-                                 I am always open to discussing new projects, creative ideas or opportunities to be part of your visions. </p>
+                                    I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+                                </p>
                             </div>
                             <div className="contact__form wow animate__fadeInUp" data-wow-duration="1.1s">
-                                <form action="#" onSubmit={sendEmail}>
+                                <form onSubmit={handleSubmit}>
                                     <div className="row">
                                         <div className="col-sm-6">
                                             <div className="postbox__contact-input">
-                                                <input type="text" placeholder="Your Name" />
+                                                <input type="text" name="name" placeholder="Your Name" required />
                                             </div>
                                         </div>
                                         <div className="col-sm-6">
                                             <div className="postbox__contact-input">
-                                                <input type="email" placeholder="Your Email address" />
+                                                <input type="email" name="email" placeholder="Your Email address" required />
                                             </div>
                                         </div>
-                                        <div className="col-sm-12"> 
+                                        <div className="col-sm-12">
                                             <div className="postbox__contact-textarea">
-                                                <textarea placeholder="Your Message"></textarea>
+                                                <textarea name="message" placeholder="Your Message" required></textarea>
                                             </div>
+                                        </div>
+                                        <div className="col-sm-12">
+                                            <button type="submit" className="main-btn-sm tp-btn-hover alt-color"><span>Send Message</span></button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                            <div className="contact__button wow animate__fadeInUp d-flex col justify-content-start" data-wow-duration="1.1s">
-                                <a className="main-btn-sm  tp-btn-hover alt-color" href="#"><span>Send Message</span></a>
-                            </div>
                         </div>
-                        {/* <div className="col-xl-4 col-lg-5">
-                            <div className="contact__left-side">
-                                <div className="contact__item d-flex align-items-center wow animate__fadeInUp" data-wow-duration="1.1s">
-                                    <div className="contact__icon">
-                                        <span><a href="#"><i className="fal fa-phone-alt"></i></a></span>
-                                    </div>
-                                    <div className="contact__content">
-                                        <h4 className="contact__title-sm">Call This Now</h4>
-                                        <span><a href="tel:+918560014421">+918560014421
-                                       </a></span>
-                                    </div>
-                                </div>
-                                <div className="contact__item d-flex align-items-center wow animate__fadeInUp" data-wow-duration="1.1s">
-                                    <div className="contact__icon">
-                                        <span><a href="#"><i className="fal fa-envelope-open-text"></i></a></span>
-                                    </div>
-                                    <div className="contact__content">
-                                        <h4 className="contact__title-sm">Your Message</h4>
-                                        <span><a href="mailto:contact@narayanvyas.com">contact@narayanvyas.com</a></span>
-                                    </div>
-                                </div>
-                                <div className="contact__item d-flex align-items-center wow animate__fadeInUp" data-wow-duration="1.1s">
-                                    <div className="contact__icon">
-                                        <span><a href="#"><i className="fal fa-map-marker-check"></i></a></span>
-                                    </div>
-                                    <div className="contact__content">
-                                        <h4 className="contact__title-sm">Your location</h4>
-                                        <span>Web Dev Fusion, I-379, New Bapu Nagar, Bhilwara, Rajasthan, 311001</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>
-            {/* </div> contant border */}
         </div>
     );
 }
 
 export default ContactTwo;
-
-
-
-
