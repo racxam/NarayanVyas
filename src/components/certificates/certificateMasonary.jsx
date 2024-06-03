@@ -49,7 +49,7 @@ const certificateMasonary = () => {
 				<div className="container-fluid">
 					<Tabs>
 						<div className="row">
-							<div className="col-xl-12">
+							<div className="col-xl-12" >
 								<TabList className={tabStyle}>
 									<Tab><button>{tab1}</button></Tab>
 									<Tab><button>{tab2}</button></Tab>
