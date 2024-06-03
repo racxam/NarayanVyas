@@ -7,21 +7,22 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 const ProjectCard = ({ project }) => {
     return (
-        <Card sx={{ margin: 'auto', boxShadow: 3, borderRadius: 2, marginBottom: 3 }}>
+        <Card sx={{ margin:'auto', boxShadow: 3, borderRadius: 2 ,width:"360px"}}>
             <Link to={project.link}>
                 <CardMedia
                     component="img"
                     height="300"
+
                     image={project.featuredImage}
                     alt={project.title}
                 />
             </Link>
             <CardContent>
-                <Typography variant="h6" sx={{ textAlign: 'center', marginBottom: 2 }}>
+                <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 2 }}>
                     <p className="product__title"><Link to={project.title}>{project.title}</Link></p>
                 </Typography>
-                {/* <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 2 }}>
-                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 2 }}>
+                    {/* <Box sx={{ display: 'flex', alignItems: 'center' }}>
                         <LocationOnIcon sx={{ marginRight: 0.5 }} />
                         <Typography variant="body2">
                             {project.location}
@@ -32,8 +33,8 @@ const ProjectCard = ({ project }) => {
                         <Typography variant="body2">
                             {project.duration}
                         </Typography>
-                    </Box>
-                </Box> */}
+                    </Box> */}
+                </Box>
                 <Divider sx={{ marginY: 2 }} />
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>

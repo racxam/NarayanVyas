@@ -45,7 +45,7 @@ const HomeMain = () => {
 			<CFCComponent />
 
 			<Project
-				slidesToShow={"3"}
+				slidesToShow={"4"}
 			/>
 			<Books />
 

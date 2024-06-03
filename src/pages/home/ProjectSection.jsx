@@ -9,7 +9,7 @@ import ProjectCard from '../../components/Project/ProjectCard';
 SwiperCore.use([Mousewheel]);
 
 
-const Project = ({ subTitle, title, slidesToShow = 4 }) => {
+const Project = ({ subTitle, title, slidesToShow}) => {
     const sliderOption = {
         pagination: {
             el: '.project-slider-dots',
@@ -23,7 +23,7 @@ const Project = ({ subTitle, title, slidesToShow = 4 }) => {
             enabled: false,
         },
         loop: true,
-        spaceBetween: 30,
+        spaceBetween: 150,
         slidesPerView: slidesToShow,
         breakpoints: {
             0: {
@@ -33,7 +33,7 @@ const Project = ({ subTitle, title, slidesToShow = 4 }) => {
                 slidesPerView: 2,
             },
             991: {
-                slidesPerView: 3,
+                slidesPerView: slidesToShow-1,
             },
             1200: {
                 slidesPerView: slidesToShow,
@@ -42,10 +42,10 @@ const Project = ({ subTitle, title, slidesToShow = 4 }) => {
     };
 
     return (
-        <div className="product__area product__plr mt-100 mb-70">
+        <div className="product__area product__plr mt-100 mb-80" >
             <div className="container-fluid">
-                <div className="row align-items-end pb-60">
-                    <div className="col-lg-6 col-md-9">
+                <div className="row align-items-end pb-60" >
+                    <div className="col-lg-6 col-md-9" >
                         <SectionTitle
                             sectionClass="project__section-box wow itfadeUp"
                             subTitleClass="section-subtitle char-anim"
@@ -54,7 +54,7 @@ const Project = ({ subTitle, title, slidesToShow = 4 }) => {
                             Title={title ? title : "Showcasing Excellence in Technology and Innovation"}
                         />
                     </div>
-                    <div className="col-lg-6 col-md-3">
+                    <div className="col-lg-6 col-md-3" >
                         <div className="project__section-arrow d-flex align-items-center justify-content-end">
                             <div className="swiper-button swiper-button-prev">
                                 <button><i className="far fa-arrow-left"></i></button>
@@ -65,11 +65,11 @@ const Project = ({ subTitle, title, slidesToShow = 4 }) => {
                         </div>
                     </div>
                 </div>
-                <div className="swiper-container project__active">
-                    <Swiper {...sliderOption} className="swiper-wrapper">
+                <div className="swiper-container project__active" >
+                    <Swiper {...sliderOption} className="swiper-wrapper" >
                         {projects.map(project => (
-                            <SwiperSlide key={project.id} className="swiper-slide">
-                                <div className="project__item" style={{ width: '100%' }}>
+                            <SwiperSlide key={project.id} className="swiper-slide" >
+                                <div className="project__item">
                                     <ProjectCard project={project} />
                                 </div>
                             </SwiperSlide>

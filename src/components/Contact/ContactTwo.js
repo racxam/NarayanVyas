@@ -36,7 +36,7 @@ const ContactTwo = (props) => {
             <div className="contact__shape-4 d-none d-md-block">
                 <img src={shapeImg4} alt="" />
             </div>
-            <div className="contact__border">
+            {/* <div className="contact__border"> */}
             <div className="">
                 <div className="container">
                     <div className="row align-items-center justify-content-center">
@@ -110,7 +110,7 @@ const ContactTwo = (props) => {
                     </div>
                 </div>
             </div>
-            </div>
+            {/* </div> contant border */}
         </div>
     );
 }

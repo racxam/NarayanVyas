@@ -5,12 +5,14 @@
 /*----------------------------------------*/
 .project{
     &__active{
-        margin:0 15px;
+        margin: 15px;
         @media #{$xs}{
             margin: 0;
         }
     }
     &__item{
+            
+
         & img{
             width: 100%;
         }

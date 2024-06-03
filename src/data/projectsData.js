@@ -120,6 +120,62 @@ const projects = [
         status: 'Ongoing',
         projectManager: 'David Taylor',
         budget: '$150,000'
+    },
+    {
+        id: 5,
+        images: [projectImg4, projectImg1, projectImg2],
+        featuredImage: projectImg4,
+        link: '/project-details',
+        title: 'Project Five',
+        techStack: [
+            { icon: FlutterIcon, name: 'Flutter' },
+            { icon: FirebaseIcon, name: 'Firebase' },
+            { icon: JavaScriptIcon, name: 'JavaScript' },
+            { icon: NodeIcon, name: 'Node.js' }
+        ],
+        location: 'Remote',
+        duration: '7 months',
+        startDate: '2023-03-01',
+        completionDate: '2023-10-01',
+        client: 'Client D',
+        featuredDescription: 'An extensive project to build a SaaS application using modern web technologies.',
+        descriptions: [
+            'Developed a SaaS platform for business management.',
+            'Used React for frontend development and user interface design.',
+            'Implemented scalable backend services with Node.js.',
+            'Ensured data security and application performance optimization.'
+        ],
+        status: 'Ongoing',
+        projectManager: 'David Taylor',
+        budget: '$150,000'
+    },
+    {
+        id: 6,
+        images: [projectImg4, projectImg1, projectImg2],
+        featuredImage: projectImg4,
+        link: '/project-details',
+        title: 'Project six',
+        techStack: [
+            { icon: FlutterIcon, name: 'Flutter' },
+            { icon: FirebaseIcon, name: 'Firebase' },
+            { icon: JavaScriptIcon, name: 'JavaScript' },
+            { icon: NodeIcon, name: 'Node.js' }
+        ],
+        location: 'Remote',
+        duration: '7 months',
+        startDate: '2023-03-01',
+        completionDate: '2023-10-01',
+        client: 'Client D',
+        featuredDescription: 'An extensive project to build a SaaS application using modern web technologies.',
+        descriptions: [
+            'Developed a SaaS platform for business management.',
+            'Used React for frontend development and user interface design.',
+            'Implemented scalable backend services with Node.js.',
+            'Ensured data security and application performance optimization.'
+        ],
+        status: 'Ongoing',
+        projectManager: 'David Taylor',
+        budget: '$150,000'
     }
 ];
 
