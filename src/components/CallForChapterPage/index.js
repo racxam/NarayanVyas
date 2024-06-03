@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
-const CallForChapterDetails = ({
+const CallForChapterPage = ({
     title = { text: '', image: '' },
     publisher = '',
     publisherLink = '',
@@ -131,4 +131,4 @@ const CallForChapterDetails = ({
     );
 }
 
-export default CallForChapterDetails;
+export default CallForChapterPage;

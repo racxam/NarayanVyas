@@ -5,7 +5,6 @@ import productImgSecureEnergyWiley from '../assets/img/cfc/secure-energy-wiley.j
 const callForChapterBooksData = [
     {
         id: 'iom-smart-healthcare-wiley',
-        permalink: 'iom-for-healthcare-wiley',
         title: {
             text: "Internet of Medicine (IoM) For Smart Healthcare",
             image: productImgIoMSmartHealthcareWiley
@@ -46,7 +45,6 @@ const callForChapterBooksData = [
     },
     {
         id: 'multimodal-data-fusion-wiley',
-        permalink: 'multimodal-data-fusion-wiley',
         title: {
             text: "Multimodal Data Fusion for Bioinformatics AI",
             image: productImgMultimodalDataFusionWiley
@@ -87,7 +85,6 @@ const callForChapterBooksData = [
     },
     {
         id: 'secure-energy-wiley',
-        permalink: 'secure-energy-wiley',
         title: {
             text: "Secure Energy Optimization: Leveraging IoT And AI For Enhanced Efficiency",
             image: productImgSecureEnergyWiley

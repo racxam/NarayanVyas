@@ -7,7 +7,6 @@ const BookDetailsPage = ({
     price,
     publisher,
     publisherLink,
-    permalink,
     editors,
     releaseDate,
     copyright,

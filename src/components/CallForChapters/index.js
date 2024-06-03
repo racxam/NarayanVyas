@@ -32,7 +32,7 @@ const CFCIndex = () => {
 								Title={book.title.text}
 								Publisher={book.publisher}
 								Price={book.price}
-								Url={`call-for-chapters/${book.permalink}`}
+								Url={`call-for-chapters/${book.id}`}
 							/>
 						</div>
 					))}

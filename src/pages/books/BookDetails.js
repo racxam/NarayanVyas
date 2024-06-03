@@ -9,9 +9,11 @@ import booksData from '../../data/booksData';
 import BookDetailsPage from '../../components/BookDetailsPage';
 import RelatedBooks from '../../components/RelatedBooks';
 import getRelatedBooks from '../../utils/getRelatedBooks';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 
 const BookDetails = () => {
-    const { bookId } = useParams(); // Get the bookId from the URL parameters
+    const { bookId } = useParams();
     const bookDetails = booksData.find(book => book.id === bookId);
     if (!bookDetails) {
         return <div>Book details not found.</div>;
@@ -21,10 +23,13 @@ const BookDetails = () => {
 
     return (
         <main>
+            <Header
+                headerClass="header__area header__transparent-2 header-width header-bg-color-2 header__mlr header__mt" />
             <Breadcrumb pageTitle="Book Details" />
             <BookDetailsPage {...bookDetails} editorsBiographies={editorsBiographies} />
             <RelatedBooks relatedBooks={relatedBooks} />
             <CTA btnText={"Book Appointment"} />
+            <Footer />
         </main>
     );
 }
