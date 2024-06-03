@@ -20,7 +20,7 @@ const CallForChapterDetails = ({
     return (
         <div className="product-details__area product-details__plr mt-100 mb-70">
             <div className="container">
-                <div className="row gx-40 align-items-center mb-100">
+                <div className="row gx-40 mb-100">
                     <div className="col-xl-6 col-lg-6 col-md-6 wow animate__fadeInLeft" data-wow-duration="1.1s">
                         <div className="product-details__main-img pb-20">
                             <img src={title.image} alt={title.text} />
@@ -46,7 +46,7 @@ const CallForChapterDetails = ({
                             {descriptionParagraphs.map((paragraph, index) => (
                                 <p key={index} className="wow animate__fadeInUp" data-wow-duration="1.1s">{paragraph}</p>
                             ))}
-                            <a className="yellow-btn tp-btn-hover alt-color mt-20 wow animate__fadeInUp" data-wow-duration="1.1s" target='_blank' href="#"><span>Submit Abstract</span><b></b></a>
+                            <a className="yellow-btn tp-btn-hover alt-color mt-20 mr-30 wow animate__fadeInUp" data-wow-duration="1.1s" target='_blank' href="#"><span>Submit Abstract</span><b></b></a>
                             <a className="yellow-btn tp-btn-hover alt-color mt-20 wow animate__fadeInUp" data-wow-duration="1.1s" target='_blank' href="#"><span>Upload Chapter</span><b></b></a>
                             <div className="product-details__social-box mt-35 wow animate__fadeInUp" data-wow-duration="1.1s">
                                 <span>Share:</span>
