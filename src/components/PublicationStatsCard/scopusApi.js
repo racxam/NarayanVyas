@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = 'your_scopus_api_key';
+const API_KEY = '6dd68cc0a9b5300686e59849b38d56d9';
 const BASE_URL = 'https://api.elsevier.com/content/author/author_id/';
 
 export const fetchScopusStats = async (authorId) => {
@@ -8,7 +8,10 @@ export const fetchScopusStats = async (authorId) => {
         const response = await axios.get(`${BASE_URL}${authorId}`, {
             headers: {
                 'X-ELS-APIKey': API_KEY,
-                'Accept': 'application/json'  // Ensure you accept JSON response
+                'Accept': 'application/json'
+            },
+            params: {
+                view: 'ENHANCED'
             }
         });
         return response.data;
