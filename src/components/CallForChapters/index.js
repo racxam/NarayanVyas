@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from '../../components/SectionTitle/index';
-import SingleProductWithImageOnly from '../Product/single_product_with_image_only';
+import SingleProductWithImageOnly from '../../components/Product/single_product_with_image_only';
 import cfcData from '../../data/callForChaptersBooksData';
 
 const sortedCfcData = cfcData.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
@@ -32,7 +32,7 @@ const CFCIndex = () => {
 								Title={book.title.text}
 								Publisher={book.publisher}
 								Price={book.price}
-								Url={`cfc/${book.permalink}`}
+								Url={`call-for-chapters/${book.permalink}`}
 							/>
 						</div>
 					))}

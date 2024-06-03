@@ -1,14 +1,13 @@
 import React from 'react';
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumnew';
 import CTA from '../../components/CTA';
-import SingleProduct from '../../components/Product';
 import callForChaptersData from '../../data/callForChaptersBooksData'; // Import the CFC data array
-
+import SingleProductWithImageOnly from '../../components/Product/single_product_with_image_only';
 import bgImg from '../../assets/img/cta/cta-bg-2.png';
 
 const CFCMain = () => {
 	// Sort CFCs by projected release date, latest first
-	const sortedCFCs = callForChaptersData.sort((a, b) => new Date(b.projectedReleaseDate) - new Date(a.projectedReleaseDate));
+	const sortedCfcData = callForChaptersData.sort((a, b) => new Date(b.projectedReleaseDate) - new Date(a.projectedReleaseDate));
 
 	return (
 		<main>
@@ -23,17 +22,18 @@ const CFCMain = () => {
 						</div>
 					</div>
 					<div className="row">
-						{sortedCFCs.map((cfc) => (
+						{sortedCfcData.map((book) => (
 							<div
-								key={cfc.id}
+								key={book.id}
 								className="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp"
 								data-wow-duration="1.1s"
 							>
-								<SingleProduct
-									Image={cfc.title.image}
-									Title={cfc.title.text}
-									Publisher={cfc.publisher}
-									Url={`/cfc/${cfc.permalink}`}
+								<SingleProductWithImageOnly
+									Image={book.title.image}
+									Title={book.title.text}
+									Publisher={book.publisher}
+									Price={book.price}
+									Url={book.permalink}
 								/>
 							</div>
 						))}

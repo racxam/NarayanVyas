@@ -42,25 +42,26 @@ const HomeMain = () => {
 
 			<HomePagePublications />
 
-			<CFCComponent/>
-			
+			<CFCComponent />
+
 			<Project
-				slidesToShow={"4"}
+				slidesToShow={"3"}
 			/>
-			<Books/>
+			<Books />
 
 			{/* <Social /> */}
 
 			{/* <Company /> */}
 
 			<Testimonial />
+
 			<Contact />
 
 
 			{/* <Blog /> */}
 
 			<CTA />
-			
+
 
 
 

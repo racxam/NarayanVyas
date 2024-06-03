@@ -20,7 +20,7 @@ const AIDrivenAlzheimerIGIDetailsMain = () => {
 
   return (
     <main>
-      <Breadcrumb pageTitle={bookDetails.title.text} />
+      <Breadcrumb pageTitle="Book Details" />
       <BookDetails {...bookDetails} editorsBiographies={editorsBiographies} />
       <div className="container">
         <div className="row">

@@ -70,7 +70,7 @@ const booksData = [
         id: 'applying-ml-techniques-to-bioinformatics',
         permalink: 'applying-ml-in-bioinformatics-igi',
         title: {
-            text: "Applying Machine Learning Techniques to Bioinformatics: Few-Shot and Zero-Shot Methods",
+            text: "Applying Machine Learning Techniques to Bioinformatics",
             image: applyingMLInBioinformaticsImg
         },
         price: '$340.00',

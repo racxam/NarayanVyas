@@ -9,19 +9,20 @@ import shapeImg3 from '../../assets/img/testimonial/testi-shape-9.png';
 import shapeImg4 from '../../assets/img/testimonial/testi-shape-10.png';
 import shapeImg5 from '../../assets/img/testimonial/testi-shape-11.png';
 
-import testimonialImg1 from '../../assets/img/testimonial/testi-3.png';
-import testimonialImg2 from '../../assets/img/testimonial/testi-shape-8.png';
-import testimonialImg3 from '../../assets/img/testimonial/testi-shape-9.png';
+import abidImg from '../../assets/img/testimonial/abid.png';
+import chahilImg from '../../assets/img/testimonial/chahil.jpg';
+import hardikImg from '../../assets/img/testimonial/hardik.jpeg';
+import emilImg from '../../assets/img/testimonial/emil.jpg';
 
 const Testimonial = () => {
     const sliderOption = {
         pagination: {
-          el: '.testimonial-slider-dots',
-          clickable: true
+            el: '.testimonial-slider-dots',
+            clickable: true
         },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
         },
         loop: true,
         spaceBetween: 30,
@@ -52,9 +53,9 @@ const Testimonial = () => {
                 <div className="row">
                     <div className="col-xl-12">
                         <SectionTitle
-                            sectionClass= "testimonial-2__section-title text-center pb-40 section-title-fixed-width"
-                            subTitle= "Client Testimonial"
-                            Title= "We Are the Best Software Company Manage.."
+                            sectionClass="testimonial-2__section-title text-center pb-40 section-title-fixed-width"
+                            subTitle="Client Testimonial"
+                            Title="We Are the Best Software Company Manage.."
                         />
                     </div>
                 </div>
@@ -63,26 +64,35 @@ const Testimonial = () => {
                         <Swiper {...sliderOption} className="swiper-wrapper">
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonialTwo
-                                    authorImg={testimonialImg1}
-                                    Title="Sasan Barson"
+                                    authorImg={hardikImg}
+                                    Title="Hardik Dhiman"
+                                    Designation="Research Consultant"
+                                    Description="Mr. Narayan Vyas is an exceptional mentor in app development, IoT, and machine learning. His guidance has helped me excel in various projects, including IoT innovations and research papers. His patient and expert approach has greatly shaped my skills as a researcher. I highly recommend him to anyone seeking mentorship in technology. Thank you, Sir, for your invaluable support."
                                 />
                             </SwiperSlide>
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonialTwo
-                                    authorImg={testimonialImg3}
-                                    Title="Marata Barson"
+                                    authorImg={abidImg}
+                                    Title="Abid Hussain"
+                                    Designation="Certified Gym Trainer"
+                                    Description="Every time I need something fixed with my websites, Narayan is my “go to” guy. He does great and gets everything done in a timely manner. Great communication. Thank you Narayan!"
                                 />
                             </SwiperSlide>
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonialTwo
-                                    authorImg={testimonialImg2}
-                                    Title="Sasan Barson"
+                                    authorImg={chahilImg}
+                                    Title="Chahil Choudhary"
+                                    Designation="Student"
+                                    Description="I highly recommend Narayan Vyas, a cooperative and knowledgeable assistant professor in computer science. His technical expertise, dedication, and ability to explain complex concepts clearly make him an invaluable asset. Narayan sir's willingness to support students and colleagues is commendable, making him an outstanding contributor to any academic institution."
                                 />
                             </SwiperSlide>
                             <SwiperSlide className="swiper-slide">
                                 <SingleTestimonialTwo
-                                    authorImg={testimonialImg3}
-                                    Title="Marata Barson"
+                                    authorImg={emilImg}
+                                    Title="Emil Zając"
+                                    Designation="Mobile App Developer"
+                                    Description="Narayan has extensive experience in developing mobile applications in Flutter. He always responded quickly and gave a new perspective on how to solve the problem. He knows how to explain even the most difficult issues in a simple and quick way."
+
                                 />
                             </SwiperSlide>
                         </Swiper>

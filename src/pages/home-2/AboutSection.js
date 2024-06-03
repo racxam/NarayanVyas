@@ -7,7 +7,7 @@ import shapeImg1 from '../../assets/img/about/about-shape-3.png';
 import shapeImg2 from '../../assets/img/about/about-shape-4.png';
 import shapeImg3 from '../../assets/img/about/about-shape-5.png';
 
-const About = () => {  
+const About = () => {
 
     return (
         <div className="about-2__area pt-5 pb-10 p-relative fix">
@@ -30,11 +30,11 @@ const About = () => {
                                     <span><i className="fal fa-check-circle"></i></span>
                                 </div>
                                 <div className="about-2__img-text">
-                                    <h5>40+</h5>
-                                    <span>Complete Projects</span>
+                                    <h5>8+</h5>
+                                    <span>Years of Experience</span>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 wow animate__fadeInRight" data-wow-duration="1.1s">
                         <div className="about-2__item">
@@ -45,12 +45,12 @@ const About = () => {
                             <div className="about-2__text">
                                 <p className="char-anim-2">With 8+ years of professional experience, I have great contribution in research and development</p>
                             </div>
-                           <div className="about-2__list-item wow animate__fadeInUp" data-wow-duration="1.1s">
+                            <div className="about-2__list-item wow animate__fadeInUp" data-wow-duration="1.1s">
                                 <h4 className="about-2__list-title">Key Highlights:</h4>
                                 <ul>
                                     <li><span>36 Publications indexed in Scopus</span></li>
                                     <li><span>170 Citations in academic research</span></li>
-                                    <li><span>Taught students from 12+ countries</span></li>
+                                    <li><span>1000+ Students Taught</span></li>
                                     <li><span>9 Books authored and edited</span></li>
                                     <li><span>8 h-index in Scopus</span></li>
                                     <li><span>6+ Workshops conducted</span></li>

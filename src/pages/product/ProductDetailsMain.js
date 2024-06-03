@@ -319,7 +319,7 @@ const ProductDetailsMain = () => {
                 Title='Secure Energy Optimization: Leveraging IoT And AI For Enhanced Efficiency'
                 Publisher='Wiley'
                 Price='Not Released'
-                Url='/cfc/secure-energy-wiley'
+                Url='/call-for-chapters/secure-energy-wiley'
               />
             </div>
           </div>

@@ -12,7 +12,7 @@ import HomeFour from '../pages/home-4';
 import HomeFive from '../pages/home-5';
 import About from '../pages/about';
 import AboutMe from '../pages/about/about-me';
-import Service from '../pages/service';
+import Services from '../pages/service';
 import ServiceTwo from '../pages/service/service-2';
 import ServiceThree from '../pages/service/service-3';
 import ServiceDetails from '../pages/service/service-details';
@@ -109,10 +109,8 @@ const App = () => {
                     <Route path="/home-4" element={<HomeFour />} />
                     <Route path="/home-5" element={<HomeFive />} />
                     <Route path="/appointments" element={<Appointments />} />
-                    <Route path="/service-1" element={<Service />} />
-                    <Route path="/service-2" element={<ServiceTwo />} />
-                    <Route path="/service-3" element={<ServiceThree />} />
                     <Route path="/service-details" element={<ServiceDetails />} />
+                    <Route path="/services" element={<Services />} />
                     <Route path="/services/mobile-app-development" element={<MobileAppDevelopmentDetails />} />
                     <Route path="/services/iot-solutions" element={<IoTSolutionsDetails />} />
                     <Route path="/services/research-and-development" element={<ResearchAndDevelopmentDetails />} />
@@ -140,9 +138,9 @@ const App = () => {
                     <Route path="/books/ai-driven-alzheimer-disease-prediction-igi" element={<AIDrivenAlzheimerIGIDetails />} />
                     <Route path="/books/quantum-machine-learning-degruyter" element={<QuantumMachineLearningDeGruyterDetails />} />
                     <Route path="/call-for-chapters" element={<CFC />} />
-                    <Route path="/cfc/secure-energy-wiley" element={<SecureEnergyWileyCFCDetails />} />
-                    <Route path="/cfc/multimodal-data-fusion-wiley" element={<MultimodalDataFusionCFCDetails />} />
-                    <Route path="/cfc/iom-for-healthcare-wiley" element={<IoMForHealthcareCFCDetails />} />
+                    <Route path="/call-for-chapters/secure-energy-wiley" element={<SecureEnergyWileyCFCDetails />} />
+                    <Route path="/call-for-chapters/multimodal-data-fusion-wiley" element={<MultimodalDataFusionCFCDetails />} />
+                    <Route path="/call-for-chapters/iom-for-healthcare-wiley" element={<IoMForHealthcareCFCDetails />} />
                     <Route path="/projects/kwizzle-mobile-app" element={<KwizzleMobileAppDetailsDetails />} />
                     <Route path="/job" element={<Job />} />
                     <Route path="/job-details" element={<JobDetails />} />

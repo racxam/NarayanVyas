@@ -30,8 +30,8 @@ const SingleTestimonialTwo = (props) => {
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>
-                        <i className="fas fa-star star-color"></i>
-                        <i className="fas fa-star star-color"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
                     </div>
                     <p>{Description ? Description : 'All the Lorem Ipsum generators on the Internet tend predefined as necessary, making this the the Internet uses a dictionary'} </p>
                 </div>

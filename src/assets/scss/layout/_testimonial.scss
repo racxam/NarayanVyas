@@ -3,136 +3,169 @@
 /*----------------------------------------*/
 /*  25. testimonial CSS START
 /*----------------------------------------*/
-.testimonial{
-    &__shape-1{
+.testimonial {
+    &__shape-1 {
         position: absolute;
         left: 3%;
         top: 11%;
         animation: rotate2 15s linear infinite;
-        @media #{$lg}{
+
+        @media #{$lg} {
             top: 4%;
         }
-        @media #{$md}{
+
+        @media #{$md} {
             top: 3%;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             left: -12%;
             top: 0%;
         }
     }
-    &__shape-2{
+
+    &__shape-2 {
         position: absolute;
         right: 3%;
-        bottom:2%;
+        bottom: 2%;
         animation: moving 9s linear infinite;
     }
-    &__shape-3{
+
+    &__shape-3 {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         top: 0;
     }
-    &__item-shape{
+
+    &__item-shape {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
-    &__plr{
+
+    &__plr {
         padding: 120px 200px;
-        @media #{$xxxl}{
-            padding:120px 150px;
+
+        @media #{$xxxl} {
+            padding: 120px 150px;
         }
-        @media #{$xxl}{
-            padding:120px 80px;
+
+        @media #{$xxl} {
+            padding: 120px 80px;
         }
-        @media #{$xl}{
-            padding:120px 40px;
+
+        @media #{$xl} {
+            padding: 120px 40px;
         }
-        @media #{$lg}{
-            padding:120px 80px;
+
+        @media #{$lg} {
+            padding: 120px 80px;
         }
-        @media #{$md}{
-            padding:120px 30px;
+
+        @media #{$md} {
+            padding: 120px 30px;
         }
-        @media #{$xs}{
-            padding:120px 0;
+
+        @media #{$xs} {
+            padding: 120px 0;
         }
     }
-    &__item{
+
+    &__item {
         background-color: #3a3a42;
         padding: 30px;
-        @media #{$xs}{
+
+        @media #{$xs} {
             flex-wrap: wrap;
             padding: 30px 15px;
         }
     }
-    &__main-img{        
+
+    &__main-img {
         flex: 0 0 auto;
-        @media #{$xs}{
+
+        @media #{$xs} {
             max-width: 100%;
         }
-        & img{
-            @media #{$xs}{
+
+        & img {
+            @media #{$xs} {
                 max-width: 100%;
             }
         }
     }
-    &__content{
+
+    &__content {
         padding-left: 20px;
-        @media #{$xxl,$xl,$xs}{
+
+        @media #{$xxl,$xl,$xs} {
             padding-left: 0;
-        }        
+        }
     }
-    &__author-name{
+
+    &__author-name {
         font-weight: 700;
         font-size: 22px;
         color: var(--it-common-white);
         transition: .3s;
-        &:hover{
+
+        &:hover {
             color: var(--it-theme-1);
         }
     }
-    &__author-info{
+
+    &__author-info {
         padding-bottom: 10px;
-        & span{
+
+        & span {
             color: var(--it-common-white);
         }
     }
-    &__content-text{
-        @media #{$xs}{
+
+    &__content-text {
+        @media #{$xs} {
             padding-bottom: 30px;
-        }  
-        & p{
+        }
+
+        & p {
             color: var(--it-common-white);
             padding-bottom: 5px;
             font-style: italic;
             padding-right: 35px;
-            @media #{$xxl}{
+
+            @media #{$xxl} {
                 padding-right: 20px;
             }
-            @media #{$xxl}{
+
+            @media #{$xxl} {
                 padding-right: 18px;
             }
-            @media #{$xs}{
+
+            @media #{$xs} {
                 padding-right: 0;
-            } 
+            }
         }
+
         & i {
             color: var(--it-theme-1);
             font-size: 25px;
             padding-right: 5px;
-            &.star-color{
-                color: var(--it-common-white);                
+
+            &.star-color {
+                color: var(--it-common-white);
             }
         }
     }
 }
+
 .testimonial-slider-dots {
-	text-align: center;
+    text-align: center;
     margin-top: 60px;
     position: relative;
     z-index: 2;
+
     & .swiper-pagination-bullet {
         width: 18px;
         height: 18px;
@@ -144,157 +177,205 @@
         margin: 0 5px;
         transition: .3s;
     }
+
     & .swiper-pagination-bullet-active {
         background-color: var(--it-theme-1);
     }
 }
-.testimonial-2{
-    &__shape-1{
+
+.testimonial-2 {
+    &__shape-1 {
         position: absolute;
         top: 73%;
         left: 24%;
-        @media #{$lg}{  
+
+        @media #{$lg} {
             left: 20%;
         }
-        @media #{$md}{  
+
+        @media #{$md} {
             left: 10%;
         }
-        @media #{$sm}{  
+
+        @media #{$sm} {
             left: 0%;
         }
     }
-    &__shape-2{
+
+    &__shape-2 {
         position: absolute;
         top: 85%;
         right: 25%;
-        @media #{$lg}{  
+
+        @media #{$lg} {
             right: 21%;
         }
-        @media #{$md}{  
+
+        @media #{$md} {
             right: 11%;
         }
-        @media #{$sm}{  
+
+        @media #{$sm} {
             right: 0%;
         }
     }
-    &__shape-3{
+
+    &__shape-3 {
         position: absolute;
         top: 36%;
         left: 16%;
         animation: tpupdown 0.8s infinite alternate;
     }
-    &__shape-4{
+
+    &__shape-4 {
         position: absolute;
         top: 43%;
         right: 1%;
         animation: tptranslateX2 4s infinite alternate;
     }
-    &__shape-5{
+
+    &__shape-5 {
         position: absolute;
         top: 66%;
         right: 11%;
         animation: moving 7s linear infinite;
     }
-    &__shape-6{
+
+    &__shape-6 {
         position: absolute;
         top: 17%;
         left: 0;
         animation: jumpTwo 4s infinite linear;
     }
-    &__shape-7{
+
+    &__shape-7 {
         position: absolute;
         bottom: 8%;
         right: 0;
         animation: tpupdown 0.8s infinite alternate;
     }
-    &__shape-8{
-        position:absolute;
+
+    &__shape-8 {
+        position: absolute;
         left: 2%;
         bottom: 20%;
         animation: moving 9s linear infinite;
     }
-    &__space{
+
+    &__space {
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
     &__main-thumb {
         padding-bottom: 15px;
-    }    
-    &__author-info{
+        border-radius: 100%;
+
+        img {
+            border: 3px solid #FFDC60;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    &__author-info {
         padding-bottom: 15px;
     }
-    &__author-name{
+
+    &__author-name {
         font-weight: 700;
         font-size: 22px;
         transition: .3s;
-        &:hover{
+
+        &:hover {
             color: var(--it-common-blue);
         }
     }
-    &__star{
+
+    &__star {
         padding-bottom: 10px;
-        & i{
+
+        & i {
             color: var(--it-theme-1);
             font-size: 20px;
             padding: 0 2px;
-            &.star-color{
+
+            &.star-color {
                 color: #dddddd;
             }
         }
     }
-    &__text{
-        & p{
+
+    &__text {
+        & p {
             padding: 0 390px;
             font-style: italic;
-            @media #{$xl}{                
+
+            @media #{$xl} {
                 padding: 0 360px;
             }
-            @media #{$lg}{                
+
+            @media #{$lg} {
                 padding: 0 270px;
             }
-            @media #{$md}{                
+
+            @media #{$md} {
                 padding: 0 150px;
             }
-            @media #{$xs}{                
-                padding: 0 ;
-                & br{
+
+            @media #{$xs} {
+                padding: 0;
+
+                & br {
                     display: none;
                 }
             }
-            @media #{$sm}{                
-                padding: 0 70px ;
+
+            @media #{$sm} {
+                padding: 0 70px;
             }
         }
     }
 }
-.testimonial-3{
-    &__space{
+
+.testimonial-3 {
+    &__space {
         padding: 120px 0;
     }
-    &__main-img{
-        @media #{$md}{
+
+    &__main-img {
+        @media #{$md} {
             margin-bottom: 60px;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             margin-bottom: 50px;
         }
     }
-    &__icon{
+
+    &__icon {
         position: absolute;
         left: 8%;
         bottom: -2%;
-        @media #{$md}{
+
+        @media #{$md} {
             left: 14%;
         }
-        @media #{$xs}{
-            left: 0%;;
+
+        @media #{$xs} {
+            left: 0%;
+            ;
             bottom: -5%;
         }
-        @media #{$sm}{
+
+        @media #{$sm} {
             left: 3%;
             bottom: -3%;
         }
-        & span{
+
+        & span {
             font-size: 40px;
             color: var(--it-common-white);
             height: 105px;
@@ -305,14 +386,16 @@
             text-align: center;
             display: inline-block;
             border: 7px solid var(--it-common-white);
-            @media #{$xs}{
+
+            @media #{$xs} {
                 font-size: 20px;
                 height: 70px;
                 width: 70px;
                 line-height: 70px;
                 border: 4px solid var(--it-common-white);
             }
-            @media #{$sm}{
+
+            @media #{$sm} {
                 font-size: 40px;
                 height: 105px;
                 width: 105px;
@@ -321,59 +404,74 @@
             }
         }
     }
-    &__content-icon{
+
+    &__content-icon {
         padding-bottom: 5px;
-        & span{
+
+        & span {
             font-size: 60px;
             color: var(--it-theme-1);
-            @media #{$xs}{
+
+            @media #{$xs} {
                 font-size: 50px;
             }
-            @media #{$sm}{
+
+            @media #{$sm} {
                 font-size: 56px;
             }
         }
     }
-    &__text{
+
+    &__text {
         padding-bottom: 20px;
-        & p{
+
+        & p {
             font-size: 21px;
             font-style: italic;
             padding-right: 95px;
             line-height: 31px;
             margin-bottom: 0;
-            @media #{$lg}{
+
+            @media #{$lg} {
                 font-size: 18px;
                 padding-right: 53px;
             }
-            @media #{$md}{
+
+            @media #{$md} {
                 padding: 0 55px;
                 font-size: 19px;
             }
-            @media #{$xs}{
+
+            @media #{$xs} {
                 padding: 0 6px;
                 font-size: 15px;
             }
-            @media #{$sm}{
+
+            @media #{$sm} {
                 padding: 0 15px;
                 font-size: 17px;
             }
         }
     }
-    &__author-name{
+
+    &__author-name {
         font-weight: 700;
         font-size: 22px;
         transition: .3s;
-        &:hover{
+
+        &:hover {
             color: var(--it-common-paste);
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             font-size: 19px;
         }
-        @media #{$sm}{
+
+        @media #{$sm} {
             font-size: 21px;
         }
-        &::before{
+
+        &::before {
             content: '';
             height: 4px;
             width: 32px;
@@ -383,86 +481,103 @@
             margin-right: 10px;
         }
     }
-    &__star{
-        & i{
+
+    &__star {
+        & i {
             color: var(--it-theme-1);
             font-size: 20px;
             padding-right: 6px;
-            &.star-color{
+
+            &.star-color {
                 color: #dddddd;
             }
         }
     }
-    &__shape-1{
+
+    &__shape-1 {
         position: absolute;
         right: 4%;
         bottom: 0;
         z-index: -1;
-        @media #{$xxxl,$xxl,$xl}{
+
+        @media #{$xxxl,$xxl,$xl} {
             right: 0;
         }
     }
-    &__shape-2{
+
+    &__shape-2 {
         position: absolute;
         left: 12%;
         top: 26%;
         z-index: -1;
         animation: zoom 7s infinite;
-        @media #{$xxxl}{
+
+        @media #{$xxxl} {
             left: 8%;
             top: 21%;
         }
-        @media #{$xxl}{
+
+        @media #{$xxl} {
             left: -2%;
             top: 21%;
         }
-        @media #{$xl}{
+
+        @media #{$xl} {
             left: -2%;
             top: 3%;
         }
-        @media #{$lg}{
+
+        @media #{$lg} {
             left: -4%;
             top: 2%;
         }
     }
-    &__shape-3{
+
+    &__shape-3 {
         position: absolute;
         left: 14%;
         top: 58%;
         z-index: -1;
         animation: moving 9s linear infinite;
-        @media #{$xxxl}{
+
+        @media #{$xxxl} {
             left: 7%;
         }
-        @media #{$xxl}{
+
+        @media #{$xxl} {
             left: 0%;
             top: 62%;
         }
-        @media #{$xl}{
+
+        @media #{$xl} {
             left: -1%;
         }
     }
 
-    &__shape-4{
+    &__shape-4 {
         position: absolute;
         left: 3%;
         bottom: 8%;
         z-index: -1;
         animation: moving 9s linear infinite;
-        @media #{$xl}{
+
+        @media #{$xl} {
             left: 6%;
             bottom: 5%;
         }
-        @media #{$lg}{
+
+        @media #{$lg} {
             left: 5%;
             bottom: 6%;
         }
     }
 }
+
 .testimonial-4-slider-dots {
     margin-top: 50px;
     position: relative;
     z-index: 2;
+
     & .swiper-pagination-bullet {
         width: 18px;
         height: 18px;
@@ -474,14 +589,17 @@
         margin: 0 5px;
         transition: .3s;
     }
+
     & .swiper-pagination-bullet-active {
         background-color: var(--it-theme-1);
     }
 }
+
 .testimonial-3-slider-dots {
     margin-top: 60px;
     position: relative;
     z-index: 2;
+
     & .swiper-pagination-bullet {
         width: 18px;
         height: 18px;
@@ -493,39 +611,49 @@
         margin: 0 5px;
         transition: .3s;
     }
+
     & .swiper-pagination-bullet-active {
         background-color: var(--it-theme-1);
     }
 }
-.testimonial-4{
+
+.testimonial-4 {
     &__slider-wrapper {
         & .swiper-wrapper {
             padding-bottom: 50px;
         }
     }
-    &__plr{
+
+    &__plr {
         padding: 0 200px;
-        @media #{$xxxl}{
-            padding:0 100px;
+
+        @media #{$xxxl} {
+            padding: 0 100px;
         }
-        @media #{$xxl}{
-            padding:0 100px;
+
+        @media #{$xxl} {
+            padding: 0 100px;
         }
-        @media #{$xl,$lg,$md}{
+
+        @media #{$xl,$lg,$md} {
             padding: 0 30px;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             padding: 0;
         }
     }
-    &__space{
+
+    &__space {
         padding-top: 100px;
         padding-bottom: 100px;
     }
-    &__section-box{
+
+    &__section-box {
         padding-bottom: 40px;
     }
-    &__item{
+
+    &__item {
         background-color: var(--it-common-black-7);
         padding: 30px 55px;
         padding-bottom: 60px;
@@ -535,103 +663,126 @@
         z-index: 2;
         border: 1px dashed transparent;
         transition: .3s;
-        @media #{$xxxl}{
-            padding: 30px 44px;            
+
+        @media #{$xxxl} {
+            padding: 30px 44px;
             padding-bottom: 60px;
         }
-        @media #{$lg}{
-            padding: 30px 22px;                      
+
+        @media #{$lg} {
+            padding: 30px 22px;
             padding-bottom: 60px;
         }
-        @media #{$md}{
+
+        @media #{$md} {
             border-bottom-right-radius: 200px;
             border-bottom-left-radius: 200px;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             padding: 30px 35px;
             padding-bottom: 30px;
             padding-bottom: 60px;
         }
-        &:hover{
+
+        &:hover {
             border: 1px dashed var(--it-theme-1);
         }
     }
-    &__icon{
+
+    &__icon {
         padding-bottom: 20px;
-        & i{
+
+        & i {
             color: var(--it-theme-1);
             padding: 0 4px;
             font-size: 23px;
-            &.star-color{
+
+            &.star-color {
                 color: var(--it-common-white);
             }
         }
     }
-    &__text{
+
+    &__text {
         padding-bottom: 10px;
-        & p{
+
+        & p {
             font-style: italic;
             color: var(--it-common-white);
             line-height: 1.8;
         }
     }
-    &__author-info{
+
+    &__author-info {
         padding-bottom: 15px;
-        & span{
+
+        & span {
             color: var(--it-common-white);
         }
     }
-    &__author-name{
+
+    &__author-name {
         font-size: 22px;
         color: var(--it-common-white);
         padding-bottom: 5px;
         transition: .3s;
+
         &:hover {
             color: var(--it-theme-1);
         }
     }
-    &__author-img{
+
+    &__author-img {
         position: absolute;
         bottom: -13%;
         left: 50%;
         transform: translateX(-50%);
     }
-    &__item-shape{
+
+    &__item-shape {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         color: #292728;
         font-size: 120px;
         z-index: -1;
     }
-    &__shape-1{
+
+    &__shape-1 {
         position: absolute;
         top: 6%;
         left: 3%;
         animation: rotate2 15s linear infinite;
-        @media #{$lg}{
+
+        @media #{$lg} {
             top: 3%;
         }
     }
-    &__shape-2{
+
+    &__shape-2 {
         position: absolute;
         bottom: 13%;
         right: 6%;
         animation: tpupdown 0.8s infinite alternate;
-        @media #{$xxxl}{
+
+        @media #{$xxxl} {
             bottom: 8%;
             right: 3%;
         }
-        @media #{$xxl}{
+
+        @media #{$xxl} {
             bottom: 7%;
             right: 3%;
         }
-        @media #{$xl}{
+
+        @media #{$xl} {
             bottom: 7%;
             right: 2%;
         }
-        @media #{$lg}{
+
+        @media #{$lg} {
             bottom: 5%;
             right: 2%;
         }

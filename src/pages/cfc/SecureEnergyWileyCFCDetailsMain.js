@@ -20,7 +20,7 @@ const IoMSmartHealthcareWileyDetailsMain = () => {
 
   return (
     <main>
-      <Breadcrumb pageTitle={cfcDetails.title.text} />
+      <Breadcrumb pageTitle="Call For Chapters" />
       <CallForChapterDetails {...cfcDetails} editorsBiographies={editorsBiographies} />
       <div className="container">
         <div className="row">
