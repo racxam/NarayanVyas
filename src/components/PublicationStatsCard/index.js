@@ -23,24 +23,22 @@ const PublicationStatsCard = () => {
             setError(null);
 
             try {
-                const authorId = '57221967474';  // Replace with actual author ID
+                const authorId = '57221967474';
                 const data = await fetchScopusStats(authorId);
 
                 console.log('Scopus data fetched:', data);
 
-                // Process the data to extract the required statistics
                 const hIndex = data['author-retrieval-response'][0]['h-index'];
                 const coauthorCount = data['author-retrieval-response'][0]['coauthor-count'];
                 const citationsCount = data['author-retrieval-response'][0]['coredata']['citation-count'];
                 const documentCount = data['author-retrieval-response'][0]['coredata']['document-count'];
 
-                // Update the stats with the fetched data
                 setStats([
                     { icon: <Star style={{ color: '#FFDC60' }} />, heading: 'Author ID', text: '57221967474', link: 'https://www.scopus.com/authid/detail.uri?authorId=57221967474' },
                     { icon: <Person style={{ color: '#FFDC60' }} />, heading: 'h-index', text: hIndex },
-                    { icon: <Person style={{ color: '#FFDC60' }} />, heading: 'Coauthors', text: coauthorCount },
-                    { icon: <LibraryBooks style={{ color: '#FFDC60' }} />, heading: 'Citations', text: citationsCount },
                     { icon: <Article style={{ color: '#FFDC60' }} />, heading: 'Documents', text: documentCount },
+                    { icon: <LibraryBooks style={{ color: '#FFDC60' }} />, heading: 'Citations', text: citationsCount },
+                    { icon: <Person style={{ color: '#FFDC60' }} />, heading: 'Co-Authors', text: coauthorCount },
                 ]);
 
                 setLoading(false);
