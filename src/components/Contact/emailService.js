@@ -2,11 +2,10 @@ import axios from 'axios';
 
 const sendEmail = async (emailData) => {
     try {
-        await axios.post('https://cors-anywhere.herokuapp.com/https://api.zeptomail.com/v1.1/email/template', emailData, {
+        await axios.post('https://web-email-proxy-823d619a0ab4.herokuapp.com/send-email', emailData, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'Authorization': `Zoho-enczapikey wSsVR60nq0X1WP16z2WvJuc7mw9XBVLxFBkv3lSl7Xb/T63FoMdvlEXGDFeuSfcfEmVsFWQW8rl8yxcH2jENiYkqywwGWyiF9mqRe1U4J3x17qnvhDzIXmVYlRKBL4kBxQ9tkmJhGski+g==`,
             },
         });
     } catch (error) {
