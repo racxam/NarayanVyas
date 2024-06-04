@@ -62,7 +62,6 @@ const BookProposalFormContainer = (props) => {
 
         try {
             await sendEmail(formData);
-            e.target.reset();
             setAuthors([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]); // Reset authors
         } catch (error) {
             console.error("Error submitting proposal:", error);

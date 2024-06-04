@@ -14,10 +14,14 @@
 		"animate.css": "^4.1.1",
 		"axios": "^1.7.2",
 		"bootstrap": "^5.2.3",
+		"concurrently": "^8.2.2",
 		"core-js": "^3.27.1",
+		"cors": "^2.8.5",
 		"emailjs-com": "^3.2.0",
+		"express": "^4.19.2",
 		"framer-motion": "^10.6.0",
 		"gsap": "^3.11.5",
+		"http-proxy-middleware": "^3.0.0",
 		"jquery": "^3.6.4",
 		"react": "^18.2.0",
 		"react-accessible-accordion": "^5.0.0",
@@ -42,7 +46,7 @@
 		"zeptomail": "^6.0.0"
 	},
 	"scripts": {
-		"start": "react-scripts start",
+		"start": "concurrently \"react-scripts start\" \"node api/send-email.js\"",
 		"dev": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
