@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactMain from './ContactMain';
 import Header from '../../components/Header';
-import FooterThree from '../../components/Footer/FooterThree';
+import Footer from '../../components/Footer';
 
 const Contact = () => {
     return (
@@ -13,10 +13,10 @@ const Contact = () => {
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <ContactMain />
-                    <FooterThree />
+                    <Footer />
                 </div>
             </div>
-                    
+
         </>
     );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumnew';
+import Breadcrumb from '../../components/Breadcrumb';
 import { InlineWidget } from "react-calendly";
 
 const AppointmentsMain = () => {

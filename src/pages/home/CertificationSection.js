@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionTitle from '../../components/SectionTitle/index'
-import CertificatesMasonaryMain from '../../components/certificates/certificateMasonary';
+import CertificatesMasonary from '../../components/CertificateMasonary';
 
 const CertificationSection = () => {
     return (
@@ -15,10 +15,10 @@ const CertificationSection = () => {
                 </div>
             </div>
 
-            <CertificatesMasonaryMain />
+            <CertificatesMasonary />
         </div>
 
     )
 }
 
-export default CertificationSection
+export default CertificationSection;

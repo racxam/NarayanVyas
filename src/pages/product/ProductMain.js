@@ -1,5 +1,5 @@
 import React from 'react';
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumnew';
+import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
 import SingleProduct from '../../components/Product';
 

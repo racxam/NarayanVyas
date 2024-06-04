@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import productImg from '../../assets/img/product/product-3.jpg';
 
 const SingleProduct = (props) => {
-    const { itemClass, Image, Title, Price, Publisher, Url, btnText } = props;
+    const { itemClass, Image, Title, Price, Url } = props;
     return (
         <div className={itemClass ? itemClass : 'product__item text-center'}>
             <div className="product__img-container">

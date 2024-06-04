@@ -1,8 +1,8 @@
 import React from 'react';
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumnew';
+import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
 import callForChaptersData from '../../data/callForChaptersBooksData'; // Import the CFC data array
-import SingleProductWithImageOnly from '../../components/Product/single_product_with_image_only';
+import CallForChaptersImageOnly from '../../components/CallForChapters/call_for_chapters_image_only';
 import bgImg from '../../assets/img/cta/cta-bg-2.png';
 
 const CFCMain = () => {
@@ -28,7 +28,7 @@ const CFCMain = () => {
 								className="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp"
 								data-wow-duration="1.1s"
 							>
-								<SingleProductWithImageOnly
+								<CallForChaptersImageOnly
 									Image={book.title.image}
 									Title={book.title.text}
 									Publisher={book.publisher}

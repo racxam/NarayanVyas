@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from '../../components/SectionTitle/index';
-import SingleProductWithImageOnly from '../../components/Product/single_product_with_image_only';
+import CallForChaptersImageOnly from '../../components/CallForChapters/call_for_chapters_image_only';
 import cfcData from '../../data/callForChaptersBooksData';
 
 const sortedCfcData = cfcData.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
@@ -27,7 +27,7 @@ const CFCIndex = () => {
 							className="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp"
 							data-wow-duration="1.1s"
 						>
-							<SingleProductWithImageOnly
+							<CallForChaptersImageOnly
 								Image={book.title.image}
 								Title={book.title.text}
 								Publisher={book.publisher}

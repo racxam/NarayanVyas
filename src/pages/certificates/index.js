@@ -1,9 +1,11 @@
 import React from 'react';
-import ProjectMain from './ProjectMain';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Breadcrumb from '../../components/Breadcrumb';
+import CTA from '../../components/CTA';
+import CertificateMasonary from '../../components/CertificateMasonary';
 
-const Project = () => {
+const index = () => {
   return (
     <>
       <Header
@@ -12,7 +14,14 @@ const Project = () => {
       />
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <ProjectMain />
+          <Breadcrumb
+            pageTitle="My Certifications"
+          />
+
+          <CertificateMasonary />
+          <CTA
+            btnText={"Book Appointment"}
+          />
           <Footer />
         </div>
       </div>
@@ -21,4 +30,4 @@ const Project = () => {
   );
 }
 
-export default Project;
+export default index;

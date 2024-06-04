@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumnew';
+import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
 import editorsBiographies from '../../data/editorsBiographies';
 import booksData from '../../data/booksData';
@@ -11,12 +11,13 @@ import RelatedBooks from '../../components/RelatedBooks';
 import getRelatedBooks from '../../utils/getRelatedBooks';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import Error from '../error'
 
 const BookDetails = () => {
     const { bookId } = useParams();
     const bookDetails = booksData.find(book => book.id === bookId);
     if (!bookDetails) {
-        return <div>Book details not found.</div>;
+        return <Error />;
     }
 
     const relatedBooks = getRelatedBooks(bookId);

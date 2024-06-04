@@ -1,16 +1,11 @@
 import React from 'react';
-import About from '../home-2/AboutSection';
-import Blog from './BlogSection';
-import Brand from '../../components/Brand';
-import Company from './CompanySection';
-import Counter from '../home-5/CounterSection';
+import About from '../home/AboutSection';
+import Counter from '../home/CounterSection';
 import CTA from './CtaSection';
-import Feature from './FeatureSection';
 import Banner from './HomeBanner';
 import Project from './ProjectSection';
 import Service from './ServiceSection';
-import Testimonial from '../home-2/TestimonialSection';
-import Social from './SocialSection';
+import Testimonial from '../home/TestimonialSection';
 import HomePagePublications from './HomePagePublications';
 import Contact from '../../components/Contact/ContactTwo'
 import Books from '../../components/Books/index'
@@ -56,9 +51,6 @@ const HomeMain = () => {
 			<Testimonial />
 
 			<Contact />
-
-
-			{/* <Blog /> */}
 
 			<CTA />
 
