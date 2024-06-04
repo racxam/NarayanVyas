@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const sendEmail = async (emailData) => {
     try {
+        // Using Heroku
         await axios.post('https://web-email-proxy-823d619a0ab4.herokuapp.com/send-email', emailData, {
             headers: {
                 'Accept': 'application/json',
