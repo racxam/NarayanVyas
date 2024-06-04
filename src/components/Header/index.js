@@ -88,12 +88,12 @@ const Header = (props) => {
 		<>
 			{topbarEnable ? <Topbar /> : ''}
 
-			<header>
+			<header >
 				<div id="header-sticky" className={`${headerClass ? headerClass : 'header__area header__transparent header__space header__plr'} ${isVisible ? 'header-sticky' : ''}`}>
-					<div className="container-fluid">
-						<div className="row align-items-center">
-							<div className="col-xl-3 col-lg-3 col-7 col-md-6">
-								<div className="header__logo">
+					<div className="container-fluid" >
+						<div className="row align-items-center" >
+							<div className="col-xl-3 col-lg-3 col-7 col-md-6" >
+								<div className="header__logo" >
 									<Link to="/">
 										{/* <img src={headerLogo ? headerLogo : Logo} alt="" /> */}
 										<h2>Narayan Vyas</h2>
@@ -112,7 +112,7 @@ const Header = (props) => {
 									</nav>
 								</div>
 							</div>
-							<div className="col-xl-3 col-lg-7 col-5 col-md-6 mt-15" >
+							<div className="col-xl-3 col-lg-2 col-5 col-md-6 mt-15" >
 								<div className="header__action d-flex justify-content-end">
 									<Link className="main-btn-sm d-none d-xl-block tp-btn-hover alt-color" to="/appointments">
 										<span>Book Appointment</span>

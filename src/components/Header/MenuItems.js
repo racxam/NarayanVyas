@@ -10,7 +10,7 @@ const MenuItems = (props) => {
         about: false,
         service: false,
         page: false,
-        blog: false
+        blog: false 
     });
 
     const openMobileMenu = menu => {
