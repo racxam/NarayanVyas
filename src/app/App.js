@@ -35,6 +35,7 @@ import Certificates from '../pages/certificates';
 
 // Books
 import Books from '../pages/books';
+import BookProposalForm from '../pages/books/BookProposalFormContainer';
 import BooksDetails from '../pages/books/BookDetails';
 
 // Call For Chapters
@@ -101,6 +102,7 @@ const App = () => {
                     {/* Books */}
                     <Route path="/books" element={<Books />} />
                     <Route path="/books/:bookId" element={<BooksDetails />} />
+                    <Route path="/book-proposal" element={<BookProposalForm />} />
 
                     {/* Call For Chapters */}
                     <Route path="/call-for-chapters" element={<CFC />} />
