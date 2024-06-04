@@ -88,10 +88,10 @@ function Slider1() {
 
         <div className="slider-controler1">
           <div className="swiper-button-prev slider-arrow">
-            <i class="fas fa-thin fa-arrow-left"></i>
+            <i class="far fa-arrow-left"></i>
           </div>
           <div className="swiper-button-next slider-arrow">
-            <i class="fas fa-thin fa-arrow-right"></i>
+            <i class="far fa-arrow-right"></i>
           </div>
           <div className="swiper-pagination1 .swiper-pagination-bullet .swiper-pagination-bullet-active"></div>
         </div>

@@ -2,6 +2,7 @@
   --primary1: #6a59ff;
   --white1: #ffffff;
   --bg1: #f5f5f5;
+  
 }
 
 html {
@@ -136,7 +137,7 @@ body {
 
 .slider-controler1 .slider-arrow {
 
-  background: var(--white1);
+  background: rgba(254,220,95,255);
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
