@@ -6,15 +6,15 @@
 
 .cta{
     &__plr{
-        margin:0 400px;
+        margin:0 24px;
         @media #{$xxxl}{
-            margin:0 400px;
+            margin:0 24px;
         }
         @media #{$xxl}{
-            margin:0 400px;
+            margin:0 40px;
         }
         @media #{$xl,$lg,$md}{
-            margin: 0 180px;
+            margin: 0 40px;
         }
         @media #{$xs}{
             margin: 0;
@@ -28,11 +28,11 @@
         margin-bottom: -165px;
         padding: 1px;
         @media #{$xs}{
-            padding: 50px 30px;
+            padding: 1px 30px;
             border-radius: 0;
         } 
         @media #{$xxs}{
-            padding: 50px 15px;
+            padding: 1px 15px;
         } 
     }
     &__title{
@@ -82,7 +82,9 @@
         }
     }
     &__section-wrapper {
-        padding-top: 30px;
+
+        padding-top: 0px;
+        width: 70%;
         @media #{$md,$xs}{
             padding-top: 0;
         }

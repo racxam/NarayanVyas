@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SingleTestimonial from '../../components/Testimonial';
 import SectionTitle from '../../components/SectionTitle';
 
-import shapeImg1 from '../../assets/img/testimonial/testi-shape-7.png';
-import shapeImg2 from '../../assets/img/testimonial/testi-shape-8.png';
+import shapeImg1 from '../../assets/img/testimonial/client1_circle.png';
+import shapeImg2 from '../../assets/img/testimonial/client2_circle.png';
 import shapeImg3 from '../../assets/img/testimonial/testi-shape-9.png';
 import shapeImg4 from '../../assets/img/testimonial/testi-shape-10.png';
 import shapeImg5 from '../../assets/img/testimonial/testi-shape-11.png';
@@ -13,7 +13,7 @@ import client1 from '../../assets/img/testimonial/client1.png';
 import client2 from '../../assets/img/testimonial/client2.png';
 import client3 from '../../assets/img/testimonial/client1.png';
 import client4 from '../../assets/img/testimonial/client2.png';
-
+ 
 const Testimonial = () => {
     const sliderOption = {
         pagination: {
@@ -38,7 +38,7 @@ const Testimonial = () => {
                 <img src={shapeImg2} alt="" />
             </div>
             <div className="testimonial-2__shape-5 d-none d-xl-block">
-                <img src={shapeImg3} alt="" />
+                <img src={shapeImg1} alt="" />
             </div>
             <div className="testimonial-2__shape-6 d-none d-lg-block">
                 <img src={shapeImg4} alt="" />
@@ -47,7 +47,7 @@ const Testimonial = () => {
                 <img src={shapeImg5} alt="" />
             </div>
             <div className="testimonial-2__shape-8 d-none d-lg-block">
-                <img src={shapeImg3} alt="" />
+                <img src={shapeImg2} alt="" />
             </div>
             <div className="container">
                 <div className="row">

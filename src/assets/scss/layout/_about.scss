@@ -379,7 +379,7 @@
                 padding-right: 15px;
             }
         }
-    }
+    }  
 
     &__img-text {
         & h5 {
@@ -423,7 +423,7 @@
         padding-bottom: 2px;
 
 
-        max-width: 50%;
+        max-width: 100%;
         margin-right: 30px;
         
         
@@ -492,7 +492,7 @@
                 width: 50%;
                 float: left;
                 list-style: none;
-                padding-bottom: 9px;
+                padding-bottom: 15px;
                 padding-right: 20px;
 
                 @media #{$xs} {

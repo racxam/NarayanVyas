@@ -7,6 +7,7 @@
     &__plr {
         padding: 0 180px;
 
+
         @media #{$xxxl} {
             padding: 0 100px;
         }
@@ -233,7 +234,9 @@
 
 .product-details {
     &__plr {
+        position: relative;
         padding: 0 200px;
+
 
         @media #{$xxxl} {
             padding: 0 100px;
