@@ -3,13 +3,13 @@ import axios from 'axios';
 import BookProposalForm from './BookProposalForm';
 
 const books = [
-    { id: 1, name: 'Book 11' },
+    { id: 1, name: 'Book 1' },
     { id: 2, name: 'Book 2' },
     { id: 3, name: 'Book 3' }
 ];
 
 const chapters = [
-    { id: 1, name: 'Chapter 111' },
+    { id: 1, name: 'Chapter 1' },
     { id: 2, name: 'Chapter 2' },
     { id: 3, name: 'Chapter 3' }
 ];
@@ -86,7 +86,7 @@ const BookProposalFormContainer = (props) => {
         };
 
         try {
-            await axios.post('https://api.zeptomail.com/v1.1/email', emailData, {
+            await axios.post('https://cors-anywhere.herokuapp.com/https://api.zeptomail.com/v1.1/email', emailData, {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
