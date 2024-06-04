@@ -70,7 +70,7 @@ const BookProposalForm = ({
                     <div className="row align-items-center justify-content-center">
                         <div className="col-xl-8 col-lg-7">
                             <div className="contact__section-title pb-10">
-                                <h4 className="section-subtitle char-anim">Submit a Book Proposal</h4>
+                                <h4 className="section-subtitle char-anim">Submit a Book Chapter Proposal</h4>
                                 <h3 className="section-title char-anim">We are excited to hear your ideas!</h3>
                             </div>
                             {successMessage && (
