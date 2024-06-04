@@ -1,0 +1,95 @@
+.custom-select select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    appearance: none;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.author-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.corresponding-author {
+    border: 1px solid #FFDC60;
+    /* Yellow border */
+}
+
+.postbox__contact-input input,
+.postbox__contact-textarea textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.author-btn {
+    height: 38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #81C784;
+    /* Lighter green */
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #E57373;
+    /* Lighter red */
+    color: #fff;
+}
+
+.author-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.corresponding-author-header {
+    background-color: #FFDC60;
+    /* Selected author yellow bg */
+    color: #FFDC60;
+}
+
+.non-corresponding-author-header {
+    background-color: #FFF8DF;
+    /* Yellow */
+    color: #fff;
+}
+
+.corresponding-label {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.corresponding-label input {
+    margin-right: 5px;
+    accent-color: #000;
+    /* Styling the checkbox */
+}
+
+.postbox__contact-input {
+    width: calc(100% - 20px);
+    /* Adjust width to match author box */
+}
