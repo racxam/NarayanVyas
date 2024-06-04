@@ -19,9 +19,9 @@ const BookDetailsPage = ({
     editorOrder,
     editorsBiographies
 }) => {
-    const tabStyle = 'nav nav-tabs pro-details-nav-btn';
+    const tabStyle = 'nav nav-tabs pro-details-nav-btn'; 
     return (
-        <div className="product-details__area product-details__plr mt-100 mb-70">
+        <div className=" product-details__plr mt-100 mb-0">
             <div className="container">
                 <div className="row gx-40 mb-100">
                     <div className="col-xl-6 col-lg-6 col-md-6 wow animate__fadeInLeft" data-wow-duration="1.1s">
@@ -59,7 +59,7 @@ const BookDetailsPage = ({
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row mb-0" >
                     <div className="productdetails-tabs mb-100">
                         <div className="row justify-content-center">
                             <div className="col-xl-12 col-lg-12 col-12">
@@ -75,9 +75,9 @@ const BookDetailsPage = ({
                                             <TabPanel>
                                                 <ul>
                                                     {chapters.map((chapter, index) => (
-                                                        <li key={index}>
+                                                     <li key={index} style={{listStyle:"none"}}>
                                                             <h6>{chapter.title}</h6>
-                                                            <p>Authors: {chapter.authors.join(', ')}</p>
+                                                            <p style={{marginLeft:"69px"}}> <i class=" fas fa-solid fa-pen-nib"></i> Authors: {chapter.authors.join(', ')}</p>
                                                         </li>
                                                     ))}
                                                 </ul>

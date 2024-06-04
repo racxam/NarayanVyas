@@ -5,8 +5,11 @@ import SingleProduct from '../Product';
 
 const index = ({ relatedBooks }) => {
     return (
-        <div className="container">
-            <div className="row">
+
+
+    
+        <div className="container" style={{marginTop:"0px"}} >
+            <div className="row" mb-0>
                 <div className="col-xl-12">
                     <div className="product__title-sm wow animate__fadeInUp" data-wow-duration="1.1s">
                         <h4>Showing all Related Products:</h4>
@@ -27,6 +30,7 @@ const index = ({ relatedBooks }) => {
                 ))}
             </div>
         </div>
+
     );
 };
 

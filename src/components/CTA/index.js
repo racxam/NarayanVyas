@@ -10,7 +10,7 @@ const CTA = (props) => {
 		<div className={ctaClass ? ctaClass : 'cta__area cta__bg cta__bg-2 cta__plr p-relative wow animate__fadeInUp'} data-wow-duration="1.1s" style={{ backgroundImage: `url(${ctaBG ? ctaBG : bgImg})` }}>
 			<div className="container">
 				<div className="row">
-					<div className="col-12">
+					<div className="col-12 d-flex justify-content-center">
 						<div className="cta__section-wrapper text-center">
 							<div className="cta__section-box">
 								<h4 className="cta__title text-white wow animate__fadeInUp" data-wow-duration="1.1s">{Title ? Title : 'Need Help?'}</h4>
