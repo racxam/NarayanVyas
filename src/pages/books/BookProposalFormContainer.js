@@ -65,8 +65,8 @@ const BookProposalFormContainer = (props) => {
             subject: 'New Book Proposal Submission',
             htmlbody: `
             <div style="font-family: Arial, sans-serif; padding: 20px; color: #333;">
-                <h2 style="color: #007BFF; margin-bottom: 20px;">New Book Proposal Submission</h2>
-                <h3 style="color: #007BFF; margin-bottom: 10px;">Proposal Details</h3>
+                <h2 style="color: #007BFF; margin-bottom: 20px; text-align:center;">New Book Proposal Submission</h2>
+                <h3 style="color: #007BFF; margin-bottom: 10px; text-align:center;">Proposal Details</h3>
                 <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 16px;">
                     <tbody>
                         <tr>
