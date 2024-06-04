@@ -1,6 +1,5 @@
-// BookProposalFormContainer.js
 import React, { useState } from 'react';
-import sendEmail from '../../components/Contact/emailService'; // Adjust the path as needed
+import axios from 'axios';
 import BookProposalForm from './BookProposalForm';
 
 const books = [
@@ -60,11 +59,43 @@ const BookProposalFormContainer = (props) => {
             authors,
         };
 
+        const emailData = {
+            from: { address: 'contact@narayanvyas.com' },
+            to: [{ email_address: { address: 'narayanvyas87@gmail.com', name: 'Narayan' } }],
+            subject: 'New Book Proposal Submission',
+            htmlbody: `
+                <div>
+                    <p><b>Book:</b> ${formData.book}</p>
+                    <p><b>Chapter:</b> ${formData.chapter}</p>
+                    <p><b>Suggested Title:</b> ${formData.suggestedTitle}</p>
+                    <p><b>Chapter Subtitles:</b> ${formData.chapterSubtitles}</p>
+                    <p><b>Keywords:</b> ${formData.keywords}</p>
+                    <p><b>Proposal:</b> ${formData.proposal}</p>
+                    <p><b>Authors:</b></p>
+                    ${formData.authors.map(author => `
+                        <div>
+                            <p>Name: ${author.name}</p>
+                            <p>Email: ${author.email}</p>
+                            <p>Department: ${author.department}</p>
+                            <p>Institution: ${author.institution}</p>
+                            <p>Corresponding: ${author.isCorresponding ? 'Yes' : 'No'}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            `
+        };
+
         try {
-            await sendEmail(formData);
+            await axios.post('https://api.zeptomail.com/v1.1/email', emailData, {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Authorization': `Zoho-enczapikey wSsVR60nq0X1WP16z2WvJuc7mw9XBVLxFBkv3lSl7Xb/T63FoMdvlEXGDFeuSfcfEmVsFWQW8rl8yxcH2jENiYkqywwGWyiF9mqRe1U4J3x17qnvhDzIXmVYlRKBL4kBxQ9tkmJhGski+g==`
+                }
+            });
             setAuthors([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]); // Reset authors
         } catch (error) {
-            console.error("Error submitting proposal:", error);
+            console.error("Error submitting proposal:", error.response ? error.response.data : error.message);
         }
     };
 
@@ -81,7 +112,6 @@ const BookProposalFormContainer = (props) => {
             handleRemoveAuthor={handleRemoveAuthor}
         />
     );
-    // p
-}
+};
 
 export default BookProposalFormContainer;

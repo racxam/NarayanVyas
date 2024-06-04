@@ -5,8 +5,8 @@ const sendEmail = async (formData) => {
     const zeptoMailAPIKey = 'wSsVR60nq0X1WP16z2WvJuc7mw9XBVLxFBkv3lSl7Xb/T63FoMdvlEXGDFeuSfcfEmVsFWQW8rl8yxcH2jENiYkqywwGWyiF9mqRe1U4J3x17qnvhDzIXmVYlRKBL4kBxQ9tkmJhGski+g==';
 
     const emailData = {
-        from: { address: 'noreply@narayanvyas.com' },
-        to: [{ email_address: { address: 'admin@narayanvyas.com', name: 'Narayan' } }],
+        from: { address: 'contact@narayanvyas.com' },
+        to: [{ email_address: { address: 'narayanvyas87@gmail.com', name: 'Narayan' } }],
         subject: 'New Book Proposal Submission',
         htmlbody: `
             <div>
