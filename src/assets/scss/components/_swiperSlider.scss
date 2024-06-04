@@ -1,4 +1,8 @@
-
+:root {
+  --primary1: #6a59ff;
+  --white1: #ffffff;
+  --bg1: #f5f5f5;
+}
 
 html {
   font-size: 62.5%;
@@ -27,13 +31,16 @@ html {
 
 body {
   font-size: 1.6rem;
-  background: var(--bg);
+
+
 }
 
 .container1 {
   max-width: 140rem;
   padding: 4rem 1rem;
   margin: 0 auto;
+
+
 
 }
 
@@ -55,6 +62,7 @@ body {
   width: 37rem !important;
   height: 42rem !important;
   position: relative;
+
 }
 
 @media (max-width: 500px) {
@@ -85,10 +93,11 @@ body {
 
 .slider-controler1 {
   position: relative;
-  bottom: 2rem;
+  bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .slider-controler1 .swiper-button-next {
@@ -121,17 +130,22 @@ body {
   .slider-controler1 .swiper-button-prev {
     left: 20% !important;
     transform: translateX(-20%) !important;
+    
   }
 }
 
 .slider-controler1 .slider-arrow {
-  background: var(--white);
+
+  background: var(--white1);
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
   left: 42%;
   transform: translateX(-42%);
   filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  margin-bottom: 10px;
+  padding: 5px;
+
 }
 
 .slider-controler1 .slider-arrow i {
@@ -154,5 +168,5 @@ body {
 }
 
 .swiper-pagination1 .swiper-pagination-bullet-active {
-  background: var(--primary);
+  background: var(--primary1);
 }
