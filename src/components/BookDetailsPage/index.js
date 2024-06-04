@@ -76,8 +76,8 @@ const BookDetailsPage = ({
                                                 <ul>
                                                     {chapters.map((chapter, index) => (
                                                      <li key={index} style={{listStyle:"none"}}>
-                                                            <h6>{chapter.title}</h6>
-                                                            <p style={{marginLeft:"69px"}}> <i class=" fas fa-solid fa-pen-nib"></i> Authors: {chapter.authors.join(', ')}</p>
+                                                            <p>{chapter.title}</p>
+                                                            <p style={{marginLeft:"69px"}}> Authors: {chapter.authors.join(', ')}</p>
                                                         </li>
                                                     ))}
                                                 </ul>
