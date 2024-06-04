@@ -52,6 +52,7 @@ const Project = ({ subTitle, title, slidesToShow }) => {
                             Title={title ? title : "Showcasing Excellence in Technology and Innovation"}
                         />
                     </div>
+                    
                     <div className="col-lg-6 col-md-3">
                         <div className="project__section-arrow d-flex align-items-center justify-content-end">
                             <div className="swiper-button swiper-button-prev">

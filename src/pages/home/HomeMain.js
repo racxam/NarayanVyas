@@ -12,6 +12,7 @@ import Books from '../../components/Books/index'
 
 import CertificationSection from './CertificationSection';
 import CFCComponent from '../../components/CallForChapters/index'
+import Slider1 from '../../components/Slider/Slider'
 
 const HomeMain = () => {
 	return (
@@ -49,6 +50,7 @@ const HomeMain = () => {
 			{/* <Company /> */}
 
 			<Testimonial />
+
 
 			<Contact />
 

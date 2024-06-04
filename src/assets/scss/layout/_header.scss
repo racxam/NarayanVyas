@@ -212,27 +212,45 @@
     }
     &__main-menu{
         & ul{
+
             margin-right: -65px;
-            @media #{$xxxl,$xxl,$xl}{
+            @media #{$xxxl}{
                 margin-right: 0;
             }
+            @media #{$xl}{
+                margin-right: 10px;
+                
+            }
+            @media #{$xxl}{
+                margin-right: 30px;
+            }
             @media #{$lg}{
-                margin-right: -30px;
+
+                margin-right: 10px;
             }
             & li{
                 display: inline-block;
                 list-style: none;
                 position: relative;
                 padding-left: 40px;
-                @media #{$xxxl,$xxl}{
+                @media #{$xxxl}{
                     padding-left: 28px;
                 }
+                @media #{$xxl}{
+                    padding-left:10px;
+                    
+
+                   
+                }
                 @media #{$xl}{
-                    padding-left: 22px;
+                    padding-left: 12px;
+
+                    font-size: 15px;
+                    // border: 10px solid green;
                 }
                 @media #{$lg}{
-                    padding-left:0;
-                    padding:0 14px;
+                    // border: 10px solid green;
+                    padding-left:10px;
                 }
                 @media #{$min-lg}{
                     & .mean-expand {

@@ -12,6 +12,6 @@ const CallForChaptersImageOnly = (props) => {
             </div>
         </div>
     )
-}
+}   
 
 export default CallForChaptersImageOnly;

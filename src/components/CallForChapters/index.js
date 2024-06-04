@@ -2,6 +2,7 @@ import React from 'react';
 import SectionTitle from '../../components/SectionTitle/index';
 import CallForChaptersImageOnly from '../../components/CallForChapters/call_for_chapters_image_only';
 import cfcData from '../../data/callForChaptersBooksData';
+import Slider1 from '../../components/Slider/Slider';
 
 const sortedCfcData = cfcData.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
 
@@ -20,7 +21,11 @@ const CFCIndex = () => {
 						</div>
 					</div>
 				</div>
-				<div className="row">
+
+
+				<Slider1/>
+
+				{/* <div className="row">
 					{sortedCfcData.map((book) => (
 						<div
 							key={book.id}
@@ -36,7 +41,13 @@ const CFCIndex = () => {
 							/>
 						</div>
 					))}
-				</div>
+				</div> */}
+
+
+
+
+
+
 			</div>
 		</div>
 	);
