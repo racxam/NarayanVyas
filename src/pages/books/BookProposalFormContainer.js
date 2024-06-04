@@ -3,7 +3,7 @@ import axios from 'axios';
 import BookProposalForm from './BookProposalForm';
 
 const books = [
-    { id: 1, name: 'Book 1' },
+    { id: 1, name: 'Book 11' },
     { id: 2, name: 'Book 2' },
     { id: 3, name: 'Book 3' }
 ];
