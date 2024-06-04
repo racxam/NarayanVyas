@@ -13,6 +13,7 @@ const sendEmail = async (emailData) => {
     }
 };
 
+
 const getEmailData = (formData, file, mail_template_key, from, to = [], cc = [], bcc = [], subject = 'New Chapter Proposal Received') => {
     const mergeInfo = {
         submissionId: formData.submissionId,
