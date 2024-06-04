@@ -93,3 +93,90 @@
     width: calc(100% - 20px);
     /* Adjust width to match author box */
 }
+
+.file-upload-container {
+    border: 2px dashed #999;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    height: 150px;
+    /* Increased height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-upload-container.drag-over {
+    border-color: #666;
+}
+
+.file-upload-label {
+    font-size: 18px;
+    color: #333;
+}
+
+.uploaded-file {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.file-name {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.file-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.remove-file-btn {
+    background: none;
+    border: none;
+    color: #ff0000;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.remove-file-btn:hover {
+    color: #cc0000;
+}
+
+.main-btn-sm .loading-spinner {
+    border: 4px solid #f3f3f3;
+    /* Light grey */
+    border-top: 4px solid #000;
+    /* Blue */
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.success-message {
+    background-color: #FFDC60;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+}

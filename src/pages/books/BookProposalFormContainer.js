@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import BookProposalForm from './BookProposalForm';
-import { getEmailBodyTemplate } from '../../data/emails/proposalSubmissionTemplate'; // Assuming emailBodyTemplate.js is in the same directory
+import { sendEmail, getEmailData } from '../../components/Contact/emailService';
 
 const books = [
     { id: 1, name: 'Book 1' },
@@ -15,11 +14,18 @@ const chapters = [
     { id: 3, name: 'Chapter 3' },
 ];
 
-// Import the email body template function
+const generateSubmissionId = (bookTitle) => {
+    const bookCode = bookTitle.replace(/[\s-]/g, '').substring(0, 4).toUpperCase();
+    const randomNumber = Math.floor(100000 + Math.random() * 900000); // 6-digit random number
+    return `${bookCode}${randomNumber}`;
+};
 
 const BookProposalFormContainer = (props) => {
     const { itemClass } = props;
     const [authors, setAuthors] = useState([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]);
+    const [file, setFile] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [successMessage, setSuccessMessage] = useState('');
 
     const handleAddAuthor = () => {
         if (authors.length < 6) {
@@ -49,11 +55,24 @@ const BookProposalFormContainer = (props) => {
         setAuthors(newAuthors);
     };
 
+    const handleFileDrop = (e) => {
+        setFile(e.target.files[0]);
+    };
+
+    const handleFileRemove = () => {
+        setFile(null);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
+
+        const bookTitle = e.target.book.value;
+        const submissionId = generateSubmissionId(bookTitle);
 
         const formData = {
-            book: e.target.book.value,
+            submissionId,
+            book: bookTitle,
             chapter: e.target.chapter.value,
             suggestedTitle: e.target.suggestedTitle.value,
             chapterSubtitles: e.target.chapterSubtitles.value,
@@ -62,30 +81,24 @@ const BookProposalFormContainer = (props) => {
             authors,
         };
 
-        // Generate email body using the template function with custom data
-        const emailBody = getEmailBodyTemplate(formData);
+        const mail_template_key = "2d6f.2a251775f7a95ff2.k1.00662cd0-2257-11ef-9632-5254008f5018.18fe2a2881d";
+        const from = { address: 'contact@narayanvyas.com', name: 'Author Relations' };
+        const to = authors.map(author => ({ email_address: { address: author.email, name: author.name } }));
+        const cc = [{ email_address: { address: 'narayanvyas87@gmail.com', name: 'Narayan Vyas' } }];
+        const bcc = []; // Add BCC addresses here if needed
 
-        const emailData = {
-            from: { address: 'contact@narayanvyas.com' },
-            to: [{ email_address: { address: 'narayanvyas87@gmail.com', name: 'Narayan' } }],
-            subject: 'New Book Proposal Submission',
-            htmlbody: emailBody,
-        };
+        const emailData = await getEmailData(formData, file, mail_template_key, from, to, cc, bcc, 'New Chapter Proposal Received');
+        await sendEmail(emailData);
 
-        try {
-            await axios.post('https://cors-anywhere.herokuapp.com/https://api.zeptomail.com/v1.1/email', emailData, {
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json',
-                    'Authorization': `Zoho-enczapikey wSsVR60nq0X1WP16z2WvJuc7mw9XBVLxFBkv3lSl7Xb/T63FoMdvlEXGDFeuSfcfEmVsFWQW8rl8yxcH2jENiYkqywwGWyiF9mqRe1U4J3x17qnvhDzIXmVYlRKBL4kBxQ9tkmJhGski+g==`,
-                },
-            });
-            setAuthors([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]); // Reset authors
-        } catch (error) {
-            console.error("Error submitting proposal:", error.response ? error.response.data : error.message);
-        }
+        setAuthors([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]);
+        setFile(null);
+        setLoading(false);
+        setSuccessMessage('Your proposal has been submitted successfully!');
+
+        setTimeout(() => {
+            setSuccessMessage('');
+        }, 7000);
     };
-
 
     return (
         <BookProposalForm
@@ -98,6 +111,11 @@ const BookProposalFormContainer = (props) => {
             handleCorrespondingChange={handleCorrespondingChange}
             handleAddAuthor={handleAddAuthor}
             handleRemoveAuthor={handleRemoveAuthor}
+            handleFileDrop={handleFileDrop}
+            handleFileRemove={handleFileRemove}
+            file={file}
+            loading={loading}
+            successMessage={successMessage}
         />
     );
 };

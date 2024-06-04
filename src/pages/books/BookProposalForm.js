@@ -1,10 +1,11 @@
-// BookProposalForm.js
-import React from 'react';
+import React, { useState } from 'react';
 import shapeImg1 from '../../assets/img/contact/ct-shape-1.png';
 import shapeImg2 from '../../assets/img/contact/ct-shape-2.png';
 import shapeImg3 from '../../assets/img/contact/ct-shape-3.png';
 import shapeImg4 from '../../assets/img/contact/ct-shape-4.png';
-import './BookProposal.css'; // Import the CSS file
+import pdfIcon from '../../assets/icons/pdf-icon.png'; // Add path to your PDF icon
+import wordIcon from '../../assets/icons/word-icon.png'; // Add path to your Word icon
+import './BookProposal.css';
 
 const BookProposalForm = ({
     itemClass,
@@ -15,8 +16,41 @@ const BookProposalForm = ({
     handleAuthorChange,
     handleCorrespondingChange,
     handleAddAuthor,
-    handleRemoveAuthor
+    handleRemoveAuthor,
+    handleFileDrop,
+    handleFileRemove,
+    file,
+    loading,
+    successMessage
 }) => {
+    const [dragOver, setDragOver] = useState(false);
+
+    const handleDragOver = (e) => {
+        e.preventDefault();
+        setDragOver(true);
+    };
+
+    const handleDragLeave = () => {
+        setDragOver(false);
+    };
+
+    const handleDrop = (e) => {
+        e.preventDefault();
+        setDragOver(false);
+        if (e.dataTransfer.files.length) {
+            handleFileDrop({ target: { files: e.dataTransfer.files } });
+        }
+    };
+
+    const renderFileIcon = (fileType) => {
+        if (fileType === 'application/pdf') {
+            return <img src={pdfIcon} alt="PDF" className="file-icon" />;
+        } else if (fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || fileType === 'application/msword') {
+            return <img src={wordIcon} alt="Word" className="file-icon" />;
+        }
+        return null;
+    };
+
     return (
         <div className={itemClass ? itemClass : 'contact__area contact__plr-2 mb-10 p-relative fix'}>
             <div className="contact__shape-1 d-none d-lg-block">
@@ -39,6 +73,11 @@ const BookProposalForm = ({
                                 <h4 className="section-subtitle char-anim">Submit a Book Proposal</h4>
                                 <h3 className="section-title char-anim">We are excited to hear your ideas!</h3>
                             </div>
+                            {successMessage && (
+                                <div className="success-message">
+                                    {successMessage}
+                                </div>
+                            )}
                             <div className="contact__form wow animate__fadeInUp" data-wow-duration="1.1s">
                                 <form onSubmit={handleSubmit}>
                                     <div className="row">
@@ -172,7 +211,38 @@ const BookProposalForm = ({
                                             </div>
                                         ))}
                                         <div className="col-sm-12">
-                                            <button type="submit" className="main-btn-sm tp-btn-hover alt-color"><span>Submit Proposal</span></button>
+                                            <div
+                                                className={`file-upload-container mt-25 mb-30 ${dragOver ? 'drag-over' : ''}`}
+                                                onDragOver={handleDragOver}
+                                                onDragLeave={handleDragLeave}
+                                                onDrop={handleDrop}
+                                                style={{ height: '150px' }}
+                                            >
+                                                <input
+                                                    type="file"
+                                                    id="file-upload"
+                                                    style={{ display: 'none' }}
+                                                    accept=".pdf,.doc,.docx"
+                                                    onChange={handleFileDrop}
+                                                />
+                                                {!file && (
+                                                    <label htmlFor="file-upload" className="file-upload-label">
+                                                        <span className="file-upload-text">Drag & drop or click to upload file</span>
+                                                    </label>
+                                                )}
+                                                {file && (
+                                                    <div className="uploaded-file">
+                                                        {renderFileIcon(file.type)}
+                                                        <span className="file-name">{file.name}</span>
+                                                        <button type="button" className="remove-file-btn" onClick={handleFileRemove}>×</button>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-12">
+                                            <button type="submit" className="main-btn-sm tp-btn-hover alt-color">
+                                                {loading ? <span className="loading-spinner"></span> : <span>Submit Proposal</span>}
+                                            </button>
                                         </div>
                                     </div>
                                 </form>

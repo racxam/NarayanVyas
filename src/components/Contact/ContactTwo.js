@@ -3,7 +3,6 @@ import shapeImg1 from '../../assets/img/contact/ct-shape-1.png';
 import shapeImg2 from '../../assets/img/contact/ct-shape-2.png';
 import shapeImg3 from '../../assets/img/contact/ct-shape-3.png';
 import shapeImg4 from '../../assets/img/contact/ct-shape-4.png';
-import sendEmail from './emailService'; // Adjust the path as needed
 
 const ContactTwo = (props) => {
     const { itemClass } = props;
@@ -17,7 +16,7 @@ const ContactTwo = (props) => {
             message: e.target.message.value,
         };
 
-        await sendEmail(formData);
+        // await sendEmail(formData);
         e.target.reset();
     };
 
