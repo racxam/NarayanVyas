@@ -21,6 +21,7 @@
 		"express": "^4.19.2",
 		"framer-motion": "^10.6.0",
 		"gsap": "^3.11.5",
+		"handlebars": "^4.7.8",
 		"http-proxy-middleware": "^3.0.0",
 		"jquery": "^3.6.4",
 		"react": "^18.2.0",

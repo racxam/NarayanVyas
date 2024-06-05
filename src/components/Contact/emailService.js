@@ -1,4 +1,5 @@
 import axios from 'axios';
+import getEmailTemplate from './emailTemplate';
 
 const sendEmail = async (emailData) => {
     try {
@@ -19,7 +20,19 @@ const sendEmail = async (emailData) => {
 
 export { sendEmail };
 
-const getEmailData = (formData, file, from, to = [], cc = [], bcc = [], subject = 'New Chapter Proposal Received') => {
+const readFileAsBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onloadend = () => {
+            const base64Content = reader.result.split(',')[1]; // Extract base64 content
+            resolve(base64Content);
+        };
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+    });
+};
+
+const getEmailData = async (formData, files, from, to = [], cc = [], bcc = [], isFinalChapter = false, publisherName = 'Wiley') => {
     const mergeInfo = {
         submissionId: formData.submissionId,
         proposal: formData.proposal,
@@ -28,54 +41,43 @@ const getEmailData = (formData, file, from, to = [], cc = [], bcc = [], subject 
         book: formData.book,
         chapterSubtitles: formData.chapterSubtitles,
         suggestedTitle: formData.suggestedTitle,
+        finalTitle: formData.finalTitle,
         authors: formData.authors.map(author => ({
             ...author,
             isCorresponding: author.isCorresponding ? 'Yes' : 'No',
         })),
     };
 
-    const htmlContent = `
-        <h1>New Chapter Proposal Received</h1>
-        <p><strong>Submission ID:</strong> ${mergeInfo.submissionId}</p>
-        <p><strong>Proposal:</strong> ${mergeInfo.proposal}</p>
-        <p><strong>Chapter:</strong> ${mergeInfo.chapter}</p>
-        <p><strong>Keywords:</strong> ${mergeInfo.keywords}</p>
-        <p><strong>Book:</strong> ${mergeInfo.book}</p>
-        <p><strong>Chapter Subtitles:</strong> ${mergeInfo.chapterSubtitles}</p>
-        <p><strong>Suggested Title:</strong> ${mergeInfo.suggestedTitle}</p>
-        <p><strong>Authors:</strong> ${mergeInfo.authors.map(author => `
-            <p>${author.name} - ${author.isCorresponding}</p>
-        `).join('')}</p>
-    `;
+    const htmlContent = getEmailTemplate(mergeInfo, isFinalChapter);
+    const bookCode = formData.book.replace(/[\s-]/g, '').substring(0, 4).toUpperCase();
+    const emailSubject = isFinalChapter
+        ? `Final Chapter Submission Confirmation (${publisherName}-${bookCode})`
+        : `Chapter Proposal Submission Confirmation (${publisherName}-${bookCode})`;
 
     const emailData = {
         from,
         to,
         cc,
         bcc,
-        subject,
+        subject: emailSubject,
         html: htmlContent,
+        attachments: []
     };
 
-    if (file) {
-        const reader = new FileReader();
-        return new Promise((resolve, reject) => {
-            reader.onloadend = () => {
-                const base64File = reader.result.split(',')[1];
-                emailData.attachments = [
-                    {
-                        filename: file.name,
-                        content: base64File,
-                    },
-                ];
-                resolve(emailData);
-            };
-            reader.onerror = reject;
-            reader.readAsDataURL(file);
-        });
-    } else {
-        return Promise.resolve(emailData);
+    if (files && files.length > 0) {
+        for (const file of files) {
+            const base64File = await readFileAsBase64(file);
+            emailData.attachments.push({
+                filename: file.name,
+                content: base64File,
+                mime_type: file.type, // Add mime type
+            });
+        }
     }
+
+    console.log('Constructed Email Data:', emailData); // Log constructed email data for debugging
+
+    return emailData;
 };
 
-export { getEmailData };
+export { getEmailData, readFileAsBase64 };
