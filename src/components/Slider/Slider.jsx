@@ -21,8 +21,10 @@ const sortedCfcData = cfcData.sort((a, b) => new Date(b.releaseDate) - new Date(
 function Slider1() {
   return (
     <div className="container1">
+      <div className="row">
 
-      <Swiper
+        <Swiper
+
 
         effect={'coverflow'}
         grabCursor={true}
@@ -34,38 +36,48 @@ function Slider1() {
           stretch: 0,
           depth: 100,
           modifier: 2.5,
+
         }}
-        pagination={{ el: '.swiper-pagination1', clickable: true }}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-          clickable: true,
-        }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container1"
-      >
-        {/* <SwiperSlide className='swiperslide1'
+          // // slidesPerView={'auto'}
+          // coverflowEffect={{
+          //   rotate: 0,
+          //   stretch: 0,
+          //   depth: 100,
+          //   modifier: 2.5,
+          // }}
+         
+          pagination={{ el: '.swiper-pagination1', clickable: true }}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            clickable: true,
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation]}
+          className="swiper_container1"
         >
-          <img src={slide_image_1} alt="slide_image" />
+          {/* <SwiperSlide className='swiperslide1'
+        >
+        <img src={slide_image_1} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide className='swiperslide1'>
-          <img src={slide_image_2} alt="slide_image" />
+        <img src={slide_image_2} alt="slide_image" />
         </SwiperSlide >
         <SwiperSlide className='swiperslide1'>
-          <img src={slide_image_3} alt="slide_image" />
+        <img src={slide_image_3} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide className='swiperslide1'>
-          <img src={slide_image_4} alt="slide_image" />
+        <img src={slide_image_4} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide className='swiperslide1'>
-          <img src={slide_image_5} alt="slide_image" />
+        <img src={slide_image_5} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide className='swiperslide1'>
-          <img src={slide_image_6} alt="slide_image" />
+        <img src={slide_image_6} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide className='swiperslide1'>
-          <img src={slide_image_7} alt="slide_image" />
-        </SwiperSlide> */}
+        <img src={slide_image_7} alt="slide_image" />
+      </SwiperSlide> */}
+
 
 
 
@@ -82,24 +94,26 @@ function Slider1() {
               Url={`call-for-chapters/${book.id}`}
             />
 
+
           </SwiperSlide>
         ))}
 
 
-        <div className="slider-controler1">
-          <div className="swiper-button-prev slider-arrow">
-            <i class="far fa-arrow-left"></i>
+          <div className="slider-controler1">
+            <div className="swiper-button-prev slider-arrow">
+              <i class="far fa-arrow-left"></i>
+            </div>
+            <div className="swiper-button-next slider-arrow">
+              <i class="far fa-arrow-right"></i>
+            </div>
+            <div className="swiper-pagination1 .swiper-pagination-bullet .swiper-pagination-bullet-active"></div>
           </div>
-          <div className="swiper-button-next slider-arrow">
-            <i class="far fa-arrow-right"></i>
-          </div>
-          <div className="swiper-pagination1 .swiper-pagination-bullet .swiper-pagination-bullet-active"></div>
-        </div>
 
 
 
 
-      </Swiper>
+        </Swiper>
+      </div>
     </div>
   );
 }
