@@ -56,7 +56,7 @@ const BookDetailsPage = ({
                             {descriptionParagraphs.map((paragraph, index) => (
                                 <p key={index} className="wow animate__fadeInUp" data-wow-duration="1.1s">{paragraph}</p>
                             ))}
-                            <a className="yellow-btn tp-btn-hover alt-color mt-20 wow animate__fadeInUp" data-wow-duration="1.1s" target='_blank' href={publisherLink}><span>Buy Now</span><b></b></a>
+                            <a className="yellow-btn tp-btn-hover alt-color mt-20 wow animate__fadeInUp" data-wow-duration="1.1s" target='_blank' href={publisherLink}><span>{isPublished ? 'Buy Now' : 'Preorder Now'}</span><b></b></a>
                             <div className="product-details__social-box mt-35 wow animate__fadeInUp" data-wow-duration="1.1s">
                                 <span>Share:</span>
                                 <a href="#"><i className="fab fa-facebook-f"></i></a>
