@@ -213,22 +213,27 @@
     &__main-menu{
         & ul{
 
-            margin-right: -65px;
+            margin-right: -40px;
             @media #{$xxxl}{
-                margin-right: 0;
-            }
-            @media #{$xl}{
-                margin-right: 10px;
-                
+                margin-right: 5px;
             }
             @media #{$xxl}{
                 margin-right: 30px;
+                // border: 1px solid purple !important;
+            }
+            @media #{$xl}{
+                margin-right: 10px;
+                // border: 5px solid black !important;
+                
             }
             @media #{$lg}{
+                // border: 5px solid red !important;
 
                 margin-right: 10px;
             }
+          
             & li{
+                margin-top: -16px;
                 display: inline-block;
                 list-style: none;
                 position: relative;
@@ -237,7 +242,8 @@
                     padding-left: 28px;
                 }
                 @media #{$xxl}{
-                    padding-left:10px;
+                    
+                    padding-left:15px;
                     
 
                    
@@ -250,7 +256,8 @@
                 }
                 @media #{$lg}{
                     // border: 10px solid green;
-                    padding-left:10px;
+                    padding-left:14px;
+                    font-size: 6rem !important;
                 }
                 @media #{$min-lg}{
                     & .mean-expand {
