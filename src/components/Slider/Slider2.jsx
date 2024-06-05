@@ -47,6 +47,7 @@ const Slider2 = () => {
                     Publisher={book.publisher}
                     Price={book.price}
                     Url={`books/${book.id}`}
+                    isPublished={book.isPublished}
                   />
                 </div>
               </div>

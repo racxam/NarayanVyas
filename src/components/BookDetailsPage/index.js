@@ -14,14 +14,16 @@ const BookDetailsPage = ({
     doi,
     isbn,
     indexIn,
+    isPublished,
     descriptionParagraphs,
     chapters,
     editorOrder,
     editorsBiographies
 }) => {
     const tabStyle = 'nav nav-tabs pro-details-nav-btn';
+
     return (
-        <div className=" product-details__plr mt-100 mb-0">
+        <div className="product-details__plr mt-100 mb-0">
             <div className="container">
                 <div className="row gx-40 mb-100">
                     <div className="col-xl-6 col-lg-6 col-md-6 wow animate__fadeInLeft" data-wow-duration="1.1s">
@@ -43,8 +45,14 @@ const BookDetailsPage = ({
                                     );
                                 })}
                             </p>
-                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Projected Release Date: {releaseDate} | Copyright: {copyright} | Language: {language} | Categories: {categories.join(', ')}</p>
-                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">ISBN: {isbn} | DOI: <a href={`https://doi.org/${doi}`} target='_blank' style={{ color: 'blue' }}>{doi}</a></p>
+                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">{isPublished ? 'Release Date:' : 'Projected Release Date:'} {releaseDate} | Copyright: {copyright} | Language: {language} | Categories: {categories.join(', ')}</p>
+                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">
+                                ISBN: {isbn}
+                                {!isPublished && (
+                                    <span className="coming-soon-badge__two">Coming Soon</span>
+                                )}
+                                {isPublished && <> | DOI: <a href={`https://doi.org/${doi}`} target='_blank' style={{ color: 'blue' }}>{doi}</a></>}
+                            </p>
                             {descriptionParagraphs.map((paragraph, index) => (
                                 <p key={index} className="wow animate__fadeInUp" data-wow-duration="1.1s">{paragraph}</p>
                             ))}
@@ -59,7 +67,7 @@ const BookDetailsPage = ({
                         </div>
                     </div>
                 </div>
-                <div className="row mb-0" >
+                <div className="row mb-0">
                     <div className="productdetails-tabs mb-100">
                         <div className="row justify-content-center">
                             <div className="col-xl-12 col-lg-12 col-12">
