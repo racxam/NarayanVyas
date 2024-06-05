@@ -25,10 +25,14 @@ const MenuItems = (props) => {
 
     return (
         <>
-            <li>
+            <li
+
+            >
                 <Link to="/">Home</Link>
             </li>
-            <li className={parentMenu === 'about-me' ? 'has-dropdown active' : 'has-dropdown'}>
+            <li className={parentMenu === 'about-me' ? 'has-dropdown active' : 'has-dropdown'}
+
+            >
                 <Link to="/about-me">About</Link>
                 <ul className={menuState.about ? "submenu submenu-open" : "submenu"}>
                     <li className={location.pathname === "/projects" ? "active" : ""}><Link to="/projects">Projects</Link></li>
@@ -39,17 +43,23 @@ const MenuItems = (props) => {
                 </ul>
                 <a href="#" onClick={() => openMobileMenu('about')}></a>
             </li>
-            <li className={location.pathname === "/publications" ? "active" : ""}>
+            <li className={location.pathname === "/publications" ? "active" : ""}
+
+            >
                 <Link to="/publications">Publications</Link>
             </li>
-            <li className={parentMenu === 'books' ? 'has-dropdown active' : 'has-dropdown'}>
-                <Link to="/books">Books</Link>
+            <li className={parentMenu === 'books' ? 'has-dropdown active' : 'has-dropdown'}
+
+            >
+                <Link to="/books">Books</Link> 
                 <ul className={menuState.service ? "submenu submenu-open" : "submenu"}>
                     <li className={location.pathname === "/call-for-chapters" ? "active" : ""}><Link to="/call-for-chapters">Call for Chapters</Link></li>
                 </ul>
                 <a href="#" onClick={() => openMobileMenu('service')}></a>
             </li>
-            <li className={parentMenu === 'services' ? 'has-dropdown active' : 'has-dropdown'}>
+            <li className={parentMenu === 'services' ? 'has-dropdown active' : 'has-dropdown'}
+
+            >
                 <Link to="/services">Services</Link>
                 <ul className={menuState.page ? "submenu submenu-open" : "submenu"}>
                     <li className={location.pathname === "/services/mobile-app-development" ? "active" : ""}><Link to="/services/mobile-app-development">Mobile App Development</Link></li>
@@ -63,7 +73,9 @@ const MenuItems = (props) => {
                     <i className="fal fa-plus"></i>
                 </a>
             </li>
-            <li className={location.pathname === "/contact" ? "active" : ""}>
+            <li className={location.pathname === "/contact" ? "active" : ""}
+
+            >
                 <Link to="/contact">Contact</Link>
             </li>
         </>
