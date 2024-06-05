@@ -1,3 +1,4 @@
+// components/CallForChapterPage.js
 import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import CustomModal from '../CustomModal';
@@ -17,8 +18,12 @@ const CallForChapterPage = ({
     descriptionParagraphs = [],
     chapters = [],
     editorsBiographies = [],
-    isConsentFormRequired = false, // Accept the isConsentFormRequired prop
-    consentFormLink = '' // Accept the consentFormLink prop
+    isConsentFormRequired = false,
+    consentFormLink = '',
+    consentFormName = '',
+    consentFormMessage = '',
+    isAbstractSubmissionClosed = false,
+    isFullChapterSubmissionClosed = false
 }) => {
     const tabStyle = 'nav nav-tabs pro-details-nav-btn';
     const [abstractModalIsOpen, setAbstractModalIsOpen] = useState(false);
@@ -59,8 +64,48 @@ const CallForChapterPage = ({
                             {descriptionParagraphs.map((paragraph, index) => (
                                 <p key={index} className="wow animate__fadeInUp" data-wow-duration="1.1s">{paragraph}</p>
                             ))}
-                            <button className="yellow-btn tp-btn-hover alt-color mt-20 mr-30 wow animate__fadeInUp" data-wow-duration="1.1s" onClick={openAbstractModal}><span>Submit Abstract</span><b></b></button>
-                            <button className="yellow-btn tp-btn-hover alt-color mt-20 wow animate__fadeInUp" data-wow-duration="1.1s" onClick={openChapterModal}><span>Upload Chapter</span><b></b></button>
+                            <div className="product__details-info table-responsive mt-20">
+                                <table className="table table-bordered" style={{ border: '1px solid #DEE2E6' }}>
+                                    <thead>
+                                        <tr>
+                                            <th colSpan="2" className="text-center" style={{ backgroundColor: '#FFF2CD', fontSize: '18px', padding: '10px' }}>Important Dates</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style={{ padding: '10px' }}>Abstract Submission Deadline</td>
+                                            <td style={{ fontWeight: 'bold', padding: '10px' }}>{abstractSubmissionDeadline}</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: '10px' }}>Abstract Acceptance Notification</td>
+                                            <td style={{ fontWeight: 'bold', padding: '10px' }}>{abstractAcceptanceNotification}</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: '10px' }}>Full Chapter Submission Deadline</td>
+                                            <td style={{ fontWeight: 'bold', padding: '10px' }}>{fullChapterSubmissionDeadline}</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: '10px' }}>Chapter Acceptance Notification</td>
+                                            <td style={{ fontWeight: 'bold', padding: '10px' }}>{chapterAcceptanceNotification}</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: '10px' }}>Projected Book Release Date</td>
+                                            <td style={{ fontWeight: 'bold', padding: '10px' }}>{projectedReleaseDate}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            {!isAbstractSubmissionClosed && (
+                                <button className="yellow-btn tp-btn-hover alt-color mt-20 mr-30 wow animate__fadeInUp" data-wow-duration="1.1s" onClick={openAbstractModal}><span>Submit Abstract</span><b></b></button>
+                            )}
+                            {!isFullChapterSubmissionClosed && (
+                                <button className="yellow-btn tp-btn-hover alt-color mt-20 wow animate__fadeInUp" data-wow-duration="1.1s" onClick={openChapterModal}><span>Upload Chapter</span><b></b></button>
+                            )}
+                            {(isAbstractSubmissionClosed && isFullChapterSubmissionClosed) && (
+                                <div className="alert alert-warning mt-20">
+                                    Chapter submissions are closed. Thank you for your cooperation.
+                                </div>
+                            )}
                             <div className="product-details__social-box mt-35 wow animate__fadeInUp" data-wow-duration="1.1s">
                                 <span>Share:</span>
                                 <a href="#"><i className="fab fa-facebook-f"></i></a>
@@ -80,7 +125,6 @@ const CallForChapterPage = ({
                                         <div className="pro-details-nav mb-40">
                                             <TabList className={tabStyle}>
                                                 <Tab><button className="nav-links"><span>Tentative Table of Contents</span></button></Tab>
-                                                <Tab><button className="nav-links"><span>Important Dates</span></button></Tab>
                                                 <Tab><button className="nav-links"><span>Editor's Biographies</span></button></Tab>
                                             </TabList>
                                         </div>
@@ -93,34 +137,6 @@ const CallForChapterPage = ({
                                                         </li>
                                                     ))}
                                                 </ul>
-                                            </TabPanel>
-                                            <TabPanel>
-                                                <div className="product__details-info table-responsive">
-                                                    <table className="table table-striped">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td className="add-info">Abstract Submission Deadline</td>
-                                                                <td className="add-info-list">{abstractSubmissionDeadline}</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td className="add-info">Abstract Acceptance Notification</td>
-                                                                <td className="add-info-list">{abstractAcceptanceNotification}</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td className="add-info">Full Chapter Submission Deadline</td>
-                                                                <td className="add-info-list">{fullChapterSubmissionDeadline}</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td className="add-info">Chapter Acceptance Notification</td>
-                                                                <td className="add-info-list">{chapterAcceptanceNotification}</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td className="add-info">Projected Book Release Date</td>
-                                                                <td className="add-info-list">{projectedReleaseDate}</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
                                             </TabPanel>
                                             <TabPanel>
                                                 {editors.map((editorId, index) => {
@@ -144,7 +160,17 @@ const CallForChapterPage = ({
                 <CFCSubmissionFormContainer itemClass="some-class" chapters={chapters} bookTitle={title.text} />
             </CustomModal>
             <CustomModal isOpen={chapterModalIsOpen} onRequestClose={closeChapterModal} contentLabel="Upload Chapter">
-                <FinalChapterSubmissionFormContainer itemClass="some-class" chapters={chapters} bookTitle={title.text} isConsentFormRequired={isConsentFormRequired} consentFormLink={consentFormLink} />
+                <FinalChapterSubmissionFormContainer
+                    itemClass="some-class"
+                    chapters={chapters}
+                    bookTitle={title.text}
+                    isConsentFormRequired={isConsentFormRequired}
+                    consentFormLink={consentFormLink}
+                    consentFormName={consentFormName}
+                    consentFormMessage={consentFormMessage}
+                    isAbstractSubmissionClosed={isAbstractSubmissionClosed}
+                    isFullChapterSubmissionClosed={isFullChapterSubmissionClosed}
+                />
             </CustomModal>
         </div>
     );

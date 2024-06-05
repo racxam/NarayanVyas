@@ -1,20 +1,21 @@
+// components/CallForChapterDetails.js
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
-
-import editorsBiographies from '../../data/editorsBiographies';
 import callForChaptersData from '../../data/callForChaptersBooksData';
 import CallForChapterPage from '../../components/CallForChapterPage';
 import RelatedBooks from '../../components/RelatedBooks';
 import getRelatedBooks from '../../utils/getRelatedBooks';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import Error from '../error'
+import Error from '../error';
+import editorsBiographies from '../../data/editorsBiographies';
 
 const CallForChapterDetails = () => {
     const { cfcId } = useParams();
     const cfcDetails = callForChaptersData.find(cfc => cfc.id === cfcId);
+
     if (!cfcDetails) {
         return <Error />;
     }

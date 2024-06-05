@@ -1,4 +1,3 @@
-// components/FinalChapterSubmissionFormContainer.js
 import React, { useState } from 'react';
 import FinalChapterSubmissionForm from '../FinalChapterSubmissionForm';
 import { sendEmail, getEmailData } from '../Contact/emailService';
@@ -9,7 +8,7 @@ const generateSubmissionId = (bookTitle) => {
     return `${bookCode}${randomNumber}`;
 };
 
-const FinalChapterSubmissionFormContainer = ({ itemClass, chapters, bookTitle, isConsentFormRequired, consentFormLink, consentFormName, isAbstractSubmissionClosed, isFullChapterSubmissionClosed }) => {
+const FinalChapterSubmissionFormContainer = ({ itemClass, chapters, bookTitle, isConsentFormRequired, consentFormLink, consentFormName, isAbstractSubmissionClosed, isFullChapterSubmissionClosed, submissionEmails = [] }) => {
     const [authors, setAuthors] = useState([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]);
     const [file, setFile] = useState(null);
     const [consentFile, setConsentFile] = useState(null);
@@ -46,7 +45,12 @@ const FinalChapterSubmissionFormContainer = ({ itemClass, chapters, bookTitle, i
     };
 
     const handleFileDrop = (e) => {
-        setFile(e.target.files[0]);
+        const file = e.target.files[0];
+        if (file && ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(file.type)) {
+            setFile(file);
+        } else {
+            setErrorMessage('Only PDF or Word files are allowed.');
+        }
     };
 
     const handleFileRemove = () => {
@@ -54,7 +58,12 @@ const FinalChapterSubmissionFormContainer = ({ itemClass, chapters, bookTitle, i
     };
 
     const handleConsentFileDrop = (e) => {
-        setConsentFile(e.target.files[0]);
+        const file = e.target.files[0];
+        if (file && ['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(file.type)) {
+            setConsentFile(file);
+        } else {
+            setErrorMessage('Only Word files are allowed for the consent form.');
+        }
     };
 
     const handleConsentFileRemove = () => {
@@ -69,6 +78,12 @@ const FinalChapterSubmissionFormContainer = ({ itemClass, chapters, bookTitle, i
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
+
+        if (!file || (isConsentFormRequired && !consentFile)) {
+            setErrorMessage(`Both the final chapter and the ${consentFormName} must be uploaded.`);
+            setLoading(false);
+            return;
+        }
 
         const submissionId = generateSubmissionId(bookTitle);
 
@@ -86,7 +101,7 @@ const FinalChapterSubmissionFormContainer = ({ itemClass, chapters, bookTitle, i
         const mail_template_key = "2d6f.2a251775f7a95ff2.k1.00662cd0-2257-11ef-9632-5254008f5018.18fe2a2881d";
         const from = { address: 'contact@narayanvyas.com', name: 'Author Relations' };
         const to = authors.map(author => ({ email_address: { address: author.email, name: author.name } }));
-        const cc = [{ email_address: { address: 'narayanvyas87@gmail.com', name: 'Narayan Vyas' } }];
+        const cc = submissionEmails.map(email => ({ email_address: { address: email, name: 'Narayan Vyas' } }));
         const bcc = []; // Add BCC addresses here if needed
 
         try {

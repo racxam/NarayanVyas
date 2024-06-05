@@ -42,12 +42,13 @@ const callForChapterBooksData = [
             { index: 14, title: "IoM-enabled Drug Development and Clinical Trials" },
             { index: 15, title: "IoM and the Evolving Regulatory Landscape: Balancing Innovation and Safety" }
         ],
-        consentFormRequired: true,
+        isConsentFormRequired: true,
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',
-        consentFormName: 'Consent Form',
+        consentFormName: 'Author\'s Agreement Form',
         consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
         isAbstractSubmissionClosed: false,
-        isFullChapterSubmissionClosed: false
+        isFullChapterSubmissionClosed: false,
+        submissionEmails: ['narayanvyas87@gmail.com']
 
     },
     {
@@ -89,13 +90,13 @@ const callForChapterBooksData = [
             { index: 14, title: "Automated Machine Learning in Bioinformatics" },
             { index: 15, title: "Future Trends in Bioinformatics AI Integration" }
         ],
-        consentFormRequired: true,
+        isConsentFormRequired: true,
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',
-        consentFormName: 'Consent Form',
+        consentFormName: 'Author\'s Agreement Form',
         consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
         isAbstractSubmissionClosed: false,
-        isFullChapterSubmissionClosed: false
-
+        isFullChapterSubmissionClosed: false,
+        submissionEmails: ['narayanvyas87@gmail.com']
     },
     {
         id: 'secure-energy-wiley',
@@ -136,13 +137,13 @@ const callForChapterBooksData = [
             { index: 14, title: "Integrating Renewable Energy Sources with IoT and AI" },
             { index: 15, title: "Case Studies: Successful Implementations of Secure Energy Optimization using IoT and AI" }
         ],
-        consentFormRequired: true,
+        isConsentFormRequired: true,
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',
         consentFormName: 'Consent Form',
         consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
-        isAbstractSubmissionClosed: false,
-        isFullChapterSubmissionClosed: false
-
+        isAbstractSubmissionClosed: true,
+        isFullChapterSubmissionClosed: true,
+        submissionEmails: ['narayanvyas87@gmail.com']
     }
 ];
 

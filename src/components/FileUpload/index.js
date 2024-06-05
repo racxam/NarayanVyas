@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import pdfIcon from '../../assets/icons/pdf-icon.png';
 import wordIcon from '../../assets/icons/word-icon.png';
 import './FileUpload.css';
 
-const FileUpload = ({ file, handleFileDrop, handleFileRemove, dragOver, setDragOver, label }) => {
+const FileUpload = ({ file, handleFileDrop, handleFileRemove, dragOver, setDragOver, label, acceptedFileTypes }) => {
     const handleDragOver = (e) => {
         e.preventDefault();
         setDragOver(true);
@@ -17,7 +17,12 @@ const FileUpload = ({ file, handleFileDrop, handleFileRemove, dragOver, setDragO
         e.preventDefault();
         setDragOver(false);
         if (e.dataTransfer.files.length) {
-            handleFileDrop({ target: { files: e.dataTransfer.files } });
+            const file = e.dataTransfer.files[0];
+            if (acceptedFileTypes.includes(file.type)) {
+                handleFileDrop({ target: { files: e.dataTransfer.files } });
+            } else {
+                alert('Invalid file type. Only PDF and Word files are allowed.');
+            }
         }
     };
 
@@ -42,12 +47,12 @@ const FileUpload = ({ file, handleFileDrop, handleFileRemove, dragOver, setDragO
                 type="file"
                 id="file-upload"
                 style={{ display: 'none' }}
-                accept=".pdf,.doc,.docx"
+                accept={acceptedFileTypes.join(',')}
                 onChange={handleFileDrop}
             />
             {!file && (
                 <label htmlFor="file-upload" className="file-upload-label">
-                    <span className="file-upload-text" style={{ fontSize: '18px' }}>{label}</span>
+                    <span className="file-upload-text">{label}</span>
                 </label>
             )}
             {file && (

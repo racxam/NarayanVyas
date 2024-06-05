@@ -1,4 +1,3 @@
-// components/FinalChapterSubmissionForm.js
 import React from 'react';
 import AuthorsSection from '../AuthorsSection';
 import FileUpload from '../FileUpload';
@@ -49,7 +48,7 @@ const FinalChapterSubmissionForm = ({
                                     <h5 className="book-title">Book: {bookTitle}</h5> {/* Display the book title */}
                                     {isConsentFormRequired && (
                                         <div className="consent-note">
-                                            This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.
+                                            This book requires a {consentFormName}. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.
                                             <div>
                                                 <a href={consentFormLink} target="_blank" rel="noopener noreferrer" className="btn-black mt-10">Download {consentFormName}</a>
                                             </div>
@@ -67,7 +66,7 @@ const FinalChapterSubmissionForm = ({
                                                 <select name="chapter" required>
                                                     <option value="">Select Chapter</option>
                                                     {chapters.map((chapter, index) => (
-                                                        <option key={index} value={chapter.title}>Chapter {index + 1}: {chapter.title}</option>
+                                                        <option key={index} value={chapter.title}>Chapter {chapter.index}: {chapter.title}</option>
                                                     ))}
                                                     <option value="Other">Other</option>
                                                 </select>
@@ -107,6 +106,7 @@ const FinalChapterSubmissionForm = ({
                                             dragOver={false}
                                             setDragOver={() => { }}
                                             label="Upload Final Chapter"
+                                            acceptedFileTypes={['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']}
                                         />
                                         {isConsentFormRequired && (
                                             <FileUpload
@@ -116,6 +116,7 @@ const FinalChapterSubmissionForm = ({
                                                 dragOver={false}
                                                 setDragOver={() => { }}
                                                 label={`Upload ${consentFormName}`}
+                                                acceptedFileTypes={['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']}
                                             />
                                         )}
                                         {successMessage && (
