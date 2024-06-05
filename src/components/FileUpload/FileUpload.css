@@ -1,0 +1,45 @@
+/* components/FileUpload.css */
+.file-upload-container {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+.file-upload-container.drag-over {
+    border-color: #007bff;
+}
+
+.file-upload-label {
+    cursor: pointer;
+    display: block;
+    font-size: 1.25em;
+}
+
+.uploaded-file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.file-name {
+    font-size: 1.1em;
+}
+
+.remove-file-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #d9534f;
+}

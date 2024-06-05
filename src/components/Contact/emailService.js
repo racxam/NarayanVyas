@@ -2,18 +2,21 @@ import axios from 'axios';
 
 const sendEmail = async (emailData) => {
     try {
-        // Using Heroku
-        await axios.post('https://web-email-proxy-823d619a0ab4.herokuapp.com/send-email', emailData, {
+        const response = await axios.post('https://web-email-proxy-823d619a0ab4.herokuapp.com/send-email', emailData, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
+                'Authorization': `Zoho-enczapikey wSsVR60nq0X1WP16z2WvJuc7mw9XBVLxFBkv3lSl7Xb/T63FoMdvlEXGDFeuSfcfEmVsFWQW8rl8yxcH2jENiYkqywwGWyiF9mqRe1U4J3x17qnvhDzIXmVYlRKBL4kBxQ9tkmJhGski+g==`,
             },
         });
+        if (response.status !== 200) {
+            throw new Error('Failed to send email');
+        }
     } catch (error) {
         console.error("Error submitting proposal:", error.response ? error.response.data : error.message);
+        throw error; // Re-throw the error to be caught in the handleSubmit function
     }
 };
-
 
 const getEmailData = (formData, file, mail_template_key, from, to = [], cc = [], bcc = [], subject = 'New Chapter Proposal Received') => {
     const mergeInfo = {

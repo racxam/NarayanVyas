@@ -1,14 +1,9 @@
 import React from 'react';
-import pdfIcon from '../../assets/icons/pdf-icon.png'; // Add path to your PDF icon
-import wordIcon from '../../assets/icons/word-icon.png'; // Add path to your Word icon
+import pdfIcon from '../../assets/icons/pdf-icon.png';
+import wordIcon from '../../assets/icons/word-icon.png';
+import './FileUpload.css';
 
-const FileUpload = ({
-    file,
-    handleFileDrop,
-    handleFileRemove,
-    dragOver,
-    setDragOver
-}) => {
+const FileUpload = ({ file, handleFileDrop, handleFileRemove, dragOver, setDragOver, label, acceptedFileTypes }) => {
     const handleDragOver = (e) => {
         e.preventDefault();
         setDragOver(true);
@@ -22,7 +17,12 @@ const FileUpload = ({
         e.preventDefault();
         setDragOver(false);
         if (e.dataTransfer.files.length) {
-            handleFileDrop({ target: { files: e.dataTransfer.files } });
+            const file = e.dataTransfer.files[0];
+            if (acceptedFileTypes.includes(file.type)) {
+                handleFileDrop({ target: { files: e.dataTransfer.files } });
+            } else {
+                alert('Invalid file type. Only PDF and Word files are allowed.');
+            }
         }
     };
 
@@ -36,36 +36,34 @@ const FileUpload = ({
     };
 
     return (
-        <div className="col-sm-12">
-            <div
-                className={`file-upload-container mt-25 mb-30 ${dragOver ? 'drag-over' : ''}`}
-                onDragOver={handleDragOver}
-                onDragLeave={handleDragLeave}
-                onDrop={handleDrop}
-                style={{ height: '150px' }}
-            >
-                <input
-                    type="file"
-                    id="file-upload"
-                    style={{ display: 'none' }}
-                    accept=".pdf,.doc,.docx"
-                    onChange={handleFileDrop}
-                />
-                {!file && (
-                    <label htmlFor="file-upload" className="file-upload-label">
-                        <span className="file-upload-text">Drag & drop or click to upload file</span>
-                    </label>
-                )}
-                {file && (
-                    <div className="uploaded-file">
-                        {renderFileIcon(file.type)}
-                        <span className="file-name">{file.name}</span>
-                        <button type="button" className="remove-file-btn" onClick={handleFileRemove}>×</button>
-                    </div>
-                )}
-            </div>
+        <div
+            className={`file-upload-container mt-25 mb-30 ${dragOver ? 'drag-over' : ''}`}
+            onDragOver={handleDragOver}
+            onDragLeave={handleDragLeave}
+            onDrop={handleDrop}
+            style={{ height: '150px' }}
+        >
+            <input
+                type="file"
+                id="file-upload"
+                style={{ display: 'none' }}
+                accept={acceptedFileTypes.join(',')}
+                onChange={handleFileDrop}
+            />
+            {!file && (
+                <label htmlFor="file-upload" className="file-upload-label">
+                    <span className="file-upload-text">{label}</span>
+                </label>
+            )}
+            {file && (
+                <div className="uploaded-file">
+                    {renderFileIcon(file.type)}
+                    <span className="file-name">{file.name}</span>
+                    <button type="button" className="remove-file-btn" onClick={handleFileRemove}>×</button>
+                </div>
+            )}
         </div>
     );
-}
+};
 
 export default FileUpload;
