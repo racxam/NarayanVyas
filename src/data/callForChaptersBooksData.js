@@ -41,7 +41,14 @@ const callForChapterBooksData = [
             { index: 13, title: "IoM in Emergency Medicine: Enhancing Response and Care" },
             { index: 14, title: "IoM-enabled Drug Development and Clinical Trials" },
             { index: 15, title: "IoM and the Evolving Regulatory Landscape: Balancing Innovation and Safety" }
-        ]
+        ],
+        consentFormRequired: true,
+        consentFormLink: 'https://example.com/path_to_consent_form.pdf',
+        consentFormName: 'Consent Form',
+        consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
+        isAbstractSubmissionClosed: false,
+        isFullChapterSubmissionClosed: false
+
     },
     {
         id: 'multimodal-data-fusion-wiley',
@@ -81,7 +88,14 @@ const callForChapterBooksData = [
             { index: 13, title: "Spatial Transcriptomics and Multimodal Fusion" },
             { index: 14, title: "Automated Machine Learning in Bioinformatics" },
             { index: 15, title: "Future Trends in Bioinformatics AI Integration" }
-        ]
+        ],
+        consentFormRequired: true,
+        consentFormLink: 'https://example.com/path_to_consent_form.pdf',
+        consentFormName: 'Consent Form',
+        consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
+        isAbstractSubmissionClosed: false,
+        isFullChapterSubmissionClosed: false
+
     },
     {
         id: 'secure-energy-wiley',
@@ -121,248 +135,15 @@ const callForChapterBooksData = [
             { index: 13, title: "Energy Storage and Optimization Techniques" },
             { index: 14, title: "Integrating Renewable Energy Sources with IoT and AI" },
             { index: 15, title: "Case Studies: Successful Implementations of Secure Energy Optimization using IoT and AI" }
-        ]
-    },
-    {
-        id: 'secure-energy-wiley',
-        title: {
-            text: "Secure Energy Optimization: Leveraging IoT And AI For Enhanced Efficiency",
-            image: productImgSecureEnergyWiley
-        },
-        publisher: 'Wiley',
-        publisherLink: 'https://www.scrivenerpublishing.com/',
-        projectedReleaseDate: 'August 2024',
-        abstractSubmissionDeadline: '2 January 2024',
-        categories: ['Healthcare', 'Technology', 'AI'],
-        abstractAcceptanceNotification: 'February 2024',
-        fullChapterSubmissionDeadline: '2 March 2024',
-        chapterAcceptanceNotification: 'May 2024',
-        descriptionParagraphs: ["Explore the synergy of IoT and AI in revolutionizing energy management and security. This comprehensive guide unveils the principles, applications, and challenges of integrating these technologies for efficient energy use. Discover real-world case studies, cybersecurity insights, and practical solutions to enhance energy efficiency and sustainability while ensuring a secure energy future."],
-        editors: [
-            'abhishek-kumar',
-            'surbhi-bhatia-khan',
-            'narayan-vyas',
-            'vishal-dutt',
-            'shakila-basheer'
         ],
-        chapters: [
-            { index: 1, title: "Introduction to Secure Energy Optimization" },
-            { index: 2, title: "The Role of IoT and AI in Energy Efficiency" },
-            { index: 3, title: "Understanding Energy Security Challenges" },
-            { index: 4, title: "IoT and AI-Based Monitoring and Control Systems for Energy Optimization" },
-            { index: 5, title: "Data Collection & Analysis for Secure Energy Optimization" },
-            { index: 6, title: "Machine Learning Algorithms for Energy Efficiency Enhancement" },
-            { index: 7, title: "Cybersecurity Measures for IoT-Enabled Energy Systems" },
-            { index: 8, title: "Securing Communication Networks in Smart Grids" },
-            { index: 9, title: "Privacy Protection in IoT-Based Energy Management" },
-            { index: 10, title: "Predictive Analytics for Demand Response and Load Management" },
-            { index: 11, title: "Dynamic Pricing and Energy Optimization Strategies" },
-            { index: 12, title: "Real-Time Monitoring & Fault Detection in Energy Infrastructure" },
-            { index: 13, title: "Energy Storage and Optimization Techniques" },
-            { index: 14, title: "Integrating Renewable Energy Sources with IoT and AI" },
-            { index: 15, title: "Case Studies: Successful Implementations of Secure Energy Optimization using IoT and AI" }
-        ]
-    },
-    {
-        id: 'secure-energy-wiley',
-        title: {
-            text: "Secure Energy Optimization: Leveraging IoT And AI For Enhanced Efficiency",
-            image: productImgSecureEnergyWiley
-        },
-        publisher: 'Wiley',
-        publisherLink: 'https://www.scrivenerpublishing.com/',
-        projectedReleaseDate: 'August 2024',
-        abstractSubmissionDeadline: '2 January 2024',
-        categories: ['Healthcare', 'Technology', 'AI'],
-        abstractAcceptanceNotification: 'February 2024',
-        fullChapterSubmissionDeadline: '2 March 2024',
-        chapterAcceptanceNotification: 'May 2024',
-        descriptionParagraphs: ["Explore the synergy of IoT and AI in revolutionizing energy management and security. This comprehensive guide unveils the principles, applications, and challenges of integrating these technologies for efficient energy use. Discover real-world case studies, cybersecurity insights, and practical solutions to enhance energy efficiency and sustainability while ensuring a secure energy future."],
-        editors: [
-            'abhishek-kumar',
-            'surbhi-bhatia-khan',
-            'narayan-vyas',
-            'vishal-dutt',
-            'shakila-basheer'
-        ],
-        chapters: [
-            { index: 1, title: "Introduction to Secure Energy Optimization" },
-            { index: 2, title: "The Role of IoT and AI in Energy Efficiency" },
-            { index: 3, title: "Understanding Energy Security Challenges" },
-            { index: 4, title: "IoT and AI-Based Monitoring and Control Systems for Energy Optimization" },
-            { index: 5, title: "Data Collection & Analysis for Secure Energy Optimization" },
-            { index: 6, title: "Machine Learning Algorithms for Energy Efficiency Enhancement" },
-            { index: 7, title: "Cybersecurity Measures for IoT-Enabled Energy Systems" },
-            { index: 8, title: "Securing Communication Networks in Smart Grids" },
-            { index: 9, title: "Privacy Protection in IoT-Based Energy Management" },
-            { index: 10, title: "Predictive Analytics for Demand Response and Load Management" },
-            { index: 11, title: "Dynamic Pricing and Energy Optimization Strategies" },
-            { index: 12, title: "Real-Time Monitoring & Fault Detection in Energy Infrastructure" },
-            { index: 13, title: "Energy Storage and Optimization Techniques" },
-            { index: 14, title: "Integrating Renewable Energy Sources with IoT and AI" },
-            { index: 15, title: "Case Studies: Successful Implementations of Secure Energy Optimization using IoT and AI" }
-        ]
-    },
-    {
-        id: 'secure-energy-wiley',
-        title: {
-            text: "Secure Energy Optimization: Leveraging IoT And AI For Enhanced Efficiency",
-            image: productImgSecureEnergyWiley
-        },
-        publisher: 'Wiley',
-        publisherLink: 'https://www.scrivenerpublishing.com/',
-        projectedReleaseDate: 'August 2024',
-        abstractSubmissionDeadline: '2 January 2024',
-        categories: ['Healthcare', 'Technology', 'AI'],
-        abstractAcceptanceNotification: 'February 2024',
-        fullChapterSubmissionDeadline: '2 March 2024',
-        chapterAcceptanceNotification: 'May 2024',
-        descriptionParagraphs: ["Explore the synergy of IoT and AI in revolutionizing energy management and security. This comprehensive guide unveils the principles, applications, and challenges of integrating these technologies for efficient energy use. Discover real-world case studies, cybersecurity insights, and practical solutions to enhance energy efficiency and sustainability while ensuring a secure energy future."],
-        editors: [
-            'abhishek-kumar',
-            'surbhi-bhatia-khan',
-            'narayan-vyas',
-            'vishal-dutt',
-            'shakila-basheer'
-        ],
-        chapters: [
-            { index: 1, title: "Introduction to Secure Energy Optimization" },
-            { index: 2, title: "The Role of IoT and AI in Energy Efficiency" },
-            { index: 3, title: "Understanding Energy Security Challenges" },
-            { index: 4, title: "IoT and AI-Based Monitoring and Control Systems for Energy Optimization" },
-            { index: 5, title: "Data Collection & Analysis for Secure Energy Optimization" },
-            { index: 6, title: "Machine Learning Algorithms for Energy Efficiency Enhancement" },
-            { index: 7, title: "Cybersecurity Measures for IoT-Enabled Energy Systems" },
-            { index: 8, title: "Securing Communication Networks in Smart Grids" },
-            { index: 9, title: "Privacy Protection in IoT-Based Energy Management" },
-            { index: 10, title: "Predictive Analytics for Demand Response and Load Management" },
-            { index: 11, title: "Dynamic Pricing and Energy Optimization Strategies" },
-            { index: 12, title: "Real-Time Monitoring & Fault Detection in Energy Infrastructure" },
-            { index: 13, title: "Energy Storage and Optimization Techniques" },
-            { index: 14, title: "Integrating Renewable Energy Sources with IoT and AI" },
-            { index: 15, title: "Case Studies: Successful Implementations of Secure Energy Optimization using IoT and AI" }
-        ]
-    },
-    {
-        id: 'secure-energy-wiley',
-        title: {
-            text: "Secure Energy Optimization: Leveraging IoT And AI For Enhanced Efficiency",
-            image: productImgSecureEnergyWiley
-        },
-        publisher: 'Wiley',
-        publisherLink: 'https://www.scrivenerpublishing.com/',
-        projectedReleaseDate: 'August 2024',
-        abstractSubmissionDeadline: '2 January 2024',
-        categories: ['Healthcare', 'Technology', 'AI'],
-        abstractAcceptanceNotification: 'February 2024',
-        fullChapterSubmissionDeadline: '2 March 2024',
-        chapterAcceptanceNotification: 'May 2024',
-        descriptionParagraphs: ["Explore the synergy of IoT and AI in revolutionizing energy management and security. This comprehensive guide unveils the principles, applications, and challenges of integrating these technologies for efficient energy use. Discover real-world case studies, cybersecurity insights, and practical solutions to enhance energy efficiency and sustainability while ensuring a secure energy future."],
-        editors: [
-            'abhishek-kumar',
-            'surbhi-bhatia-khan',
-            'narayan-vyas',
-            'vishal-dutt',
-            'shakila-basheer'
-        ],
-        chapters: [
-            { index: 1, title: "Introduction to Secure Energy Optimization" },
-            { index: 2, title: "The Role of IoT and AI in Energy Efficiency" },
-            { index: 3, title: "Understanding Energy Security Challenges" },
-            { index: 4, title: "IoT and AI-Based Monitoring and Control Systems for Energy Optimization" },
-            { index: 5, title: "Data Collection & Analysis for Secure Energy Optimization" },
-            { index: 6, title: "Machine Learning Algorithms for Energy Efficiency Enhancement" },
-            { index: 7, title: "Cybersecurity Measures for IoT-Enabled Energy Systems" },
-            { index: 8, title: "Securing Communication Networks in Smart Grids" },
-            { index: 9, title: "Privacy Protection in IoT-Based Energy Management" },
-            { index: 10, title: "Predictive Analytics for Demand Response and Load Management" },
-            { index: 11, title: "Dynamic Pricing and Energy Optimization Strategies" },
-            { index: 12, title: "Real-Time Monitoring & Fault Detection in Energy Infrastructure" },
-            { index: 13, title: "Energy Storage and Optimization Techniques" },
-            { index: 14, title: "Integrating Renewable Energy Sources with IoT and AI" },
-            { index: 15, title: "Case Studies: Successful Implementations of Secure Energy Optimization using IoT and AI" }
-        ]
-    },
-    {
-        id: 'secure-energy-wiley',
-        title: {
-            text: "Secure Energy Optimization: Leveraging IoT And AI For Enhanced Efficiency",
-            image: productImgSecureEnergyWiley
-        },
-        publisher: 'Wiley',
-        publisherLink: 'https://www.scrivenerpublishing.com/',
-        projectedReleaseDate: 'August 2024',
-        abstractSubmissionDeadline: '2 January 2024',
-        categories: ['Healthcare', 'Technology', 'AI'],
-        abstractAcceptanceNotification: 'February 2024',
-        fullChapterSubmissionDeadline: '2 March 2024',
-        chapterAcceptanceNotification: 'May 2024',
-        descriptionParagraphs: ["Explore the synergy of IoT and AI in revolutionizing energy management and security. This comprehensive guide unveils the principles, applications, and challenges of integrating these technologies for efficient energy use. Discover real-world case studies, cybersecurity insights, and practical solutions to enhance energy efficiency and sustainability while ensuring a secure energy future."],
-        editors: [
-            'abhishek-kumar',
-            'surbhi-bhatia-khan',
-            'narayan-vyas',
-            'vishal-dutt',
-            'shakila-basheer'
-        ],
-        chapters: [
-            { index: 1, title: "Introduction to Secure Energy Optimization" },
-            { index: 2, title: "The Role of IoT and AI in Energy Efficiency" },
-            { index: 3, title: "Understanding Energy Security Challenges" },
-            { index: 4, title: "IoT and AI-Based Monitoring and Control Systems for Energy Optimization" },
-            { index: 5, title: "Data Collection & Analysis for Secure Energy Optimization" },
-            { index: 6, title: "Machine Learning Algorithms for Energy Efficiency Enhancement" },
-            { index: 7, title: "Cybersecurity Measures for IoT-Enabled Energy Systems" },
-            { index: 8, title: "Securing Communication Networks in Smart Grids" },
-            { index: 9, title: "Privacy Protection in IoT-Based Energy Management" },
-            { index: 10, title: "Predictive Analytics for Demand Response and Load Management" },
-            { index: 11, title: "Dynamic Pricing and Energy Optimization Strategies" },
-            { index: 12, title: "Real-Time Monitoring & Fault Detection in Energy Infrastructure" },
-            { index: 13, title: "Energy Storage and Optimization Techniques" },
-            { index: 14, title: "Integrating Renewable Energy Sources with IoT and AI" },
-            { index: 15, title: "Case Studies: Successful Implementations of Secure Energy Optimization using IoT and AI" }
-        ]
-    },
-    {
-        id: 'secure-energy-wiley',
-        title: {
-            text: "Secure Energy Optimization: Leveraging IoT And AI For Enhanced Efficiency",
-            image: productImgSecureEnergyWiley
-        },
-        publisher: 'Wiley',
-        publisherLink: 'https://www.scrivenerpublishing.com/',
-        projectedReleaseDate: 'August 2024',
-        abstractSubmissionDeadline: '2 January 2024',
-        categories: ['Healthcare', 'Technology', 'AI'],
-        abstractAcceptanceNotification: 'February 2024',
-        fullChapterSubmissionDeadline: '2 March 2024',
-        chapterAcceptanceNotification: 'May 2024',
-        descriptionParagraphs: ["Explore the synergy of IoT and AI in revolutionizing energy management and security. This comprehensive guide unveils the principles, applications, and challenges of integrating these technologies for efficient energy use. Discover real-world case studies, cybersecurity insights, and practical solutions to enhance energy efficiency and sustainability while ensuring a secure energy future."],
-        editors: [
-            'abhishek-kumar',
-            'surbhi-bhatia-khan',
-            'narayan-vyas',
-            'vishal-dutt',
-            'shakila-basheer'
-        ],
-        chapters: [
-            { index: 1, title: "Introduction to Secure Energy Optimization" },
-            { index: 2, title: "The Role of IoT and AI in Energy Efficiency" },
-            { index: 3, title: "Understanding Energy Security Challenges" },
-            { index: 4, title: "IoT and AI-Based Monitoring and Control Systems for Energy Optimization" },
-            { index: 5, title: "Data Collection & Analysis for Secure Energy Optimization" },
-            { index: 6, title: "Machine Learning Algorithms for Energy Efficiency Enhancement" },
-            { index: 7, title: "Cybersecurity Measures for IoT-Enabled Energy Systems" },
-            { index: 8, title: "Securing Communication Networks in Smart Grids" },
-            { index: 9, title: "Privacy Protection in IoT-Based Energy Management" },
-            { index: 10, title: "Predictive Analytics for Demand Response and Load Management" },
-            { index: 11, title: "Dynamic Pricing and Energy Optimization Strategies" },
-            { index: 12, title: "Real-Time Monitoring & Fault Detection in Energy Infrastructure" },
-            { index: 13, title: "Energy Storage and Optimization Techniques" },
-            { index: 14, title: "Integrating Renewable Energy Sources with IoT and AI" },
-            { index: 15, title: "Case Studies: Successful Implementations of Secure Energy Optimization using IoT and AI" }
-        ]
-    },
+        consentFormRequired: true,
+        consentFormLink: 'https://example.com/path_to_consent_form.pdf',
+        consentFormName: 'Consent Form',
+        consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
+        isAbstractSubmissionClosed: false,
+        isFullChapterSubmissionClosed: false
+
+    }
 ];
 
 export default callForChapterBooksData;

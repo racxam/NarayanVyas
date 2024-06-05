@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
@@ -12,14 +11,15 @@ const BookDetailsPage = ({
     copyright,
     language,
     categories,
-    isbn13,
+    doi,
+    isbn,
     indexIn,
     descriptionParagraphs,
     chapters,
     editorOrder,
     editorsBiographies
 }) => {
-    const tabStyle = 'nav nav-tabs pro-details-nav-btn'; 
+    const tabStyle = 'nav nav-tabs pro-details-nav-btn';
     return (
         <div className=" product-details__plr mt-100 mb-0">
             <div className="container">
@@ -44,7 +44,7 @@ const BookDetailsPage = ({
                                 })}
                             </p>
                             <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Projected Release Date: {releaseDate} | Copyright: {copyright} | Language: {language} | Categories: {categories.join(', ')}</p>
-                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">DOI: <a href={isbn13} target='_blank'>{isbn13}</a></p>
+                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">ISBN: {isbn} | DOI: <a href={`https://doi.org/${doi}`} target='_blank' style={{ color: 'blue' }}>{doi}</a></p>
                             {descriptionParagraphs.map((paragraph, index) => (
                                 <p key={index} className="wow animate__fadeInUp" data-wow-duration="1.1s">{paragraph}</p>
                             ))}
@@ -75,9 +75,9 @@ const BookDetailsPage = ({
                                             <TabPanel>
                                                 <ul>
                                                     {chapters.map((chapter, index) => (
-                                                     <li key={index} style={{listStyle:"none"}}>
-                                                            <p>{chapter.title}</p>
-                                                            <p style={{marginLeft:"69px"}}> Authors: {chapter.authors.join(', ')}</p>
+                                                        <li key={index} style={{ listStyle: "none", padding: "15px", border: "1px solid #ddd", marginBottom: "10px", borderRadius: "5px" }}>
+                                                            <p style={{ fontSize: "16px", marginBottom: "5px" }}><strong>Chapter {chapter.index}:</strong> {chapter.title}</p>
+                                                            <p style={{ fontSize: "16px" }}><strong>Authors:</strong> {chapter.authors.join(', ')}</p>
                                                         </li>
                                                     ))}
                                                 </ul>

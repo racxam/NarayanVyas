@@ -1,0 +1,97 @@
+.alert {
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+/* Add these styles to your CSS file */
+.btn.btn-black {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn.btn-black:hover {
+    background-color: #333;
+    color: white;
+}
+
+.consent-note {
+    background-color: #FFF8DD;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.btn-download-consent-form {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-download-consent-form:hover,
+.btn-download-consent-form:active,
+.btn-download-consent-form:visited {
+    background-color: #333;
+    color: #FFF;
+}
+
+/* Add this CSS to your global styles or the relevant CSS file */
+
+.btn-black {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.alert-warning {
+    background-color: #FFF8DD;
+    color: #856404;
+    border-color: #ffeeba;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 16px;
+}

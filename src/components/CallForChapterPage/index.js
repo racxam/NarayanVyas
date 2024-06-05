@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import CustomModal from '../CustomModal';
+import CFCSubmissionFormContainer from '../CFCSubmissionForm/CFCSubmissionFormContainer';
+import FinalChapterSubmissionFormContainer from '../FinalChapterSubmissionForm/FinalChapterSubmissionFormContainer';
 
 const CallForChapterPage = ({
     title = { text: '', image: '' },
@@ -13,9 +16,19 @@ const CallForChapterPage = ({
     projectedReleaseDate = '',
     descriptionParagraphs = [],
     chapters = [],
-    editorsBiographies = []
+    editorsBiographies = [],
+    isConsentFormRequired = false, // Accept the isConsentFormRequired prop
+    consentFormLink = '' // Accept the consentFormLink prop
 }) => {
     const tabStyle = 'nav nav-tabs pro-details-nav-btn';
+    const [abstractModalIsOpen, setAbstractModalIsOpen] = useState(false);
+    const [chapterModalIsOpen, setChapterModalIsOpen] = useState(false);
+
+    const openAbstractModal = () => setAbstractModalIsOpen(true);
+    const closeAbstractModal = () => setAbstractModalIsOpen(false);
+
+    const openChapterModal = () => setChapterModalIsOpen(true);
+    const closeChapterModal = () => setChapterModalIsOpen(false);
 
     return (
         <div className="product-details__area product-details__plr mt-100 mb-70">
@@ -46,8 +59,8 @@ const CallForChapterPage = ({
                             {descriptionParagraphs.map((paragraph, index) => (
                                 <p key={index} className="wow animate__fadeInUp" data-wow-duration="1.1s">{paragraph}</p>
                             ))}
-                            <a className="yellow-btn tp-btn-hover alt-color mt-20 mr-30 wow animate__fadeInUp" data-wow-duration="1.1s" target='_blank' href="#"><span>Submit Abstract</span><b></b></a>
-                            <a className="yellow-btn tp-btn-hover alt-color mt-20 wow animate__fadeInUp" data-wow-duration="1.1s" target='_blank' href="#"><span>Upload Chapter</span><b></b></a>
+                            <button className="yellow-btn tp-btn-hover alt-color mt-20 mr-30 wow animate__fadeInUp" data-wow-duration="1.1s" onClick={openAbstractModal}><span>Submit Abstract</span><b></b></button>
+                            <button className="yellow-btn tp-btn-hover alt-color mt-20 wow animate__fadeInUp" data-wow-duration="1.1s" onClick={openChapterModal}><span>Upload Chapter</span><b></b></button>
                             <div className="product-details__social-box mt-35 wow animate__fadeInUp" data-wow-duration="1.1s">
                                 <span>Share:</span>
                                 <a href="#"><i className="fab fa-facebook-f"></i></a>
@@ -75,8 +88,8 @@ const CallForChapterPage = ({
                                             <TabPanel>
                                                 <ul>
                                                     {chapters.map((chapter, index) => (
-                                                        <li key={index}>
-                                                            <p><strong>Chapter {index + 1}:</strong> {chapter.title}</p>
+                                                        <li key={index} style={{ listStyle: "none", padding: "15px", border: "1px solid #ddd", marginBottom: "10px", borderRadius: "5px" }}>
+                                                            <p style={{ fontSize: "16px", marginBottom: "5px" }}><strong>Chapter {chapter.index}:</strong> {chapter.title}</p>
                                                         </li>
                                                     ))}
                                                 </ul>
@@ -127,6 +140,12 @@ const CallForChapterPage = ({
                     </div>
                 </div>
             </div>
+            <CustomModal isOpen={abstractModalIsOpen} onRequestClose={closeAbstractModal} contentLabel="Submit Abstract">
+                <CFCSubmissionFormContainer itemClass="some-class" chapters={chapters} bookTitle={title.text} />
+            </CustomModal>
+            <CustomModal isOpen={chapterModalIsOpen} onRequestClose={closeChapterModal} contentLabel="Upload Chapter">
+                <FinalChapterSubmissionFormContainer itemClass="some-class" chapters={chapters} bookTitle={title.text} isConsentFormRequired={isConsentFormRequired} consentFormLink={consentFormLink} />
+            </CustomModal>
         </div>
     );
 }

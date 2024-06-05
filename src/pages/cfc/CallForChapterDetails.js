@@ -14,12 +14,12 @@ import Error from '../error'
 
 const CallForChapterDetails = () => {
     const { cfcId } = useParams();
-    const cfcDetails = callForChaptersData.find(cfc => cfc.id === 'iom-smart-healthcare-wiley');
+    const cfcDetails = callForChaptersData.find(cfc => cfc.id === cfcId);
     if (!cfcDetails) {
         return <Error />;
     }
 
-    const relatedBooks = getRelatedBooks('iom-smart-healthcare-wiley', true);
+    const relatedBooks = getRelatedBooks(cfcId, true);
 
     return (
         <main>

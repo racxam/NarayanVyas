@@ -1,10 +1,11 @@
+// components/BookProposalForm.js
 import React, { useState } from 'react';
 import shapeImg1 from '../../assets/img/contact/ct-shape-1.png';
 import shapeImg2 from '../../assets/img/contact/ct-shape-2.png';
 import shapeImg3 from '../../assets/img/contact/ct-shape-3.png';
 import shapeImg4 from '../../assets/img/contact/ct-shape-4.png';
 import './BookProposal.css';
-import AuthorsSection from './AuthorsSection';
+import AuthorsSection from '../../components/AuthorsSection';
 import FileUpload from '../../components/FileUpload';
 
 const BookProposalForm = ({
