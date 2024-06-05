@@ -25,7 +25,7 @@ const Footer = (props) => {
                                     <div className="footer__text">
                                         <p>Empowering Innovation in Mobile Development, IoT, and Research</p>
                                     </div>
-                                    <div className="footer-3__social-box">
+                                    <div className="footer-3__social-box" style={{marginTop:"16px"}}>
                                         <a href="https://www.facebook.com/narayanvyas87"><i className="fab fa-facebook-f"></i></a>
                                         <a href="https://www.twitter.com/narayanvyas87"><i className="fab fa-twitter"></i></a>
                                         <a href="https://www.instagram.com/narayanvyas87"><i className="fab fa-brands fa-instagram"></i></a>
