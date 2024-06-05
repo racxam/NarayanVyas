@@ -90,20 +90,20 @@ const Header = (props) => {
 
 			<header
 
-			 >
+			>
 				<div id="header-sticky" className={`${headerClass ? headerClass : 'header__area header__transparent header__space header__plr'} ${isVisible ? 'header-sticky' : ''}`}
 
 				>
 					<div className="container-fluid"
 
-					 >
-						<div className="row align-items-center" 
+					>
+						<div className="row align-items-center"
 
 						>
-							<div className="col-xl-3 col-lg-3 col-7 col-md-6" 
+							<div className="col-xl-3 col-lg-3 col-7 col-md-6"
 
 							>
-								<div className="header__logo" 
+								<div className="header__logo"
 
 								>
 									<Link to="/">
@@ -113,7 +113,7 @@ const Header = (props) => {
 									</Link>
 								</div>
 							</div>
-							<div className="col-xl-6 col-lg-7 d-none d-lg-block" 
+							<div className="col-xl-6 col-lg-7 d-none d-lg-block"
 
 							>
 								<div className="header__main-menu text-xxl-end text-center"
@@ -123,25 +123,25 @@ const Header = (props) => {
 
 									>
 										<ul
-										className='mr-10'
-										style={{ marginRight:"10px !important"}}
+											className='mr-10'
+											style={{ marginRight: "10px !important" }}
 										>
 											<MenuItems
 												parentMenu={parentMenu}
-												
+
 											/>
 										</ul>
 									</nav>
 								</div>
 							</div>
-							<div className="col-xl-3 col-lg-2 col-5 col-md-6 mt-5" 
-									>
+							<div className="col-xl-3 col-lg-2 col-5 col-md-6 mt-5"
+							>
 								<div className="header__action d-flex justify-content-end"
 
 								>
 									<Link className="main-btn-sm d-none d-xl-block tp-btn-hover alt-color" to="/appointments">
 										<span> Book Appointment</span>
-										
+
 									</Link>
 									<div className="header__menu-bar"
 

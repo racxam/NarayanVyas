@@ -8,18 +8,20 @@ const MenuItems = (props) => {
     const [menuState, setMenuState] = useState({
         home: false,
         about: false,
-        service: false,
+        publication:false,
+        books: false,
         page: false,
-        blog: false 
+
     });
 
     const openMobileMenu = menu => {
         setMenuState({
             home: menu === 'home' ? !menuState.home : false,
             about: menu === 'about' ? !menuState.about : false,
-            service: menu === 'service' ? !menuState.service : false,
+            books: menu === 'books' ? !menuState.books : false,
             page: menu === 'page' ? !menuState.page : false,
-            blog: menu === 'blog' ? !menuState.blog : false
+            publication: menu === 'publication' ? !menuState.publication : false,
+
         });
     };
 
@@ -41,7 +43,10 @@ const MenuItems = (props) => {
                     <li className={location.pathname === "/machine-learning-notes" ? "active" : ""}><Link to="/machine-learning-notes">ML Notes</Link></li>
                     <li className={location.pathname === "/java-notes" ? "active" : ""}><Link to="/java-notes">Java Notes</Link></li>
                 </ul>
-                <a href="#" onClick={() => openMobileMenu('about')}></a>
+                {/* <a href="#" onClick={() => openMobileMenu('about')}></a> */}
+                <a className={menuState.page ? 'mean-expand mean-expand mean-clicked' : 'mean-expand'} href="#" onClick={() => openMobileMenu('about')}>
+                    <i className="fal fa-plus"></i>
+                </a>
             </li>
             <li className={location.pathname === "/publications" ? "active" : ""}
 
@@ -52,10 +57,12 @@ const MenuItems = (props) => {
 
             >
                 <Link to="/books">Books</Link> 
-                <ul className={menuState.service ? "submenu submenu-open" : "submenu"}>
+                <ul className={menuState.books ? "submenu submenu-open" : "submenu"}>
                     <li className={location.pathname === "/call-for-chapters" ? "active" : ""}><Link to="/call-for-chapters">Call for Chapters</Link></li>
                 </ul>
-                <a href="#" onClick={() => openMobileMenu('service')}></a>
+                <a className={menuState.page ? 'mean-expand mean-expand mean-clicked' : 'mean-expand'} href="#" onClick={() => openMobileMenu('books')}>
+                    <i className="fal fa-plus"></i>
+                </a>
             </li>
             <li className={parentMenu === 'services' ? 'has-dropdown active' : 'has-dropdown'}
 
