@@ -28,7 +28,7 @@ function Slider1() {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={'3'}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -71,19 +71,19 @@ function Slider1() {
 
 
 
-          {sortedCfcData.map(book => (
-            <SwiperSlide key={book.id} className={"swiperslide1" }>
+        {sortedCfcData.map(book => (
+          <SwiperSlide key={book.id} className={"swiperslide1"}>
 
-              <CallForChaptersImageOnly
-								Image={book.title.image}
-								Title={book.title.text}
-								Publisher={book.publisher}
-								Price={book.price}
-								Url={`call-for-chapters/${book.id}`}
-							/>
+            <CallForChaptersImageOnly
+              Image={book.title.image}
+              Title={book.title.text}
+              Publisher={book.publisher}
+              Price={book.price}
+              Url={`call-for-chapters/${book.id}`}
+            />
 
-            </SwiperSlide>
-          ))}
+          </SwiperSlide>
+        ))}
 
 
         <div className="slider-controler1">
