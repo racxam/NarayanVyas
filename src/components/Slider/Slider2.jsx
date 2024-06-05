@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Navigation, Pagination } from "swiper/modules";
 import booksData from '../../data/booksData';
 import SingleProduct from '../../components/Product';
-import { FreeMode, Navigation, Pagination } from "swiper";
 import { RxArrowTopRight } from "react-icons/rx";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,12 +10,12 @@ import "swiper/css/free-mode";
 const sortedBooks = booksData.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
 
 const Slider2 = () => {
-  const loopEnabled = sortedBooks.length >= 7; // Enable loop only if there are at least 7 items
+  // const loopEnabled = sortedBooks.length >= 7; // Enable loop only if there are at least 7 items
 
   return (
     <div className="flex items-center justify-center flex-col h-[900px] bg-[#6c34af]">
       <Swiper
-        loop={loopEnabled}
+        loop={true}
         breakpoints={{
           340: {
             slidesPerView: 2,

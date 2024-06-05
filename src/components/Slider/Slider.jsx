@@ -1,12 +1,12 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 import slide_image_1 from '../../assets/img/sliderImages/img_1.jpg';
 import slide_image_2 from '../../assets/img/sliderImages/img_2.jpg';
 import slide_image_3 from '../../assets/img/sliderImages/img_3.jpg';
@@ -30,13 +30,35 @@ function Slider1() {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'3'}
+        slidesPerView='auto'
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
           depth: 100,
           modifier: 2.5,
 
+        }}
+        breakpoints={{
+          320: {
+            slidesPerView: 'auto',
+
+          },
+          480: {
+            slidesPerView: 'auto',
+
+          },
+          640: {
+            slidesPerView: 'auto',
+
+          },
+          768: {
+            slidesPerView: 'auto',
+
+          },
+          1024: {
+            slidesPerView: 5,
+
+          },
         }}
           // // slidesPerView={'auto'}
           // coverflowEffect={{

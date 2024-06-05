@@ -1,8 +1,6 @@
 import React from 'react';
+import { register } from 'swiper/element/bundle';
 import { createRoot } from 'react-dom';
-
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
@@ -10,14 +8,13 @@ import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/scss/main.scss';
 
-// Import Swiper styles
-import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
-import 'swiper/scss/scrollbar';
+// import function to register Swiper custom elements
+// register Swiper custom elements
+register();
 
-SwiperCore.use([Navigation]);
-SwiperCore.use([Pagination]);
+
+
+
 
 createRoot(document.getElementById('root')).render(
 	<BrowserRouter>

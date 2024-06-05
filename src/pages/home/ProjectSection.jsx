@@ -1,11 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Mousewheel } from 'swiper';
 import SectionTitle from '../../components/SectionTitle';
 import projectsData from '../../data/projectsData';
 import ProjectCard from '../../components/Project/ProjectCard';
 
-SwiperCore.use([Mousewheel]);
+
 
 const Project = ({ subTitle, title, slidesToShow }) => {
     const sliderOption = {
