@@ -65,17 +65,23 @@ const PublicationStatsCard = () => {
                 height: '36px',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center' // Center align the title
+                justifyContent: 'center' 
+
+                // Center align the title
             }}>
-                <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
+                <Typography variant="subtitle1" sx={{ fontWeight: 'bold', fontSize:'1.5rem' }}>
                     Scopus Stats
                 </Typography>
             </Box>
             <CardContent>
                 {loading ? (
-                    <Typography>Loading...</Typography>
+                    <Typography
+                    sx={{fontSize:"1.5rem"}}
+                    >Loading...</Typography>
                 ) : error ? (
-                    <Typography color="error">{error}</Typography>
+                    <Typography
+                    sx={{fontSize:"1.5rem"}}
+                     color="error">{error}</Typography>
                 ) : (
                     <Table>
                         <TableBody>
@@ -85,17 +91,17 @@ const PublicationStatsCard = () => {
                                         {stat.icon}
                                     </TableCell>
                                     <TableCell sx={{ borderBottom: 'none', padding: '2px' }}>
-                                        <Typography variant="body1" sx={{ fontWeight: 'bold' }}>
+                                        <Typography variant="body1" sx={{ fontWeight: 'bold',fontSize:"1.5rem" }}>
                                             {stat.heading}:
                                         </Typography>
                                     </TableCell>
                                     <TableCell sx={{ borderBottom: 'none', padding: '2px' }}>
                                         {stat.link ? (
-                                            <Link href={stat.link} target="_blank" rel="noopener noreferrer" sx={{ fontWeight: 'bold', color: 'white', '&:hover': { color: '#FFDC60' } }}>
+                                            <Link href={stat.link} target="_blank" rel="noopener noreferrer" sx={{ fontWeight: 'bold',fontSize:"1.5rem", color: 'white', '&:hover': { color: '#FFDC60' } }}>
                                                 {stat.text}
                                             </Link>
                                         ) : (
-                                            <Typography variant="body1" sx={{ fontWeight: 'bold' }}>
+                                            <Typography variant="body1" sx={{ fontWeight: 'bold' ,fontSize:"1.5rem"}}>
                                                 {stat.text}
                                             </Typography>
                                         )}
