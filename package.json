@@ -30,6 +30,7 @@
 		"react-dom": "^18.2.0",
 		"react-dropzone": "^14.2.3",
 		"react-helmet": "^6.1.0",
+		"react-icons": "^5.2.1",
 		"react-lightbox-pack": "^0.1.5",
 		"react-masonry-css": "^1.0.16",
 		"react-modal": "^3.16.1",

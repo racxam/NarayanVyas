@@ -185,7 +185,8 @@ const booksData = [
             'dac-nhuong-le',
             'narayan-vyas',
         ]
-    }, {
+    }, 
+    {
         id: 'quantum-innovations-nexus-biomedical-intelligence',
         title: {
             text: "Quantum Innovations at the Nexus of Biomedical Intelligence",
@@ -231,7 +232,145 @@ const booksData = [
             'anupam-baliyan',
             'narayan-vyas'
         ]
-    }
+    },
+    {
+        id: 'quantum-innovations-nexus-biomedical-intelligence',
+        title: {
+            text: "Quantum Innovations at the Nexus of Biomedical Intelligence",
+            image: quantumInBiomedicalIGIImg
+        },
+        price: '$330.00',
+        publisher: 'IGI Global',
+        publisherLink: 'https://www.igi-global.com/book/quantum-innovations-nexus-biomedical-intelligence/328543',
+        releaseDate: 'December 2023',
+        copyright: '© 2024',
+        language: 'English',
+        categories: ['Technology', 'AI'],
+        isbn13: 'https://dx.doi.org/10.4018/979-8-3693-1479-1',
+        indexIn: ['Google Scholar', 'Scopus'],
+        descriptionParagraphs: [
+            "The convergence of quantum technologies and biomedical intelligence is a frontier of boundless potential. The quantum advancements revolutionize disease detection, personalized medicine, and health monitoring frameworks while confronting the pressing challenge of accountability in machine learning systems within the biomedical domain. How do quantum innovations at the nexus of biomedical intelligence redefine biomedical research and healthcare, addressing critical inquiries such as the transformative potential of quantum computing, machine learning, and sensing technologies?",
+            "Quantum Innovations at the Nexus of Biomedical Intelligence explores the intricate synergy between quantum mechanics and the biomedical domain. This book elucidates the profound implications and applications arising from the fusion of quantum computing, artificial intelligence, and biomedical sciences.",
+            "This book introduces biomedical engineering, setting the stage for a deep dive into the transformative role of quantum computing and artificial intelligence. As the narrative unfolds, the text navigates the reader through the uncharted territories of quantum-enhanced machine learning, quantum sensing and their profound impact on diagnostics, personalized medicine, and health monitoring frameworks. The intersection of quantum computing and AI in medical advancements and cybersecurity is illuminated, offering a comprehensive understanding of the multifaceted applications of these cutting-edge technologies.",
+            "The book is a collaborative effort, allowing luminaries from quantum computing, artificial intelligence, biomedicine, bioengineering, molecular biology, and healthcare to share their expertise. Readers will find in-depth discussions on topics ranging from the detection of cardiomegaly using quantum-enhanced deep convolutional neural networks to applying quantum machine learning algorithms in predicting outbreaks of diseases such as dengue fever. The challenges of accountability in machine learning systems are explored beyond mere technical obstacles, establishing a critical dialogue on responsible innovation in this burgeoning field.",
+            "This book is ideal for researchers, scientists, academics, and professionals across diverse disciplines in quantum innovations within biomedical intelligence. Graduate students and postdoctoral researchers will discover a valuable resource that expands their knowledge and unveils new avenues for research and future investigations."
+        ],
+        chapters: [
+            { title: "Chapter 1: AI-Driven Plant Leaf Disease Detection for Modern Agriculture", authors: ["M. Suchetha", "Jaya Sai Kotamsetti", "Dasapalli Sasidhar Reddy", "S. Preethi", "D. Edwin Dhas"], link: '' },
+            { title: "Chapter 2: Enhancing Elderly Health Monitoring Framework With Quantum-Assisted Machine Learning Models as Micro Services", authors: ["A. Bhuvaneswari", "R. Srivel", "N. Elamathi", "S. Shitharth", "K. Sangeetha"], link: '' },
+            { title: "Chapter 3: Explaining the Challenges of Accountability in Machine Learning Systems Beyond Technical Obstacles", authors: ["Srinivas Kumar Palvadi"], link: '' },
+            { title: "Chapter 4: Exploring the Potential of Quantum Computing in AI, Medical Advancements, and Cyber Security", authors: ["Srinivas Kumar Palvadi"], link: '' },
+            { title: "Chapter 5: Hybrid Algorithms for Medical Insights Using Quantum Computing", authors: ["Nitika Kapoor", "Parminder Singh", "Kusrini M. Kom", "Vishal Bharti"], link: '' },
+            { title: "Chapter 6: Impact of Pairwise Electrode Features in the Classification of Emotions for EEG Signal Analysis", authors: ["M. Suchetha", "V. V. Rama Raghavan", "Shaik Fardeen", "P. V. S. Nithish", "S. Preethi", "D. Edwin Dhas"], link: '' },
+            { title: "Chapter 7: Infected Plant Leaves Detection Using Multilayered Convolutional Neural Network and Quantum Classifier", authors: ["Damandeep Kaur", "Shamandeep Singh", "Simarjeet Kaur", "Gurpreet Singh", "Rani Kumari"], link: '' },
+            { title: "Chapter 8: Machine Learning and Quantum Computing in Biomedical Intelligence", authors: ["Pradeepta Kumar Sarangi", "Shreya Kumari", "Mani Sawhney", "Amit Vajpayee", "Mukesh Rohra", "Srikanta Mallik"], link: '' },
+            { title: "Chapter 9: Personalized Medicine Through Quantum Computing: Tailoring Treatments in Healthcare", authors: ["Muskan Sharma", "Yash Mahajan", "Abdullah Alzahrani"], link: '' },
+            { title: "Chapter 10: Quantum Computing for Dengue Fever Outbreak Prediction: Machine Learning and Genetic Hybrid Algorithms Approach", authors: ["Dhaya Chinnathambi", "Srivel Ravi", "Mohammed Abdul Matheen", "Saravanan Pandiaraj"], link: '' },
+            { title: "Chapter 11: Quantum Machine Learning for Biomedical Data Analysis", authors: ["Dankan Gowda V.", "Harshali Yogesh Patil", "Shafiqul Abidin", "Ribhu Abhusan Panda", "Sampathirao Suneetha"], link: '' },
+            { title: "Chapter 12: Revolutionizing Biomedical Engineering With Quantum Computing and AI", authors: ["Mamta", "Nitin Garla", "Inam Ul Haq", "Hardik Dhiman"], link: '' },
+            { title: "Chapter 13: Smart Detection and Removal of Artifacts in Cognitive Signals Using Biomedical Signal Intelligence Applications", authors: ["R. Kishore Kanna", "K. Yamuna Devi", "R. Gomalavalli", "A. Ambikapathy"], link: '' },
+            { title: "Chapter 14: Understanding Biomedical Engineering for Quantum Computing", authors: ["Rashmi Agrawal", "Vicente Garcia Diaz"], link: '' },
+        ],
+        editorOrder: [
+            'vishal-dutt',
+            'abhishek-kumar',
+            'sachin-ahuja',
+            'anupam-baliyan',
+            'narayan-vyas'
+        ]
+    },
+    {
+        id: 'quantum-innovations-nexus-biomedical-intelligence',
+        title: {
+            text: "Quantum Innovations at the Nexus of Biomedical Intelligence",
+            image: quantumInBiomedicalIGIImg
+        },
+        price: '$330.00',
+        publisher: 'IGI Global',
+        publisherLink: 'https://www.igi-global.com/book/quantum-innovations-nexus-biomedical-intelligence/328543',
+        releaseDate: 'December 2023',
+        copyright: '© 2024',
+        language: 'English',
+        categories: ['Technology', 'AI'],
+        isbn13: 'https://dx.doi.org/10.4018/979-8-3693-1479-1',
+        indexIn: ['Google Scholar', 'Scopus'],
+        descriptionParagraphs: [
+            "The convergence of quantum technologies and biomedical intelligence is a frontier of boundless potential. The quantum advancements revolutionize disease detection, personalized medicine, and health monitoring frameworks while confronting the pressing challenge of accountability in machine learning systems within the biomedical domain. How do quantum innovations at the nexus of biomedical intelligence redefine biomedical research and healthcare, addressing critical inquiries such as the transformative potential of quantum computing, machine learning, and sensing technologies?",
+            "Quantum Innovations at the Nexus of Biomedical Intelligence explores the intricate synergy between quantum mechanics and the biomedical domain. This book elucidates the profound implications and applications arising from the fusion of quantum computing, artificial intelligence, and biomedical sciences.",
+            "This book introduces biomedical engineering, setting the stage for a deep dive into the transformative role of quantum computing and artificial intelligence. As the narrative unfolds, the text navigates the reader through the uncharted territories of quantum-enhanced machine learning, quantum sensing and their profound impact on diagnostics, personalized medicine, and health monitoring frameworks. The intersection of quantum computing and AI in medical advancements and cybersecurity is illuminated, offering a comprehensive understanding of the multifaceted applications of these cutting-edge technologies.",
+            "The book is a collaborative effort, allowing luminaries from quantum computing, artificial intelligence, biomedicine, bioengineering, molecular biology, and healthcare to share their expertise. Readers will find in-depth discussions on topics ranging from the detection of cardiomegaly using quantum-enhanced deep convolutional neural networks to applying quantum machine learning algorithms in predicting outbreaks of diseases such as dengue fever. The challenges of accountability in machine learning systems are explored beyond mere technical obstacles, establishing a critical dialogue on responsible innovation in this burgeoning field.",
+            "This book is ideal for researchers, scientists, academics, and professionals across diverse disciplines in quantum innovations within biomedical intelligence. Graduate students and postdoctoral researchers will discover a valuable resource that expands their knowledge and unveils new avenues for research and future investigations."
+        ],
+        chapters: [
+            { title: "Chapter 1: AI-Driven Plant Leaf Disease Detection for Modern Agriculture", authors: ["M. Suchetha", "Jaya Sai Kotamsetti", "Dasapalli Sasidhar Reddy", "S. Preethi", "D. Edwin Dhas"], link: '' },
+            { title: "Chapter 2: Enhancing Elderly Health Monitoring Framework With Quantum-Assisted Machine Learning Models as Micro Services", authors: ["A. Bhuvaneswari", "R. Srivel", "N. Elamathi", "S. Shitharth", "K. Sangeetha"], link: '' },
+            { title: "Chapter 3: Explaining the Challenges of Accountability in Machine Learning Systems Beyond Technical Obstacles", authors: ["Srinivas Kumar Palvadi"], link: '' },
+            { title: "Chapter 4: Exploring the Potential of Quantum Computing in AI, Medical Advancements, and Cyber Security", authors: ["Srinivas Kumar Palvadi"], link: '' },
+            { title: "Chapter 5: Hybrid Algorithms for Medical Insights Using Quantum Computing", authors: ["Nitika Kapoor", "Parminder Singh", "Kusrini M. Kom", "Vishal Bharti"], link: '' },
+            { title: "Chapter 6: Impact of Pairwise Electrode Features in the Classification of Emotions for EEG Signal Analysis", authors: ["M. Suchetha", "V. V. Rama Raghavan", "Shaik Fardeen", "P. V. S. Nithish", "S. Preethi", "D. Edwin Dhas"], link: '' },
+            { title: "Chapter 7: Infected Plant Leaves Detection Using Multilayered Convolutional Neural Network and Quantum Classifier", authors: ["Damandeep Kaur", "Shamandeep Singh", "Simarjeet Kaur", "Gurpreet Singh", "Rani Kumari"], link: '' },
+            { title: "Chapter 8: Machine Learning and Quantum Computing in Biomedical Intelligence", authors: ["Pradeepta Kumar Sarangi", "Shreya Kumari", "Mani Sawhney", "Amit Vajpayee", "Mukesh Rohra", "Srikanta Mallik"], link: '' },
+            { title: "Chapter 9: Personalized Medicine Through Quantum Computing: Tailoring Treatments in Healthcare", authors: ["Muskan Sharma", "Yash Mahajan", "Abdullah Alzahrani"], link: '' },
+            { title: "Chapter 10: Quantum Computing for Dengue Fever Outbreak Prediction: Machine Learning and Genetic Hybrid Algorithms Approach", authors: ["Dhaya Chinnathambi", "Srivel Ravi", "Mohammed Abdul Matheen", "Saravanan Pandiaraj"], link: '' },
+            { title: "Chapter 11: Quantum Machine Learning for Biomedical Data Analysis", authors: ["Dankan Gowda V.", "Harshali Yogesh Patil", "Shafiqul Abidin", "Ribhu Abhusan Panda", "Sampathirao Suneetha"], link: '' },
+            { title: "Chapter 12: Revolutionizing Biomedical Engineering With Quantum Computing and AI", authors: ["Mamta", "Nitin Garla", "Inam Ul Haq", "Hardik Dhiman"], link: '' },
+            { title: "Chapter 13: Smart Detection and Removal of Artifacts in Cognitive Signals Using Biomedical Signal Intelligence Applications", authors: ["R. Kishore Kanna", "K. Yamuna Devi", "R. Gomalavalli", "A. Ambikapathy"], link: '' },
+            { title: "Chapter 14: Understanding Biomedical Engineering for Quantum Computing", authors: ["Rashmi Agrawal", "Vicente Garcia Diaz"], link: '' },
+        ],
+        editorOrder: [
+            'vishal-dutt',
+            'abhishek-kumar',
+            'sachin-ahuja',
+            'anupam-baliyan',
+            'narayan-vyas'
+        ]
+    },
+    {
+        id: 'quantum-innovations-nexus-biomedical-intelligence',
+        title: {
+            text: "Quantum Innovations at the Nexus of Biomedical Intelligence",
+            image: quantumInBiomedicalIGIImg
+        },
+        price: '$330.00',
+        publisher: 'IGI Global',
+        publisherLink: 'https://www.igi-global.com/book/quantum-innovations-nexus-biomedical-intelligence/328543',
+        releaseDate: 'December 2023',
+        copyright: '© 2024',
+        language: 'English',
+        categories: ['Technology', 'AI'],
+        isbn13: 'https://dx.doi.org/10.4018/979-8-3693-1479-1',
+        indexIn: ['Google Scholar', 'Scopus'],
+        descriptionParagraphs: [
+            "The convergence of quantum technologies and biomedical intelligence is a frontier of boundless potential. The quantum advancements revolutionize disease detection, personalized medicine, and health monitoring frameworks while confronting the pressing challenge of accountability in machine learning systems within the biomedical domain. How do quantum innovations at the nexus of biomedical intelligence redefine biomedical research and healthcare, addressing critical inquiries such as the transformative potential of quantum computing, machine learning, and sensing technologies?",
+            "Quantum Innovations at the Nexus of Biomedical Intelligence explores the intricate synergy between quantum mechanics and the biomedical domain. This book elucidates the profound implications and applications arising from the fusion of quantum computing, artificial intelligence, and biomedical sciences.",
+            "This book introduces biomedical engineering, setting the stage for a deep dive into the transformative role of quantum computing and artificial intelligence. As the narrative unfolds, the text navigates the reader through the uncharted territories of quantum-enhanced machine learning, quantum sensing and their profound impact on diagnostics, personalized medicine, and health monitoring frameworks. The intersection of quantum computing and AI in medical advancements and cybersecurity is illuminated, offering a comprehensive understanding of the multifaceted applications of these cutting-edge technologies.",
+            "The book is a collaborative effort, allowing luminaries from quantum computing, artificial intelligence, biomedicine, bioengineering, molecular biology, and healthcare to share their expertise. Readers will find in-depth discussions on topics ranging from the detection of cardiomegaly using quantum-enhanced deep convolutional neural networks to applying quantum machine learning algorithms in predicting outbreaks of diseases such as dengue fever. The challenges of accountability in machine learning systems are explored beyond mere technical obstacles, establishing a critical dialogue on responsible innovation in this burgeoning field.",
+            "This book is ideal for researchers, scientists, academics, and professionals across diverse disciplines in quantum innovations within biomedical intelligence. Graduate students and postdoctoral researchers will discover a valuable resource that expands their knowledge and unveils new avenues for research and future investigations."
+        ],
+        chapters: [
+            { title: "Chapter 1: AI-Driven Plant Leaf Disease Detection for Modern Agriculture", authors: ["M. Suchetha", "Jaya Sai Kotamsetti", "Dasapalli Sasidhar Reddy", "S. Preethi", "D. Edwin Dhas"], link: '' },
+            { title: "Chapter 2: Enhancing Elderly Health Monitoring Framework With Quantum-Assisted Machine Learning Models as Micro Services", authors: ["A. Bhuvaneswari", "R. Srivel", "N. Elamathi", "S. Shitharth", "K. Sangeetha"], link: '' },
+            { title: "Chapter 3: Explaining the Challenges of Accountability in Machine Learning Systems Beyond Technical Obstacles", authors: ["Srinivas Kumar Palvadi"], link: '' },
+            { title: "Chapter 4: Exploring the Potential of Quantum Computing in AI, Medical Advancements, and Cyber Security", authors: ["Srinivas Kumar Palvadi"], link: '' },
+            { title: "Chapter 5: Hybrid Algorithms for Medical Insights Using Quantum Computing", authors: ["Nitika Kapoor", "Parminder Singh", "Kusrini M. Kom", "Vishal Bharti"], link: '' },
+            { title: "Chapter 6: Impact of Pairwise Electrode Features in the Classification of Emotions for EEG Signal Analysis", authors: ["M. Suchetha", "V. V. Rama Raghavan", "Shaik Fardeen", "P. V. S. Nithish", "S. Preethi", "D. Edwin Dhas"], link: '' },
+            { title: "Chapter 7: Infected Plant Leaves Detection Using Multilayered Convolutional Neural Network and Quantum Classifier", authors: ["Damandeep Kaur", "Shamandeep Singh", "Simarjeet Kaur", "Gurpreet Singh", "Rani Kumari"], link: '' },
+            { title: "Chapter 8: Machine Learning and Quantum Computing in Biomedical Intelligence", authors: ["Pradeepta Kumar Sarangi", "Shreya Kumari", "Mani Sawhney", "Amit Vajpayee", "Mukesh Rohra", "Srikanta Mallik"], link: '' },
+            { title: "Chapter 9: Personalized Medicine Through Quantum Computing: Tailoring Treatments in Healthcare", authors: ["Muskan Sharma", "Yash Mahajan", "Abdullah Alzahrani"], link: '' },
+            { title: "Chapter 10: Quantum Computing for Dengue Fever Outbreak Prediction: Machine Learning and Genetic Hybrid Algorithms Approach", authors: ["Dhaya Chinnathambi", "Srivel Ravi", "Mohammed Abdul Matheen", "Saravanan Pandiaraj"], link: '' },
+            { title: "Chapter 11: Quantum Machine Learning for Biomedical Data Analysis", authors: ["Dankan Gowda V.", "Harshali Yogesh Patil", "Shafiqul Abidin", "Ribhu Abhusan Panda", "Sampathirao Suneetha"], link: '' },
+            { title: "Chapter 12: Revolutionizing Biomedical Engineering With Quantum Computing and AI", authors: ["Mamta", "Nitin Garla", "Inam Ul Haq", "Hardik Dhiman"], link: '' },
+            { title: "Chapter 13: Smart Detection and Removal of Artifacts in Cognitive Signals Using Biomedical Signal Intelligence Applications", authors: ["R. Kishore Kanna", "K. Yamuna Devi", "R. Gomalavalli", "A. Ambikapathy"], link: '' },
+            { title: "Chapter 14: Understanding Biomedical Engineering for Quantum Computing", authors: ["Rashmi Agrawal", "Vicente Garcia Diaz"], link: '' },
+        ],
+        editorOrder: [
+            'vishal-dutt',
+            'abhishek-kumar',
+            'sachin-ahuja',
+            'anupam-baliyan',
+            'narayan-vyas'
+        ]
+    },
 ];
 
 export default booksData;

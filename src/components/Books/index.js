@@ -2,7 +2,7 @@ import React from 'react'
 import SingleProduct from '../../components/Product';
 import SectionTitle from '../../components/SectionTitle/index'
 import booksData from '../../data/booksData';
-
+import Slider2 from '../../components/Slider/Slider2'
 const sortedBooks = booksData.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
 
 const index = () => {
@@ -22,7 +22,7 @@ const index = () => {
 
 
                 </div>
-                <div className="row">
+                {/* <div className="row">
                     {sortedBooks.map((book) => (
                         <div
                             key={book.id}
@@ -38,7 +38,11 @@ const index = () => {
                             />
                         </div>
                     ))}
-                </div>
+                </div> */}
+
+                <Slider2/>
+
+
             </div>
         </div>
     )
