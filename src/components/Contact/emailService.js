@@ -6,7 +6,6 @@ const sendEmail = async (emailData) => {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'Authorization': `Zoho-enczapikey wSsVR60nq0X1WP16z2WvJuc7mw9XBVLxFBkv3lSl7Xb/T63FoMdvlEXGDFeuSfcfEmVsFWQW8rl8yxcH2jENiYkqywwGWyiF9mqRe1U4J3x17qnvhDzIXmVYlRKBL4kBxQ9tkmJhGski+g==`,
             },
         });
         if (response.status !== 200) {
@@ -18,7 +17,9 @@ const sendEmail = async (emailData) => {
     }
 };
 
-const getEmailData = (formData, file, mail_template_key, from, to = [], cc = [], bcc = [], subject = 'New Chapter Proposal Received') => {
+export { sendEmail };
+
+const getEmailData = (formData, file, from, to = [], cc = [], bcc = [], subject = 'New Chapter Proposal Received') => {
     const mergeInfo = {
         submissionId: formData.submissionId,
         proposal: formData.proposal,
@@ -33,14 +34,27 @@ const getEmailData = (formData, file, mail_template_key, from, to = [], cc = [],
         })),
     };
 
+    const htmlContent = `
+        <h1>New Chapter Proposal Received</h1>
+        <p><strong>Submission ID:</strong> ${mergeInfo.submissionId}</p>
+        <p><strong>Proposal:</strong> ${mergeInfo.proposal}</p>
+        <p><strong>Chapter:</strong> ${mergeInfo.chapter}</p>
+        <p><strong>Keywords:</strong> ${mergeInfo.keywords}</p>
+        <p><strong>Book:</strong> ${mergeInfo.book}</p>
+        <p><strong>Chapter Subtitles:</strong> ${mergeInfo.chapterSubtitles}</p>
+        <p><strong>Suggested Title:</strong> ${mergeInfo.suggestedTitle}</p>
+        <p><strong>Authors:</strong> ${mergeInfo.authors.map(author => `
+            <p>${author.name} - ${author.isCorresponding}</p>
+        `).join('')}</p>
+    `;
+
     const emailData = {
-        mail_template_key,
         from,
         to,
         cc,
         bcc,
-        merge_info: mergeInfo,
         subject,
+        html: htmlContent,
     };
 
     if (file) {
@@ -50,13 +64,13 @@ const getEmailData = (formData, file, mail_template_key, from, to = [], cc = [],
                 const base64File = reader.result.split(',')[1];
                 emailData.attachments = [
                     {
+                        filename: file.name,
                         content: base64File,
-                        mime_type: file.type,
-                        name: file.name,
                     },
                 ];
                 resolve(emailData);
             };
+            reader.onerror = reject;
             reader.readAsDataURL(file);
         });
     } else {
@@ -64,4 +78,4 @@ const getEmailData = (formData, file, mail_template_key, from, to = [], cc = [],
     }
 };
 
-export { sendEmail, getEmailData };
+export { getEmailData };

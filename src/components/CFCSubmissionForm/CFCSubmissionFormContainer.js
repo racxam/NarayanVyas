@@ -65,14 +65,13 @@ const CFCSubmissionFormContainer = ({ itemClass, chapters, bookTitle }) => {
             authors,
         };
 
-        const mail_template_key = "2d6f.2a251775f7a95ff2.k1.00662cd0-2257-11ef-9632-5254008f5018.18fe2a2881d";
-        const from = { address: 'contact@narayanvyas.com', name: 'Author Relations' };
-        const to = authors.map(author => ({ email_address: { address: author.email, name: author.name } }));
-        const cc = [{ email_address: { address: 'narayanvyas87@gmail.com', name: 'Narayan Vyas' } }];
+        const from = 'contact@narayanvyas.com'; // Update this if needed
+        const to = authors.map(author => author.email);
+        const cc = ['narayanvyas87@gmail.com']; // Add CC addresses here
         const bcc = []; // Add BCC addresses here if needed
 
         try {
-            const emailData = await getEmailData(formData, null, mail_template_key, from, to, cc, bcc, 'New Chapter Proposal Received');
+            const emailData = await getEmailData(formData, null, from, to, cc, bcc, 'New Chapter Proposal Received');
             await sendEmail(emailData);
             setAuthors([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]);
             setLoading(false);
