@@ -1,6 +1,8 @@
 import productImgIoMSmartHealthcareWiley from '../assets/img/cfc/iomt-wiley.jpg';
 import productImgMultimodalDataFusionWiley from '../assets/img/cfc/multimodal-wiley.jpg';
 import productImgSecureEnergyWiley from '../assets/img/cfc/secure-energy-wiley.jpg';
+import productImgRadarAiDegruyter from '../assets/img/cfc/radar_ai_degruyter.png';
+import productImgIoTRadarAAP from '../assets/img/cfc/iot-rs-aap.png';
 
 const callForChapterBooksData = [
     {
@@ -144,7 +146,102 @@ const callForChapterBooksData = [
         isAbstractSubmissionClosed: true,
         isFullChapterSubmissionClosed: true,
         submissionEmails: ['narayanvyas87@gmail.com']
-    }
+    },
+    {
+        id: 'iot-remote-sensing-precision-agriculture',
+        title: {
+            text: "IoT and Remote Sensing Technologies for Precision Agriculture",
+            image: productImgIoTRadarAAP
+        },
+        publisher: 'AAP',
+        publisherLink: 'https://www.appleacademicpress.com/',
+        projectedReleaseDate: 'May 2025',
+        abstractSubmissionDeadline: '30 July 2024',
+        categories: ['Agriculture', 'Technology', 'IoT'],
+        abstractAcceptanceNotification: '30 August 2024',
+        fullChapterSubmissionDeadline: '30 September 2024',
+        chapterAcceptanceNotification: 'December 2024',
+        descriptionParagraphs: [
+            "IoT and Remote Sensing Technologies for Precision Agriculture offers a thorough exploration of how advanced technologies are transforming modern agriculture. This book covers the integration of Internet of Things (IoT) and remote sensing technologies, focusing on their applications and benefits for crop monitoring and yield prediction. The chapters build a solid foundation, beginning with an introduction to the basics of IoT and remote sensing, and then delve into core principles of crop monitoring and yield prediction within precision agriculture."
+        ],
+        editors: [
+            'sartajvir-singh',
+            'narayan-vyas',
+            'dankan-gowda-v'
+        ],
+        chapters: [
+            { index: 1, title: "Introduction to IoT and Remote Sensing in Agriculture" },
+            { index: 2, title: "Fundamentals of Crop Monitoring and Yield Prediction for Precision Agriculture" },
+            { index: 3, title: "Integrating IoT Solutions for Smart Farming" },
+            { index: 4, title: "Remote Sensing Technologies for Precision Agriculture and Crop Yield Estimation" },
+            { index: 5, title: "Optical and Microwave Remote Sensing Applications in Crop Yield Prediction" },
+            { index: 6, title: "Detection of Soil Moisture Changes using Remote Sensing Dataset" },
+            { index: 7, title: "Multi-Spectral and Hyper-Spectral Imaging for Precise Change Detection" },
+            { index: 8, title: "Soil Health Monitoring Solutions using IoT, Remote Sensing, and Artificial Intelligence" },
+            { index: 9, title: "Harnessing the Potential of Drones in Agriculture: Enhancing Crop Surveillance" },
+            { index: 10, title: "Real-time Crop Monitoring Solutions with Advanced IoT Networks" },
+            { index: 11, title: "Pest and Disease Detection using Remote Sensing and IoT" },
+            { index: 12, title: "Climate and Weather Monitoring Systems for Agricultural Applications" },
+            { index: 13, title: "AI and Blockchain-Powered Smart Solutions for Precision Agriculture" },
+            { index: 14, title: "Challenges and Solutions for Sustainable Agriculture with Remote Sensing and IoT" },
+            { index: 15, title: "Future Trends in IoT and Remote Sensing Integration for Precision Agriculture" }
+        ],
+        isConsentFormRequired: true,
+        consentFormLink: 'https://example.com/path_to_consent_form.pdf',
+        consentFormName: 'Author\'s Agreement Form',
+        consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
+        isAbstractSubmissionClosed: false,
+        isFullChapterSubmissionClosed: false,
+        submissionEmails: ['narayanvyas87@gmail.com']
+    },
+    {
+        id: 'radar-ai-remote-sensing',
+        title: {
+            text: "RADAR Remote Sensing Data Analysis with Artificial Intelligence",
+            image: productImgRadarAiDegruyter
+        },
+        publisher: 'De Gruyter',
+        publisherLink: 'https://www.degruyter.com/',
+        projectedReleaseDate: '2025',
+        abstractSubmissionDeadline: '5 August 2024',
+        categories: ['Remote Sensing', 'AI', 'Technology'],
+        abstractAcceptanceNotification: '15 September 2024',
+        fullChapterSubmissionDeadline: '15 November 2024',
+        chapterAcceptanceNotification: 'May 2025',
+        descriptionParagraphs: [
+            "RADAR Remote Sensing Data Analysis with Artificial Intelligence offers a comprehensive exploration into the innovative integration of RADAR technology with Artificial Intelligence. This pivotal resource dives into the essentials of RADAR remote sensing, highlighting how AI is reshaping data interpretation and application across various sectors."
+        ],
+        editors: [
+            'alessandro-vinciarelli',
+            'sartajvir-singh',
+            'narayan-vyas',
+            'mona-as-ali'
+        ],
+        chapters: [
+            { index: 1, title: "Introduction to RADAR Remote Sensing and AI" },
+            { index: 2, title: "Evolution of various RADAR missions and sensors" },
+            { index: 3, title: "Fundamentals of active and passive microwave remote sensing" },
+            { index: 4, title: "Potential applications of RADAR remote sensing with AI" },
+            { index: 5, title: "Big data analysis of RADAR remote sensing: Challenges and Solutions" },
+            { index: 6, title: "Advanced Machine/Deep Learning algorithms for RADAR remote sensing" },
+            { index: 7, title: "Fusion of SAR/Scatterometer and Optical Remote Sensing: Enhanced Classification and Change Detection" },
+            { index: 8, title: "Role of emerging tool and technologies like IoT in enhancing RADAR capabilities" },
+            { index: 9, title: "Deep Learning in SAR: Enhancing Image Interpretation" },
+            { index: 10, title: "Emerging Trends in AI for RADAR remote sensing" },
+            { index: 11, title: "Urban Infrastructure Monitoring with AI and RADAR-based Remote Sensing" },
+            { index: 12, title: "Agricultural Insights: SAR for Crop Yield Estimation and Soil Monitoring" },
+            { index: 13, title: "Disaster Management: Leveraging SAR for Environmental Sustainability" },
+            { index: 14, title: "Emerging AI-enabled RADAR Applications in real-time scenarios" },
+            { index: 15, title: "Future Scope of RADAR Remote Sensing with AI" }
+        ],
+        isConsentFormRequired: false,
+        consentFormLink: 'https://example.com/path_to_consent_form.pdf',
+        consentFormName: 'Author\'s Agreement Form',
+        consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
+        isAbstractSubmissionClosed: false,
+        isFullChapterSubmissionClosed: false,
+        submissionEmails: ['narayanvyas87@gmail.com']
+    },
 ];
 
 export default callForChapterBooksData;

@@ -1,14 +1,14 @@
 // src/components/RelatedBooks.js
 
 import React from 'react';
-import SingleProduct from '../Product';
+import CallForChaptersImageOnly from '../../components/CallForChapters/call_for_chapters_image_only';
 
 const index = ({ relatedBooks }) => {
     return (
 
 
-    
-        <div className="container" style={{marginTop:"0px"}} >
+
+        <div className="container" style={{ marginTop: "0px" }} >
             <div className="row" mb-0>
                 <div className="col-xl-12">
                     <div className="product__title-sm wow animate__fadeInUp" data-wow-duration="1.1s">
@@ -19,7 +19,7 @@ const index = ({ relatedBooks }) => {
             <div className="row">
                 {relatedBooks.map((book) => (
                     <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp" data-wow-duration="1.1s" key={book.id}>
-                        <SingleProduct
+                        <CallForChaptersImageOnly
                             Image={book.title.image}
                             Title={book.title.text}
                             Publisher={book.publisher}
