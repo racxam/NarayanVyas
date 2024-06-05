@@ -1,7 +1,7 @@
 import booksData from '../data/booksData';
 import callForChaptersData from '../data/callForChaptersBooksData';
 
-const getRelatedItems = (currentItemId, isCFC, maxItems = 6) => {
+const getRelatedItems = (currentItemId, isCFC, maxItems = 3) => {
     const itemsData = isCFC ? callForChaptersData : booksData;
     const currentItem = itemsData.find(item => item.id === currentItemId);
     if (!currentItem) return [];

@@ -11,18 +11,20 @@ const generateSubmissionId = (bookTitle) => {
 const FinalChapterSubmissionFormContainer = ({
     itemClass, chapters, bookTitle, isConsentFormRequired, consentFormLink,
     consentFormName, isAbstractSubmissionClosed, isFullChapterSubmissionClosed,
-    submissionEmails = []
+    submissionEmails = [], publisherName = 'Wiley'
 }) => {
-    const [authors, setAuthors] = useState([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]);
+    const [authors, setAuthors] = useState([{ name: '', email: '', department: '', institution: '', phone: '', country: '', isCorresponding: true }]);
     const [file, setFile] = useState(null);
     const [consentFile, setConsentFile] = useState(null);
     const [loading, setLoading] = useState(false);
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const [dragOverFile, setDragOverFile] = useState(false);
+    const [dragOverConsentFile, setDragOverConsentFile] = useState(false);
 
     const handleAddAuthor = () => {
         if (authors.length < 6) {
-            setAuthors([...authors, { name: '', email: '', department: '', institution: '', isCorresponding: false }]);
+            setAuthors([...authors, { name: '', email: '', department: '', institution: '', phone: '', country: '', isCorresponding: false }]);
         }
     };
 
@@ -52,6 +54,7 @@ const FinalChapterSubmissionFormContainer = ({
         const file = e.target.files[0];
         if (file && ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(file.type)) {
             setFile(file);
+            setErrorMessage(''); // Clear previous error message
         } else {
             setErrorMessage('Only PDF or Word files are allowed.');
         }
@@ -63,10 +66,11 @@ const FinalChapterSubmissionFormContainer = ({
 
     const handleConsentFileDrop = (e) => {
         const file = e.target.files[0];
-        if (file && ['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(file.type)) {
+        if (file && ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/pdf'].includes(file.type)) {
             setConsentFile(file);
+            setErrorMessage(''); // Clear previous error message
         } else {
-            setErrorMessage('Only Word files are allowed for the consent form.');
+            setErrorMessage('Only PDF or Word files are allowed for the consent form.');
         }
     };
 
@@ -109,22 +113,21 @@ const FinalChapterSubmissionFormContainer = ({
         const bcc = []; // Add BCC addresses here if needed
 
         try {
-            const emailData = await getEmailData(formData, file, from, to, cc, bcc, 'New Chapter Proposal Received');
-            await sendEmail(emailData);
-
-            if (isConsentFormRequired) {
-                if (!consentFile) {
-                    throw new Error("Consent form is required.");
-                }
-                const consentEmailData = await getEmailData(formData, consentFile, from, to, cc, bcc, 'New Consent Form Received');
-                await sendEmail(consentEmailData);
+            const files = [file];
+            if (isConsentFormRequired && consentFile) {
+                files.push(consentFile);
             }
 
-            setAuthors([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]);
+            const emailData = await getEmailData(formData, files, from, to, cc, bcc, true, publisherName); // Pass true for final chapter and publisher name
+            console.log('Email Data:', emailData); // Log email data for debugging
+            await sendEmail(emailData);
+
+            setAuthors([{ name: '', email: '', department: '', institution: '', phone: '', country: '', isCorresponding: true }]);
             setFile(null);
             setConsentFile(null);
             setSuccessMessage('Your final chapter has been submitted successfully!');
         } catch (error) {
+            console.error('Error submitting final chapter:', error); // Log error for debugging
             setErrorMessage('There was an error submitting your final chapter. Please try again later.');
         } finally {
             setLoading(false);
@@ -158,6 +161,10 @@ const FinalChapterSubmissionFormContainer = ({
             clearMessages={clearMessages}
             isAbstractSubmissionClosed={isAbstractSubmissionClosed}
             isFullChapterSubmissionClosed={isFullChapterSubmissionClosed}
+            dragOverFile={dragOverFile}
+            setDragOverFile={setDragOverFile}
+            dragOverConsentFile={dragOverConsentFile}
+            setDragOverConsentFile={setDragOverConsentFile}
         />
     );
 };

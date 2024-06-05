@@ -26,7 +26,11 @@ const FinalChapterSubmissionForm = ({
     consentFormLink, // Accept the consentFormLink prop
     consentFormName, // Accept the consentFormName prop
     isAbstractSubmissionClosed, // Accept the isAbstractSubmissionClosed prop
-    isFullChapterSubmissionClosed // Accept the isFullChapterSubmissionClosed prop
+    isFullChapterSubmissionClosed, // Accept the isFullChapterSubmissionClosed prop
+    dragOverFile, // Accept dragOverFile as a prop
+    setDragOverFile, // Accept setDragOverFile as a prop
+    dragOverConsentFile, // Accept dragOverConsentFile as a prop
+    setDragOverConsentFile // Accept setDragOverConsentFile as a prop
 }) => {
     return (
         <div className={itemClass ? itemClass : 'contact__area contact__plr-2 mb-10 p-relative fix'}>
@@ -103,8 +107,8 @@ const FinalChapterSubmissionForm = ({
                                             file={file}
                                             handleFileDrop={handleFileDrop}
                                             handleFileRemove={handleFileRemove}
-                                            dragOver={false}
-                                            setDragOver={() => { }}
+                                            dragOver={dragOverFile}
+                                            setDragOver={setDragOverFile}
                                             label="Upload Final Chapter"
                                             acceptedFileTypes={['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']}
                                         />
@@ -113,8 +117,8 @@ const FinalChapterSubmissionForm = ({
                                                 file={consentFile}
                                                 handleFileDrop={handleConsentFileDrop}
                                                 handleFileRemove={handleConsentFileRemove}
-                                                dragOver={false}
-                                                setDragOver={() => { }}
+                                                dragOver={dragOverConsentFile}
+                                                setDragOver={setDragOverConsentFile}
                                                 label={`Upload ${consentFormName}`}
                                                 acceptedFileTypes={['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']}
                                             />
@@ -149,6 +153,6 @@ const FinalChapterSubmissionForm = ({
             </div>
         </div>
     );
-}
+};
 
 export default FinalChapterSubmissionForm;

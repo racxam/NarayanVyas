@@ -3,7 +3,6 @@ import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
 import callForChaptersData from '../../data/callForChaptersBooksData'; // Import the CFC data array
 import CallForChaptersImageOnly from '../../components/CallForChapters/call_for_chapters_image_only';
-import bgImg from '../../assets/img/cta/cta-bg-2.png';
 
 const CFCMain = () => {
 	// Sort CFCs by projected release date, latest first

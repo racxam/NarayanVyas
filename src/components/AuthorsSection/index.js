@@ -1,4 +1,3 @@
-// components/AuthorsSection.js
 import React from 'react';
 
 const AuthorsSection = ({ authors, handleAuthorChange, handleCorrespondingChange, handleAddAuthor, handleRemoveAuthor }) => {
@@ -6,7 +5,7 @@ const AuthorsSection = ({ authors, handleAuthorChange, handleCorrespondingChange
         <>
             {authors.map((author, index) => (
                 <div className={`col-sm-12 author-box ${author.isCorresponding ? 'corresponding-author' : ''}`} key={index}>
-                    <div className={`row author-header align-items-center ${author.isCorresponding ? 'corresponding-author-header' : 'non-corresponding-author-header'}`}>
+                    <div className={`row author-header align-items-center ${author.isCorresponding ? 'corresponding-author-header' : 'non-corresponding-author-header'}`} style={{ backgroundColor: '#FFF1CD' }}>
                         <div className="col-sm-10 d-flex align-items-center">
                             <h5>Author {index + 1}</h5>
                             <label className="corresponding-label">
@@ -24,6 +23,7 @@ const AuthorsSection = ({ authors, handleAuthorChange, handleCorrespondingChange
                                     type="button"
                                     className="btn btn-danger author-btn"
                                     onClick={() => handleRemoveAuthor(index)}
+                                    style={{ fontSize: '20px' }}
                                 >
                                     -
                                 </button>
@@ -33,6 +33,7 @@ const AuthorsSection = ({ authors, handleAuthorChange, handleCorrespondingChange
                                     type="button"
                                     className="btn btn-success author-btn"
                                     onClick={handleAddAuthor}
+                                    style={{ fontSize: '20px' }}
                                 >
                                     +
                                 </button>
@@ -40,7 +41,7 @@ const AuthorsSection = ({ authors, handleAuthorChange, handleCorrespondingChange
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-sm-4">
                             <div className="postbox__contact-input">
                                 <input
                                     type="text"
@@ -52,7 +53,7 @@ const AuthorsSection = ({ authors, handleAuthorChange, handleCorrespondingChange
                                 />
                             </div>
                         </div>
-                        <div className="col-sm-6">
+                        <div className="col-sm-4">
                             <div className="postbox__contact-input">
                                 <input
                                     type="email"
@@ -64,9 +65,21 @@ const AuthorsSection = ({ authors, handleAuthorChange, handleCorrespondingChange
                                 />
                             </div>
                         </div>
+                        <div className="col-sm-4">
+                            <div className="postbox__contact-input">
+                                <input
+                                    type="text"
+                                    name={`authorPhone-${index}`}
+                                    placeholder="Phone Number"
+                                    value={author.phone}
+                                    onChange={(e) => handleAuthorChange(index, 'phone', e.target.value)}
+                                    required
+                                />
+                            </div>
+                        </div>
                     </div>
                     <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-sm-4">
                             <div className="postbox__contact-input">
                                 <input
                                     type="text"
@@ -78,7 +91,7 @@ const AuthorsSection = ({ authors, handleAuthorChange, handleCorrespondingChange
                                 />
                             </div>
                         </div>
-                        <div className="col-sm-6">
+                        <div className="col-sm-4">
                             <div className="postbox__contact-input">
                                 <input
                                     type="text"
@@ -86,6 +99,18 @@ const AuthorsSection = ({ authors, handleAuthorChange, handleCorrespondingChange
                                     placeholder="Institution"
                                     value={author.institution}
                                     onChange={(e) => handleAuthorChange(index, 'institution', e.target.value)}
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div className="col-sm-4">
+                            <div className="postbox__contact-input">
+                                <input
+                                    type="text"
+                                    name={`authorCountry-${index}`}
+                                    placeholder="Country"
+                                    value={author.country}
+                                    onChange={(e) => handleAuthorChange(index, 'country', e.target.value)}
                                     required
                                 />
                             </div>
