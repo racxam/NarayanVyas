@@ -120,7 +120,7 @@ const FinalChapterSubmissionForm = ({
                                                 dragOver={dragOverConsentFile}
                                                 setDragOver={setDragOverConsentFile}
                                                 label={`Upload ${consentFormName}`}
-                                                acceptedFileTypes={['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']}
+                                                acceptedFileTypes={['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']}
                                             />
                                         )}
                                         {successMessage && (

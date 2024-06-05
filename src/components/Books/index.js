@@ -40,7 +40,7 @@ const index = () => {
                     ))}
                 </div> */}
 
-                <Slider2/>
+                <Slider2 />
 
 
             </div>
