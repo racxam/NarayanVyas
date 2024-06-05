@@ -17,6 +17,10 @@ const Slider2 = () => {
     <div className="flex items-center justify-center flex-col h-[900px] bg-[#6c34af]">
       <Swiper
         loop={true}
+        autoplay= {{
+          enabled: true,
+          speed: 1000,
+      }}
         breakpoints={{
           340: {
             slidesPerView: 2,
@@ -71,7 +75,7 @@ const Slider2 = () => {
             className="swiperSlide2"
             
             >
-              <div className="flex flex-col gap-6 mb-30 group relative shadow-lg rounded-xl px-6 py-8 h-[280px] w-[215px] lg:h-[520px] lg:w-[350px] overflow-hidden cursor-pointer"
+              <div className="flex flex-col gap-6 mb-30 group relative rounded-xl px-6 py-8 h-[280px] w-[215px] lg:h-[520px] lg:w-[350px] overflow-hidden cursor-pointer"
               style={{borderRadius:"10px"}}
               >
                 <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
