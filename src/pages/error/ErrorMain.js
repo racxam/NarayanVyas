@@ -29,7 +29,7 @@ const ErrorMain = () => {
 			</div>
 
 			<CTA
-				ctaBG={bgImg}
+				btnText={"Book Appointment"}
 			/>
 		</main>
   );
