@@ -8,7 +8,11 @@ const generateSubmissionId = (bookTitle) => {
     return `${bookCode}${randomNumber}`;
 };
 
-const FinalChapterSubmissionFormContainer = ({ itemClass, chapters, bookTitle, isConsentFormRequired, consentFormLink, consentFormName, isAbstractSubmissionClosed, isFullChapterSubmissionClosed, submissionEmails = [] }) => {
+const FinalChapterSubmissionFormContainer = ({
+    itemClass, chapters, bookTitle, isConsentFormRequired, consentFormLink,
+    consentFormName, isAbstractSubmissionClosed, isFullChapterSubmissionClosed,
+    submissionEmails = []
+}) => {
     const [authors, setAuthors] = useState([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]);
     const [file, setFile] = useState(null);
     const [consentFile, setConsentFile] = useState(null);
@@ -78,6 +82,7 @@ const FinalChapterSubmissionFormContainer = ({ itemClass, chapters, bookTitle, i
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
+        clearMessages(); // Clear previous messages
 
         if (!file || (isConsentFormRequired && !consentFile)) {
             setErrorMessage(`Both the final chapter and the ${consentFormName} must be uploaded.`);
@@ -98,21 +103,20 @@ const FinalChapterSubmissionFormContainer = ({ itemClass, chapters, bookTitle, i
             authors,
         };
 
-        const mail_template_key = "2d6f.2a251775f7a95ff2.k1.00662cd0-2257-11ef-9632-5254008f5018.18fe2a2881d";
-        const from = { address: 'contact@narayanvyas.com', name: 'Author Relations' };
-        const to = authors.map(author => ({ email_address: { address: author.email, name: author.name } }));
-        const cc = submissionEmails.map(email => ({ email_address: { address: email, name: 'Narayan Vyas' } }));
+        const from = 'contact@narayanvyas.com';
+        const to = authors.map(author => author.email);
+        const cc = submissionEmails; // Add CC addresses from submissionEmails
         const bcc = []; // Add BCC addresses here if needed
 
         try {
-            const emailData = await getEmailData(formData, file, mail_template_key, from, to, cc, bcc, 'New Chapter Proposal Received');
+            const emailData = await getEmailData(formData, file, from, to, cc, bcc, 'New Chapter Proposal Received');
             await sendEmail(emailData);
 
             if (isConsentFormRequired) {
                 if (!consentFile) {
                     throw new Error("Consent form is required.");
                 }
-                const consentEmailData = await getEmailData(formData, consentFile, mail_template_key, from, to, cc, bcc, 'New Consent Form Received');
+                const consentEmailData = await getEmailData(formData, consentFile, from, to, cc, bcc, 'New Consent Form Received');
                 await sendEmail(consentEmailData);
             }
 
@@ -124,7 +128,7 @@ const FinalChapterSubmissionFormContainer = ({ itemClass, chapters, bookTitle, i
             setErrorMessage('There was an error submitting your final chapter. Please try again later.');
         } finally {
             setLoading(false);
-            setTimeout(clearMessages, 10000);
+            setTimeout(clearMessages, 10000); // Display messages for 10 seconds
         }
     };
 
