@@ -13,7 +13,8 @@ const CertificateMasonary = () => {
         default: 5,
         1200: 5,
         992: 3,
-        576: 2
+        576: 2,
+        
     };
 
     const tabStyle = 'nav justify-content-center project-2__button-box masonary-menu';

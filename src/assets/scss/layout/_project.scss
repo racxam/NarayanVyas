@@ -185,30 +185,40 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        margin: 30px;
+        margin: 3%;
         z-index: 4;    
         opacity: 0;
         visibility: hidden;
-        transition: .3s;    
+        transition: .3s;  
+
         @media #{$lg}{
             margin: 15px;
         }
+        @media #{$xxs}{
+            margin: 15px;
+        }
         & h5{
+            // border: 1px solid black;
             color: var(--it-common-white);
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 1.5rem;
             transition: .3s;
             @media #{$lg}{
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
             @media #{$md}{
-                font-size: 0.8rem;
+                font-size: 1.5rem;
             }
             @media #{$xs}{
-                font-size: 0.6rem;
+                font-size: 1.5rem;
+            }
+            @media #{$xxs}{
+                margin-top: 5rem !important;
+
+                font-size: 1.3rem;
             }
             @media #{$sm}{
-                font-size:0.5rem;
+                font-size:1.2rem;
             }
             &:hover{
                 color: var(--it-theme-1);
@@ -231,6 +241,9 @@
             @media #{$sm}{
                 font-size: 15px;
             }
+            @media #{$xxs}{
+                font-size: 1px !important;
+            }
         }
     }
     &__img-icon{
@@ -242,9 +255,10 @@
         opacity: 0;
         visibility: hidden;
         transition: .3s;
+
        
 
-;
+
         & a {
 
             height: 40px;
@@ -261,6 +275,11 @@
             @media #{$sm}{
                 height: 20px;
                 width: 20px;
+
+            }
+            @media #{$xxs}{
+                height: 25px;
+                width: 28px;
 
             }
 
