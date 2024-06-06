@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes, useLocation } from 'react-router-dom';
 import WOW from 'wowjs';
-import Modal from 'react-modal';
 
 // Utility Components
 import Preloader from "../components/Preloader";
@@ -36,7 +35,7 @@ import Certificates from '../pages/certificates';
 
 // Books
 import Books from '../pages/books';
-import BookProposalFormContainer from '../pages/books/BookProposalFormContainer';
+import BookProposalForm from '../pages/books/BookProposalFormContainer';
 import BooksDetails from '../pages/books/BookDetails';
 
 // Call For Chapters
@@ -50,10 +49,6 @@ import Appointments from '../pages/appointments';
 // Publications
 import Publications from '../pages/publications';
 
-import './app.css';
-
-// Set the app element for react-modal
-Modal.setAppElement('#root');
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -107,7 +102,7 @@ const App = () => {
                     {/* Books */}
                     <Route path="/books" element={<Books />} />
                     <Route path="/books/:bookId" element={<BooksDetails />} />
-                    <Route path="/book-proposal" element={<BookProposalFormContainer />} />
+                    <Route path="/book-proposal" element={<BookProposalForm />} />
 
                     {/* Call For Chapters */}
                     <Route path="/call-for-chapters" element={<CFC />} />

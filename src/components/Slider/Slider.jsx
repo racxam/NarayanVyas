@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
@@ -8,12 +8,23 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import cfcData from '../../data/callForChaptersBooksData';
 import CallForChaptersImageOnly from '../../components/CallForChapters/call_for_chapters_image_only';
+import { useEffect } from 'react';
 const sortedCfcData = cfcData.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
 
 function Slider1() {
+
+
+    const initialSlide = Math.floor(sortedCfcData.length / 2)+1;
+
+
+   
+  
+  
+
+  
   return (
     <div className="container1">
-      <div className="row">
+      <div className="row d-flex justify-content-center">
 
         <Swiper
 
@@ -23,6 +34,7 @@ function Slider1() {
           centeredSlides={true}
           loop={true}
           slidesPerView='auto'
+          initialSlide={initialSlide-1}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -48,18 +60,19 @@ function Slider1() {
 
             },
             1024: {
-              slidesPerView: 5,
+              slidesPerView: '5',
+              centeredSlides: true,
 
 
-          },
-        }}
-         
-         
+            },
+          }}
+
+
 
           pagination={{ el: '.swiper-pagination1', clickable: true }}
           navigation={{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next1',
+            prevEl: '.swiper-button-prev1',
             clickable: true,
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
@@ -109,6 +122,9 @@ function Slider1() {
           ))}
 
 
+        </Swiper>
+            <div className="swiper-pagination1 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+        {/* <div className="project-slider-dots"></div>,
           <div className="slider-controler1">
             <div className="swiper-button-prev slider-arrow">
               <i class="far fa-arrow-left"></i>
@@ -116,13 +132,11 @@ function Slider1() {
             <div className="swiper-button-next slider-arrow">
               <i class="far fa-arrow-right"></i>
             </div>
-            <div className="swiper-pagination1 .swiper-pagination-bullet .swiper-pagination-bullet-active"></div>
-          </div>
+          </div> */}
 
 
 
 
-        </Swiper>
       </div>
     </div>
   );

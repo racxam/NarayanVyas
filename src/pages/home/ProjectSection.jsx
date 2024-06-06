@@ -7,7 +7,7 @@ import Globals from '../../Globals';
 
 
 
-const Project = ({ subTitle, title, slidesToShow }) => {
+const Project = ({ subTitle, title}) => {
     const sliderOption = {
         pagination: {
             el: '.project-slider-dots',
@@ -17,27 +17,48 @@ const Project = ({ subTitle, title, slidesToShow }) => {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
         },
-        mousewheel: {
-            enabled: false,
-        },
         loop: true,
-        spaceBetween: 150,
-        slidesPerView: slidesToShow,
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
+        spaceBetween:"150px",
+        freeMode:"true",
+        grabCursor:"true",
+        // slidesPerView: 'auto',
+        breakpoints:{
+            320: {
+              slidesPerView: 'auto',
+  
             },
-            576: {
-                slidesPerView: 2,
+            480: {
+              slidesPerView: 'auto',
+  
             },
-            991: {
-                slidesPerView: slidesToShow - 1,
+            640: {
+  
+              slidesPerView: '2',
+              spaceBetween:"15px"
+  
             },
-            1200: {
-                slidesPerView: slidesToShow,
+            768: {
+  
+              slidesPerView: '2',
+              spaceBetween:"15px"
+  
             },
-        },
-    };
+            1024: {
+              slidesPerView: '3',
+              spaceBetween:"150px",
+
+
+              
+              
+            },1400:{
+                slidesPerView: '4',
+                spaceBetween:"150px",
+  
+              
+            }
+          }}
+         
+    
 
     return (
         <div className="product__area product__plr mt-100 mb-80">

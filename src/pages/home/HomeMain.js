@@ -42,9 +42,9 @@ const HomeMain = () => {
 
 			<CertificationSection />
 
-			{/* <Project
-				slidesToShow={"4"}
-			/> */}
+			<Project
+				
+			/>
 
 			<Testimonial />
 

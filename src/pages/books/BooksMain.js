@@ -27,7 +27,7 @@ const BooksMain = () => {
 									Title={book.title.text}
 									Publisher={book.publisher}
 									Price={book.price}
-									Url={book.id}
+									Url={`books/${book.id}`}
 									isPublished={book.isPublished}
 								/>
 							</div>

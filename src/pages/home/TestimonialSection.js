@@ -24,7 +24,7 @@ const Testimonial = () => {
     };
 
     return (
-        <div className="testimonial-2__area  pt-50 pb-30 testimonial-2__space p-relative">
+        <div className="testimonial-2__area pb-30 testimonial-2__space p-relative">
             <div className="testimonial-2__shape-3 d-none d-lg-block custom-testimonial-img">
                 <img src={images.testimonials.hardikDhimanImg} alt="" />
             </div>
