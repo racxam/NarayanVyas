@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import bgImg1 from '../../assets/img/slider/slider-bg-3.png';
+import bgImg from '../../assets/img/slider/slider-bg-3.png';
 import Image from '../../assets/img/about/about-5.png';
 
 import shapeImg1 from '../../assets/img/slider/shape-32.png';
@@ -11,13 +11,11 @@ import shapeImg4 from '../../assets/img/slider/shape-35.png';
 import shapeImg5 from '../../assets/img/slider/shape-24.png';
 import shapeImg6 from '../../assets/img/slider/shape-22.png';
 
-
-
 const Breadcrumb = (props) => {
 	const { pageTitle, breadcrumbsImg, breadcrumbsBg } = props;
 
 	return (
-		<div className="breadcrumb__area breadcrumb__plr breadcrumb__space breadcrumb__bg breadcrumb__overlay p-relative fix" style={{ backgroundImage: `url(${breadcrumbsBg ? breadcrumbsBg : bgImg1})`, height: "50vh" }}>
+		<div className="breadcrumb__area breadcrumb__plr breadcrumb__space breadcrumb__bg breadcrumb__overlay p-relative fix" style={{backgroundImage: `url(${breadcrumbsBg ? breadcrumbsBg : bgImg})`}}>
 			<div className="breadcrumb__shape-1 d-none d-md-block wow animate__fadeInRight" data-wow-duration="1.1s">
 				<img src={shapeImg1} alt="" />
 			</div>
@@ -36,7 +34,7 @@ const Breadcrumb = (props) => {
 			<div className="breadcrumb__shape-6">
 				<img src={shapeImg6} alt="" />
 			</div>
-
+			
 			<div className="container-fluid">
 				<div className="row align-items-center">
 					<div className="col-xxl-6 col-xl-6 col-lg-6">
@@ -49,7 +47,9 @@ const Breadcrumb = (props) => {
 					</div>
 					<div className="col-xxl-6 col-xl-6 col-lg-6">
 						<div className="breadcrumb__main-img text-end">
-							<img src={breadcrumbsImg ? breadcrumbsImg : Image} alt="" className='breadcrumb__main-img__inside-img' />
+						<img src={breadcrumbsImg ? breadcrumbsImg : Image} alt="" 
+						
+						/>
 						</div>
 					</div>
 				</div>
@@ -58,4 +58,8 @@ const Breadcrumb = (props) => {
 	);
 }
 
-export default Breadcrumb
+export default Breadcrumb;
+
+
+
+

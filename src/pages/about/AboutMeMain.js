@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import CTA from '../../components/CTA';
 import SocialFeed from '../../components/SocialFeed';
 import ContactTwo from '../../components/Contact/ContactTwo';
-import Breadcrumb from '../../components/Breadcrumb';
+import Breadcrumb from '../../components/Breadcrumb/index';
 
 import aboutImg from '../../assets/img/about/narayan_vyas_Profile_photo_forAbout.png'
 import aboutImg2 from '../../assets/img/about/about-2.jpg'
