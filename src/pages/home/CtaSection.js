@@ -18,7 +18,12 @@ const CTA = () => {
       <div className="cta__shape-icon d-none d-md-block">
         <img src={ctaIcon} alt="" />
       </div>
-      <div className="container" >
+      <div className="container"
+      // style={{
+      //   marginTop:"10px",
+      //   marginBottom:"10px"
+      // }}
+      >
         <div className="row">
           <div className="col-12 d-flex justify-content-center" >
             <div className="cta__section-wrapper text-center">
