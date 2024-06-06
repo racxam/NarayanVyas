@@ -8,7 +8,7 @@ import Globals from '../../Globals';
 const CTA = () => {
 
   return (
-    <div className="cta__area cta__bg cta__plr .cta__area::before p-relative  wow animate__fadeInUp" data-wow-duration="1.1s" style={{  backgroundImage: `url(${ctaBG})`,
+    <div className="cta__area cta__bg cta__plr p-relative wow animate__fadeInUp" data-wow-duration="1.1s" style={{  backgroundImage: `url(${ctaBG})`,
 
 
 

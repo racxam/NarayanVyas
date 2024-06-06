@@ -210,12 +210,12 @@ const Header = (props) => {
 							</div>
 						</div>
 					</div>
-					<div className="itoffcanvas__social">
-						<div className="social-icon">
-							<a href={Globals.facebookUrl} target='_blank' rel='noreferrer'><i className="fab fa-facebook-square"></i></a>
-							<a href={Globals.linkedinUrl} target='_blank' rel='noreferrer'><i className="fab fa-brands fa-linkedin"></i></a>
-							<a href={Globals.githubUrl} target='_blank' rel='noreferrer'><i className="fab fa-brands fa-github"></i></a>
-							<a href={Globals.globalEmailUrl} target='_blank' rel='noreferrer'><i class="far fa-envelope"></i></a>
+					<div className="itoffcanvas__social" >
+						<div className="social-icon" >
+							<a href={Globals.facebookUrl} target='_blank' rel='noreferrer' className='m-2' ><i className="fab fa-facebook-square"></i></a>
+							<a href={Globals.linkedinUrl} target='_blank' rel='noreferrer' className='m-2'><i className="fab fa-brands fa-linkedin"></i></a>
+							<a href={Globals.githubUrl} target='_blank' rel='noreferrer' className='m-2'><i className="fab fa-brands fa-github"></i></a>
+							<a href={Globals.globalEmailUrl} target='_blank' rel='noreferrer' className='m-2'><i class="far fa-envelope"></i></a>
 						</div>
 					</div>
 				</div>

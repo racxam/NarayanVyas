@@ -16,12 +16,12 @@ const SocialFeed = (props) => {
                             <img src={socialImg2} alt="" />
                         </div>
                         <div className="social__text">
-                            <h4 className="social__title"><a href={Globals.facebookUrl}>Instagram</a></h4>
+                            <h4 className="social__title"><a href={Globals.facebookUrl} target='_blank'>Instagram</a></h4>
                             <span>{Globals.facebookUsername}</span>
                         </div>
                     </div>
                     <div className="social__link social__color-2">
-                        <a href={Globals.facebookUrl}><span><i className="fal fa-arrow-right"></i></span></a>
+                        <a href={Globals.facebookUrl} target='_blank'><span><i className="fal fa-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@ const SocialFeed = (props) => {
                         </div>
                     </div>
                     <div className="social__link social__color-4">
-                        <a href={Globals.linkedinUrl}><span><i className="fal fa-arrow-right"></i></span></a>
+                        <a href={Globals.linkedinUrl} target='_blank'><span><i className="fal fa-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -48,12 +48,12 @@ const SocialFeed = (props) => {
                             <img src={socialImg1} alt="" />
                         </div>
                         <div className="social__text">
-                            <h4 className="social__title"><a href={Globals.githubUrl}>GitHub</a></h4>
+                            <h4 className="social__title"><a href={Globals.githubUrl} target='_blank'>GitHub</a></h4>
                             <span>{Globals.githubUsername}</span>
                         </div>
                     </div>
                     <div className="social__link contact__color-1">
-                        <a href={Globals.githubUrl}><span><i className="fal fa-arrow-right"></i></span></a>
+                        <a href={Globals.githubUrl} target='_blank'><span><i className="fal fa-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -64,12 +64,12 @@ const SocialFeed = (props) => {
                             <img src={socialImg3} alt="" />
                         </div>
                         <div className="social__text">
-                            <h4 className="social__title"><a href={Globals.globalEmailUrl}>Twitter</a></h4>
+                            <h4 className="social__title"><a href={`${Globals.globalEmailUrl}`} target='_blank'>Gmail</a></h4>
                             <span>{Globals.globalEmail}</span>
                         </div>
                     </div>
                     <div className="social__link social__color-3">
-                        <a href={Globals.globalEmailUrl}><span><i className="fal fa-arrow-right"></i></span></a>
+                        <a href={`${Globals.globalEmailUrl}`} target='_blank'><span><i className="fal fa-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
