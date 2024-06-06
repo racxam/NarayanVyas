@@ -9,13 +9,13 @@ const sortedCfcData = cfcData.sort((a, b) => new Date(b.releaseDate) - new Date(
 
 const CFCIndex = () => {
 	return (
-		<div className="product__area product__plr pt-100 pb-100">
+		<div className="product__area product__plr pt-100 pb-30">
 			<div className="container-fluid">
 				<div className="col-xl-12 col-lg-12 wow animate__fadeIn" data-wow-duration="1.1s">
 					<div className="row justify-content-center">
 						<div className="col-xl-6 col-lg-6 wow animate__fadeInUp" data-wow-duration="1.1s">
 							<SectionTitle
-								sectionClass="service__section-box text-center pb-35 section-title-fixed-width"
+								sectionClass="service__section-box text-center pb-5 section-title-fixed-width"
 								subTitle={Globals.cfcSectionHeading}
 								Title={Globals.cfcSectionSubheading}
 							/>
