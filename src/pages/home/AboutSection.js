@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import aboutImg from '../../assets/img/about/about-2.png';
+import images from '../../assets/images';
 import shapeImg1 from '../../assets/img/about/about-shape-3.png';
 import shapeImg2 from '../../assets/img/about/about-shape-4.png';
 import shapeImg3 from '../../assets/img/about/about-shape-5.png';
@@ -24,7 +24,7 @@ const About = () => {
                 <div className="row align-items-center">
                     <div className="col-xl-6 col-lg-6 wow animate__fadeInLeft" data-wow-duration="1.1s">
                         <div className="about-2__main-img p-relative">
-                            <img src={aboutImg} alt="" />
+                            <img src={images.misc.aboutImg} alt="" />
                             <div className="about-2__main-img-content d-flex align-items-center">
                                 <div className="about-2__icon">
                                     <span><i className="fal fa-check-circle"></i></span>

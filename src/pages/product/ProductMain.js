@@ -1,20 +1,7 @@
 import React from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
-import SingleProduct from '../../components/Product';
-
-import productImg1 from '../../assets/img/product/product-1.jpg';
-import productImg2 from '../../assets/img/product/product-2.jpg';
-import productImg3 from '../../assets/img/product/product-3.jpg';
-import productImg4 from '../../assets/img/product/product-4.jpg';
-import productImg5 from '../../assets/img/product/product-5.jpg';
-import productImg6 from '../../assets/img/product/product-6.jpg';
-import productImg7 from '../../assets/img/product/product-7.jpg';
-import productImg8 from '../../assets/img/product/product-8.jpg';
-import productImg9 from '../../assets/img/product/product-9.jpg';
-
 import Project from '../home/ProjectSection';
-
 import bgImg from '../../assets/img/cta/cta-bg-2.png';
 
 const ProductMain = () => {

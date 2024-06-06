@@ -6,7 +6,7 @@ import SocialFeed from '../../components/SocialFeed';
 import Contact from '../../components/Contact/Contact';
 import Breadcrumb from '../../components/Breadcrumb';
 
-import aboutImg from '../../assets/img/about/narayan_vyas_Profile_photo_forAbout.png'
+import images from '../../assets/images';
 import Globals from '../../Globals';
 
 const HomeMain = () => {
@@ -22,7 +22,7 @@ const HomeMain = () => {
 						<div className="row align-items-center">
 							<div className="col-xl-5 col-lg-5 wow tpfadeUp" data-wow-duration="1.1s">
 								<div className="about-5__main-img text-center text-lg-start">
-									<Link to="/about-us"><img src={aboutImg} alt="" /></Link>
+									<Link to="/about-us"><img src={images.misc.aboutImg} alt="" /></Link>
 								</div>
 							</div>
 							<div className="col-xl-7 col-lg-7">

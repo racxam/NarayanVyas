@@ -1,14 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import SocialFeed from '../../components/SocialFeed';
 import Breadcrumbnew from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
-
-
-
-
-import bgImg from '../../assets/img/cta/cta-bg-2.png';
-
 import projectSingleImg1 from '../../assets/img/project/pro-38.jpg';
 import projectSingleImg2 from '../../assets/img/project/pro-39.jpg';
 import projectSingleImg3 from '../../assets/img/project/pro-40.jpg';

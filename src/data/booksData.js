@@ -1,15 +1,11 @@
-import aiDrivenAlzheimerImg from '../assets/img/books/ai-driven-alzheimer-igi.jpg';
-import applyingMLInBioinformaticsImg from '../assets/img/books/few-shot-zero-shot-igi.jpg';
-import innovationsInMLIoTWaterManagementImg from '../assets/img/books/water-management-igi.jpg';
-import quantumInBiomedicalIGIImg from '../assets/img/books/quantam-for-biomedical-igi.jpg';
-import quantumMachineLearningDeGruyterImg from '../assets/img/books/quantum-machine-learning-degruyter.jpg';
+import images from '../assets/images';
 
 const booksData = [
     {
         id: 'ai-driven-alzheimer-disease-detection',
         title: {
             text: "AI-Driven Alzheimer's Disease Detection and Prediction",
-            image: aiDrivenAlzheimerImg
+            image: images.books.aiDrivenAlzheimerImg
         },
         price: '$425.00',
         publisher: 'IGI Global',
@@ -69,7 +65,7 @@ const booksData = [
         id: 'applying-ml-techniques-in-bioinformatics',
         title: {
             text: "Applying Machine Learning Techniques to Bioinformatics",
-            image: applyingMLInBioinformaticsImg
+            image: images.books.applyingMLInBioinformaticsImg
         },
         price: '$340.00',
         publisher: 'IGI Global',
@@ -119,7 +115,7 @@ const booksData = [
         id: 'innovations-in-ml-iot-for-water-management',
         title: {
             text: "Innovations in Machine Learning and IoT for Water Management",
-            image: innovationsInMLIoTWaterManagementImg
+            image: images.books.innovationsInMLIoTWaterManagementImg
         },
         price: '$300.00',
         publisher: 'IGI Global',
@@ -165,7 +161,7 @@ const booksData = [
         id: 'quantum-machine-learning-quantum-algorithms-neural-networks',
         title: {
             text: "Quantum Machine Learning: Quantum Algorithms and Neural Networks",
-            image: quantumMachineLearningDeGruyterImg
+            image: images.books.quantumMachineLearningDeGruyterImg
         },
         price: '144,95 €',
         publisher: 'De Gruyter',
@@ -194,7 +190,7 @@ const booksData = [
         id: 'quantum-innovations-nexus-biomedical-intelligence',
         title: {
             text: "Quantum Innovations at the Nexus of Biomedical Intelligence",
-            image: quantumInBiomedicalIGIImg
+            image: images.books.quantumInBiomedicalIGIImg
         },
         price: '$330.00',
         publisher: 'IGI Global',

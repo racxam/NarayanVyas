@@ -1,4 +1,5 @@
 // src/components/Testimonial/index.js
+import images from '../../assets/images';
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -6,7 +7,6 @@ import SingleTestimonial from '../../components/Testimonial';
 import SectionTitle from '../../components/SectionTitle';
 import Globals from '../../Globals';
 import testimonialsData from '../../data/testimonialsData';
-import { images } from '../../data/testimonialsData';
 
 const Testimonial = () => {
     const sliderOption = {
