@@ -8,7 +8,7 @@ const publications = [
         doi: '10.4018/979-8-3693-1822-5',
         doiText: '10.4018/979-8-3693-1822-5',
         scopusIndexed: true,
-        wosIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.4018/979-8-3693-1822-5'
     },
     {
