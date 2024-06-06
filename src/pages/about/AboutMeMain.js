@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 import CTA from '../../components/CTA';
 import SocialFeed from '../../components/SocialFeed';
+import Breadcrumb from '../../components/Breadcrumb/index';
 import Contact from '../../components/Contact/Contact';
-import Breadcrumb from '../../components/Breadcrumb';
 
 import images from '../../assets/images';
 import Globals from '../../Globals';

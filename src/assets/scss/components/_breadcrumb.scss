@@ -37,14 +37,31 @@
         }
     }
     &__space{
-        padding-top: 200px;
-        padding-bottom: -5px;
+        padding-top:200px;
+
+        padding-bottom: 20px;
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
+      
+        @media #{$xxxl}{
+            // padding:0 100px;
+        }
+        @media #{$xxl}{
+            // padding:0 100px;
+        }
+        @media #{$xl,$lg,$md}{
+            // padding: 0 30px;
+        }
         @media #{$xs}{
-            padding-top: 200px;
-            padding-bottom: 80px;
+            padding-top: 100px;
+
+
+            // padding-bottom: 80px;
+        }
+        @media #{$xxs}{
+            padding-top: 100px;
+            // padding-bottom: 80px;
         }
     }
     &__subtitle{
@@ -95,6 +112,7 @@
         top: 2%;
     }
     &__shape-3{
+        
         position: absolute;
         top: 13%;
         left: 2%;
@@ -120,55 +138,53 @@
         animation: moving 9s linear infinite;
     }
     &__shape-6{
+        
         position: absolute;
         bottom: 12%;
         right: 1%;
         animation: tptranslateX2 4s infinite alternate;
     }
     &__main-img{
-
-
-       
-
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        // border: 1px solid red;
+        justify-content: center;
         animation: tpupdown 0.8s infinite alternate;
-        &__inside-img{
-            @media #{$xxxl} {
-                height:250px;
+        & img{
+            @media #{$xxxl}{
+                width: 50%;
             }
-            @media #{$xxl} {
-                height:300px;
-    
-            }
-            @media #{$xl} {
-                height:250px;
-    
-            }
-            @media #{$lg} {
-                height:200px;
-    
+            @media #{$xxl}{
+                width: 50%;
                 
             }
-            @media #{$md} {
-                height:250px;
-    
+            @media #{$xl,$lg}{
+                
+                width: 50%;
+                
+            }
+            @media #{$md}{
+                width: 50%;
+                // border: 1px solid black;
+                // margin-right: 20rem;
+                
+                
+            }
+            @media #{$xs}{
+                // margin-right: 20rem;
+                // border: 1px solid purple;
+                width: 50%;
 
             }
-            @media #{$sm} {
-                height:250px;
-    
-
-            }
-            @media #{$xs} {
-
-                height:100px;
-    
+            @media #{$xxs}{
+                // margin-right: 13rem;
+                border: 4px solid hotpink;
+                width: 70%;
 
             }
         }
-
     }
-    
-
     &__big-text{
         position: absolute;
         left: 43%;
