@@ -6,7 +6,7 @@ import getContactEmailTemplate from './contactEmailTemplate';
 
 const sendEmail = async (emailData) => {
     try {
-        const response = await axios.post('https://web-email-proxy-823d619a0ab4.herokuapp.com/send-email', emailData, {
+        const response = await axios.post('https://us-central1-narayan-vyas-website.cloudfunctions.net/send_email_api', emailData, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
