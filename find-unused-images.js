@@ -40,7 +40,7 @@ console.log('Unused images:');
 console.log(unusedImages);
 
 // Optional: Delete unused images (uncomment the following lines if you want to delete them)
-unusedImages.forEach(image => {
-    fs.unlinkSync(path.join(__dirname, image));
-    console.log(`Deleted: ${image}`);
-});
+// unusedImages.forEach(image => {
+//     fs.unlinkSync(path.join(__dirname, image));
+//     console.log(`Deleted: ${image}`);
+// });
