@@ -20,18 +20,7 @@ const ProjectCard = ({ project }) => {
                     <p className="product__title"><Link to={project.title}>{project.title}</Link></p>
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 2 }}>
-                    {/* <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                        <LocationOnIcon sx={{ marginRight: 0.5 }} />
-                        <Typography variant="body2">
-                            {project.location}
-                        </Typography>
-                    </Box>
-                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                        <AccessTimeIcon sx={{ marginRight: 0.5 }} />
-                        <Typography variant="body2">
-                            {project.duration}
-                        </Typography>
-                    </Box> */}
+                   
                 </Box>
                 <Divider sx={{ marginY: 2 }} />
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

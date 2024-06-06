@@ -10,25 +10,56 @@ const sortedBooks = booksData.sort((a, b) => new Date(b.releaseDate) - new Date(
 
 const Slider2 = () => {
   // const loopEnabled = sortedBooks.length >= 7; // Enable loop only if there are at least 7 items
-
+  const initialSlide = Math.floor(sortedBooks.length / 2)+1;
   return (
-    <div className="flex items-center justify-center flex-col h-[900px] bg-[#6c34af]">
+    <div className="d-flex row justify-content-center flex-col h-[900px] bg-[#6c34af]">
+
       <Swiper
         loop={true}
+        initialSlide={initialSlide-1}
+        centeredSlides={true}
+        slidesPerView={'auto'}
         breakpoints={{
-          340: {
-            slidesPerView: 2,
-            spaceBetween: 15,
+          320: {
+            slidesPerView: 'auto',
+
           },
-          700: {
-            slidesPerView: 3,
-            spaceBetween: 15,
+          480: {
+            slidesPerView: 'auto',
+
           },
+          640: {
+
+            slidesPerView: '2',
+            spaceBetween:"15px"
+
+          },
+          768: {
+
+            slidesPerView: '3',
+            spaceBetween:"15px"
+
+          },
+          1024: {
+            slidesPerView: '4',
+            spaceBetween:"15px",
+            centeredSlides: true,
+            
+            
+          },1400:{
+            slidesPerView: '5',
+            spaceBetween:"15px",
+            centeredSlides: true,
+
+            
+          }
         }}
         freeMode={true}
         grabCursor={true}
-        pagination={{ clickable: true }}
+        pagination={{ el: '.swiper-pagination2', clickable: true }}
         navigation={{
+          nextEl: '.swiper-button-next2',
+          prevEl: '.swiper-button-prev2',
           clickable: true,
         }}
         modules={[FreeMode, Pagination, Navigation]}
@@ -54,6 +85,7 @@ const Slider2 = () => {
           ))}
         </div>
       </Swiper>
+      <div className="swiper-pagination2 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
     </div>
   );
 };
