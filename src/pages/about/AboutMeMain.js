@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import CTA from '../../components/CTA';
 import SocialFeed from '../../components/SocialFeed';
-import ContactTwo from '../../components/Contact/ContactTwo';
+import Contact from '../../components/Contact/Contact';
 import Breadcrumb from '../../components/Breadcrumb';
 
 import aboutImg from '../../assets/img/about/narayan_vyas_Profile_photo_forAbout.png'
@@ -102,7 +102,8 @@ const HomeMain = () => {
 				</div>
 			</div> */}
 
-			<ContactTwo />
+			<Contact />
+
 			<CTA />
 		</main>
 	);

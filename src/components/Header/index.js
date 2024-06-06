@@ -188,7 +188,7 @@ const Header = (props) => {
 							</div>
 							<div className="itoffcanvas__info-address">
 								<span>Email</span>
-								<a href={Globals.globalEmailUrl} target="_blank">{Globals.globalEmail}</a>
+								<a href={Globals.globalEmailUrl} target="_blank" rel="noreferrer">{Globals.globalEmail}</a>
 							</div>
 						</div>
 						<div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -197,7 +197,7 @@ const Header = (props) => {
 							</div>
 							<div className="itoffcanvas__info-address">
 								<span>Github</span>
-								<a href={Globals.githubUrl} target="_blank">{Globals.githubUsername}</a>
+								<a href={Globals.githubUrl} target="_blank" rel="noreferrer">{Globals.githubUsername}</a>
 							</div>
 						</div>
 						<div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -206,16 +206,16 @@ const Header = (props) => {
 							</div>
 							<div className="itoffcanvas__info-address">
 								<span>LinkedIn</span>
-								<a href={Globals.linkedinUrl} target="_blank">{Globals.linkedinUsername}</a>
+								<a href={Globals.linkedinUrl} target="_blank" rel="noreferrer">{Globals.linkedinUsername}</a>
 							</div>
 						</div>
 					</div>
 					<div className="itoffcanvas__social">
 						<div className="social-icon">
-							<a href={Globals.facebookUrl} target='_blank'><i className="fab fa-facebook-square"></i></a>
-							<a href={Globals.linkedinUrl} target='_blank'><i className="fab fa-brands fa-linkedin"></i></a>
-							<a href={Globals.githubUrl} target='_blank'><i className="fab fa-brands fa-github"></i></a>
-							<a href={Globals.globalEmail} target='_blank'><i class="far fa-envelope"></i></a>
+							<a href={Globals.facebookUrl} target='_blank' rel='noreferrer'><i className="fab fa-facebook-square"></i></a>
+							<a href={Globals.linkedinUrl} target='_blank' rel='noreferrer'><i className="fab fa-brands fa-linkedin"></i></a>
+							<a href={Globals.githubUrl} target='_blank' rel='noreferrer'><i className="fab fa-brands fa-github"></i></a>
+							<a href={Globals.globalEmail} target='_blank' rel='noreferrer'><i class="far fa-envelope"></i></a>
 						</div>
 					</div>
 				</div>

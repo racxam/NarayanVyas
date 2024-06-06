@@ -32,7 +32,7 @@ const SocialFeed = (props) => {
                             <img src={socialImg4} alt="" />
                         </div>
                         <div className="social__text">
-                            <h4 className="social__title"><a href={Globals.linkedinUrl} target='_blank'>Linkedin </a></h4>
+                            <h4 className="social__title"><a href={Globals.linkedinUrl} target='_blank' rel='noreferrer'>Linkedin </a></h4>
                             <span>{Globals.linkedinUsername}</span>
                         </div>
                     </div>

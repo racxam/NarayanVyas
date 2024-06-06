@@ -27,10 +27,10 @@ const Footer = (props) => {
                                         <p>{Globals.footerDescription}</p>
                                     </div>
                                     <div className="footer-3__social-box" style={{ marginTop: "16px" }}>
-                                        <a href={Globals.facebookUrl} target='_blank'><i className="fab fa-facebook-f"></i></a>
-                                        <a href={Globals.linkedinUrl} target='_blank'><i className="fab fa-linkedin"></i></a>
-                                        <a href={Globals.githubUrl} target='_blank'><i className="fab fa-brands fa-github"></i></a>
-                                        <a href={Globals.globalEmail} target='_blank'><i className="far fa-envelope"></i></a>
+                                        <a href={Globals.facebookUrl} target='_blank' rel='noreferrer'><i className="fab fa-facebook-f"></i></a>
+                                        <a href={Globals.linkedinUrl} target='_blank' rel='noreferrer'><i className="fab fa-linkedin"></i></a>
+                                        <a href={Globals.githubUrl} target='_blank' rel='noreferrer'><i className="fab fa-brands fa-github"></i></a>
+                                        <a href={Globals.globalEmail} target='_blank' rel='noreferrer'><i className="far fa-envelope"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -59,11 +59,11 @@ const Footer = (props) => {
                                 </h4>
                                 <div className="footer__menu-list">
                                     <ul>
-                                        <li><a href={Globals.fiverrUrl} target='_blank'><i className="fal fa-angle-right"></i>&ensp;Fiverr</a></li>
-                                        <li><a href={Globals.teacherOnUrl} target='_blank'><i className="fal fa-angle-right"></i>&ensp;TeacherOn</a></li>
-                                        <li><a href={Globals.githubUrl} target='_blank'><i className="fal fa-angle-right"></i>&ensp;Github</a></li>
-                                        <li><a href={Globals.scopusUrl} target='_blank'><i className="fal fa-angle-right"></i>&ensp;Scopus</a></li>
-                                        <li><a href={Globals.researchGateUrl} target='_blank'><i className="fal fa-angle-right"></i>&ensp;ResearchGate</a></li>
+                                        <li><a href={Globals.fiverrUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Fiverr</a></li>
+                                        <li><a href={Globals.teacherOnUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;TeacherOn</a></li>
+                                        <li><a href={Globals.githubUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Github</a></li>
+                                        <li><a href={Globals.scopusUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Scopus</a></li>
+                                        <li><a href={Globals.researchGateUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;ResearchGate</a></li>
                                         <li><a href="/contact"><i className="fal fa-angle-right"></i>&ensp;Contact</a></li>
                                     </ul>
                                 </div>

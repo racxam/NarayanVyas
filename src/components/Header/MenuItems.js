@@ -8,7 +8,7 @@ const MenuItems = (props) => {
     const [menuState, setMenuState] = useState({
         home: false,
         about: false,
-        publication:false,
+        publication: false,
         books: false,
         page: false,
 
@@ -37,7 +37,7 @@ const MenuItems = (props) => {
             >
                 <Link to="/about-me">About</Link>
                 <ul className={menuState.about ? "submenu submenu-open" : "submenu"}>
-                    <li className={location.pathname === "/projects" ? "active" : ""}><Link to="/projects">Projects</Link></li>
+                    {/* <li className={location.pathname === "/projects" ? "active" : ""}><Link to="/projects">Projects</Link></li> */}
                     <li className={location.pathname === "/certificates" ? "active" : ""}><Link to="/certificates">Certificates</Link></li>
                     <li className={location.pathname === "/study-notes" ? "active" : ""}><Link to="/study-notes">Study Notes</Link></li>
                     <li className={location.pathname === "/machine-learning-notes" ? "active" : ""}><Link to="/machine-learning-notes">ML Notes</Link></li>
@@ -56,7 +56,7 @@ const MenuItems = (props) => {
             <li className={parentMenu === 'books' ? 'has-dropdown active' : 'has-dropdown'}
 
             >
-                <Link to="/books">Books</Link> 
+                <Link to="/books">Books</Link>
                 <ul className={menuState.books ? "submenu submenu-open" : "submenu"}>
                     <li className={location.pathname === "/call-for-chapters" ? "active" : ""}><Link to="/call-for-chapters">Call for Chapters</Link></li>
                 </ul>

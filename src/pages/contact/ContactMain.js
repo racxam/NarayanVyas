@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactTwo from '../../components/Contact/ContactTwo';
+import Contact from '../../components/Contact/Contact';
 import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
 
@@ -11,7 +11,7 @@ const ContactMain = () => {
 				pageTitle="Contact"
 			/>
 
-			<ContactTwo />
+			<Contact />
 
 			<CTA
 

@@ -4,10 +4,6 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SingleTestimonial from '../../components/Testimonial';
 import SectionTitle from '../../components/SectionTitle';
-import shapeImg1 from '../../assets/img/testimonial/client1_circle.png';
-import shapeImg2 from '../../assets/img/testimonial/client2_circle.png';
-import shapeImg4 from '../../assets/img/testimonial/testi-shape-10.png';
-import shapeImg5 from '../../assets/img/testimonial/testi-shape-11.png';
 import Globals from '../../Globals';
 import testimonialsData from '../../data/testimonialsData';
 import { images } from '../../data/testimonialsData';
@@ -28,7 +24,7 @@ const Testimonial = () => {
     };
 
     return (
-        <div className="testimonial-2__area testimonial-2__space grey-bg p-relative">
+        <div className="testimonial-2__area  pt-50 pb-30 testimonial-2__space p-relative">
             <div className="testimonial-2__shape-3 d-none d-lg-block custom-testimonial-img">
                 <img src={images.hardikDhimanImg} alt="" />
             </div>

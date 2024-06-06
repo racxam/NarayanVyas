@@ -8,7 +8,7 @@ const sortedBooks = booksData.sort((a, b) => new Date(b.releaseDate) - new Date(
 
 const index = () => {
     return (
-        <div className="product__area product__plr mt-100 mb-70">
+        <div className="product__area product__plr grey-bg pt-30 pb-100">
             <div className="container-fluid">
                 <div className="col-xl-12 col-lg-12 wow animate__fadeIn mt-100" data-wow-duration="1.1s">
                     <div className="row justify-content-center">

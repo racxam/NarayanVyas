@@ -153,7 +153,7 @@ const callForChapterBooksData = [
             text: "IoT and Remote Sensing Technologies for Precision Agriculture",
             image: productImgIoTRadarAAP
         },
-        publisher: 'AAP',
+        publisher: 'Apple Academic Press',
         publisherLink: 'https://www.appleacademicpress.com/',
         projectedReleaseDate: 'May 2025',
         abstractSubmissionDeadline: '30 July 2024',
@@ -242,7 +242,7 @@ const callForChapterBooksData = [
         isFullChapterSubmissionClosed: false,
         submissionEmails: ['narayanvyas87@gmail.com']
     },
-    
+
 ];
 
 export default callForChapterBooksData;

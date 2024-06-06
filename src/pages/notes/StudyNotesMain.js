@@ -61,7 +61,7 @@ const StudyNotesMain = () => {
 					<a href="https://drive.google.com/uc?export=download&id=1ChsgAk9zdNwpIDFPG3OCoAFBEFUgEcKf">Click here to Download C Programming</a>
 				</p>
 				<p>
-					<a href="https://urec.in/html" target="_blank" rel="noopener noreferrer">Click here to Download H. T. M. L. Project Programs</a>
+					<a href="https://urec.in/html" rel="noopener noreferrer">Click here to Download H. T. M. L. Project Programs</a>
 				</p>
 			</div>
 

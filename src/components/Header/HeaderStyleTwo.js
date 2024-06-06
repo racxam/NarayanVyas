@@ -151,7 +151,7 @@ const HeaderStyleTwo = (props) => {
 							</div>
 							<div className="itoffcanvas__info-address">
 								<span>Location</span>
-								<a href="htits://www.google.com/maps/@37.4801311,22.8928877,3z" target="_blank">Riverside 255,
+								<a href="htits://www.google.com/maps/@37.4801311,22.8928877,3z" target="_blank" rel="noreferrer">Riverside 255,
 									San Francisco, USA </a>
 							</div>
 						</div>
