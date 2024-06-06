@@ -1,0 +1,524 @@
+NarayanVyas
+├── .DS_Store
+├── .gitignore
+├── CNAME
+├── README.md
+├── assets.zip
+├── directory_structure.txt
+├── extractAndSaveTree.js
+├── find-unused-images.js
+├── package-lock.json
+├── package.json
+├── public
+│   public
+│   ├── fav.png
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── public.zip
+├── src
+│   src
+│   ├── .DS_Store
+│   ├── Globals.js
+│   ├── app
+│   │   app
+│   │   ├── App.js
+│   │   └── app.css
+│   ├── assets
+│   │   assets
+│   │   ├── .DS_Store
+│   │   ├── fonts
+│   │   │   fonts
+│   │   │   ├── fa-brands-400.eot
+│   │   │   ├── fa-brands-400.ttf
+│   │   │   ├── fa-brands-400.woff
+│   │   │   ├── fa-brands-400.woff2
+│   │   │   ├── fa-duotone-900.eot
+│   │   │   ├── fa-duotone-900.ttf
+│   │   │   ├── fa-duotone-900.woff
+│   │   │   ├── fa-duotone-900.woff2
+│   │   │   ├── fa-light-300.eot
+│   │   │   ├── fa-light-300.ttf
+│   │   │   ├── fa-light-300.woff
+│   │   │   ├── fa-light-300.woff2
+│   │   │   ├── fa-regular-400.eot
+│   │   │   ├── fa-regular-400.ttf
+│   │   │   ├── fa-regular-400.woff
+│   │   │   ├── fa-regular-400.woff2
+│   │   │   ├── fa-solid-900.eot
+│   │   │   ├── fa-solid-900.ttf
+│   │   │   ├── fa-solid-900.woff
+│   │   │   └── fa-solid-900.woff2
+│   │   ├── icons
+│   │   │   icons
+│   │   │   ├── pdf-icon.png
+│   │   │   └── word-icon.png
+│   │   ├── images.js
+│   │   ├── img
+│   │   │   img
+│   │   │   ├── .DS_Store
+│   │   │   ├── about
+│   │   │   │   about
+│   │   │   │   ├── about-2.png
+│   │   │   │   ├── about-5.png
+│   │   │   │   ├── about-shape-3.png
+│   │   │   │   ├── about-shape-4.png
+│   │   │   │   ├── about-shape-5.png
+│   │   │   │   └── user_profile_about.png
+│   │   │   ├── books
+│   │   │   │   books
+│   │   │   │   ├── ai-driven-alzheimer-igi.jpg
+│   │   │   │   ├── few-shot-zero-shot-igi.jpg
+│   │   │   │   ├── quantam-for-biomedical-igi.jpg
+│   │   │   │   ├── quantum-machine-learning-degruyter.jpg
+│   │   │   │   └── water-management-igi.jpg
+│   │   │   ├── brand
+│   │   │   │   brand
+│   │   │   │   ├── .DS_Store
+│   │   │   │   ├── Linkedin.png
+│   │   │   │   ├── brand-8.png
+│   │   │   │   ├── brand-shape-1.png
+│   │   │   │   ├── chat.png
+│   │   │   │   ├── five-stars.png
+│   │   │   │   ├── fiverr.png
+│   │   │   │   ├── gitHub.png
+│   │   │   │   ├── googleScholar.png
+│   │   │   │   ├── researchGate.png
+│   │   │   │   ├── scopus.png
+│   │   │   │   ├── teacheron.png
+│   │   │   │   ├── verified.png
+│   │   │   │   └── vidwan.png
+│   │   │   ├── certificates
+│   │   │   │   certificates
+│   │   │   │   ├── .DS_Store
+│   │   │   │   ├── awards
+│   │   │   │   │   awards
+│   │   │   │   │   ├── .DS_Store
+│   │   │   │   │   ├── icaiihi_2023_session_chair.jpg
+│   │   │   │   │   ├── icdsns_2023_reviewer.jpg
+│   │   │   │   │   ├── ieeextream_proctor.jpg
+│   │   │   │   │   ├── nimitcon_2023_reviewer.jpg
+│   │   │   │   │   └── ssn_college_workshop_2021.jpg
+│   │   │   │   ├── courses
+│   │   │   │   │   courses
+│   │   │   │   │   ├── .DS_Store
+│   │   │   │   │   ├── coursera_blockchain.jpg
+│   │   │   │   │   ├── innobuzz_ceh.jpg
+│   │   │   │   │   ├── sololearn_css.jpg
+│   │   │   │   │   ├── sololearn_html.jpg
+│   │   │   │   │   ├── udemy_arduino.jpg
+│   │   │   │   │   ├── udemy_ethereum_solidity.jpg
+│   │   │   │   │   ├── udemy_flutter.jpg
+│   │   │   │   │   ├── udemy_kicad.jpg
+│   │   │   │   │   ├── udemy_respberry_pi.jpg
+│   │   │   │   │   └── vskills_html5.jpg
+│   │   │   │   └── memberships
+│   │   │   │       memberships
+│   │   │   │       ├── acm_membership.jpg
+│   │   │   │       ├── grss_membership.jpg
+│   │   │   │       ├── ieee_consultant_network.jpg
+│   │   │   │       ├── ieee_membership.jpg
+│   │   │   │       └── ieee_young_professional.jpg
+│   │   │   ├── cfc
+│   │   │   │   cfc
+│   │   │   │   ├── iomt-wiley.jpg
+│   │   │   │   ├── iot-rs-aap.png
+│   │   │   │   ├── multimodal-wiley.jpg
+│   │   │   │   ├── radar_ai_degruyter.png
+│   │   │   │   └── secure-energy-wiley.jpg
+│   │   │   ├── contact
+│   │   │   │   contact
+│   │   │   │   ├── ct-shape-1.png
+│   │   │   │   ├── ct-shape-2.png
+│   │   │   │   ├── ct-shape-3.png
+│   │   │   │   └── ct-shape-4.png
+│   │   │   ├── cta
+│   │   │   │   cta
+│   │   │   │   ├── cta-bg-2.png
+│   │   │   │   ├── cta-bg.png
+│   │   │   │   └── cta-icon.png
+│   │   │   ├── error
+│   │   │   │   error
+│   │   │   │   └── error.jpg
+│   │   │   ├── feature
+│   │   │   │   feature
+│   │   │   │   ├── fea-1.png
+│   │   │   │   ├── fea-2.png
+│   │   │   │   └── fea-3.png
+│   │   │   ├── footer
+│   │   │   │   footer
+│   │   │   │   └── footer-bg.jpg
+│   │   │   ├── logo
+│   │   │   │   logo
+│   │   │   │   ├── footer-logo.png
+│   │   │   │   └── logo-2.png
+│   │   │   ├── offcanvas
+│   │   │   │   offcanvas
+│   │   │   │   └── offcanvas-shape-1.jpg
+│   │   │   ├── product
+│   │   │   │   product
+│   │   │   │   ├── product-3.jpg
+│   │   │   │   └── product-9.jpg
+│   │   │   ├── profile
+│   │   │   │   profile
+│   │   │   │   └── user_profile.png
+│   │   │   ├── project
+│   │   │   │   project
+│   │   │   │   ├── pro-38.jpg
+│   │   │   │   ├── pro-39.jpg
+│   │   │   │   ├── pro-4.jpg
+│   │   │   │   ├── pro-40.jpg
+│   │   │   │   ├── project-1.png
+│   │   │   │   └── project-2.png
+│   │   │   ├── service
+│   │   │   │   service
+│   │   │   │   ├── iot-solutions.jpg
+│   │   │   │   ├── mobile-app-development.jpg
+│   │   │   │   ├── project-consultancy.jpg
+│   │   │   │   ├── research-and-development.jpg
+│   │   │   │   ├── research-publication.jpg
+│   │   │   │   ├── sv-icon-shape-1.png
+│   │   │   │   ├── sv-icon-shape-14_tmp32402
+│   │   │   │   ├── sv-icon-shape-18_tmp3458
+│   │   │   │   ├── sv-icon-shape-19_tmp4878
+│   │   │   │   ├── sv-icon-shape-8_tmp2892
+│   │   │   │   ├── sv-item-shape-1.png
+│   │   │   │   ├── sv-shape-1.png
+│   │   │   │   ├── sv-shape-2.png
+│   │   │   │   └── workshop-and-training.jpg
+│   │   │   ├── slider
+│   │   │   │   slider
+│   │   │   │   ├── shape-1.png
+│   │   │   │   ├── shape-10.png
+│   │   │   │   ├── shape-11.png
+│   │   │   │   ├── shape-2.png
+│   │   │   │   ├── shape-22.png
+│   │   │   │   ├── shape-24.png
+│   │   │   │   ├── shape-3.png
+│   │   │   │   ├── shape-32.png
+│   │   │   │   ├── shape-33.png
+│   │   │   │   ├── shape-34.png
+│   │   │   │   ├── shape-35.png
+│   │   │   │   ├── shape-4.png
+│   │   │   │   ├── shape-5.png
+│   │   │   │   ├── shape-6.png
+│   │   │   │   ├── shape-7.png
+│   │   │   │   ├── shape-8.png
+│   │   │   │   ├── shape-9.png
+│   │   │   │   └── slider-bg-3.png
+│   │   │   ├── social
+│   │   │   │   social
+│   │   │   │   ├── social-1.png
+│   │   │   │   ├── social-2.png
+│   │   │   │   ├── social-3.png
+│   │   │   │   └── social-4.png
+│   │   │   └── testimonial
+│   │   │       testimonial
+│   │   │       ├── abid.png
+│   │   │       ├── chahil.jpg
+│   │   │       ├── emil.jpg
+│   │   │       ├── hardik.jpg
+│   │   │       ├── testi-3.png
+│   │   │       ├── testi-shape-5.png
+│   │   │       └── testi-shape-6.png
+│   │   └── scss
+│   │       scss
+│   │       ├── _animations.scss
+│   │       ├── _custom-animation.scss
+│   │       ├── _flaticon.scss
+│   │       ├── _font-awesome-pro.scss
+│   │       ├── _hover-reveal.scss
+│   │       ├── _meanmenu.scss
+│   │       ├── _nice-select.scss
+│   │       ├── _spacing.scss
+│   │       ├── components
+│   │       │   components
+│   │       │   ├── _accordion.scss
+│   │       │   ├── _animation.scss
+│   │       │   ├── _background.scss
+│   │       │   ├── _breadcrumb.scss
+│   │       │   ├── _buttons.scss
+│   │       │   ├── _carousel.scss
+│   │       │   ├── _meanmenu.scss
+│   │       │   ├── _modal.scss
+│   │       │   ├── _offcanvas.scss
+│   │       │   ├── _preloader.scss
+│   │       │   ├── _search.scss
+│   │       │   ├── _section-title.scss
+│   │       │   ├── _spacing.scss
+│   │       │   ├── _swiperSlider.scss
+│   │       │   ├── _tab.scss
+│   │       │   └── _theme.scss
+│   │       ├── layout
+│   │       │   layout
+│   │       │   ├── _about.scss
+│   │       │   ├── _blog.scss
+│   │       │   ├── _brand.scss
+│   │       │   ├── _cart.scss
+│   │       │   ├── _company.scss
+│   │       │   ├── _contact.scss
+│   │       │   ├── _counter.scss
+│   │       │   ├── _cta.scss
+│   │       │   ├── _error.scss
+│   │       │   ├── _faq.scss
+│   │       │   ├── _feature.scss
+│   │       │   ├── _footer.scss
+│   │       │   ├── _header.scss
+│   │       │   ├── _job.scss
+│   │       │   ├── _newsletter.scss
+│   │       │   ├── _price.scss
+│   │       │   ├── _product.scss
+│   │       │   ├── _project.scss
+│   │       │   ├── _service.scss
+│   │       │   ├── _slider.scss
+│   │       │   ├── _social.scss
+│   │       │   ├── _team.scss
+│   │       │   ├── _testimonial.scss
+│   │       │   ├── _video.scss
+│   │       │   └── _work.scss
+│   │       ├── main.scss
+│   │       └── utils
+│   │           utils
+│   │           ├── _breakpoints.scss
+│   │           ├── _colors.scss
+│   │           ├── _index.scss
+│   │           ├── _mixins.scss
+│   │           ├── _root.scss
+│   │           └── _typography.scss
+│   ├── components
+│   │   components
+│   │   ├── AuthorsSection
+│   │   │   AuthorsSection
+│   │   │   └── index.js
+│   │   ├── BookDetailsPage
+│   │   │   BookDetailsPage
+│   │   │   └── index.js
+│   │   ├── Books
+│   │   │   Books
+│   │   │   └── index.js
+│   │   ├── Brand
+│   │   │   Brand
+│   │   │   └── index.js
+│   │   ├── Breadcrumb
+│   │   │   Breadcrumb
+│   │   │   └── index.js
+│   │   ├── CFCSubmissionForm
+│   │   │   CFCSubmissionForm
+│   │   │   ├── CFCSubmissionFormContainer.js
+│   │   │   └── index.js
+│   │   ├── CTA
+│   │   │   CTA
+│   │   │   └── index.js
+│   │   ├── CallForChapterPage
+│   │   │   CallForChapterPage
+│   │   │   ├── ContactModal.js
+│   │   │   └── index.js
+│   │   ├── CallForChapters
+│   │   │   CallForChapters
+│   │   │   ├── call_for_chapters_image_only.js
+│   │   │   └── index.js
+│   │   ├── CertificateMasonary
+│   │   │   CertificateMasonary
+│   │   │   └── index.js
+│   │   ├── ComingSoon
+│   │   │   ComingSoon
+│   │   │   └── index.js
+│   │   ├── Contact
+│   │   │   Contact
+│   │   │   ├── Contact.js
+│   │   │   ├── contactEmailTemplate.js
+│   │   │   ├── emailService.js
+│   │   │   ├── emailTemplate.js
+│   │   │   └── index.js
+│   │   ├── CustomModal
+│   │   │   CustomModal
+│   │   │   ├── Modal.css
+│   │   │   └── index.js
+│   │   ├── Error
+│   │   │   Error
+│   │   │   └── index.js
+│   │   ├── Faq
+│   │   │   Faq
+│   │   │   └── index.js
+│   │   ├── FileUpload
+│   │   │   FileUpload
+│   │   │   ├── FileUpload.css
+│   │   │   └── index.js
+│   │   ├── FinalChapterSubmissionForm
+│   │   │   FinalChapterSubmissionForm
+│   │   │   ├── FinalChapterSubmissionFormContainer.js
+│   │   │   └── index.js
+│   │   ├── Footer
+│   │   │   Footer
+│   │   │   └── index.js
+│   │   ├── Header
+│   │   │   Header
+│   │   │   ├── HeaderStyleTwo.js
+│   │   │   ├── MenuItems.js
+│   │   │   ├── Topbar.js
+│   │   │   └── index.js
+│   │   ├── PageContent
+│   │   │   PageContent
+│   │   │   └── index.js
+│   │   ├── Preloader
+│   │   │   Preloader
+│   │   │   └── index.js
+│   │   ├── Product
+│   │   │   Product
+│   │   │   └── index.js
+│   │   ├── Project
+│   │   │   Project
+│   │   │   └── ProjectCard.js
+│   │   ├── ProjectDetailsContent
+│   │   │   ProjectDetailsContent
+│   │   │   └── index.js
+│   │   ├── PublicationStatsCard
+│   │   │   PublicationStatsCard
+│   │   │   ├── index.js
+│   │   │   └── scopusApi.js
+│   │   ├── RelatedBooks
+│   │   │   RelatedBooks
+│   │   │   └── index.js
+│   │   ├── ScrollTop
+│   │   │   ScrollTop
+│   │   │   ├── LoadTop.js
+│   │   │   └── index.js
+│   │   ├── SectionTitle
+│   │   │   SectionTitle
+│   │   │   └── index.js
+│   │   ├── Service
+│   │   │   Service
+│   │   │   └── index.js
+│   │   ├── SingleCertificate
+│   │   │   SingleCertificate
+│   │   │   └── index.js
+│   │   ├── Slider
+│   │   │   Slider
+│   │   │   ├── Slider.jsx
+│   │   │   └── Slider2.jsx
+│   │   ├── SocialFeed
+│   │   │   SocialFeed
+│   │   │   ├── SingleSocial.js
+│   │   │   └── index.js
+│   │   └── Testimonial
+│   │       Testimonial
+│   │       └── index.js
+│   ├── data
+│   │   data
+│   │   ├── booksData.js
+│   │   ├── callForChaptersBooksData.js
+│   │   ├── certificatesData.js
+│   │   ├── editorsBiographies.js
+│   │   ├── emails
+│   │   │   emails
+│   │   │   └── proposalSubmissionTemplate.js
+│   │   ├── pageContent.js
+│   │   ├── projectsData.js
+│   │   ├── publicationsData.js
+│   │   ├── servicesData.js
+│   │   └── testimonialsData.js
+│   ├── index.js
+│   ├── pages
+│   │   pages
+│   │   ├── .DS_Store
+│   │   ├── about
+│   │   │   about
+│   │   │   ├── AboutMeMain.js
+│   │   │   ├── about-me.js
+│   │   │   └── index.js
+│   │   ├── appointments
+│   │   │   appointments
+│   │   │   ├── AppointmentsMain.js
+│   │   │   └── index.js
+│   │   ├── books
+│   │   │   books
+│   │   │   ├── BookDetails.js
+│   │   │   ├── BookProposal.css
+│   │   │   ├── BookProposalForm.js
+│   │   │   ├── BookProposalFormContainer.js
+│   │   │   ├── BooksMain.js
+│   │   │   └── index.js
+│   │   ├── certificates
+│   │   │   certificates
+│   │   │   └── index.js
+│   │   ├── cfc
+│   │   │   cfc
+│   │   │   ├── CFCMain.js
+│   │   │   ├── CallForChapterDetails.js
+│   │   │   └── index.js
+│   │   ├── contact
+│   │   │   contact
+│   │   │   ├── ContactMain.js
+│   │   │   └── index.js
+│   │   ├── content_page
+│   │   │   content_page
+│   │   │   └── index.js
+│   │   ├── error
+│   │   │   error
+│   │   │   ├── ErrorMain.js
+│   │   │   └── index.js
+│   │   ├── home
+│   │   │   home
+│   │   │   ├── AboutSection.js
+│   │   │   ├── CertificationSection.js
+│   │   │   ├── CompanySection.js
+│   │   │   ├── CounterSection.js
+│   │   │   ├── CtaSection.js
+│   │   │   ├── FeatureSection.js
+│   │   │   ├── HomeBanner.js
+│   │   │   ├── HomeMain.js
+│   │   │   ├── HomePagePublications.css
+│   │   │   ├── HomePagePublications.js
+│   │   │   ├── ProjectSection.jsx
+│   │   │   ├── ServiceSection.js
+│   │   │   ├── SocialSection.js
+│   │   │   ├── TestimonialSection.js
+│   │   │   └── index.js
+│   │   ├── notes
+│   │   │   notes
+│   │   │   ├── JavaNotesMain.js
+│   │   │   ├── MLNotesMain.js
+│   │   │   ├── StudyNotesMain.js
+│   │   │   ├── java-notes.js
+│   │   │   ├── ml-notes.js
+│   │   │   └── study-notes.js
+│   │   ├── product
+│   │   │   product
+│   │   │   ├── ProductDetailsMain.js
+│   │   │   ├── ProductMain.js
+│   │   │   ├── index.js
+│   │   │   └── product-details.js
+│   │   ├── projects
+│   │   │   projects
+│   │   │   ├── KwizzleMobileAppProjectMain.js
+│   │   │   ├── ProjectDetails.js
+│   │   │   ├── ProjectDetailsMain.js
+│   │   │   ├── ProjectDetailsPage.js
+│   │   │   ├── ProjectMain.js
+│   │   │   ├── SingleProject.js
+│   │   │   ├── index.js
+│   │   │   ├── kwizzle-mobile-app-details.js
+│   │   │   ├── project-1.js
+│   │   │   ├── project-2.js
+│   │   │   ├── project-details.js
+│   │   │   └── project-masonary.js
+│   │   ├── publications
+│   │   │   publications
+│   │   │   ├── PublicationsMain.css
+│   │   │   ├── PublicationsMain.js
+│   │   │   └── index.js
+│   │   └── services
+│   │       services
+│   │       ├── ServiceDetailsPage.js
+│   │       ├── ServiceMain.js
+│   │       └── index.js
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+│   └── utils
+│       utils
+│       └── getRelatedBooks.js
+├── src.zip
+└── yarn.lock
