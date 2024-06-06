@@ -5,7 +5,7 @@ import Globals from '../../Globals';
 
 const CertificationSection = () => {
     return (
-        <div className="col-xl-12 col-lg-12 grey-bg pt-100 pb-70 wow animate__fadeIn " data-wow-duration="1.1s">
+        <div className="col-xl-12 col-lg-12 pt-100 grey-bg wow animate__fadeIn " data-wow-duration="1.1s">
             <div className="row justify-content-center">
                 <div className="col-xl-6 col-lg-6 wow animate__fadeInUp" data-wow-duration="1.1s">
                     <SectionTitle

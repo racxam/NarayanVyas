@@ -24,7 +24,7 @@ const highlightContributors = (contributors) => {
 
 const HomePagePublications = () => {
     return (
-        <div className="service__area service__space service__mlr pt-100 pb-100 p-relative mt-1">
+        <div className="service__area service__mlr pt-100 pb-100 p-relative mt-1">
             <div className="service__shape-1">
                 <img src={shapeImg1} alt="" />
             </div>

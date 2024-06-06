@@ -11,7 +11,7 @@ import featureImg3 from '../../assets/img/feature/fea-3.png';
 const Feature = () => {
 
   return (
-    <div className="feature__area feature__mlr pt-100 pb-70">
+    <div className="feature__area feature__mlr ">
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-xl-6 wow animate__fadeInUp" data-wow-duration="1.1s">

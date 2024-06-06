@@ -2,7 +2,7 @@
   --primary1: #6a59ff;
   --white1: #ffffff;
   --bg1: #f5f5f5;
-  
+
 }
 
 html {
@@ -38,7 +38,7 @@ body {
 
 .container1 {
   max-width: 140rem;
-  padding: 4rem 1rem;
+  // padding: 4rem 1rem;
   margin: 0 auto;
 
 }
@@ -69,10 +69,12 @@ body {
   .swiper_container1 {
     height: 52rem;
   }
+
   .swiperslide1 {
     width: 28rem !important;
     height: 36rem !important;
   }
+
   .swiperslide1 img {
     width: 28rem !important;
     height: 36rem !important;
@@ -130,13 +132,13 @@ body {
   .slider-controler1 .swiper-button-prev {
     left: 20% !important;
     transform: translateX(-20%) !important;
-    
+
   }
 }
 
 .slider-controler1 .slider-arrow {
 
-  background: rgba(254,220,95,255);
+  background: rgba(254, 220, 95, 255);
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
@@ -212,13 +214,13 @@ body {
   .slider-controler2 .swiper-button-prev2 {
     left: 20% !important;
     transform: translateX(-20%) !important;
-    
+
   }
 }
 
 .slider-controler2 .slider-arrow {
 
-  background: rgba(254,220,95,255);
+  background: rgba(254, 220, 95, 255);
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
@@ -263,13 +265,14 @@ body {
 
 
 
-.swiperSlide2{
+.swiperSlide2 {
 
   width: 400px !important;
 
   position: relative;
 
 }
+
 .swiper-3d {
   perspective: 1621px;
 }

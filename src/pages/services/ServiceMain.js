@@ -4,7 +4,7 @@ import SingleService from '../../components/Service';
 
 const ServiceMain = () => {
 	return (
-		<div className="service__area service__space service__mlr pt-100 pb-70 p-relative mt-1">
+		<div className="service__area service__space service__mlr p-relative mt-1">
 			<div className="container-fluid">
 				<div className="row">
 					{servicesData.map((service, index) => {
