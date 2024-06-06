@@ -8,7 +8,7 @@ import Globals from '../../Globals';
 
 const PublicationStatsCard = () => {
     const [stats, setStats] = useState([
-        { icon: <Star style={{ color: '#FFDC60' }} />, heading: 'Author ID', text: '57221967474', link: 'https://www.scopus.com/authid/detail.uri?authorId=57221967474' },
+        { icon: <Star style={{ color: '#FFDC60' }} />, heading: 'Author ID', text: Globals.scopusUsername, link: 'https://www.scopus.com/authid/detail.uri?authorId=57221967474' },
         { icon: <Person style={{ color: '#FFDC60' }} />, heading: 'h-index', text: 'Loading...' },
         { icon: <Person style={{ color: '#FFDC60' }} />, heading: 'Coauthors', text: 'Loading...' },
         { icon: <LibraryBooks style={{ color: '#FFDC60' }} />, heading: 'Citations', text: 'Loading...' },
