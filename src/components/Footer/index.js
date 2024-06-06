@@ -30,7 +30,7 @@ const Footer = (props) => {
                                         <a href={Globals.facebookUrl} target='_blank' rel='noreferrer'><i className="fab fa-facebook-f"></i></a>
                                         <a href={Globals.linkedinUrl} target='_blank' rel='noreferrer'><i className="fab fa-linkedin"></i></a>
                                         <a href={Globals.githubUrl} target='_blank' rel='noreferrer'><i className="fab fa-brands fa-github"></i></a>
-                                        <a href={Globals.globalEmail} target='_blank' rel='noreferrer'><i className="far fa-envelope"></i></a>
+                                        <a href={Globals.globalEmailUrl} target='_blank' rel='noreferrer'><i className="far fa-envelope"></i></a>
                                     </div>
                                 </div>
                             </div>
