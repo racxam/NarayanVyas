@@ -24,7 +24,7 @@ const index = ({ relatedBooks }) => {
                             Title={book.title.text}
                             Publisher={book.publisher}
                             Price={book.price}
-                            Url={`/books/${book.id}`}
+                            Url={`/call-for-chapters/${book.id}`}
                         />
                     </div>
                 ))}

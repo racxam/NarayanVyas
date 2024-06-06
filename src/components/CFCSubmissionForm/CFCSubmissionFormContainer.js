@@ -8,11 +8,13 @@ const generateSubmissionId = (bookTitle) => {
     return `${bookCode}${randomNumber}`;
 };
 
-const CFCSubmissionFormContainer = ({ itemClass, chapters, bookTitle }) => {
+const CFCSubmissionFormContainer = ({ itemClass, chapters, bookTitle, publisher }) => {
     const [authors, setAuthors] = useState([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]);
     const [loading, setLoading] = useState(false);
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+
+    console.log(publisher);
 
     const handleAddAuthor = () => {
         if (authors.length < 6) {
@@ -57,6 +59,7 @@ const CFCSubmissionFormContainer = ({ itemClass, chapters, bookTitle }) => {
         const formData = {
             submissionId,
             book: bookTitle,
+            publisher: publisher,
             chapter: e.target.chapter.value,
             suggestedTitle: e.target.suggestedTitle.value,
             chapterSubtitles: e.target.chapterSubtitles.value,

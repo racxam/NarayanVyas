@@ -19,8 +19,9 @@ const FinalChapterSubmissionForm = ({
     handleConsentFileRemove,
     loading,
     successMessage,
-    errorMessage, // Accept the error message as a prop
     bookTitle,
+    publisher, // Accept the publisher as a prop
+    errorMessage, // Accept the error message as a prop
     clearMessages, // Accept the clearMessages function as a prop
     isConsentFormRequired, // Accept the isConsentFormRequired prop
     consentFormLink, // Accept the consentFormLink prop

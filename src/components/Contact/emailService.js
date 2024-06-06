@@ -35,7 +35,7 @@ const readFileAsBase64 = (file) => {
     });
 };
 
-const getEmailData = async (formData, files = [], from, to = [], cc = [], bcc = [], isFinalChapter = false, publisherName = 'Wiley', isContactForm = false) => {
+const getEmailData = async (formData, files = [], from, to = [], cc = [], bcc = [], isFinalChapter = false, publisher, isContactForm = false) => {
     let emailSubject = '';
     let htmlContent = '';
 
@@ -61,8 +61,8 @@ const getEmailData = async (formData, files = [], from, to = [], cc = [], bcc = 
         htmlContent = getEmailTemplate(mergeInfo, isFinalChapter);
         const bookCode = formData.book.replace(/[\s-]/g, '').substring(0, 4).toUpperCase();
         emailSubject = isFinalChapter
-            ? `Final Chapter Submission Confirmation (${publisherName}-${bookCode})`
-            : `Chapter Proposal Submission Confirmation (${publisherName}-${bookCode})`;
+            ? `Final Chapter Submission Confirmation (${publisher}-${bookCode})`
+            : `Chapter Proposal Submission Confirmation (${publisher}-${bookCode})`;
     }
 
     const emailData = {

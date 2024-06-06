@@ -34,7 +34,6 @@ const CallForChapterPage = ({
 
     const openChapterModal = () => setChapterModalIsOpen(true);
     const closeChapterModal = () => setChapterModalIsOpen(false);
-
     return (
         <div className="product-details__area product-details__plr mt-100 mb-70">
             <div className="container">
@@ -157,12 +156,13 @@ const CallForChapterPage = ({
                 </div>
             </div>
             <CustomModal isOpen={abstractModalIsOpen} onRequestClose={closeAbstractModal} contentLabel="Submit Abstract">
-                <CFCSubmissionFormContainer itemClass="some-class" chapters={chapters} bookTitle={title.text} />
+                <CFCSubmissionFormContainer itemClass="some-class" chapters={chapters} bookTitle={title.text} publisher={publisher} />
             </CustomModal>
             <CustomModal isOpen={chapterModalIsOpen} onRequestClose={closeChapterModal} contentLabel="Upload Chapter">
                 <FinalChapterSubmissionFormContainer
                     itemClass="some-class"
                     chapters={chapters}
+                    publisher={publisher}
                     bookTitle={title.text}
                     isConsentFormRequired={isConsentFormRequired}
                     consentFormLink={consentFormLink}
