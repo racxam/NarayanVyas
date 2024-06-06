@@ -33,10 +33,11 @@ const PublicationsMain = () => {
 								<a href={pub.link} target="_blank" rel="noopener noreferrer" className='publication-title'>
 									{pub.title}
 								</a>
-								{pub.scopusIndexed && <span className='badge badge-success'>Scopus Indexed</span>}
+								{pub.wosIndexed && <span className='badge badge-success badge-sci mr-10'>SCI</span>}
+								{pub.scopusIndexed && <span className='badge badge-success'>Scopus</span>}
 							</div>
 							<p className='publication-contributors'>
-								<i className="fas fa-user" style={{ color: '#c0392b' }}></i> <strong>{pub.type === 'Book' ? 'Editors' : 'Authors'}:</strong> <span dangerouslySetInnerHTML={{ __html: highlightContributors(pub.contributors) }} />
+								<i className="fas fa-user" style={{ color: '#c0392b' }}></i> <strong style={{ display: 'inline' }}>{pub.type === 'Book' ? 'Editors' : 'Authors'}:</strong> <span dangerouslySetInnerHTML={{ __html: highlightContributors(pub.contributors) }} />
 							</p>
 							<p className='publication-info'>
 								<i className="far fa-calendar-alt" style={{ color: '#f39c12' }}></i> {pub.date}
