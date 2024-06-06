@@ -50,23 +50,12 @@ function Slider1() {
             1024: {
               slidesPerView: 5,
 
-<<<<<<< HEAD
+
           },
         }}
          
          
-=======
-            },
-          }}
-          // // slidesPerView={'auto'}
-          // coverflowEffect={{
-          //   rotate: 0,
-          //   stretch: 0,
-          //   depth: 100,
-          //   modifier: 2.5,
-          // }}
 
->>>>>>> origin/main
           pagination={{ el: '.swiper-pagination1', clickable: true }}
           navigation={{
             nextEl: '.swiper-button-next',

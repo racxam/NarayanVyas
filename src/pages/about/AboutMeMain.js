@@ -3,13 +3,8 @@ import { Link } from 'react-router-dom';
 
 import CTA from '../../components/CTA';
 import SocialFeed from '../../components/SocialFeed';
-<<<<<<< HEAD
-import ContactTwo from '../../components/Contact/ContactTwo';
 import Breadcrumb from '../../components/Breadcrumb/index';
-=======
 import Contact from '../../components/Contact/Contact';
-import Breadcrumb from '../../components/Breadcrumb';
->>>>>>> origin/main
 
 import aboutImg from '../../assets/img/about/narayan_vyas_Profile_photo_forAbout.png'
 import Globals from '../../Globals';
