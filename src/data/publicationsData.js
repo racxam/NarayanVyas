@@ -8,6 +8,7 @@ const publications = [
         doi: '10.4018/979-8-3693-1822-5',
         doiText: '10.4018/979-8-3693-1822-5',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.4018/979-8-3693-1822-5'
     },
     {
@@ -19,6 +20,7 @@ const publications = [
         doi: '10.4018/979-8-3693-1194-3',
         doiText: '10.4018/979-8-3693-1194-3',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.4018/979-8-3693-1194-3'
     },
     {
@@ -30,6 +32,7 @@ const publications = [
         doi: '10.4018/979-8-3693-1479-1',
         doiText: '10.4018/979-8-3693-1479-1',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.4018/979-8-3693-1479-1'
     },
     {
@@ -41,6 +44,7 @@ const publications = [
         doi: '10.4018/979-8-3693-0968-1.ch003',
         doiText: '10.4018/979-8-3693-0968-1.ch003',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://www.igi-global.com/chapter/elevating-iot-sensor-data-management-and-security-through-blockchain-solutions/342145'
     },
     {
@@ -52,6 +56,7 @@ const publications = [
         doi: '10.1002/9781394257003.ch15',
         doiText: '10.1002/9781394257003.ch15',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://onlinelibrary.wiley.com/doi/10.1002/9781394257003.ch15'
     },
     {
@@ -64,6 +69,7 @@ const publications = [
         doi: '10.1109/ICICIS56802.2023.10430280',
         doiText: '10.1109/ICICIS56802.2023.10430280',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICICIS56802.2023.10430280'
     },
     {
@@ -76,6 +82,7 @@ const publications = [
         doi: '10.1109/ICIIP61524.2023.10537665',
         doiText: '10.1109/ICIIP61524.2023.10537665',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICIIP61524.2023.10537665'
     },
     {
@@ -88,6 +95,7 @@ const publications = [
         doi: '10.1109/ICIIP61524.2023.10537765',
         doiText: '10.1109/ICIIP61524.2023.10537765',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICIIP61524.2023.10537765'
     },
     {
@@ -100,6 +108,7 @@ const publications = [
         doi: '10.1109/ICIIP61524.2023.10537643',
         doiText: '10.1109/ICIIP61524.2023.10537643',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICIIP61524.2023.10537643'
     },
     {
@@ -112,6 +121,7 @@ const publications = [
         doi: '10.1109/ICCSAI59793.2023.10421138',
         doiText: '10.1109/ICCSAI59793.2023.10421138',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICCSAI59793.2023.10421138'
     },
     {
@@ -124,6 +134,7 @@ const publications = [
         doi: '10.1109/ICTACS59847.2023.10390276',
         doiText: '10.1109/ICTACS59847.2023.10390276',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICTACS59847.2023.10390276'
     },
     {
@@ -136,6 +147,7 @@ const publications = [
         doi: '10.1109/ICTACS59847.2023.10390369',
         doiText: '10.1109/ICTACS59847.2023.10390369',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICTACS59847.2023.10390369'
     },
     {
@@ -148,6 +160,7 @@ const publications = [
         doi: '10.1109/ICTACS59847.2023.10390302',
         doiText: '10.1109/ICTACS59847.2023.10390302',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICTACS59847.2023.10390302'
     },
     {
@@ -160,6 +173,7 @@ const publications = [
         doi: '10.1109/ICCCIS60361.2023.10425187',
         doiText: '10.1109/ICCCIS60361.2023.10425187',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICCCIS60361.2023.10425187'
     },
     {
@@ -172,6 +186,7 @@ const publications = [
         doi: '10.1109/ICTACS59847.2023.10390258',
         doiText: '10.1109/ICTACS59847.2023.10390258',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICTACS59847.2023.10390258'
     },
     {
@@ -184,6 +199,7 @@ const publications = [
         doi: '10.1109/ICICAT57735.2023.10263628',
         doiText: '10.1109/ICICAT57735.2023.10263628',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICICAT57735.2023.10263628'
     },
     {
@@ -196,6 +212,7 @@ const publications = [
         doi: '10.1109/AIC57670.2023.10263915',
         doiText: '10.1109/AIC57670.2023.10263915',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/AIC57670.2023.10263915'
     },
     {
@@ -208,6 +225,7 @@ const publications = [
         doi: '10.1109/CCPIS59145.2023.10291872',
         doiText: '10.1109/CCPIS59145.2023.10291872',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/CCPIS59145.2023.10291872'
     },
     {
@@ -220,6 +238,7 @@ const publications = [
         doi: '10.1109/NMITCON58196.2023.10276198',
         doiText: '10.1109/NMITCON58196.2023.10276198',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/NMITCON58196.2023.10276198'
     },
     {
@@ -232,6 +251,7 @@ const publications = [
         doi: '10.1109/ICCPCT58313.2023.10244828',
         doiText: '10.1109/ICCPCT58313.2023.10244828',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICCPCT58313.2023.10244828'
     },
     {
@@ -244,6 +264,7 @@ const publications = [
         doi: '10.1109/ICCPCT58313.2023.10245885',
         doiText: '10.1109/ICCPCT58313.2023.10245885',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICCPCT58313.2023.10245885'
     },
     {
@@ -256,6 +277,7 @@ const publications = [
         doi: '10.1109/ICCPCT58313.2023.10245177',
         doiText: '10.1109/ICCPCT58313.2023.10245177',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICCPCT58313.2023.10245177'
     },
     {
@@ -268,6 +290,7 @@ const publications = [
         doi: '10.1109/ICAICCIT60255.2023.10465784',
         doiText: '10.1109/ICAICCIT60255.2023.10465784',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICAICCIT60255.2023.10465784'
     },
     {
@@ -280,6 +303,7 @@ const publications = [
         doi: '10.1109/CISCT57197.2023.10351422',
         doiText: '10.1109/CISCT57197.2023.10351422',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/CISCT57197.2023.10351422'
     },
     {
@@ -292,6 +316,7 @@ const publications = [
         doi: '10.1109/CISCT57197.2023.10351277',
         doiText: '10.1109/CISCT57197.2023.10351277',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/CISCT57197.2023.10351277'
     },
     {
@@ -304,6 +329,7 @@ const publications = [
         doi: '10.1109/ICCUBEA58933.2023.10392109',
         doiText: '10.1109/ICCUBEA58933.2023.10392109',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICCUBEA58933.2023.10392109'
     },
     {
@@ -316,6 +342,7 @@ const publications = [
         doi: '10.1109/ASIANCON58793.2023.10270756',
         doiText: '10.1109/ASIANCON58793.2023.10270756',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ASIANCON58793.2023.10270756'
     },
     {
@@ -328,6 +355,7 @@ const publications = [
         doi: '10.1109/WCONF58270.2023.10235220',
         doiText: '10.1109/WCONF58270.2023.10235220',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/WCONF58270.2023.10235220'
     },
     {
@@ -340,6 +368,7 @@ const publications = [
         doi: '10.1109/ICESC57686.2023.10193047',
         doiText: '10.1109/ICESC57686.2023.10193047',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICESC57686.2023.10193047'
     },
     {
@@ -352,6 +381,7 @@ const publications = [
         doi: '10.1109/ICSCSS57650.2023.10169365',
         doiText: '10.1109/ICSCSS57650.2023.10169365',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICSCSS57650.2023.10169365'
     },
     {
@@ -364,6 +394,7 @@ const publications = [
         doi: '10.1109/ICCMC56507.2023.10083522',
         doiText: '10.1109/ICCMC56507.2023.10083522',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/ICCMC56507.2023.10083522'
     },
     {
@@ -376,6 +407,7 @@ const publications = [
         doi: '10.1109/aisc56616.2023.10085380',
         doiText: '10.1109/aisc56616.2023.10085380',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/aisc56616.2023.10085380'
     },
     {
@@ -388,6 +420,7 @@ const publications = [
         doi: '10.1109/aisc56616.2023.10085018',
         doiText: '10.1109/aisc56616.2023.10085018',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/aisc56616.2023.10085018'
     },
     {
@@ -399,6 +432,7 @@ const publications = [
         doi: '10.14704/nq.2022.20.9.NQ44681',
         doiText: '10.14704/nq.2022.20.9.NQ44681',
         scopusIndexed: false,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.14704/nq.2022.20.9.NQ44681'
     },
     {
@@ -411,6 +445,7 @@ const publications = [
         doi: '10.1109/iciss49785.2020.9315870',
         doiText: '10.1109/iciss49785.2020.9315870',
         scopusIndexed: true,
+        wosIndexed: false,
         link: 'https://dx.doi.org/10.1109/iciss49785.2020.9315870'
     }
 ];

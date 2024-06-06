@@ -59,6 +59,10 @@
     border-radius: 5px;
 }
 
+.badge-success.badge-sci {
+    background-color: #007bff;
+}
+
 .publication-contributors,
 .publication-info {
     margin: 5px 0;

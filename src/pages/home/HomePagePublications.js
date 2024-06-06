@@ -43,7 +43,7 @@ const HomePagePublications = () => {
                 </div>
                 <div className="row" >
                     <div className="publications-grid wow animate__fadeInUp" data-wow-duration="1.1s">
-                        {publications.slice(0, 10).map((pub, index) => (
+                        {publications.slice(0, 6).map((pub, index) => (
                             <div key={index} className="publication-card">
                                 <div className="publication-number-box">
                                     <div className="publication-number">{index + 1}</div>

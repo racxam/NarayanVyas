@@ -1,9 +1,5 @@
 // projectsData.js
-
-import projectImg1 from '../assets/img/project/project-1.png';
-import projectImg2 from '../assets/img/project/project-2.png';
-import projectImg3 from '../assets/img/project/project-1.png';
-import projectImg4 from '../assets/img/project/project-2.png';
+import images from '../assets/images';
 import FlutterIcon from '@mui/icons-material/FlutterDash'; // Replace with the actual Flutter icon
 import FirebaseIcon from '@mui/icons-material/Whatshot'; // Example icon for Firebase
 import JavaScriptIcon from '@mui/icons-material/Code'; // Example icon for JavaScript
@@ -13,8 +9,8 @@ import NodeIcon from '@mui/icons-material/Storage'; // Example icon for Node.js
 const projects = [
     {
         id: '1',
-        images: [projectImg1, projectImg2, projectImg3],
-        featuredImage: projectImg1,
+        images: [images.projects.projectImg1, images.projects.projectImg2, images.projects.projectImg3],
+        featuredImage: images.projects.projectImg1,
         title: 'Kwizzle',
         techStack: [
             { icon: FlutterIcon, name: 'Flutter' },
@@ -44,8 +40,8 @@ const projects = [
     },
     {
         id: '2',
-        images: [projectImg2, projectImg3, projectImg4],
-        featuredImage: projectImg2,
+        images: [images.projects.projectImg2, images.projects.projectImg3, images.projects.projectImg4],
+        featuredImage: images.projects.projectImg2,
         title: 'TakeMyPark',
         techStack: [
             { icon: FlutterIcon, name: 'Flutter' },
@@ -75,8 +71,8 @@ const projects = [
     },
     {
         id: '3',
-        images: [projectImg3, projectImg4, projectImg1],
-        featuredImage: projectImg3,
+        images: [images.projects.projectImg3, images.projects.projectImg4, images.projects.projectImg1],
+        featuredImage: images.projects.projectImg3,
 
         title: 'Project Three',
         techStack: [
@@ -108,8 +104,8 @@ const projects = [
     },
     {
         id: '4',
-        images: [projectImg4, projectImg1, projectImg2],
-        featuredImage: projectImg4,
+        images: [images.projects.projectImg4, images.projects.projectImg1, images.projects.projectImg2],
+        featuredImage: images.projects.projectImg4,
         title: 'Project Four',
         techStack: [
             { icon: FlutterIcon, name: 'Flutter' },
@@ -140,8 +136,8 @@ const projects = [
     },
     {
         id: '5',
-        images: [projectImg4, projectImg1, projectImg2],
-        featuredImage: projectImg4,
+        images: [images.projects.projectImg4, images.projects.projectImg1, images.projects.projectImg2],
+        featuredImage: images.projects.projectImg4,
         title: 'Project Five',
         techStack: [
             { icon: FlutterIcon, name: 'Flutter' },
@@ -172,8 +168,8 @@ const projects = [
     },
     {
         id: '6',
-        images: [projectImg4, projectImg1, projectImg2],
-        featuredImage: projectImg4,
+        images: [images.projects.projectImg4, images.projects.projectImg1, images.projects.projectImg2],
+        featuredImage: images.projects.projectImg4,
         title: 'Project six',
         techStack: [
             { icon: FlutterIcon, name: 'Flutter' },

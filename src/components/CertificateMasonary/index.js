@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Masonry from 'react-masonry-css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import certificatesData from '../../data/certificatesData';
@@ -14,7 +13,6 @@ const CertificateMasonary = () => {
         1200: 5,
         992: 3,
         576: 2,
-
     };
 
     const tabStyle = 'nav justify-content-center project-2__button-box masonary-menu';

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Globals from '../../Globals';
+import images from '../../assets/images';
 
-// import sliderImg1 from '../../assets/img/slider/slider-1.png';
-import sliderImg1 from '../../assets/img/profile/narayan_vyas_Profile_photo3.png';
 import shapeImg1 from '../../assets/img/slider/shape-1.png';
 import shapeImg2 from '../../assets/img/slider/shape-2.png';
 import shapeImg3 from '../../assets/img/slider/shape-3.png';
@@ -78,7 +77,7 @@ const Banner = () => {
                     </div>
                     <div className="col-xl-6 col-lg-6 wow animate__fadeInRight" data-wow-duration="1.1s">
                         <div className="slider__thumb">
-                            <img src={sliderImg1} alt="" />
+                            <img src={images.misc.userProfileHome} alt="" />
                         </div>
                     </div>
                 </div>

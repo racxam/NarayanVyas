@@ -1,15 +1,11 @@
-import productImgIoMSmartHealthcareWiley from '../assets/img/cfc/iomt-wiley.jpg';
-import productImgMultimodalDataFusionWiley from '../assets/img/cfc/multimodal-wiley.jpg';
-import productImgSecureEnergyWiley from '../assets/img/cfc/secure-energy-wiley.jpg';
-import productImgRadarAiDegruyter from '../assets/img/cfc/radar_ai_degruyter.png';
-import productImgIoTRadarAAP from '../assets/img/cfc/iot-rs-aap.png';
+import images from '../assets/images';
 
 const callForChapterBooksData = [
     {
         id: 'iom-smart-healthcare-wiley',
         title: {
             text: "Internet of Medicine (IoM) For Smart Healthcare",
-            image: productImgIoMSmartHealthcareWiley
+            image: images.cfc.productImgIoMSmartHealthcareWiley
         },
         publisher: 'Wiley',
         publisherLink: 'https://www.scrivenerpublishing.com/',
@@ -57,7 +53,7 @@ const callForChapterBooksData = [
         id: 'multimodal-data-fusion-wiley',
         title: {
             text: "Multimodal Data Fusion for Bioinformatics AI",
-            image: productImgMultimodalDataFusionWiley
+            image: images.cfc.productImgMultimodalDataFusionWiley
         },
         publisher: 'Wiley',
         publisherLink: 'https://www.scrivenerpublishing.com/',
@@ -104,7 +100,7 @@ const callForChapterBooksData = [
         id: 'secure-energy-wiley',
         title: {
             text: "Secure Energy Optimization: Leveraging IoT And AI For Enhanced Efficiency",
-            image: productImgSecureEnergyWiley
+            image: images.cfc.productImgSecureEnergyWiley
         },
         publisher: 'Wiley',
         publisherLink: 'https://www.scrivenerpublishing.com/',
@@ -151,7 +147,7 @@ const callForChapterBooksData = [
         id: 'iot-remote-sensing-precision-agriculture',
         title: {
             text: "IoT and Remote Sensing Technologies for Precision Agriculture",
-            image: productImgIoTRadarAAP
+            image: images.cfc.productImgIoTRadarAAP
         },
         publisher: 'Apple Academic Press',
         publisherLink: 'https://www.appleacademicpress.com/',
@@ -198,7 +194,7 @@ const callForChapterBooksData = [
         id: 'radar-ai-remote-sensing',
         title: {
             text: "RADAR Remote Sensing Data Analysis with Artificial Intelligence",
-            image: productImgRadarAiDegruyter
+            image: images.cfc.productImgRadarAiDegruyter
         },
         publisher: 'De Gruyter',
         publisherLink: 'https://www.degruyter.com/',

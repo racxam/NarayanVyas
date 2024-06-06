@@ -1,4 +1,5 @@
 // src/components/Testimonial/index.js
+import images from '../../assets/images';
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -6,7 +7,6 @@ import SingleTestimonial from '../../components/Testimonial';
 import SectionTitle from '../../components/SectionTitle';
 import Globals from '../../Globals';
 import testimonialsData from '../../data/testimonialsData';
-import { images } from '../../data/testimonialsData';
 
 const Testimonial = () => {
     const sliderOption = {
@@ -26,13 +26,13 @@ const Testimonial = () => {
     return (
         <div className="testimonial-2__area  pt-50 pb-30 testimonial-2__space p-relative">
             <div className="testimonial-2__shape-3 d-none d-lg-block custom-testimonial-img">
-                <img src={images.hardikDhimanImg} alt="" />
+                <img src={images.testimonials.hardikDhimanImg} alt="" />
             </div>
             <div className="testimonial-2__shape-4 d-none d-lg-block custom-testimonial-img">
-                <img src={images.abidHussainImg} alt="" />
+                <img src={images.testimonials.abidHussainImg} alt="" />
             </div>
             <div className="testimonial-2__shape-5 d-none d-xl-block custom-testimonial-img">
-                <img src={images.chahilChoudharyImg} alt="" />
+                <img src={images.testimonials.chahilChoudharyImg} alt="" />
             </div>
             {/* <div className="testimonial-2__shape-6 d-none d-lg-block custom-testimonial-img">
                 <img src={images.emilZajacImg} alt="" />
@@ -41,7 +41,7 @@ const Testimonial = () => {
                 <img src={images.hardikDhimanImg} alt="" />
             </div> */}
             <div className="testimonial-2__shape-8 d-none d-lg-block custom-testimonial-img">
-                <img src={images.chahilChoudharyImg} alt="" />
+                <img src={images.testimonials.chahilChoudharyImg} alt="" />
             </div>
             <div className="container">
                 <div className="row">

@@ -1,15 +1,10 @@
-import mobileAppDevelopmentImg from '../assets/img/service/mobile-app-development.jpg';
-import iotSolutionsImg from '../assets/img/service/iot-solutions.jpg';
-import projectConsultancyImg from '../assets/img/service/project-consultancy.jpg';
-import publicationAssistanceImg from '../assets/img/service/research-publication.jpg';
-import researchAndDevelopmentImg from '../assets/img/service/research-and-development.jpg';
-import trainingAndWorkshopsImg from '../assets/img/service/workshop-and-training.jpg';
+import images from '../assets/images';
 
 const servicesData = [
     {
         id: 'mobile-app-development',
         pageTitle: "Mobile Application Development",
-        mainImage: mobileAppDevelopmentImg,
+        mainImage: images.services.mobileAppDevelopmentImg,
         iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [
@@ -34,7 +29,7 @@ const servicesData = [
     {
         id: 'iot-solutions',
         pageTitle: "IoT Solutions",
-        mainImage: iotSolutionsImg,
+        mainImage: images.services.iotSolutionsImg,
         iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [
@@ -59,7 +54,7 @@ const servicesData = [
     {
         id: 'project-consultancy',
         pageTitle: "Project Consultancy",
-        mainImage: projectConsultancyImg,
+        mainImage: images.services.projectConsultancyImg,
         iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [
@@ -84,7 +79,7 @@ const servicesData = [
     {
         id: 'publication-assistance',
         pageTitle: "Publication Assistance",
-        mainImage: publicationAssistanceImg,
+        mainImage: images.services.publicationAssistanceImg,
         iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [
@@ -109,7 +104,7 @@ const servicesData = [
     {
         id: 'research-and-development',
         pageTitle: "Research and Development",
-        mainImage: researchAndDevelopmentImg,
+        mainImage: images.services.researchAndDevelopmentImg,
         iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [
@@ -134,7 +129,7 @@ const servicesData = [
     {
         id: 'training-and-workshops',
         pageTitle: "Training and Workshops",
-        mainImage: trainingAndWorkshopsImg,
+        mainImage: images.services.trainingAndWorkshopsImg,
         iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [

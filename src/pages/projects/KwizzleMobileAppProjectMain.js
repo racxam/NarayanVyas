@@ -1,10 +1,6 @@
 import React from 'react';
 import CTA from '../../components/CTA';
-import Faq from '../../components/Faq';
 import Breadcrumb from '../../components/Breadcrumb';
-
-import bgImg from '../../assets/img/cta/cta-bg-2.png';
-
 import serviceImg1 from '../../assets/img/service/iot-solutions.jpg';
 
 const KwizzleMobileAppProjectMain = () => {
