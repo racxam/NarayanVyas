@@ -3,6 +3,7 @@ import SectionTitle from '../../components/SectionTitle/index';
 import CallForChaptersImageOnly from '../../components/CallForChapters/call_for_chapters_image_only';
 import cfcData from '../../data/callForChaptersBooksData';
 import Slider1 from '../../components/Slider/Slider';
+import Globals from '../../Globals';
 
 const sortedCfcData = cfcData.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
 
@@ -15,15 +16,15 @@ const CFCIndex = () => {
 						<div className="col-xl-6 col-lg-6 wow animate__fadeInUp" data-wow-duration="1.1s">
 							<SectionTitle
 								sectionClass="service__section-box text-center pb-35 section-title-fixed-width"
-								subTitle="Call For Chapters"
-								Title="Submit Your Quality Chapter"
+								subTitle={Globals.cfcSectionHeading}
+								Title={Globals.cfcSectionSubheading}
 							/>
 						</div>
 					</div>
 				</div>
 
 
-				<Slider1/>
+				<Slider1 />
 
 				{/* <div className="row">
 					{sortedCfcData.map((book) => (

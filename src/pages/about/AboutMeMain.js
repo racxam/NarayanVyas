@@ -7,9 +7,7 @@ import ContactTwo from '../../components/Contact/ContactTwo';
 import Breadcrumb from '../../components/Breadcrumb';
 
 import aboutImg from '../../assets/img/about/narayan_vyas_Profile_photo_forAbout.png'
-import aboutImg2 from '../../assets/img/about/about-2.jpg'
-
-import bgImg from '../../assets/img/cta/cta-bg-2.png';
+import Globals from '../../Globals';
 
 const HomeMain = () => {
 	return (
@@ -17,7 +15,7 @@ const HomeMain = () => {
 			<Breadcrumb
 				pageTitle="About Me"
 			/>
-  
+
 			<div className="about-5__area about-5__plr" >
 				<div className="container-fluid">
 					<div className="about-5__border">
@@ -29,27 +27,27 @@ const HomeMain = () => {
 							</div>
 							<div className="col-xl-7 col-lg-7">
 								<div className="about-5__content-box">
-									<h4 className="about-5__content-title wow tpfadeUp" data-wow-duration="1.1s">About Me:</h4>
+									<h4 className="about-5__content-title wow tpfadeUp" data-wow-duration="1.1s">About Me</h4>
 									<div className="about-5__content">
 										<div className="about-5__text wow tpfadeUp" data-wow-duration="1.1s">
-											<p>About : My name is Narayan Vyas, I am a professional Web Developer, Android / iOS App Developer and a Teacher. I have good experience in Arduino, Electronics, Internet of Things, Robotics, HTML5, CSS3, BootStrap, WordPress, Flutter, JavaScript, jQuery and SEO. I have completed more than 50 projects for my clients in past 7 years. I am currently Founder & CEO of Web Dev Fusion. </p>
+											<p>{Globals.homePageHeaderDescription}</p>
 										</div>
 										<div className="about-5__content-list wow tpfadeUp" data-wow-duration="1.1s">
 											<ul>
-												<li><i className="fal fa-check-circle"></i><span>Name: 	Narayan Vyas</span></li>
-												<li><i className="fal fa-check-circle"></i><span>Address: Bhilwara</span></li>
-												<li><i className="fal fa-check-circle"></i><span>Age: 24 Years</span></li>
-												<li><i className="fal fa-check-circle"></i><span>Nationality: Indian</span></li>
-												<li><i className="fal fa-check-circle"></i><span>Freelance: Available</span></li>
-												<li><i className="fal fa-check-circle"></i><span>Email: contact@narayanvyas.com</span></li>
+												<li><i className="fal fa-check-circle"></i><span>{Globals.aboutPublicationHighlight}</span></li>
+												<li><i className="fal fa-check-circle"></i><span>{Globals.aboutCitationHighlight}</span></li>
+												<li><i className="fal fa-check-circle"></i><span>{Globals.aboutStudentsHighlight}</span></li>
+												<li><i className="fal fa-check-circle"></i><span>{Globals.aboutBooksHighlight}</span></li>
+												<li><i className="fal fa-check-circle"></i><span>{Globals.aboutHIndexHighlight}</span></li>
+												<li><i className="fal fa-check-circle"></i><span>{Globals.aboutWorkshopHighlight}</span></li>
 											</ul>
 										</div>
-										<div className="about-5__button wow tpfadeUp" data-wow-duration="1.1s">
+										{/* <div className="about-5__button wow tpfadeUp" data-wow-duration="1.1s">
 											<Link className="main-btn tp-btn-hover alt-color" to="/about-us">
 												<span>About More</span>
 												<b></b>
 											</Link>
-										</div>
+										</div> */}
 									</div>
 								</div>
 							</div>

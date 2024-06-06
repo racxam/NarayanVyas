@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import ModalVideo from 'react-modal-video';
 import { Link } from 'react-router-dom';
 
 import aboutImg from '../../assets/img/about/about-2.png';
 import shapeImg1 from '../../assets/img/about/about-shape-3.png';
 import shapeImg2 from '../../assets/img/about/about-shape-4.png';
 import shapeImg3 from '../../assets/img/about/about-shape-5.png';
+import Globals from '../../Globals';
 
 const About = () => {
 
@@ -30,7 +30,7 @@ const About = () => {
                                     <span><i className="fal fa-check-circle"></i></span>
                                 </div>
                                 <div className="about-2__img-text">
-                                    <h5>8+</h5>
+                                    <h5>{Globals.totalExperience}+</h5>
                                     <span>Years of Experience</span>
                                 </div>
                             </div>
@@ -39,21 +39,21 @@ const About = () => {
                     <div className="col-xl-6 col-lg-6 wow animate__fadeInRight" data-wow-duration="1.1s">
                         <div className="about-2__item">
                             <div className="about-2__section-title">
-                                <h4 className="section-subtitle char-anim">About me</h4>
-                                <h3 className="section-title char-anim">Delivering Excellence in Technology and Research</h3>
-                            </div> 
+                                <h4 className="section-subtitle char-anim">{Globals.aboutSectionHeading}</h4>
+                                <h3 className="section-title char-anim">{Globals.homePageAboutHeader}</h3>
+                            </div>
                             <div className="about-2__text">
-                                <p className="char-anim-2">With 8+ years of professional experience, I have great contribution in research and development</p>
+                                <p className="char-anim-2">{Globals.aboutSectionSubheading}</p>
                             </div>
                             <div className="about-2__list-item wow animate__fadeInUp" data-wow-duration="1.1s">
                                 <h4 className="about-2__list-title">Key Highlights:</h4>
                                 <ul>
-                                    <li><span>36 Publications indexed in Scopus</span></li>
-                                    <li><span>170 Citations in academic research</span></li>
-                                    <li><span>1000+ Students Taught</span></li>
-                                    <li><span>9 Books authored and edited</span></li>
-                                    <li><span>8 h-index in Scopus</span></li>
-                                    <li><span>6+ Workshops conducted</span></li>
+                                    <li><span>{Globals.aboutPublicationHighlight}</span></li>
+                                    <li><span>{Globals.aboutCitationHighlight}</span></li>
+                                    <li><span>{Globals.aboutStudentsHighlight}</span></li>
+                                    <li><span>{Globals.aboutBooksHighlight}</span></li>
+                                    <li><span>{Globals.aboutHIndexHighlight}</span></li>
+                                    <li><span>{Globals.aboutWorkshopHighlight}</span></li>
                                 </ul>
                             </div>
                             <div className="about-2__button wow animate__fadeInUp" data-wow-duration="1.1s">

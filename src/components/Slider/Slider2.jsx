@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Pagination } from "swiper/modules";
 import booksData from '../../data/booksData';
 import SingleProduct from '../../components/Product';
-import { RxArrowTopRight } from "react-icons/rx";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";

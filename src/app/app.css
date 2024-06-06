@@ -130,3 +130,11 @@
     text-align: center;
     margin-left: 30px;
 }
+
+.custom-testimonial-img img {
+    border: 3px solid #FFDC60;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}

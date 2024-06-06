@@ -5,6 +5,7 @@ import servicesData from '../../data/servicesData';
 
 import shapeImg1 from '../../assets/img/service/sv-shape-1.png';
 import shapeImg2 from '../../assets/img/service/sv-shape-2.png';
+import Globals from '../../Globals';
 
 const Service = () => {
     return (
@@ -20,8 +21,8 @@ const Service = () => {
                     <div className="col-xl-6 col-lg-6 wow animate__fadeInUp" data-wow-duration="1.1s">
                         <SectionTitle
                             sectionClass="service__section-box text-center pb-35 section-title-fixed-width"
-                            subTitle="My Services"
-                            Title="Experts in Every Aspect of Technology and Research"
+                            subTitle={Globals.servicesSectionHeading}
+                            Title={Globals.servicesSectionSubheading}
                         />
                     </div>
                 </div>

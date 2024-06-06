@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 import MenuItems from './MenuItems';
 import Topbar from './Topbar'
 
-import Logo from '../../assets/img/logo/logo-1.png';
-import offCanvasLogo from '../../assets/img/logo/footer-logo.png';
 import Shape from '../../assets/img/offcanvas/offcanvas-shape-1.jpg';
+import Globals from '../../Globals';
 
 const Header = (props) => {
 	const { headerClass, parentMenu, headerLogo, topbarEnable } = props;
@@ -165,14 +164,12 @@ const Header = (props) => {
 					</div>
 					<div className="itoffcanvas__logo">
 						<Link to="/">
-							<h1 style={{ color: "whitesmoke" }}>Narayan Vyas</h1>
+							<h1 style={{ color: "whitesmoke" }}>{Globals.myName}</h1>
 							{/* <img src={offCanvasLogo} alt="" /> */}
 						</Link>
 					</div>
 					<div className="itoffcanvas__text">
-						<p>
-
-							I'm Narayan Vyas, Founder & CEO of Web Dev Fusion, with over 7 years of experience in Web Design, UI/UX, and Mobile App Development. I've completed 100+ projects, delivering high-quality solutions. Get in touch to discuss how I can help your business thrive!</p>
+						<p>{Globals.sidebarDescription}</p>
 					</div>
 					<div className={innerWidth < 992 ? 'mobile-menu mean-container' : 'd-none'}>
 						<div className="mean-bar">
@@ -191,7 +188,7 @@ const Header = (props) => {
 							</div>
 							<div className="itoffcanvas__info-address">
 								<span>Email</span>
-								<a href="maito:contact@narayanvyas.com" target="_blank">contact@narayanvyas.com</a>
+								<a href={Globals.globalEmailUrl} target="_blank">{Globals.globalEmail}</a>
 							</div>
 						</div>
 						<div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -200,7 +197,7 @@ const Header = (props) => {
 							</div>
 							<div className="itoffcanvas__info-address">
 								<span>Github</span>
-								<a href="https://github.com/narayanvyas" target="_blank">narayanvyas</a>
+								<a href={Globals.githubUrl} target="_blank">{Globals.githubUsername}</a>
 							</div>
 						</div>
 						<div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -209,17 +206,16 @@ const Header = (props) => {
 							</div>
 							<div className="itoffcanvas__info-address">
 								<span>LinkedIn</span>
-								<a href="https://www.linkedin.com/in/narayanvyas87/" target="_blank">Narayan Vyas</a>
+								<a href={Globals.linkedinUrl} target="_blank">{Globals.linkedinUsername}</a>
 							</div>
 						</div>
 					</div>
 					<div className="itoffcanvas__social">
 						<div className="social-icon">
-							<a href="https://www.twitter.com/narayanvyas87" target="_blank"><i className="fab fa-twitter"></i></a>
-							<a href="https://www.facebook.com/narayanvyas87" target="_blank"><i className="fab fa-facebook-square"></i></a>
-							<a href="https://www.linkedin.com/in/narayanvyas87/" target="_blank"><i className="fab fa-brands fa-linkedin"></i></a>
-							<a href="https://www.instagram.com/narayanvyas87" target="_blank"><i class="fab fa-brands fa-instagram"></i></a>
-
+							<a href={Globals.facebookUrl} target='_blank'><i className="fab fa-facebook-square"></i></a>
+							<a href={Globals.linkedinUrl} target='_blank'><i className="fab fa-brands fa-linkedin"></i></a>
+							<a href={Globals.githubUrl} target='_blank'><i className="fab fa-brands fa-github"></i></a>
+							<a href={Globals.globalEmail} target='_blank'><i class="far fa-envelope"></i></a>
 						</div>
 					</div>
 				</div>

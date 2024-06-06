@@ -6,6 +6,7 @@ import './HomePagePublications.css'; // Import the CSS file
 import SectionTitle from '../../components/SectionTitle';
 import shapeImg1 from '../../assets/img/service/sv-shape-1.png';
 import shapeImg2 from '../../assets/img/service/sv-shape-2.png';
+import Globals from '../../Globals';
 
 // Function to parse date in MM/YYYY format
 const parseDate = (dateString) => {
@@ -35,8 +36,8 @@ const HomePagePublications = () => {
                     <div className="col-xl-6 col-lg-6 wow animate__fadeInUp" data-wow-duration="1.1s">
                         <SectionTitle
                             sectionClass="service__section-box text-center pb-35 section-title-fixed-width"
-                            subTitle="Recent Publications"
-                            Title="Explore My Recent Academic Publications"
+                            subTitle={Globals.publicationSectionHeading}
+                            Title={Globals.publicationSectionSubheading}
                         />
                     </div>
                 </div>

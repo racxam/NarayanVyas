@@ -14,13 +14,6 @@ const CFCMain = () => {
 			<div className="product__area product__plr mt-100 mb-70">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-xl-12">
-							<div className="product__title-sm wow animate__fadeInUp" data-wow-duration="1.1s">
-								<h4>Showing All Calls For Chapters</h4>
-							</div>
-						</div>
-					</div>
-					<div className="row">
 						{sortedCfcData.map((book) => (
 							<div
 								key={book.id}

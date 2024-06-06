@@ -6,8 +6,6 @@ import CTA from '../../components/CTA';
 import SingleProduct from '../../components/Product';
 import booksData from '../../data/booksData';
 
-import bgImg from '../../assets/img/cta/cta-bg-2.png';
-
 const BooksMain = () => {
 	// Sort books by release date, latest first
 	const sortedBooks = booksData.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
@@ -17,13 +15,6 @@ const BooksMain = () => {
 			<Breadcrumb pageTitle="Books" />
 			<div className="product__area product__plr mt-100 mb-70">
 				<div className="container-fluid">
-					<div className="row">
-						<div className="col-xl-12">
-							<div className="product__title-sm wow animate__fadeInUp" data-wow-duration="1.1s">
-								<h4>Showing All Published Books</h4>
-							</div>
-						</div>
-					</div>
 					<div className="row">
 						{sortedBooks.map((book) => (
 							<div

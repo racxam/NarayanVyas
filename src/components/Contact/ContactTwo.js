@@ -3,6 +3,7 @@ import shapeImg1 from '../../assets/img/contact/ct-shape-1.png';
 import shapeImg2 from '../../assets/img/contact/ct-shape-2.png';
 import shapeImg3 from '../../assets/img/contact/ct-shape-3.png';
 import shapeImg4 from '../../assets/img/contact/ct-shape-4.png';
+import Globals from '../../Globals';
 
 const ContactTwo = (props) => {
     const { itemClass } = props;
@@ -39,13 +40,11 @@ const ContactTwo = (props) => {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-xl-8 col-lg-7">
                             <div className="contact__section-title pb-10">
-                                <h4 className="section-subtitle char-anim">Get In Contact</h4>
-                                <h3 className="section-title char-anim">Feel free to get in touch! <br /></h3>
+                                <h4 className="section-subtitle char-anim">{Globals.contactSectionHeading}</h4>
+                                <h3 className="section-title char-anim">{Globals.contactSectionSubheading}<br /></h3>
                             </div>
                             <div className="contact__text">
-                                <p className="char-anim-2">
-                                    I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
-                                </p>
+                                <p className="char-anim-2">{Globals.contactSectionDescription}</p>
                             </div>
                             <div className="contact__form wow animate__fadeInUp" data-wow-duration="1.1s">
                                 <form onSubmit={handleSubmit}>

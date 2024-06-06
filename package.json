@@ -50,7 +50,7 @@
 		"zeptomail": "^6.0.0"
 	},
 	"scripts": {
-		"start": "concurrently \"react-scripts start\" \"node api/send-email.js\"",
+		"start": "react-scripts start",
 		"dev": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, CardContent, Typography, Box, Table, TableBody, TableCell, TableRow, Link } from '@mui/material';
-import { Book, Article, LibraryBooks, Person, Star } from '@mui/icons-material';
+import { Article, LibraryBooks, Person, Star } from '@mui/icons-material';
 import { fetchScopusStats } from './scopusApi';
 
 // Scopus Page 
@@ -65,23 +65,23 @@ const PublicationStatsCard = () => {
                 height: '36px',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center' 
+                justifyContent: 'center'
 
                 // Center align the title
             }}>
-                <Typography variant="subtitle1" sx={{ fontWeight: 'bold', fontSize:'1.5rem' }}>
+                <Typography variant="subtitle1" sx={{ fontWeight: 'bold', fontSize: '1.5rem' }}>
                     Scopus Stats
                 </Typography>
             </Box>
             <CardContent>
                 {loading ? (
                     <Typography
-                    sx={{fontSize:"1.5rem"}}
+                        sx={{ fontSize: "1.5rem" }}
                     >Loading...</Typography>
                 ) : error ? (
                     <Typography
-                    sx={{fontSize:"1.5rem"}}
-                     color="error">{error}</Typography>
+                        sx={{ fontSize: "1.5rem" }}
+                        color="error">{error}</Typography>
                 ) : (
                     <Table>
                         <TableBody>
@@ -91,17 +91,17 @@ const PublicationStatsCard = () => {
                                         {stat.icon}
                                     </TableCell>
                                     <TableCell sx={{ borderBottom: 'none', padding: '2px' }}>
-                                        <Typography variant="body1" sx={{ fontWeight: 'bold',fontSize:"1.5rem" }}>
+                                        <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: "1.5rem" }}>
                                             {stat.heading}:
                                         </Typography>
                                     </TableCell>
                                     <TableCell sx={{ borderBottom: 'none', padding: '2px' }}>
                                         {stat.link ? (
-                                            <Link href={stat.link} target="_blank" rel="noopener noreferrer" sx={{ fontWeight: 'bold',fontSize:"1.5rem", color: 'white', '&:hover': { color: '#FFDC60' } }}>
+                                            <Link href={stat.link} target="_blank" rel="noopener noreferrer" sx={{ fontWeight: 'bold', fontSize: "1.5rem", color: 'white', '&:hover': { color: '#FFDC60' } }}>
                                                 {stat.text}
                                             </Link>
                                         ) : (
-                                            <Typography variant="body1" sx={{ fontWeight: 'bold' ,fontSize:"1.5rem"}}>
+                                            <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: "1.5rem" }}>
                                                 {stat.text}
                                             </Typography>
                                         )}

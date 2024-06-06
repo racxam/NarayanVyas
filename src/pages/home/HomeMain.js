@@ -35,6 +35,7 @@ const HomeMain = () => {
 
 
 			<CertificationSection />
+
 			<Counter />
 
 			<HomePagePublications />
