@@ -26,7 +26,7 @@ const CFCMain = () => {
 									Publisher={book.publisher}
 									Price={book.price}
 									Url={book.id}
-								/>
+								 />
 							</div>
 						))}
 					</div>
