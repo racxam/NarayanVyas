@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Card, CardContent, Typography, Box, Table, TableBody, TableCell, TableRow, Link } from '@mui/material';
-import { Book, Article, LibraryBooks, Person, Star } from '@mui/icons-material';
+import { Article, LibraryBooks, Person, Star } from '@mui/icons-material';
 import { fetchScopusStats } from './scopusApi';
+import Globals from '../../Globals';
 
 // Scopus Page 
 
 const PublicationStatsCard = () => {
     const [stats, setStats] = useState([
-        { icon: <Star style={{ color: '#FFDC60' }} />, heading: 'Author ID', text: '57221967474', link: 'https://www.scopus.com/authid/detail.uri?authorId=57221967474' },
+        { icon: <Star style={{ color: '#FFDC60' }} />, heading: 'Author ID', text: Globals.scopusUsername, link: 'https://www.scopus.com/authid/detail.uri?authorId=57221967474' },
         { icon: <Person style={{ color: '#FFDC60' }} />, heading: 'h-index', text: 'Loading...' },
         { icon: <Person style={{ color: '#FFDC60' }} />, heading: 'Coauthors', text: 'Loading...' },
         { icon: <LibraryBooks style={{ color: '#FFDC60' }} />, heading: 'Citations', text: 'Loading...' },
@@ -23,7 +24,7 @@ const PublicationStatsCard = () => {
             setError(null);
 
             try {
-                const authorId = '57221967474';
+                const authorId = Globals.scopusUsername;
                 const data = await fetchScopusStats(authorId);
 
                 console.log('Scopus data fetched:', data);
@@ -65,23 +66,23 @@ const PublicationStatsCard = () => {
                 height: '36px',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center' 
+                justifyContent: 'center'
 
                 // Center align the title
             }}>
-                <Typography variant="subtitle1" sx={{ fontWeight: 'bold', fontSize:'1.5rem' }}>
+                <Typography variant="subtitle1" sx={{ fontWeight: 'bold', fontSize: '1.5rem' }}>
                     Scopus Stats
                 </Typography>
             </Box>
             <CardContent>
                 {loading ? (
                     <Typography
-                    sx={{fontSize:"1.5rem"}}
+                        sx={{ fontSize: "1.5rem" }}
                     >Loading...</Typography>
                 ) : error ? (
                     <Typography
-                    sx={{fontSize:"1.5rem"}}
-                     color="error">{error}</Typography>
+                        sx={{ fontSize: "1.5rem" }}
+                        color="error">{error}</Typography>
                 ) : (
                     <Table>
                         <TableBody>
@@ -91,17 +92,17 @@ const PublicationStatsCard = () => {
                                         {stat.icon}
                                     </TableCell>
                                     <TableCell sx={{ borderBottom: 'none', padding: '2px' }}>
-                                        <Typography variant="body1" sx={{ fontWeight: 'bold',fontSize:"1.5rem" }}>
+                                        <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: "1.5rem" }}>
                                             {stat.heading}:
                                         </Typography>
                                     </TableCell>
                                     <TableCell sx={{ borderBottom: 'none', padding: '2px' }}>
                                         {stat.link ? (
-                                            <Link href={stat.link} target="_blank" rel="noopener noreferrer" sx={{ fontWeight: 'bold',fontSize:"1.5rem", color: 'white', '&:hover': { color: '#FFDC60' } }}>
+                                            <Link href={stat.link} target="_blank" rel="noopener noreferrer" sx={{ fontWeight: 'bold', fontSize: "1.5rem", color: 'white', '&:hover': { color: '#FFDC60' } }}>
                                                 {stat.text}
                                             </Link>
                                         ) : (
-                                            <Typography variant="body1" sx={{ fontWeight: 'bold' ,fontSize:"1.5rem"}}>
+                                            <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: "1.5rem" }}>
                                                 {stat.text}
                                             </Typography>
                                         )}

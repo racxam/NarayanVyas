@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
 import projectsData from '../../data/projectsData';
-import Faq from '../../components/Faq';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Error from '../error'

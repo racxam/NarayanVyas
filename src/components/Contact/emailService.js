@@ -1,5 +1,8 @@
+// src/Contact/emailService.js
+
 import axios from 'axios';
 import getEmailTemplate from './emailTemplate';
+import getContactEmailTemplate from './contactEmailTemplate';
 
 const sendEmail = async (emailData) => {
     try {
@@ -13,7 +16,7 @@ const sendEmail = async (emailData) => {
             throw new Error('Failed to send email');
         }
     } catch (error) {
-        console.error("Error submitting proposal:", error.response ? error.response.data : error.message);
+        console.error("Error submitting form:", error.response ? error.response.data : error.message);
         throw error; // Re-throw the error to be caught in the handleSubmit function
     }
 };
@@ -32,27 +35,35 @@ const readFileAsBase64 = (file) => {
     });
 };
 
-const getEmailData = async (formData, files, from, to = [], cc = [], bcc = [], isFinalChapter = false, publisherName = 'Wiley') => {
-    const mergeInfo = {
-        submissionId: formData.submissionId,
-        proposal: formData.proposal,
-        chapter: formData.chapter,
-        keywords: formData.keywords,
-        book: formData.book,
-        chapterSubtitles: formData.chapterSubtitles,
-        suggestedTitle: formData.suggestedTitle,
-        finalTitle: formData.finalTitle,
-        authors: formData.authors.map(author => ({
-            ...author,
-            isCorresponding: author.isCorresponding ? 'Yes' : 'No',
-        })),
-    };
+const getEmailData = async (formData, files = [], from, to = [], cc = [], bcc = [], isFinalChapter = false, publisher, isContactForm = false) => {
+    let emailSubject = '';
+    let htmlContent = '';
 
-    const htmlContent = getEmailTemplate(mergeInfo, isFinalChapter);
-    const bookCode = formData.book.replace(/[\s-]/g, '').substring(0, 4).toUpperCase();
-    const emailSubject = isFinalChapter
-        ? `Final Chapter Submission Confirmation (${publisherName}-${bookCode})`
-        : `Chapter Proposal Submission Confirmation (${publisherName}-${bookCode})`;
+    if (isContactForm) {
+        htmlContent = getContactEmailTemplate(formData);
+        emailSubject = 'New Contact Form Submission';
+    } else {
+        const mergeInfo = {
+            submissionId: formData.submissionId,
+            proposal: formData.proposal,
+            chapter: formData.chapter,
+            keywords: formData.keywords,
+            book: formData.book,
+            chapterSubtitles: formData.chapterSubtitles,
+            suggestedTitle: formData.suggestedTitle,
+            finalTitle: formData.finalTitle,
+            authors: formData.authors.map(author => ({
+                ...author,
+                isCorresponding: author.isCorresponding ? 'Yes' : 'No',
+            })),
+        };
+
+        htmlContent = getEmailTemplate(mergeInfo, isFinalChapter);
+        const bookCode = formData.book.replace(/[\s-]/g, '').substring(0, 4).toUpperCase();
+        emailSubject = isFinalChapter
+            ? `Final Chapter Submission Confirmation (${publisher}-${bookCode})`
+            : `Chapter Proposal Submission Confirmation (${publisher}-${bookCode})`;
+    }
 
     const emailData = {
         from,

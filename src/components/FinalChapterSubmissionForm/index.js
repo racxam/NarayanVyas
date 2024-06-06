@@ -19,8 +19,8 @@ const FinalChapterSubmissionForm = ({
     handleConsentFileRemove,
     loading,
     successMessage,
-    errorMessage, // Accept the error message as a prop
     bookTitle,
+    errorMessage, // Accept the error message as a prop
     clearMessages, // Accept the clearMessages function as a prop
     isConsentFormRequired, // Accept the isConsentFormRequired prop
     consentFormLink, // Accept the consentFormLink prop
@@ -111,6 +111,7 @@ const FinalChapterSubmissionForm = ({
                                             setDragOver={setDragOverFile}
                                             label="Upload Final Chapter"
                                             acceptedFileTypes={['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']}
+                                            inputId="finalChapterUpload" // Unique input ID
                                         />
                                         {isConsentFormRequired && (
                                             <FileUpload
@@ -121,6 +122,7 @@ const FinalChapterSubmissionForm = ({
                                                 setDragOver={setDragOverConsentFile}
                                                 label={`Upload ${consentFormName}`}
                                                 acceptedFileTypes={['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']}
+                                                inputId="consentFormUpload" // Unique input ID
                                             />
                                         )}
                                         {successMessage && (

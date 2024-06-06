@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import ctaIcon from '../../assets/img/cta/cta-icon.png';
 import ctaBG from '../../assets/img/cta/cta-bg.png';
+import Globals from '../../Globals';
 
 const CTA = () => {
 
@@ -12,12 +13,12 @@ const CTA = () => {
         <img src={ctaIcon} alt="" />
       </div>
       <div className="container">
-        <div className="row">  
+        <div className="row">
           <div className="col-12 d-flex justify-content-center" >
             <div className="cta__section-wrapper text-center">
               <div className="cta__section-box">
-                <h4 className="cta__title wow animate__fadeInUp" data-wow-duration="1.1s">Need Help?</h4>
-                <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Book an Appointment for Expert Consultancy Schedule a session for Mobile App Development consultancy or Research Guidance tailored to your needs.</p>
+                <h4 className="cta__title wow animate__fadeInUp" data-wow-duration="1.1s">{Globals.ctcSectionHeading}</h4>
+                <p className="wow animate__fadeInUp" data-wow-duration="1.1s">{Globals.ctcSectionDescription}</p>
               </div>
               <div className="cta__btn wow animate__fadeInUp" data-wow-duration="1.1s">
                 <Link to="/appointments" className="white-btn tp-btn-hover alt-color"><span>Book Appointment</span><b></b>

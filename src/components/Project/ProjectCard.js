@@ -2,8 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardMedia, Typography, Box, Divider } from '@mui/material';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 const ProjectCard = ({ project }) => {
     return (

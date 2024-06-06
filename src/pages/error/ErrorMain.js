@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
 import CTA from '../../components/CTA';
 
-import bgImg from '../../assets/img/cta/cta-bg-2.png';
 import errorImg from '../../assets/img/error/error.jpg';
 
 const ErrorMain = () => {
 	return (
-    <main>
+		<main>
 			<div className="error__area pt-200 pb-100">
 				<div className="container">
 					<div className="row justify-content-center">
@@ -32,7 +31,7 @@ const ErrorMain = () => {
 				btnText={"Book Appointment"}
 			/>
 		</main>
-  );
+	);
 }
 
 export default ErrorMain;

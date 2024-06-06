@@ -34,7 +34,6 @@ const CallForChapterPage = ({
 
     const openChapterModal = () => setChapterModalIsOpen(true);
     const closeChapterModal = () => setChapterModalIsOpen(false);
-
     return (
         <div className="product-details__area product-details__plr mt-100 mb-70">
             <div className="container">
@@ -47,20 +46,20 @@ const CallForChapterPage = ({
                     <div className="col-xl-6 col-lg-6 col-md-6">
                         <div className="product-details__left-side">
                             <h4 className="product-details__left-title wow animate__fadeInUp" data-wow-duration="1.1s">{title.text}</h4>
-                            <h5 className="wow animate__fadeInUp" data-wow-duration="1.1s">Publisher: <span><a href={publisherLink} target='_blank'>{publisher}</a></span></h5>
-                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Editors:
+                            <h5 className="wow animate__fadeInUp" data-wow-duration="1.1s">Publisher: <span><a href={publisherLink} target='_blank' rel='noreferrer'>{publisher}</a></span></h5>
+                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Editors:&nbsp;
                                 {editors.map((editorId, index) => {
                                     const editor = editorsBiographies.find(ed => ed.id === editorId);
                                     return editor ? (
                                         <span key={editorId}>
-                                            <a href={editor.profileLink || '#'} target='_blank'>{editor.name}</a>{index < editors.length - 1 && ', '}
+                                            <a href={editor.profileLink || '#'} target='_blank' rel='noreferrer'>{editor.name}</a>{index < editors.length - 1 && ', '}
                                         </span>
                                     ) : (
                                         <span key={editorId}>Unknown Editor{index < editors.length - 1 && ', '}</span>
                                     );
                                 })}
                             </p>
-                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Projected Release Date: {projectedReleaseDate}</p>
+                            {/* <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Projected Release Date: {projectedReleaseDate}</p> */}
                             {descriptionParagraphs.map((paragraph, index) => (
                                 <p key={index} className="wow animate__fadeInUp" data-wow-duration="1.1s">{paragraph}</p>
                             ))}
@@ -142,7 +141,7 @@ const CallForChapterPage = ({
                                                 {editors.map((editorId, index) => {
                                                     const editor = editorsBiographies.find(ed => ed.id === editorId);
                                                     return editor ? (
-                                                        <p key={editorId}><b>{editor.name}</b> {editor.bio} <a href={editor.profileLink || '#'} target='_blank'>Profile</a></p>
+                                                        <p key={editorId}><b>{editor.name}</b> {editor.bio} <a href={editor.profileLink || '#'} target='_blank' rel='noreferrer'>Profile</a></p>
                                                     ) : (
                                                         <p key={editorId}>Unknown Editor</p>
                                                     );
@@ -157,12 +156,13 @@ const CallForChapterPage = ({
                 </div>
             </div>
             <CustomModal isOpen={abstractModalIsOpen} onRequestClose={closeAbstractModal} contentLabel="Submit Abstract">
-                <CFCSubmissionFormContainer itemClass="some-class" chapters={chapters} bookTitle={title.text} />
+                <CFCSubmissionFormContainer itemClass="some-class" chapters={chapters} bookTitle={title.text} publisher={publisher} />
             </CustomModal>
             <CustomModal isOpen={chapterModalIsOpen} onRequestClose={closeChapterModal} contentLabel="Upload Chapter">
                 <FinalChapterSubmissionFormContainer
                     itemClass="some-class"
                     chapters={chapters}
+                    publisher={publisher}
                     bookTitle={title.text}
                     isConsentFormRequired={isConsentFormRequired}
                     consentFormLink={consentFormLink}

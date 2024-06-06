@@ -11,7 +11,7 @@ const generateSubmissionId = (bookTitle) => {
 const FinalChapterSubmissionFormContainer = ({
     itemClass, chapters, bookTitle, isConsentFormRequired, consentFormLink,
     consentFormName, isAbstractSubmissionClosed, isFullChapterSubmissionClosed,
-    submissionEmails = [], publisherName = 'Wiley'
+    submissionEmails = [], publisher
 }) => {
     const [authors, setAuthors] = useState([{ name: '', email: '', department: '', institution: '', phone: '', country: '', isCorresponding: true }]);
     const [file, setFile] = useState(null);
@@ -21,7 +21,7 @@ const FinalChapterSubmissionFormContainer = ({
     const [errorMessage, setErrorMessage] = useState('');
     const [dragOverFile, setDragOverFile] = useState(false);
     const [dragOverConsentFile, setDragOverConsentFile] = useState(false);
-
+    console.log(publisher);
     const handleAddAuthor = () => {
         if (authors.length < 6) {
             setAuthors([...authors, { name: '', email: '', department: '', institution: '', phone: '', country: '', isCorresponding: false }]);
@@ -117,8 +117,7 @@ const FinalChapterSubmissionFormContainer = ({
             if (isConsentFormRequired && consentFile) {
                 files.push(consentFile);
             }
-
-            const emailData = await getEmailData(formData, files, from, to, cc, bcc, true, publisherName); // Pass true for final chapter and publisher name
+            const emailData = await getEmailData(formData, files, from, to, cc, bcc, true, publisher); // Pass true for final chapter and publisher name
             console.log('Email Data:', emailData); // Log email data for debugging
             await sendEmail(emailData);
 

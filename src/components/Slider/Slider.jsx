@@ -6,14 +6,6 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-import slide_image_1 from '../../assets/img/sliderImages/img_1.jpg';
-import slide_image_2 from '../../assets/img/sliderImages/img_2.jpg';
-import slide_image_3 from '../../assets/img/sliderImages/img_3.jpg';
-import slide_image_4 from '../../assets/img/sliderImages/img_4.jpg'
-import slide_image_5 from '../../assets/img/sliderImages/img_5.jpg'
-import slide_image_6 from '../../assets/img/sliderImages/img_6.jpg'
-import slide_image_7 from '../../assets/img/sliderImages/img_7.jpg'
 import cfcData from '../../data/callForChaptersBooksData';
 import CallForChaptersImageOnly from '../../components/CallForChapters/call_for_chapters_image_only';
 const sortedCfcData = cfcData.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
@@ -26,42 +18,55 @@ function Slider1() {
         <Swiper
 
 
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView='auto'
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
+          effect={'coverflow'}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView='auto'
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
 
-        }}
-        breakpoints={{
-          320: {
-            slidesPerView: 'auto',
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 'auto',
 
-          },
-          480: {
-            slidesPerView: 'auto',
+            },
+            480: {
+              slidesPerView: 'auto',
 
-          },
-          640: {
-            slidesPerView: 'auto',
+            },
+            640: {
+              slidesPerView: 'auto',
 
-          },
-          768: {
-            slidesPerView: 'auto',
+            },
+            768: {
+              slidesPerView: 'auto',
 
-          },
-          1024: {
-            slidesPerView: 5,
+            },
+            1024: {
+              slidesPerView: 5,
 
+<<<<<<< HEAD
           },
         }}
          
          
+=======
+            },
+          }}
+          // // slidesPerView={'auto'}
+          // coverflowEffect={{
+          //   rotate: 0,
+          //   stretch: 0,
+          //   depth: 100,
+          //   modifier: 2.5,
+          // }}
+
+>>>>>>> origin/main
           pagination={{ el: '.swiper-pagination1', clickable: true }}
           navigation={{
             nextEl: '.swiper-button-next',
@@ -99,20 +104,20 @@ function Slider1() {
 
 
 
-        {sortedCfcData.map(book => (
-          <SwiperSlide key={book.id} className={"swiperslide1"}>
+          {sortedCfcData.map(book => (
+            <SwiperSlide key={book.id} className={"swiperslide1"}>
 
-            <CallForChaptersImageOnly
-              Image={book.title.image}
-              Title={book.title.text}
-              Publisher={book.publisher}
-              Price={book.price}
-              Url={`call-for-chapters/${book.id}`}
-            />
+              <CallForChaptersImageOnly
+                Image={book.title.image}
+                Title={book.title.text}
+                Publisher={book.publisher}
+                Price={book.price}
+                Url={`call-for-chapters/${book.id}`}
+              />
 
 
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          ))}
 
 
           <div className="slider-controler1">

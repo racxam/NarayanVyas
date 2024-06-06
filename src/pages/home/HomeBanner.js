@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Globals from '../../Globals';
 
 // import sliderImg1 from '../../assets/img/slider/slider-1.png';
 import sliderImg1 from '../../assets/img/profile/narayan_vyas_Profile_photo3.png';
@@ -12,7 +13,7 @@ import shapeImg6 from '../../assets/img/slider/shape-6.png';
 import shapeImg7 from '../../assets/img/slider/shape-7.png';
 import shapeImg8 from '../../assets/img/slider/shape-8.png';
 import shapeImg9 from '../../assets/img/slider/shape-9.png';
-import shapeImg10 from '../../assets/img/slider/shape-10.png'; 
+import shapeImg10 from '../../assets/img/slider/shape-10.png';
 import shapeImg11 from '../../assets/img/slider/shape-11.png';
 
 const Banner = () => {
@@ -61,12 +62,12 @@ const Banner = () => {
                     <div className="col-xl-6 col-lg-6">
                         <div className="slider__section-box">
                             <h4 className="section-subtitle char-anim wow animate__fadeInUp" data-wow-duration="1.1s"
-                            >I am Narayan Vyas!</h4>
+                            >{Globals.homePageShortTagLine}</h4>
                             <h3 className="hero-title-2 char-anim wow animate__fadeInUp" data-wow-duration="1.1s"
-                            >Researcher by Profession, Developer by Passion </h3>
+                            >{Globals.homePageTagline}</h3>
                         </div>
                         <div className="slider__content wow animate__fadeInUp para-justi" data-wow-duration="1.1s" >
-                            <p className="char-anim-2">Narayan Vyas is an accomplished academician at Chandigarh University, specializing in computer science research. He qualified for NTA UGC NET & JRF on his first attempt. With expertise in IoT and Mobile Application Development, he has trained students globally and published extensively in Scopus journals and conferences. An active IEEE member, Narayan engages with IEEE Young Professional, IEEE GRSS, IEEE Sensors Council, and ISPRS. His research focuses on Remote Sensing, Machine Learning, Deep Learning, and Computer Vision. He has served as a keynote speaker and resource person for numerous workshops and webinars and has over 30 publications and 9+ edited books with publishers like Wiley, De Gruyter, and IGI Global.</p>
+                            <p className="char-anim-2">{Globals.homePageHeaderDescription}</p>
                         </div>
                         <div className="slider__btn wow animate__fadeInUp" data-wow-duration="1.1s">
                             <Link to="/appointments" className="main-btn tp-btn-hover alt-color">

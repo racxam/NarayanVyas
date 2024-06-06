@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionTitle from '../../components/SectionTitle';
 import projectsData from '../../data/projectsData';
 import ProjectCard from '../../components/Project/ProjectCard';
+import Globals from '../../Globals';
 
 
 
@@ -47,11 +48,11 @@ const Project = ({ subTitle, title, slidesToShow }) => {
                             sectionClass="project__section-box wow itfadeUp"
                             subTitleClass="section-subtitle char-anim"
                             titleClass="section-title char-anim"
-                            subTitle={subTitle ? subTitle : "My Projects"}
-                            Title={title ? title : "Showcasing Excellence in Technology and Innovation"}
+                            subTitle={subTitle ? subTitle : Globals.projectsSectionHeading}
+                            Title={title ? title : Globals.projectsSectionSubheading}
                         />
                     </div>
-                    
+
                     <div className="col-lg-6 col-md-3">
                         <div className="project__section-arrow d-flex align-items-center justify-content-end">
                             <div className="swiper-button swiper-button-prev">

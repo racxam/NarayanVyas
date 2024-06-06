@@ -3,7 +3,7 @@ import pdfIcon from '../../assets/icons/pdf-icon.png';
 import wordIcon from '../../assets/icons/word-icon.png';
 import './FileUpload.css';
 
-const FileUpload = ({ file, handleFileDrop, handleFileRemove, dragOver, setDragOver, label, acceptedFileTypes }) => {
+const FileUpload = ({ file, handleFileDrop, handleFileRemove, dragOver, setDragOver, label, acceptedFileTypes, inputId }) => {
     const handleDragOver = (e) => {
         e.preventDefault();
         setDragOver(true);
@@ -45,13 +45,13 @@ const FileUpload = ({ file, handleFileDrop, handleFileRemove, dragOver, setDragO
         >
             <input
                 type="file"
-                id="file-upload"
+                id={inputId} // Use the unique input ID here
                 style={{ display: 'none' }}
                 accept={acceptedFileTypes.join(',')}
                 onChange={handleFileDrop}
             />
             {!file && (
-                <label htmlFor="file-upload" className="file-upload-label">
+                <label htmlFor={inputId} className="file-upload-label">
                     <span className="file-upload-text">{label}</span>
                 </label>
             )}

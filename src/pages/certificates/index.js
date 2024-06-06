@@ -18,7 +18,9 @@ const index = () => {
             pageTitle="My Certifications"
           />
 
-          <CertificateMasonary />
+          <div className='pt-100'>
+            <CertificateMasonary />
+          </div>
           <CTA
             btnText={"Book Appointment"}
           />

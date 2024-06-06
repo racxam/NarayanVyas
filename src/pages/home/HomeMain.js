@@ -7,7 +7,7 @@ import Project from './ProjectSection';
 import Service from './ServiceSection';
 import Testimonial from '../home/TestimonialSection';
 import HomePagePublications from './HomePagePublications';
-import Contact from '../../components/Contact/ContactTwo'
+import Contact from '../../components/Contact/Contact'
 import Books from '../../components/Books/index'
 
 import CertificationSection from './CertificationSection';
@@ -30,37 +30,31 @@ const HomeMain = () => {
 
 			<About />
 
-
-			<Service />
-
-
-			<CertificationSection />
-			<Counter />
-
-			<HomePagePublications />
+			<Books />
 
 			<CFCComponent />
 
-			<Project
+			<Counter />
+
+			<Service />
+
+			<HomePagePublications />
+
+			<CertificationSection />
+
+			{/* <Project
 				slidesToShow={"4"}
-			/>
-			<Books />
-
-			{/* <Social /> */}
-
-			{/* <Company /> */}
+			/> */}
 
 			<Testimonial />
-
-
 
 			<Contact />
 
 			<CTA />
 
+			{/* <Social /> */}
 
-
-
+			{/* <Company /> */}
 		</main>
 	);
 }

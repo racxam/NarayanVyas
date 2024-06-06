@@ -3,19 +3,20 @@ import SingleProduct from '../../components/Product';
 import SectionTitle from '../../components/SectionTitle/index'
 import booksData from '../../data/booksData';
 import Slider2 from '../../components/Slider/Slider2'
+import Globals from '../../Globals';
 const sortedBooks = booksData.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
 
 const index = () => {
     return (
-        <div className="product__area product__plr mt-100 mb-70">
+        <div className="product__area product__plr grey-bg pt-100 pb-100">
             <div className="container-fluid">
-                <div className="col-xl-12 col-lg-12 wow animate__fadeIn mt-100" data-wow-duration="1.1s">
+                <div className="col-xl-12 col-lg-12 wow animate__fadeIn" data-wow-duration="1.1s">
                     <div className="row justify-content-center">
                         <div className="col-xl-6 col-lg-6 wow animate__fadeInUp" data-wow-duration="1.1s">
                             <SectionTitle
                                 sectionClass="service__section-box text-center pb-35 section-title-fixed-width"
-                                subTitle="Published Books"
-                                Title="Showing All Published Books"
+                                subTitle={Globals.booksSectionHeading}
+                                Title={Globals.booksSectionSubheading}
                             />
                         </div>
                     </div>

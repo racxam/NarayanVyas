@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import PublicationStatsCard from '../../components/PublicationStatsCard';
 import footerBG from '../../assets/img/footer/footer-bg.jpg';
+import Globals from '../../Globals';
 
 const Footer = (props) => {
     const { footerLogo, footerClass } = props;
@@ -18,18 +19,18 @@ const Footer = (props) => {
                                 <div className="footer__logo">
                                     <Link to="/">
                                         {/* <img src={footerLogo ? footerLogo : Logo} alt="" /> */}
-                                        <h2 style={{ color: 'whitesmoke' }}>Narayan Vyas</h2>
+                                        <h2 style={{ color: 'whitesmoke' }}>{Globals.myName}</h2>
                                     </Link>
                                 </div>
                                 <div className="footer__content">
                                     <div className="footer__text">
-                                        <p>Empowering Innovation in Mobile Development, IoT, and Research</p>
+                                        <p>{Globals.footerDescription}</p>
                                     </div>
-                                    <div className="footer-3__social-box" style={{marginTop:"16px"}}>
-                                        <a href="https://www.facebook.com/narayanvyas87"><i className="fab fa-facebook-f"></i></a>
-                                        <a href="https://www.twitter.com/narayanvyas87"><i className="fab fa-twitter"></i></a>
-                                        <a href="https://www.instagram.com/narayanvyas87"><i className="fab fa-brands fa-instagram"></i></a>
-                                        <a href="https://github.com/narayanvyas"><i className="fab fa-brands fa-github"></i></a>
+                                    <div className="footer-3__social-box" style={{ marginTop: "16px" }}>
+                                        <a href={Globals.facebookUrl} target='_blank' rel='noreferrer'><i className="fab fa-facebook-f"></i></a>
+                                        <a href={Globals.linkedinUrl} target='_blank' rel='noreferrer'><i className="fab fa-linkedin"></i></a>
+                                        <a href={Globals.githubUrl} target='_blank' rel='noreferrer'><i className="fab fa-brands fa-github"></i></a>
+                                        <a href={Globals.globalEmailUrl} target='_blank' rel='noreferrer'><i className="far fa-envelope"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -58,11 +59,11 @@ const Footer = (props) => {
                                 </h4>
                                 <div className="footer__menu-list">
                                     <ul>
-                                        <li><a href="https://www.fiverr.com/narayanvyas" target='_blank'><i className="fal fa-angle-right"></i>&ensp;Fiverr</a></li>
-                                        <li><a href="https://www.teacheron.com/tutor/3CgM" target='_blank'><i className="fal fa-angle-right"></i>&ensp;TeacherOn</a></li>
-                                        <li><a href="https://github.com/narayanvyas/" target='_blank'><i className="fal fa-angle-right"></i>&ensp;Github</a></li>
-                                        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57221967474" target='_blank'><i className="fal fa-angle-right"></i>&ensp;Scopus</a></li>
-                                        <li><a href="https://www.researchgate.net/profile/Narayan-Vyas" target='_blank'><i className="fal fa-angle-right"></i>&ensp;ResearchGate</a></li>
+                                        <li><a href={Globals.fiverrUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Fiverr</a></li>
+                                        <li><a href={Globals.teacherOnUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;TeacherOn</a></li>
+                                        <li><a href={Globals.githubUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Github</a></li>
+                                        <li><a href={Globals.scopusUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Scopus</a></li>
+                                        <li><a href={Globals.researchGateUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;ResearchGate</a></li>
                                         <li><a href="/contact"><i className="fal fa-angle-right"></i>&ensp;Contact</a></li>
                                     </ul>
                                 </div>

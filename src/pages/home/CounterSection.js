@@ -8,6 +8,7 @@ import countImg1 from '../../assets/img/brand/brand-8.png';
 import countImg2 from '../../assets/img/brand/verified.png';
 import countImg3 from '../../assets/img/brand/chat.png';
 import countImg4 from '../../assets/img/brand/five-stars.png';
+import Globals from "../../Globals";
 
 const Counter = () => {
 
@@ -15,25 +16,25 @@ const Counter = () => {
 
     const counters = [
         {
-            countNum: 8, 
+            countNum: Globals.totalExperience,
             countSubtext: '+',
             countTitle: 'Years of Experience',
             countImg: countImg1,
         },
         {
-            countNum: 40,
+            countNum: Globals.projectsCount,
             countSubtext: '+',
             countTitle: 'Projects Completed',
             countImg: countImg2,
         },
         {
-            countNum: 35,
+            countNum: Globals.publicationCount,
             countSubtext: '+',
             countTitle: 'Publications',
             countImg: countImg3,
         },
         {
-            countNum: 10,
+            countNum: Globals.totalBooksCount,
             countSubtext: '+',
             countTitle: 'Books',
             countImg: countImg4,

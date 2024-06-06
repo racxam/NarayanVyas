@@ -19,29 +19,29 @@ import 'swiper/css/navigation';
 
 
 const Brand = (props) => {
-	const {itemClass} = props;
+    const { itemClass } = props;
     const sliderOption = {
         loop: true,
         spaceBetween: 38,
         slidesPerView: '5',
         breakpoints: {
             0: {
-              slidesPerView: 1,
+                slidesPerView: 1,
             },
             576: {
-              slidesPerView: 2,
+                slidesPerView: 2,
             },
             991: {
-              slidesPerView: 4,
+                slidesPerView: 4,
             },
             1200: {
-              slidesPerView: 5,
+                slidesPerView: 5,
             },
         },
-        autoplay:{
+        autoplay: {
             delay: 1500,
             disableOnInteraction: false,
-          }
+        }
     }
     return (
         <div className={itemClass ? itemClass : 'brand__area brand__mlr brand__white-bg'} >
@@ -52,81 +52,81 @@ const Brand = (props) => {
                             <Swiper {...sliderOption} className="swiper-wrapper mySwiper"
 
 
-                           centeredSlides={true}
-                       
-                        
-                           modules={[Autoplay, Pagination, Navigation]}
+                                centeredSlides={true}
 
 
-    
-                              
+                                modules={[Autoplay, Pagination, Navigation]}
+
+
+
+
                             >
                                 <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration=".7s">
                                     <div className="brand__img">
-                                        <a href="https://www.fiverr.com/narayanvyas" target='_blank'>
-                                        <img src={brandImg1} alt=""  style={{cursor:'pointer'}}/>
+                                        <a href="https://www.fiverr.com/narayanvyas" target='_blank' rel='noreferrer'>
+                                            <img src={brandImg1} alt="" style={{ cursor: 'pointer' }} />
 
                                         </a>
 
 
-                                        
+
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration=".9s">
                                     <div className="brand__img">
-                                        <a href="https://github.com/narayanvyas/" target='_blank'>
+                                        <a href="https://github.com/narayanvyas/" target='_blank' rel='noreferrer'>
 
-                                        <img src={brandImg2} alt="" style={{cursor:'pointer'}} />
+                                            <img src={brandImg2} alt="" style={{ cursor: 'pointer' }} />
                                         </a>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.1s">
                                     <div className="brand__img">
-                                        <a href="https://scholar.google.com/citations?user=aFSIhMoAAAAJ" target='_blank'>
+                                        <a href="https://scholar.google.com/citations?user=aFSIhMoAAAAJ" target='_blank' rel='noreferrer'>
 
-                                        <img src={brandImg3} alt="" style={{cursor:'pointer'}}/>
+                                            <img src={brandImg3} alt="" style={{ cursor: 'pointer' }} />
                                         </a>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.3s">
 
                                     <div className="brand__img" >
-                                      <a href="https://www.scopus.com/authid/detail.uri?authorId=57221967474" target='_blank'>
+                                        <a href="https://www.scopus.com/authid/detail.uri?authorId=57221967474" target='_blank' rel='noreferrer'>
 
-                                        <img src={brandImg4} alt="" style={{cursor:'pointer'}}/>
-                                      </a>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.5s">
-                                    <div className="brand__img">
-                                        <a href="https://www.linkedin.com/in/narayanvyas87/" target='_blank'>
-
-                                        <img src={brandImg5} alt=""style={{cursor:'pointer'}} />
+                                            <img src={brandImg4} alt="" style={{ cursor: 'pointer' }} />
                                         </a>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.5s">
                                     <div className="brand__img">
-                                        <a href="https://www.researchgate.net/profile/Narayan-Vyas" target='_blank'>
+                                        <a href="https://www.linkedin.com/in/narayanvyas87/" target='_blank' rel='noreferrer'>
 
-                                        <img src={brandImg6} alt=""style={{cursor:'pointer'}} />
+                                            <img src={brandImg5} alt="" style={{ cursor: 'pointer' }} />
                                         </a>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.5s">
                                     <div className="brand__img">
-                                        <a href="https://www.teacheron.com/tutor/3CgM" target='_blank'>
+                                        <a href="https://www.researchgate.net/profile/Narayan-Vyas" target='_blank' rel='noreferrer'>
 
-                                        <img src={brandImg7} alt=""style={{cursor:'pointer'}} />
+                                            <img src={brandImg6} alt="" style={{ cursor: 'pointer' }} />
+                                        </a>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.5s">
+                                    <div className="brand__img">
+                                        <a href="https://www.teacheron.com/tutor/3CgM" target='_blank' rel='noreferrer'>
+
+                                            <img src={brandImg7} alt="" style={{ cursor: 'pointer' }} />
                                         </a>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.5s">
 
                                     <div className="brand__img">
-                                        <a href="https://vidwan.inflibnet.ac.in/profile/526462" target='_blank'>
+                                        <a href="https://vidwan.inflibnet.ac.in/profile/526462" target='_blank' rel='noreferrer'>
 
-                                        <img src={brandImg8} alt=""style={{cursor:'pointer'}} />
+                                            <img src={brandImg8} alt="" style={{ cursor: 'pointer' }} />
                                         </a>
                                     </div>
                                 </SwiperSlide>

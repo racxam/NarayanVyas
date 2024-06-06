@@ -10,7 +10,7 @@ const servicesData = [
         id: 'mobile-app-development',
         pageTitle: "Mobile Application Development",
         mainImage: mobileAppDevelopmentImg,
-        iconBg: '', // Add appropriate image path if available
+        iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [
             "Professional Code",
@@ -35,7 +35,7 @@ const servicesData = [
         id: 'iot-solutions',
         pageTitle: "IoT Solutions",
         mainImage: iotSolutionsImg,
-        iconBg: '', // Add appropriate image path if available
+        iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [
             "Expert Guidance",
@@ -60,7 +60,7 @@ const servicesData = [
         id: 'project-consultancy',
         pageTitle: "Project Consultancy",
         mainImage: projectConsultancyImg,
-        iconBg: '', // Add appropriate image path if available
+        iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [
             "Expert Guidance",
@@ -85,7 +85,7 @@ const servicesData = [
         id: 'publication-assistance',
         pageTitle: "Publication Assistance",
         mainImage: publicationAssistanceImg,
-        iconBg: '', // Add appropriate image path if available
+        iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [
             "Expert Guidance",
@@ -110,7 +110,7 @@ const servicesData = [
         id: 'research-and-development',
         pageTitle: "Research and Development",
         mainImage: researchAndDevelopmentImg,
-        iconBg: '', // Add appropriate image path if available
+        iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [
             "Comprehensive Research",
@@ -135,7 +135,7 @@ const servicesData = [
         id: 'training-and-workshops',
         pageTitle: "Training and Workshops",
         mainImage: trainingAndWorkshopsImg,
-        iconBg: '', // Add appropriate image path if available
+        iconBg: '',
         subheaderHeading: 'What you will get?',
         whatYouGet: [
             "Comprehensive Training",
