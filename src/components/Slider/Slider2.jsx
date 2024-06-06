@@ -37,8 +37,8 @@ const Slider2 = () => {
         <div className="row">
           {sortedBooks.map(book => (
             <SwiperSlide key={book.id} className="swiperSlide2">
-              <div className="flex flex-col gap-6 mb-30 group relative shadow-lg rounded-xl px-6 py-8 h-[280px] w-[215px] lg:h-[520px] lg:w-[350px] overflow-hidden cursor-pointer" style={{ borderRadius: "10px" }}>
-                <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
+              <div className="flex flex-col gap-6 mb-30 group relative shadow-sm rounded-xl px-6 py-8 h-[280px] w-[215px] lg:h-[520px] lg:w-[350px] overflow-hidden cursor-pointer" style={{ borderRadius: "10px" }}>
+                {/* <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" /> */}
                 <div className="relative flex flex-col gap-3">
                   <SingleProduct
                     Image={book.title.image}

@@ -34,7 +34,7 @@ const CertificateMasonary = () => {
     };
 
     return (
-        <div className="project-2__area project-2__plr-3 project-2__space p-relative fix wow animate__fadeInUp" data-wow-duration="1.1s" style={{ paddingTop: "10px" }}>
+        <div className="project-2__area project-2__plr-3 project-2__space p-relative fix wow animate__fadeInUp " data-wow-duration="1.1s" style={{ paddingTop: "10px" }}>
             <div className="container-fluid">
                 <Tabs>
                     <div className="row">
@@ -50,7 +50,7 @@ const CertificateMasonary = () => {
                     <TabPanel>
                         <Masonry
                             breakpointCols={breakpointColumnsObj}
-                            className="my-masonry-grid"
+                            className="my-masonry-grid "
                             columnClassName="my-masonry-grid_column">
                             {renderCertificates("all")}
                         </Masonry>

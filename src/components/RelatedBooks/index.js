@@ -8,7 +8,7 @@ const index = ({ relatedBooks }) => {
 
 
 
-        <div className="container" style={{ marginTop: "0px" }} >
+        <div className="container" style={{ marginTop: "-95px" }} >
             <div className="row" mb-0>
                 <div className="col-xl-12">
                     <div className="product__title-sm wow animate__fadeInUp" data-wow-duration="1.1s">
