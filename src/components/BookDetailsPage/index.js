@@ -35,7 +35,7 @@ const BookDetailsPage = ({
                         <div className="product-details__left-side">
                             <h4 className="product-details__left-title wow animate__fadeInUp" data-wow-duration="1.1s">{title.text}</h4>
                             <h5 className="wow animate__fadeInUp" data-wow-duration="1.1s">Price: <span>{price}</span> | Publisher: <span><a href={publisherLink} target='_blank' rel='noreferrer'>{publisher}</a></span></h5>
-                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Editors:
+                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Editors:&nbsp;
                                 {editorOrder.map((editorId, index) => {
                                     const editor = editorsBiographies.find(ed => ed.id === editorId);
                                     return (

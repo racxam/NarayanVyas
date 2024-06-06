@@ -47,7 +47,7 @@ const CallForChapterPage = ({
                         <div className="product-details__left-side">
                             <h4 className="product-details__left-title wow animate__fadeInUp" data-wow-duration="1.1s">{title.text}</h4>
                             <h5 className="wow animate__fadeInUp" data-wow-duration="1.1s">Publisher: <span><a href={publisherLink} target='_blank' rel='noreferrer'>{publisher}</a></span></h5>
-                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Editors:
+                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Editors:&nbsp;
                                 {editors.map((editorId, index) => {
                                     const editor = editorsBiographies.find(ed => ed.id === editorId);
                                     return editor ? (
@@ -59,7 +59,7 @@ const CallForChapterPage = ({
                                     );
                                 })}
                             </p>
-                            <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Projected Release Date: {projectedReleaseDate}</p>
+                            {/* <p className="wow animate__fadeInUp" data-wow-duration="1.1s">Projected Release Date: {projectedReleaseDate}</p> */}
                             {descriptionParagraphs.map((paragraph, index) => (
                                 <p key={index} className="wow animate__fadeInUp" data-wow-duration="1.1s">{paragraph}</p>
                             ))}

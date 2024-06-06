@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Card, CardContent, Typography, Box, Table, TableBody, TableCell, TableRow, Link } from '@mui/material';
 import { Article, LibraryBooks, Person, Star } from '@mui/icons-material';
 import { fetchScopusStats } from './scopusApi';
+import Globals from '../../Globals';
 
 // Scopus Page 
 
@@ -23,7 +24,7 @@ const PublicationStatsCard = () => {
             setError(null);
 
             try {
-                const authorId = '57221967474';
+                const authorId = Globals.scopusUsername;
                 const data = await fetchScopusStats(authorId);
 
                 console.log('Scopus data fetched:', data);
