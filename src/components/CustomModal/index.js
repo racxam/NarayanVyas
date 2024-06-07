@@ -1,6 +1,8 @@
 import React from 'react';
 import Modal from 'react-modal';
 
+import './Modal.css';
+
 const customStyles = {
     overlay: {
         backgroundColor: 'rgba(0, 0, 0, 0.75)',
@@ -17,9 +19,10 @@ const customStyles = {
         borderRadius: '4px',
         outline: 'none',
         padding: '20px',
-        maxHeight: '80%',
+        maxHeight: '85%',
         maxWidth: '80%',
         width: 'auto',
+        boxSizing: 'border-box',
     }
 };
 

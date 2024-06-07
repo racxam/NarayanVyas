@@ -18,6 +18,7 @@ const CallForChapterPage = ({
     descriptionParagraphs = [],
     chapters = [],
     editorsBiographies = [],
+    guidelines = [],
     isConsentFormRequired = false,
     consentFormLink = '',
     consentFormName = '',
@@ -63,37 +64,66 @@ const CallForChapterPage = ({
                             {descriptionParagraphs.map((paragraph, index) => (
                                 <p key={index} className="wow animate__fadeInUp" data-wow-duration="1.1s">{paragraph}</p>
                             ))}
-                            <div className="product__details-info table-responsive mt-20">
+                            <div className="product__details-info table-responsive table-cell-style mt-20">
                                 <table className="table table-bordered" style={{ border: '1px solid #DEE2E6' }}>
                                     <thead>
                                         <tr>
-                                            <th colSpan="2" className="text-center" style={{ backgroundColor: '#FFF2CD', fontSize: '18px', padding: '10px' }}>Important Dates</th>
+                                            <th colSpan="2" className="text-center" style={{ backgroundColor: '#FFF2CD', fontSize: '18px' }}>Important Dates</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td style={{ padding: '10px' }}>Abstract Submission Deadline</td>
-                                            <td style={{ fontWeight: 'bold', padding: '10px' }}>{abstractSubmissionDeadline}</td>
+                                            <td>Abstract Submission Deadline</td>
+                                            <td>{abstractSubmissionDeadline}</td>
                                         </tr>
                                         <tr>
-                                            <td style={{ padding: '10px' }}>Abstract Acceptance Notification</td>
-                                            <td style={{ fontWeight: 'bold', padding: '10px' }}>{abstractAcceptanceNotification}</td>
+                                            <td>Abstract Acceptance Notification</td>
+                                            <td>{abstractAcceptanceNotification}</td>
                                         </tr>
                                         <tr>
-                                            <td style={{ padding: '10px' }}>Full Chapter Submission Deadline</td>
-                                            <td style={{ fontWeight: 'bold', padding: '10px' }}>{fullChapterSubmissionDeadline}</td>
+                                            <td>Full Chapter Submission Deadline</td>
+                                            <td>{fullChapterSubmissionDeadline}</td>
                                         </tr>
                                         <tr>
-                                            <td style={{ padding: '10px' }}>Chapter Acceptance Notification</td>
-                                            <td style={{ fontWeight: 'bold', padding: '10px' }}>{chapterAcceptanceNotification}</td>
+                                            <td>Chapter Acceptance Notification</td>
+                                            <td>{chapterAcceptanceNotification}</td>
                                         </tr>
                                         <tr>
-                                            <td style={{ padding: '10px' }}>Projected Book Release Date</td>
-                                            <td style={{ fontWeight: 'bold', padding: '10px' }}>{projectedReleaseDate}</td>
+                                            <td>Projected Book Release Date</td>
+                                            <td>{projectedReleaseDate}</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
+
+                            <div className="product__details-info table-responsive table-cell-style mt-20">
+                                <table className="table table-bordered" style={{ border: '1px solid #DEE2E6' }}>
+                                    <thead>
+                                        <tr>
+                                            <th colSpan="2" className="text-center" style={{ backgroundColor: '#FFF2CD', fontSize: '18px' }}>Important Guidelines</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {guidelines.map((item, index) => (
+                                            <tr key={index}>
+                                                <td>{item.title}</td>
+                                                <td>
+                                                    {Array.isArray(item.guideline) ? (
+                                                        <ul>
+                                                            {item.guideline.map((line, idx) => (
+                                                                <li key={idx}>{line.heading}: {line.details}</li>
+                                                            ))}
+                                                        </ul>
+                                                    ) : (
+                                                        item.guideline
+                                                    )}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+
                             {!isAbstractSubmissionClosed && (
                                 <button className="yellow-btn tp-btn-hover alt-color mt-20 mr-30 wow animate__fadeInUp" data-wow-duration="1.1s" onClick={openAbstractModal}><span>Submit Abstract</span><b></b></button>
                             )}

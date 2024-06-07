@@ -40,6 +40,24 @@ const callForChapterBooksData = [
             { index: 14, title: "IoM-enabled Drug Development and Clinical Trials" },
             { index: 15, title: "IoM and the Evolving Regulatory Landscape: Balancing Innovation and Safety" }
         ],
+        guidelines: [
+            { title: "Citation Style", guideline: "APA (7th Edition)" },
+            { title: "Formatting", guideline: "11 pt Times Roman, 1.5 line spacing" },
+            {
+                title: "Originality", guideline: "Plagiarism Under 10%, 0% AI Generated Content"
+            },
+            {
+                title: "Headings",
+                guideline: [
+                    { heading: "Heading 1", details: "ALL BOLD CAPS" },
+                    { heading: "Heading 2", details: "Bold Title Case" },
+                    { heading: "Heading 3", details: "Bold Italic Title Case" },
+                    { heading: "Heading 4", details: "Bold Italic Sentence case" },
+                    { heading: "Heading 5", details: "Light Italic Sentence case" },
+                    { heading: "Paragraphs", details: "Should be Numbered (1.1, 1.1.1, etc.)" }
+                ]
+            }
+        ],
         isConsentFormRequired: true,
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',
         consentFormName: 'Author\'s Agreement Form',
@@ -88,6 +106,24 @@ const callForChapterBooksData = [
             { index: 14, title: "Automated Machine Learning in Bioinformatics" },
             { index: 15, title: "Future Trends in Bioinformatics AI Integration" }
         ],
+        guidelines: [
+            { title: "Citation Style", guideline: "APA (7th Edition)" },
+            { title: "Formatting", guideline: "11 pt Times Roman, 1.5 line spacing" },
+            {
+                title: "Originality", guideline: "Plagiarism Under 10%, 0% AI Generated Content"
+            },
+            {
+                title: "Headings",
+                guideline: [
+                    { heading: "Heading 1", details: "ALL BOLD CAPS" },
+                    { heading: "Heading 2", details: "Bold Title Case" },
+                    { heading: "Heading 3", details: "Bold Italic Title Case" },
+                    { heading: "Heading 4", details: "Bold Italic Sentence case" },
+                    { heading: "Heading 5", details: "Light Italic Sentence case" },
+                    { heading: "Paragraphs", details: "Should be Numbered (1.1, 1.1.1, etc.)" }
+                ]
+            }
+        ],
         isConsentFormRequired: true,
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',
         consentFormName: 'Author\'s Agreement Form',
@@ -134,6 +170,24 @@ const callForChapterBooksData = [
             { index: 13, title: "Energy Storage and Optimization Techniques" },
             { index: 14, title: "Integrating Renewable Energy Sources with IoT and AI" },
             { index: 15, title: "Case Studies: Successful Implementations of Secure Energy Optimization using IoT and AI" }
+        ],
+        guidelines: [
+            { title: "Citation Style", guideline: "APA (7th Edition)" },
+            { title: "Formatting", guideline: "11 pt Times Roman, 1.5 line spacing" },
+            {
+                title: "Originality", guideline: "Plagiarism Under 10%, 0% AI Generated Content"
+            },
+            {
+                title: "Headings",
+                guideline: [
+                    { heading: "Heading 1", details: "ALL BOLD CAPS" },
+                    { heading: "Heading 2", details: "Bold Title Case" },
+                    { heading: "Heading 3", details: "Bold Italic Title Case" },
+                    { heading: "Heading 4", details: "Bold Italic Sentence case" },
+                    { heading: "Heading 5", details: "Light Italic Sentence case" },
+                    { heading: "Paragraphs", details: "Should be Numbered (1.1, 1.1.1, etc.)" }
+                ]
+            }
         ],
         isConsentFormRequired: true,
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',
@@ -182,6 +236,24 @@ const callForChapterBooksData = [
             { index: 14, title: "Challenges and Solutions for Sustainable Agriculture with Remote Sensing and IoT" },
             { index: 15, title: "Future Trends in IoT and Remote Sensing Integration for Precision Agriculture" }
         ],
+        guidelines: [
+            { title: "Citation Style", guideline: "APA (7th Edition)" },
+            { title: "Formatting", guideline: "11 pt Times Roman, 1.5 line spacing" },
+            {
+                title: "Originality", guideline: "Plagiarism Under 10%, 0% AI Generated Content"
+            },
+            {
+                title: "Headings",
+                guideline: [
+                    { heading: "Heading 1", details: "ALL BOLD CAPS" },
+                    { heading: "Heading 2", details: "Bold Title Case" },
+                    { heading: "Heading 3", details: "Bold Italic Title Case" },
+                    { heading: "Heading 4", details: "Bold Italic Sentence case" },
+                    { heading: "Heading 5", details: "Light Italic Sentence case" },
+                    { heading: "Paragraphs", details: "Should be Numbered (1.1, 1.1.1, etc.)" }
+                ]
+            }
+        ],
         isConsentFormRequired: true,
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',
         consentFormName: 'Author\'s Agreement Form',
@@ -229,6 +301,24 @@ const callForChapterBooksData = [
             { index: 13, title: "Disaster Management: Leveraging SAR for Environmental Sustainability" },
             { index: 14, title: "Emerging AI-enabled RADAR Applications in real-time scenarios" },
             { index: 15, title: "Future Scope of RADAR Remote Sensing with AI" }
+        ],
+        guidelines: [
+            { title: "Citation Style", guideline: "APA (7th Edition)" },
+            { title: "Formatting", guideline: "11 pt Times Roman, 1.5 line spacing" },
+            {
+                title: "Originality", guideline: "Plagiarism Under 10%, 0% AI Generated Content"
+            },
+            {
+                title: "Headings",
+                guideline: [
+                    { heading: "Heading 1", details: "ALL BOLD CAPS" },
+                    { heading: "Heading 2", details: "Bold Title Case" },
+                    { heading: "Heading 3", details: "Bold Italic Title Case" },
+                    { heading: "Heading 4", details: "Bold Italic Sentence case" },
+                    { heading: "Heading 5", details: "Light Italic Sentence case" },
+                    { heading: "Paragraphs", details: "Should be Numbered (1.1, 1.1.1, etc.)" }
+                ]
+            }
         ],
         isConsentFormRequired: false,
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',

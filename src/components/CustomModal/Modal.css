@@ -14,7 +14,7 @@
     left: 50%;
     right: auto;
     bottom: auto;
-    transform: translate(-50%, -50%);
+    transform: translate(-0%, -0%);
     background: white;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -42,7 +42,17 @@
     cursor: pointer;
 }
 
-.modal-content {
-    max-height: 100%;
-    overflow-y: auto;
+/* Responsive styles */
+@media (max-width: 768px) {
+    .ReactModal__Content {
+        transform: translate(-10%, -0%);
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ReactModal__Content {
+        transform: translate(-10%, -0%);
+        padding: 10px;
+    }
 }
