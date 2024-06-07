@@ -37,7 +37,7 @@ const MenuItems = (props) => {
             >
                 <Link to="/about-me">About</Link>
                 <ul className={menuState.about ? "submenu submenu-open" : "submenu"}>
-                    {/* <li className={location.pathname === "/projects" ? "active" : ""}><Link to="/projects">Projects</Link></li> */}
+                    <li className={location.pathname === "/projects" ? "active" : ""}><Link to="/projects">Projects</Link></li>
                     <li className={location.pathname === "/certificates" ? "active" : ""}><Link to="/certificates">Certificates</Link></li>
                     <li className={location.pathname === "/study-notes" ? "active" : ""}><Link to="/study-notes">Study Notes</Link></li>
                     <li className={location.pathname === "/machine-learning-notes" ? "active" : ""}><Link to="/machine-learning-notes">ML Notes</Link></li>

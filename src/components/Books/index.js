@@ -1,10 +1,8 @@
 import React from 'react'
-import SingleProduct from '../../components/Product';
 import SectionTitle from '../../components/SectionTitle/index'
 import booksData from '../../data/booksData';
 import Slider2 from '../../components/Slider/Slider2'
 import Globals from '../../Globals';
-const sortedBooks = booksData.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
 
 const index = () => {
     return (
@@ -31,28 +29,6 @@ const index = () => {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-                {/* <div className="row">
-                    {sortedBooks.map((book) => (
-                        <div
-                            key={book.id}
-                            className="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-30 wow animate__fadeInUp"
-                            data-wow-duration="1.1s"
-                        >
-                            <SingleProduct
-                                Image={book.title.image}
-                                Title={book.title.text}
-                                Publisher={book.publisher}
-                                Price={book.price}
-                                Url={`books/${book.id}`}
-                            />
-                        </div>
-                    ))}
-                </div> */}
 
                 <Slider2 />
 

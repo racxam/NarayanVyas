@@ -9,7 +9,7 @@ import Testimonial from '../home/TestimonialSection';
 import HomePagePublications from './HomePagePublications';
 import Contact from '../../components/Contact/Contact'
 import Books from '../../components/Books/index'
-
+import Brand from '../../components/Brand'
 import CertificationSection from './CertificationSection';
 import CFCComponent from '../../components/CallForChapters/index'
 
@@ -21,12 +21,7 @@ const HomeMain = () => {
 
 			<Banner />
 
-			{/* Currently hiding the Brands menu as it might cause copyright related issues */}
-			{/* <Brand /> */}
-
-
-			{/* Hiding this seciton also coz it is same as the project section  */}
-			{/* <Feature /> */}
+			<Brand />
 
 			<About />
 
@@ -42,9 +37,7 @@ const HomeMain = () => {
 
 			<CertificationSection />
 
-			<Project
-				
-			/>
+			<Project />
 
 			<Testimonial />
 

@@ -3,10 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardMedia, Typography, Box, Divider } from '@mui/material';
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, Url }) => {
     return (
         <Card sx={{ margin: 'auto', boxShadow: 3, borderRadius: 2, width: "360px", marginBottom: "3px" }}>
-            <Link to={`projects/${project.id}`}>
+            <Link to={Url}>
                 <CardMedia
                     component="img"
                     height="300"
@@ -18,6 +18,7 @@ const ProjectCard = ({ project }) => {
             <CardContent>
                 <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 2 }}>
                     <p className="product__title"><Link to={project.title}>{project.title}</Link></p>
+                    <p className="product__title">{project.featuredDescription}</p>
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 2 }}>
 
@@ -32,7 +33,7 @@ const ProjectCard = ({ project }) => {
                         ))}
                     </Box>
                     <div className='service__link service__link-color-2'>
-                        <Link to={project.link}>Learn More <i className="fal fa-arrow-right"></i>
+                        <Link to={Url}>Learn More <i className="fal fa-arrow-right"></i>
                         </Link>
                     </div>
                 </Box>

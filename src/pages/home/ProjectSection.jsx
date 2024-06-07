@@ -7,7 +7,7 @@ import Globals from '../../Globals';
 
 
 
-const Project = ({ subTitle, title}) => {
+const Project = ({ subTitle, title }) => {
     const sliderOption = {
         pagination: {
             el: '.project-slider-dots',
@@ -18,47 +18,48 @@ const Project = ({ subTitle, title}) => {
             prevEl: '.swiper-button-prev'
         },
         loop: true,
-        spaceBetween:"150px",
-        freeMode:"true",
-        grabCursor:"true",
+        spaceBetween: "150px",
+        freeMode: "true",
+        grabCursor: "true",
         // slidesPerView: 'auto',
-        breakpoints:{
+        breakpoints: {
             320: {
-              slidesPerView: 'auto',
-  
+                slidesPerView: 'auto',
+
             },
             480: {
-              slidesPerView: 'auto',
-  
+                slidesPerView: 'auto',
+
             },
             640: {
-  
-              slidesPerView: '2',
-              spaceBetween:"15px"
-  
+
+                slidesPerView: '2',
+                spaceBetween: "15px"
+
             },
             768: {
-  
-              slidesPerView: '2',
-              spaceBetween:"15px"
-  
+
+                slidesPerView: '2',
+                spaceBetween: "15px"
+
             },
             1024: {
-              slidesPerView: '3',
-              spaceBetween:"150px",
+                slidesPerView: '3',
+                spaceBetween: "150px",
 
 
-              
-              
-            },1400:{
+
+
+            }, 1400: {
                 slidesPerView: '4',
-                spaceBetween:"150px",
-  
-              
+                spaceBetween: "150px",
+
+
             }
-          }}
-         
-    
+        }
+    }
+
+
 
     return (
         <div className="product__area product__plr mt-100 mb-80">
@@ -90,7 +91,7 @@ const Project = ({ subTitle, title}) => {
                         {projectsData.map(project => (
                             <SwiperSlide key={project.id} className="swiper-slide">
                                 <div className="project__item">
-                                    <ProjectCard project={project} />
+                                    <ProjectCard project={project} Url={`projects/${project.id}`} />
                                 </div>
                             </SwiperSlide>
                         ))}

@@ -3,7 +3,7 @@ import images from '../assets/images';
 const servicesData = [
     {
         id: 'mobile-app-development',
-        pageTitle: "Mobile Application Development",
+        pageTitle: "Mobile App Development",
         mainImage: images.services.mobileAppDevelopmentImg,
         iconBg: '',
         subheaderHeading: 'What you will get?',

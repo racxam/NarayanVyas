@@ -1,29 +1,19 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import { Autoplay, Pagination, Navigation } from 'swiper';
-
-import brandImg1 from '../../assets/img/brand/fiverr.png';
-import brandImg2 from '../../assets/img/brand/gitHub.png';
-import brandImg3 from '../../assets/img/brand/googleScholar.png';
-import brandImg4 from '../../assets/img/brand/scopus.png';
-import brandImg5 from '../../assets/img/brand/Linkedin.png';
-import brandImg6 from '../../assets/img/brand/researchGate.png';
-import brandImg7 from '../../assets/img/brand/teacheron.png';
-import brandImg8 from '../../assets/img/brand/vidwan.png';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import techData from '../../data/techData'; // Import techData
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-
-
 const Brand = (props) => {
     const { itemClass } = props;
     const sliderOption = {
         loop: true,
-        spaceBetween: 38,
-        slidesPerView: '5',
+        spaceBetween: 40,
+        slidesPerView: 12,
+        centeredSlides: true,
         breakpoints: {
             0: {
                 slidesPerView: 1,
@@ -41,97 +31,28 @@ const Brand = (props) => {
         autoplay: {
             delay: 1500,
             disableOnInteraction: false,
-        }
-    }
+        },
+    };
+
     return (
-        <div className={itemClass ? itemClass : 'brand__area brand__mlr brand__white-bg'} >
-            <div className="container">
+        <div className={itemClass ? itemClass : 'brand__area brand__mlr brand__white-bg'}>
+            <div className="container mt-0 mb-0">
                 <div className="row">
                     <div className="col-12">
-                        <div className="swiper-container brand__active ">
-                            <Swiper {...sliderOption} className="swiper-wrapper mySwiper"
-
-
-                                centeredSlides={true}
-
-
+                        <div className="swiper-container brand__active">
+                            <Swiper
+                                {...sliderOption}
+                                className="swiper-wrapper mySwiper"
                                 modules={[Autoplay, Pagination, Navigation]}
-
-
-
-
                             >
-                                <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration=".7s">
-                                    <div className="brand__img">
-                                        <a href="https://www.fiverr.com/narayanvyas" target='_blank' rel='noreferrer'>
-                                            <img src={brandImg1} alt="" style={{ cursor: 'pointer' }} />
-
-                                        </a>
-
-
-
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration=".9s">
-                                    <div className="brand__img">
-                                        <a href="https://github.com/narayanvyas/" target='_blank' rel='noreferrer'>
-
-                                            <img src={brandImg2} alt="" style={{ cursor: 'pointer' }} />
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.1s">
-                                    <div className="brand__img">
-                                        <a href="https://scholar.google.com/citations?user=aFSIhMoAAAAJ" target='_blank' rel='noreferrer'>
-
-                                            <img src={brandImg3} alt="" style={{ cursor: 'pointer' }} />
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.3s">
-
-                                    <div className="brand__img" >
-                                        <a href="https://www.scopus.com/authid/detail.uri?authorId=57221967474" target='_blank' rel='noreferrer'>
-
-                                            <img src={brandImg4} alt="" style={{ cursor: 'pointer' }} />
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.5s">
-                                    <div className="brand__img">
-                                        <a href="https://www.linkedin.com/in/narayanvyas87/" target='_blank' rel='noreferrer'>
-
-                                            <img src={brandImg5} alt="" style={{ cursor: 'pointer' }} />
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.5s">
-                                    <div className="brand__img">
-                                        <a href="https://www.researchgate.net/profile/Narayan-Vyas" target='_blank' rel='noreferrer'>
-
-                                            <img src={brandImg6} alt="" style={{ cursor: 'pointer' }} />
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.5s">
-                                    <div className="brand__img">
-                                        <a href="https://www.teacheron.com/tutor/3CgM" target='_blank' rel='noreferrer'>
-
-                                            <img src={brandImg7} alt="" style={{ cursor: 'pointer' }} />
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide className="swiper-slide wow animate__fadeInUp" data-wow-duration="1.5s">
-
-                                    <div className="brand__img">
-                                        <a href="https://vidwan.inflibnet.ac.in/profile/526462" target='_blank' rel='noreferrer'>
-
-                                            <img src={brandImg8} alt="" style={{ cursor: 'pointer' }} />
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
+                                {techData.map((tech) => (
+                                    <SwiperSlide key={tech.id} className="swiper-slide wow animate__fadeInUp" data-wow-duration=".7s">
+                                        <div className="brand__img">
+                                            <img src={tech.image} alt={tech.title} style={{ width: '70px' }} />
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
                             </Swiper>
-
                         </div>
                     </div>
                 </div>
