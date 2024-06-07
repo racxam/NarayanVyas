@@ -28,7 +28,7 @@ const BookDetailsPage = ({
                 <div className="row gx-40 mb-50">
                     <div className="col-xl-6 col-lg-6 col-md-6 wow animate__fadeInLeft" data-wow-duration="1.1s">
                         <div className="product-details__main-img pb-20">
-                            <img src={title.image} alt={title.text} />
+                            <img src={title.image} alt={title.text} className='br-10' />
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-6">

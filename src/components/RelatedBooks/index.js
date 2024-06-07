@@ -3,7 +3,7 @@
 import React from 'react';
 import CallForChaptersImageOnly from '../../components/CallForChapters/call_for_chapters_image_only';
 
-const index = ({ relatedBooks }) => {
+const index = ({ relatedBooks, isCfcPage }) => {
     return (
 
 
@@ -24,7 +24,7 @@ const index = ({ relatedBooks }) => {
                             Title={book.title.text}
                             Publisher={book.publisher}
                             Price={book.price}
-                            Url={`/call-for-chapters/${book.id}`}
+                            Url={`/${isCfcPage ? 'call-for-chapters' : 'books'}/${book.id}`}
                         />
                     </div>
                 ))}

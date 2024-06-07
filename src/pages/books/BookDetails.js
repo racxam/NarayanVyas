@@ -28,7 +28,7 @@ const BookDetails = () => {
                 headerClass="header__area header__transparent-2 header-width header-bg-color-2 header__mlr header__mt" />
             <Breadcrumb pageTitle="Book Details" />
             <BookDetailsPage {...bookDetails} editorsBiographies={editorsBiographies} />
-            <RelatedBooks relatedBooks={relatedBooks} />
+            <RelatedBooks relatedBooks={relatedBooks} isCfcPage={false} />
             <CTA btnText={"Book Appointment"} />
             <Footer />
         </main>
