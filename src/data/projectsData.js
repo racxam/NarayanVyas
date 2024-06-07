@@ -1,10 +1,5 @@
 // projectsData.js
 import images from '../assets/images';
-import FlutterIcon from '@mui/icons-material/FlutterDash'; // Replace with the actual Flutter icon
-import FirebaseIcon from '@mui/icons-material/Whatshot'; // Example icon for Firebase
-import JavaScriptIcon from '@mui/icons-material/Code'; // Example icon for JavaScript
-import ReactIcon from '@mui/icons-material/EmojiObjects'; // Example icon for React
-import NodeIcon from '@mui/icons-material/Storage'; // Example icon for Node.js
 
 const projects = [
     {
@@ -13,9 +8,9 @@ const projects = [
         featuredImage: images.projects.projectImg1,
         title: 'Kwizzle',
         techStack: [
-            { icon: FlutterIcon, name: 'Flutter' },
-            { icon: FirebaseIcon, name: 'Firebase' },
-            { icon: JavaScriptIcon, name: 'JavaScript' }
+            { icon: images.icons.flutterIcon, name: 'Flutter' },
+            { icon: images.icons.firebaseIcon, name: 'Firebase' },
+            { icon: images.icons.javascriptIcon, name: 'JavaScript' }
         ],
         location: 'Remote',
         duration: '4 months',
@@ -44,9 +39,9 @@ const projects = [
         featuredImage: images.projects.projectImg2,
         title: 'TakeMyPark',
         techStack: [
-            { icon: FlutterIcon, name: 'Flutter' },
-            { icon: FirebaseIcon, name: 'Firebase' },
-            { icon: FirebaseIcon, name: 'Firebase Messaging' }
+            { icon: images.icons.flutterIcon, name: 'Flutter' },
+            { icon: images.icons.firebaseIcon, name: 'Firebase' },
+            { icon: images.icons.javascriptIcon, name: 'JavaScript' }
         ],
         location: 'Remote',
         duration: '6 months',
@@ -76,10 +71,9 @@ const projects = [
 
         title: 'Project Three',
         techStack: [
-            { icon: FlutterIcon, name: 'Flutter' },
-            { icon: FirebaseIcon, name: 'Firebase' },
-            { icon: JavaScriptIcon, name: 'JavaScript' },
-            { icon: ReactIcon, name: 'React' }
+            { icon: images.icons.flutterIcon, name: 'Flutter' },
+            { icon: images.icons.firebaseIcon, name: 'Firebase' },
+            { icon: images.icons.javascriptIcon, name: 'JavaScript' }
         ],
         location: 'Remote',
         duration: '5 months',
@@ -108,10 +102,9 @@ const projects = [
         featuredImage: images.projects.projectImg4,
         title: 'Project Four',
         techStack: [
-            { icon: FlutterIcon, name: 'Flutter' },
-            { icon: FirebaseIcon, name: 'Firebase' },
-            { icon: JavaScriptIcon, name: 'JavaScript' },
-            { icon: NodeIcon, name: 'Node.js' }
+            { icon: images.icons.flutterIcon, name: 'Flutter' },
+            { icon: images.icons.firebaseIcon, name: 'Firebase' },
+            { icon: images.icons.javascriptIcon, name: 'JavaScript' }
         ],
         location: 'Remote',
         duration: '7 months',
@@ -140,10 +133,9 @@ const projects = [
         featuredImage: images.projects.projectImg4,
         title: 'Project Five',
         techStack: [
-            { icon: FlutterIcon, name: 'Flutter' },
-            { icon: FirebaseIcon, name: 'Firebase' },
-            { icon: JavaScriptIcon, name: 'JavaScript' },
-            { icon: NodeIcon, name: 'Node.js' }
+            { icon: images.icons.flutterIcon, name: 'Flutter' },
+            { icon: images.icons.firebaseIcon, name: 'Firebase' },
+            { icon: images.icons.javascriptIcon, name: 'JavaScript' }
         ],
         location: 'Remote',
         duration: '7 months',
@@ -172,10 +164,9 @@ const projects = [
         featuredImage: images.projects.projectImg4,
         title: 'Project six',
         techStack: [
-            { icon: FlutterIcon, name: 'Flutter' },
-            { icon: FirebaseIcon, name: 'Firebase' },
-            { icon: JavaScriptIcon, name: 'JavaScript' },
-            { icon: NodeIcon, name: 'Node.js' }
+            { icon: images.icons.flutterIcon, name: 'Flutter' },
+            { icon: images.icons.firebaseIcon, name: 'Firebase' },
+            { icon: images.icons.javascriptIcon, name: 'JavaScript' }
         ],
         location: 'Remote',
         duration: '7 months',

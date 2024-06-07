@@ -9,15 +9,15 @@ const sortedBooks = booksData.sort((a, b) => new Date(b.releaseDate) - new Date(
 const index = () => {
     return (
         <div className="product__area product__plr grey-bg pt-100 pb-100">
-                <div className="container-fluid">
-                <div className="row align-items-end pb-60">
+            <div className="container-fluid">
+                <div className="row align-items-end book-custom-section pb-60">
                     <div className="col-lg-6 col-md-9">
-                    <SectionTitle
-                                sectionClass="service__section-box pb-35 section-title-fixed-width"
-                                subTitle={Globals.booksSectionHeading}
-                                Title={Globals.booksSectionSubheading}
-                            />
-                   
+                        <SectionTitle
+                            sectionClass="service__section-box pb-35 section-title-fixed-width"
+                            subTitle={Globals.booksSectionHeading}
+                            Title={Globals.booksSectionSubheading}
+                        />
+
                     </div>
 
                     <div className="col-lg-6 col-md-3">

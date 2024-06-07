@@ -26,28 +26,28 @@ const CFCIndex = () => {
 
 
 
-                <div className="row align-items-end pb-60">
-                    <div className="col-lg-6 col-md-9">
-					<SectionTitle
-								sectionClass="service__section-box pb-5 section-title-fixed-width"
-								subTitle={Globals.cfcSectionHeading}
-								Title={Globals.cfcSectionSubheading}
-							/>
-                   
-                    </div>
+				<div className="row align-items-end book-custom-section pb-60">
+					<div className="col-lg-6 col-md-9">
+						<SectionTitle
+							sectionClass="service__section-box pb-5 section-title-fixed-width"
+							subTitle={Globals.cfcSectionHeading}
+							Title={Globals.cfcSectionSubheading}
+						/>
 
-                    <div className="col-lg-6 col-md-3">
-                        <div className="project__section-arrow d-flex align-items-center justify-content-end">
-                            <div className="swiper-button swiper-button-prev1">
-                                <button><i className="far fa-arrow-left"></i></button>
-                            </div>
-                            <div className="swiper-button swiper-button-next1">
-                                <button><i className="far fa-arrow-right"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-					
+					</div>
+
+					<div className="col-lg-6 col-md-3">
+						<div className="project__section-arrow d-flex align-items-center justify-content-end">
+							<div className="swiper-button swiper-button-prev1">
+								<button><i className="far fa-arrow-left"></i></button>
+							</div>
+							<div className="swiper-button swiper-button-next1">
+								<button><i className="far fa-arrow-right"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+
 
 
 
@@ -76,8 +76,8 @@ const CFCIndex = () => {
 
 
 
-			
-		</div>
+
+			</div>
 		</div>
 	);
 }

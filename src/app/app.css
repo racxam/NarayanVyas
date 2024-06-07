@@ -162,3 +162,17 @@
 .br-10 {
     border-radius: 10px;
 }
+
+/* Books Section */
+.book-custom-section {
+    padding-bottom: 35px !important;
+}
+
+/* Remove Service Icon */
+.service-details__service-item.remove-icon li::before {
+    display: none !important;
+}
+
+.service-details__service-item.remove-icon img {
+    margin-right: 10px;
+}
