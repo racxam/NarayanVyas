@@ -74,7 +74,7 @@ const CFCSubmissionFormContainer = ({ itemClass, chapters, bookTitle, publisher 
         const bcc = []; // Add BCC addresses here if needed
 
         try {
-            const emailData = await getEmailData(formData, null, from, to, cc, bcc, 'New Chapter Proposal Received');
+            const emailData = await getEmailData(formData, null, from, to, cc, bcc, false, publisher);
             await sendEmail(emailData);
             setAuthors([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]);
             setLoading(false);

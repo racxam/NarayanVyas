@@ -6,7 +6,7 @@ import getContactEmailTemplate from './contactEmailTemplate';
 
 const sendEmail = async (emailData) => {
     try {
-        const response = await axios.post('https://us-central1-narayan-vyas-website.cloudfunctions.net/send_email_api', emailData, {
+        const response = await axios.post('https://us-central1-narayan-vyas-website.cloudfunctions.net/api/send-email', emailData, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
@@ -63,6 +63,7 @@ const getEmailData = async (formData, files = [], from, to = [], cc = [], bcc = 
         emailSubject = isFinalChapter
             ? `Final Chapter Submission Confirmation (${publisher}-${bookCode})`
             : `Chapter Proposal Submission Confirmation (${publisher}-${bookCode})`;
+        console.log(emailSubject);
     }
 
     const emailData = {

@@ -1,4 +1,5 @@
 // src/App.js
+import './app.css';
 
 import React, { useState, useEffect } from "react";
 import { Route, Routes, useLocation } from 'react-router-dom';

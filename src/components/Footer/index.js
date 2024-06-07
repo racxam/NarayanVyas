@@ -1,12 +1,13 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Globals from '../../Globals';
 
 import PublicationStatsCard from '../../components/PublicationStatsCard';
 import footerBG from '../../assets/img/footer/footer-bg.jpg';
-import Globals from '../../Globals';
 
 const Footer = (props) => {
+    const currentYear = new Date().getFullYear();
     const { footerLogo, footerClass } = props;
     return (
         <footer>
@@ -86,7 +87,7 @@ const Footer = (props) => {
                     <div className="row align-items-center">
                         <div className="col-md-6 wow animate__slideInUp" data-wow-duration="1.1s">
                             <div className="copyright__text">
-                                <span>Copyright Narayan Vyas 2024, All Right Reserved</span>
+                                <span>Copyright &copy; {currentYear} {Globals.myName}, All Right Reserved</span>
                             </div>
                         </div>
                         <div className="col-md-6 wow animate__fadeInUp" data-wow-duration="1.1s">
