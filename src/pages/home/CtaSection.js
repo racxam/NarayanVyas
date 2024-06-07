@@ -25,7 +25,7 @@ const CTA = () => {
       // }}
       >
         <div className="row">
-          <div className="col-12 d-flex justify-content-center" >
+          <div className="col-12 d-flex justify-content-center cta-maintain" >
             <div className="cta__section-wrapper text-center">
               <div className="cta__section-box">
                 <h4 className="cta__title wow animate__fadeInUp" data-wow-duration="1.1s">{Globals.ctcSectionHeading}</h4>
