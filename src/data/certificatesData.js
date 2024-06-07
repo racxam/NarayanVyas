@@ -127,51 +127,51 @@ const certificatesData = [
         verificationUrl: "https://example.com/verify/UDEMY2021-014",
         type: "course"
     },
-    {
-        id: "udemy_flutter",
-        image: images.certificates.courses.udemy_flutter,
-        title: "Udemy Flutter",
-        issueDate: "2021-10-30",
-        certificateId: "UDEMY2021-015",
-        verificationUrl: "https://example.com/verify/UDEMY2021-015",
-        type: "course"
-    },
-    {
-        id: "sololearn_html",
-        image: images.certificates.courses.sololearn_html,
-        title: "Sololearn HTML",
-        issueDate: "2021-11-05",
-        certificateId: "SOLOLEARN2021-016",
-        verificationUrl: "https://example.com/verify/SOLOLEARN2021-016",
-        type: "course"
-    },
-    {
-        id: "sololearn_css",
-        image: images.certificates.courses.sololearn_css,
-        title: "Sololearn CSS",
-        issueDate: "2021-12-10",
-        certificateId: "SOLOLEARN2021-017",
-        verificationUrl: "https://example.com/verify/SOLOLEARN2021-017",
-        type: "course"
-    },
-    {
-        id: "udemy_kicad",
-        image: images.certificates.courses.udemy_kicad,
-        title: "Udemy KiCad",
-        issueDate: "2022-01-15",
-        certificateId: "UDEMY2022-018",
-        verificationUrl: "https://example.com/verify/UDEMY2022-018",
-        type: "course"
-    },
-    {
-        id: "udemy_raspberry_pi",
-        image: images.certificates.courses.udemy_raspberry_pi,
-        title: "Udemy Raspberry Pi",
-        issueDate: "2022-02-20",
-        certificateId: "UDEMY2022-019",
-        verificationUrl: "https://example.com/verify/UDEMY2022-019",
-        type: "course"
-    },
+    // {
+    //     id: "udemy_flutter",
+    //     image: images.certificates.courses.udemy_flutter,
+    //     title: "Udemy Flutter",
+    //     issueDate: "2021-10-30",
+    //     certificateId: "UDEMY2021-015",
+    //     verificationUrl: "https://example.com/verify/UDEMY2021-015",
+    //     type: "course"
+    // },
+    // {
+    //     id: "sololearn_html",
+    //     image: images.certificates.courses.sololearn_html,
+    //     title: "Sololearn HTML",
+    //     issueDate: "2021-11-05",
+    //     certificateId: "SOLOLEARN2021-016",
+    //     verificationUrl: "https://example.com/verify/SOLOLEARN2021-016",
+    //     type: "course"
+    // },
+    // {
+    //     id: "sololearn_css",
+    //     image: images.certificates.courses.sololearn_css,
+    //     title: "Sololearn CSS",
+    //     issueDate: "2021-12-10",
+    //     certificateId: "SOLOLEARN2021-017",
+    //     verificationUrl: "https://example.com/verify/SOLOLEARN2021-017",
+    //     type: "course"
+    // },
+    // {
+    //     id: "udemy_kicad",
+    //     image: images.certificates.courses.udemy_kicad,
+    //     title: "Udemy KiCad",
+    //     issueDate: "2022-01-15",
+    //     certificateId: "UDEMY2022-018",
+    //     verificationUrl: "https://example.com/verify/UDEMY2022-018",
+    //     type: "course"
+    // },
+    // {
+    //     id: "udemy_raspberry_pi",
+    //     image: images.certificates.courses.udemy_raspberry_pi,
+    //     title: "Udemy Raspberry Pi",
+    //     issueDate: "2022-02-20",
+    //     certificateId: "UDEMY2022-019",
+    //     verificationUrl: "https://example.com/verify/UDEMY2022-019",
+    //     type: "course"
+    // },
     {
         id: "vskills_html5",
         image: images.certificates.courses.vskills_html5,
