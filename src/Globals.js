@@ -31,6 +31,11 @@ class Globals {
     static fiverrUsername = 'narayanvyas';
     static teacherOnUsername = 'narayanvyas';
     static scopusUsername = '57221967474';
+    static orcidId = '0000-0003-4225-0764';
+    static semanticScholarId = 'Narayan-Vyas/107727548';
+    static googleScholarId = 'aFSIhMoAAAAJ';
+    static wosResearcherId = 'IUQ-5540-2023';
+    static vidwanId = '526462';
     static researchGateUsername = 'Narayan-Vyas';
 
     // URLs
@@ -40,7 +45,12 @@ class Globals {
     static fiverrUrl = `https://www.fiverr.com/${Globals.fiverrUsername}`;
     static teacherOnUrl = `https://www.teacheron.com/tutor/3CgM`;
     static scopusUrl = `https://www.scopus.com/authid/detail.uri?authorId=${Globals.scopusUsername}`;
+    static orcidUrl = `https://orcid.org/${Globals.orcidId}`;
+    static semanticScholarUrl = `https://www.semanticscholar.org/author/${Globals.semanticScholarId}`;
+    static googleScholarUrl = `https://scholar.google.com/citations?user=${Globals.googleScholarId}`;
     static researchGateUrl = `https://www.researchgate.net/profile/${Globals.researchGateUsername}`;
+    static wosResearcherUrl = `https://www.webofscience.com/wos/author/record/${Globals.wosResearcherId}`;
+    static vidwanUrl = `https://vidwan.inflibnet.ac.in/profile/${Globals.vidwanId}`;
     static globalEmailUrl = `mailto:${Globals.globalEmail}`;
 
     // Section Headings and Subheadings
@@ -65,7 +75,7 @@ class Globals {
     static contactSectionDescription = 'I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.';
     static ctcSectionHeading = 'Need Help?';
     static ctcSectionDescription = 'Book an Appointment for Expert Consultancy Schedule a session for Mobile App Development consultancy or Research Guidance tailored to your needs.';
-    static footerDescription = 'Empowering Innovation in Mobile Development, IoT, and Research';
+    static footerDescription = 'Shaping Tomorrow\'s Technology: Leading Expertise in IoT, Mobile Apps, Remote Sensing, and Machine Learning.';
 
     // Highlights and Descriptions
     static aboutPublicationHighlight;

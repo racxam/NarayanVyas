@@ -1,4 +1,6 @@
 // src/App.js
+import './app.css';
+import 'devicon/devicon.min.css';
 
 import React, { useState, useEffect } from "react";
 import { Route, Routes, useLocation } from 'react-router-dom';

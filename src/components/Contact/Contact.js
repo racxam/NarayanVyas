@@ -45,7 +45,7 @@ const Contact = (props) => {
     };
 
     return (
-        <div className={itemClass ? itemClass : 'contact__area contact__plr-2 grey-bg p-relative fix'}>
+        <div className={itemClass ? itemClass : 'contact__area contact__plr-2 p-relative fix'}>
             <div className="contact__shape-1 d-none d-lg-block">
                 <img src={shapeImg1} alt="" />
             </div>

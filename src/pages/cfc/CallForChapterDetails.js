@@ -28,7 +28,7 @@ const CallForChapterDetails = () => {
                 headerClass="header__area header__transparent-2 header-width header-bg-color-2 header__mlr header__mt" />
             <Breadcrumb pageTitle="Call For Chapters" />
             <CallForChapterPage {...cfcDetails} editorsBiographies={editorsBiographies} />
-            <RelatedBooks relatedBooks={relatedBooks} />
+            <RelatedBooks relatedBooks={relatedBooks} isCfcPage={true} />
             <CTA
                 btnText={"Book Appointment"}
             />

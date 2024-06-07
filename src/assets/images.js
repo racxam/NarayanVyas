@@ -65,7 +65,29 @@ import userProfileHome from '../assets/img/profile/user_profile.png';
 import aboutImg from '../assets/img/about/about-2.png';
 import aboutPageImg from '../assets/img/about/user_profile_about.png';
 
+// Dev Icons
+import flutterIcon from 'devicon/icons/flutter/flutter-original.svg';
+import dartIcon from 'devicon/icons/dart/dart-original.svg';
+import javascriptIcon from 'devicon/icons/javascript/javascript-original.svg';
+import firebaseIcon from 'devicon/icons/firebase/firebase-original.svg';
+import reactIcon from 'devicon/icons/react/react-original.svg';
+import bootstrapIcon from 'devicon/icons/bootstrap/bootstrap-original.svg';
+import nodeflutterIcon from 'devicon/icons/nodejs/nodejs-original.svg';
+import googleCloudIcon from 'devicon/icons/googlecloud/googlecloud-original.svg';
+import mySQLIcon from 'devicon/icons/mysql/mysql-original.svg';
+
 const images = {
+    icons: {
+        flutterIcon,
+        dartIcon,
+        javascriptIcon,
+        firebaseIcon,
+        reactIcon,
+        bootstrapIcon,
+        nodeflutterIcon,
+        googleCloudIcon,
+        mySQLIcon,
+    },
     misc: {
         userProfileHome,
         aboutImg,

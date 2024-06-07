@@ -17,7 +17,7 @@
 
 .alert .close {
     position: absolute;
-    top: 10px;
+    top: 7px;
     right: 10px;
     background: none;
     border: none;
@@ -145,4 +145,34 @@
 
 .footer__text {
     margin-bottom: 20px;
+}
+
+
+/* Table Cell */
+.table-cell-style tr,
+.table-cell-style td {
+    padding: 7px !important;
+}
+
+.table-cell-style tr li,
+.table-cell-style td li {
+    list-style-type: none;
+}
+
+.br-10 {
+    border-radius: 10px;
+}
+
+/* Books Section */
+.book-custom-section {
+    padding-bottom: 35px !important;
+}
+
+/* Remove Service Icon */
+.service-details__service-item.remove-icon li::before {
+    display: none !important;
+}
+
+.service-details__service-item.remove-icon img {
+    margin-right: 10px;
 }

@@ -1,12 +1,13 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Globals from '../../Globals';
 
 import PublicationStatsCard from '../../components/PublicationStatsCard';
 import footerBG from '../../assets/img/footer/footer-bg.jpg';
-import Globals from '../../Globals';
 
 const Footer = (props) => {
+    const currentYear = new Date().getFullYear();
     const { footerLogo, footerClass } = props;
     return (
         <footer>
@@ -59,12 +60,13 @@ const Footer = (props) => {
                                 </h4>
                                 <div className="footer__menu-list">
                                     <ul>
+                                        <li><a href={Globals.scopusUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Scopus</a></li>
+                                        <li><a href={Globals.googleScholarUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Google Scholar</a></li>
+                                        <li><a href={Globals.researchGateUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;ResearchGate</a></li>
+                                        <li><a href={Globals.orcidUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;ORCID</a></li>
                                         <li><a href={Globals.fiverrUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Fiverr</a></li>
                                         <li><a href={Globals.teacherOnUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;TeacherOn</a></li>
-                                        <li><a href={Globals.githubUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Github</a></li>
-                                        <li><a href={Globals.scopusUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Scopus</a></li>
-                                        <li><a href={Globals.researchGateUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;ResearchGate</a></li>
-                                        <li><a href="/contact"><i className="fal fa-angle-right"></i>&ensp;Contact</a></li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -86,7 +88,7 @@ const Footer = (props) => {
                     <div className="row align-items-center">
                         <div className="col-md-6 wow animate__slideInUp" data-wow-duration="1.1s">
                             <div className="copyright__text">
-                                <span>Copyright Narayan Vyas 2024, All Right Reserved</span>
+                                <span>Copyright &copy; {currentYear} {Globals.myName}, All Right Reserved</span>
                             </div>
                         </div>
                         <div className="col-md-6 wow animate__fadeInUp" data-wow-duration="1.1s">

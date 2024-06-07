@@ -35,11 +35,11 @@ const ProjectDetailsPage = () => {
                                         </div>
                                     </div>
                                     <div className="col-xl-4 col-lg-5 wow animate__fadeInRight" data-wow-duration="1.1s">
-                                        <div className="service-details__service-item">
+                                        <div className="service-details__service-item remove-icon">
                                             <h4>{serviceDetails.subheaderHeading}</h4>
                                             <ul>
                                                 {serviceDetails.techStack.map((item, index) => (
-                                                    <li key={index}>{item.name}</li>
+                                                    <li key={index}><img src={item.icon} alt={item.name} Icon width='22' height='22' />{item.name}</li>
                                                 ))}
                                             </ul>
                                         </div>
