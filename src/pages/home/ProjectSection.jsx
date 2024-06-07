@@ -75,7 +75,7 @@ const Project = ({ subTitle, title}) => {
                     </div>
 
                     <div className="col-lg-6 col-md-3">
-                        <div className="project__section-arrow d-flex align-items-center justify-content-end">
+                        <div className="project__section-arrow d-flex align-items-center justify-content-end mt-20">
                             <div className="swiper-button swiper-button-prev">
                                 <button><i className="far fa-arrow-left"></i></button>
                             </div>
