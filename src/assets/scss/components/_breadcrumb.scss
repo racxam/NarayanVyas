@@ -60,7 +60,7 @@
             // padding-bottom: 80px;
         }
         @media #{$xxs}{
-            padding-top: 100px;
+            padding-top: 150px;
             // padding-bottom: 80px;
         }
     }
@@ -179,9 +179,9 @@
             }
             @media #{$xxs}{
                 // margin-right: 13rem;
-                // border: 4px solid hotpink;
+                border: 4px solid hotpink;
                 
-                width: 70%;
+                display: none;
 
             }
         }

@@ -42,7 +42,7 @@ const Breadcrumb = (props) => {
 							<h3 className="breadcrumb__title char-anim wow animate__fadeInUp" data-wow-duration="1.1s">{pageTitle ? pageTitle : 'About Us'}</h3>
 							<div className="breadcrumb__button wow animate__fadeInUp" data-wow-duration="1.1s">
 								<Link to="/">Home<i className="far fa-angle-right"></i><span>{pageTitle ? pageTitle : 'About Us'}</span></Link>
-							</div>
+							</div>  
 						</div>
 					</div>
 					<div className="col-xxl-6 col-xl-6 col-lg-6">
