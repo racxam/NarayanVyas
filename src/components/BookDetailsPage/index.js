@@ -21,7 +21,7 @@ const BookDetailsPage = ({
     editorsBiographies
 }) => {
     const tabStyle = 'nav nav-tabs pro-details-nav-btn';
-
+    // 
     return (
         <div className="product-details__plr mt-100 mb-0">
             <div className="container">
