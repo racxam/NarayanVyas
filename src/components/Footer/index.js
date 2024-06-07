@@ -60,12 +60,13 @@ const Footer = (props) => {
                                 </h4>
                                 <div className="footer__menu-list">
                                     <ul>
+                                        <li><a href={Globals.scopusUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Scopus</a></li>
+                                        <li><a href={Globals.googleScholarUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Google Scholar</a></li>
+                                        <li><a href={Globals.researchGateUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;ResearchGate</a></li>
+                                        <li><a href={Globals.orcidUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;ORCID</a></li>
                                         <li><a href={Globals.fiverrUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Fiverr</a></li>
                                         <li><a href={Globals.teacherOnUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;TeacherOn</a></li>
-                                        <li><a href={Globals.githubUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Github</a></li>
-                                        <li><a href={Globals.scopusUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;Scopus</a></li>
-                                        <li><a href={Globals.researchGateUrl} target='_blank' rel='noreferrer'><i className="fal fa-angle-right"></i>&ensp;ResearchGate</a></li>
-                                        <li><a href="/contact"><i className="fal fa-angle-right"></i>&ensp;Contact</a></li>
+
                                     </ul>
                                 </div>
                             </div>
