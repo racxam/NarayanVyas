@@ -2,7 +2,6 @@ import React from 'react';
 import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
 import publications from '../../data/publicationsData';
-import './PublicationsMain.css'; // Import the CSS file
 
 // Function to parse date in MM/YYYY format
 const parseDate = (dateString) => {
@@ -29,15 +28,21 @@ const PublicationsMain = () => {
 							<div className='publication-number'>{index + 1}</div>
 						</div>
 						<div className='publication-details'>
-							<div className='d-flex justify-content-between align-items-center'>
-								<a href={pub.link} target="_blank" rel="noopener noreferrer" className='publication-title'>
-									{pub.title}
-								</a>
-								{pub.wosIndexed && <span className='badge badge-success badge-sci mr-10'>SCI</span>}
-								{pub.scopusIndexed && <span className='badge badge-success'>Scopus</span>}
+							<div className='title-and-badges'>
+								<div className='publication-title'>
+									<a href={pub.link} target="_blank" rel="noopener noreferrer">
+										{pub.title}
+									</a>
+								</div>
+								<div className='badges ml-20'>
+									{pub.wosIndexed && <span className='badge badge-sci'>SCI</span>}
+									{pub.scopusIndexed && <span className='badge badge-success'>Scopus</span>}
+								</div>
 							</div>
 							<p className='publication-contributors'>
-								<i className="fas fa-user" style={{ color: '#c0392b' }}></i> <strong style={{ display: 'inline' }}>{pub.type === 'Book' ? 'Editors' : 'Authors'}:</strong> <span dangerouslySetInnerHTML={{ __html: highlightContributors(pub.contributors) }} />
+								<i className="fas fa-user" style={{ color: '#c0392b' }}></i>
+								<strong>{pub.type === 'Book' ? 'Editors' : 'Authors'}:</strong>
+								<span dangerouslySetInnerHTML={{ __html: highlightContributors(pub.contributors) }} />
 							</p>
 							<p className='publication-info'>
 								<i className="far fa-calendar-alt" style={{ color: '#f39c12' }}></i> {pub.date}
