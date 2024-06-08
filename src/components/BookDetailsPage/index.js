@@ -21,8 +21,17 @@ const BookDetailsPage = ({
     editorsBiographies
 }) => {
     const tabStyle = 'nav nav-tabs pro-details-nav-btn';
-    // 
-    return ( 
+
+    const shareURL = window.location.href; // Current page URL
+    const shareText = `Check out this book: ${title.text}`;
+
+    const facebookShare = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareURL)}`;
+    const linkedInShare = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareURL)}`;
+    const xShare = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareURL)}&text=${encodeURIComponent(shareText)}`;
+    const instagramShare = `https://www.instagram.com/?url=${encodeURIComponent(shareURL)}`; // Instagram sharing is typically done via the app
+    const whatsappShare = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}%20${encodeURIComponent(shareURL)}`;
+
+    return (
         <div className="product-details__plr mt-100 mb-0">
             <div className="container">
                 <div className="row mb-50">
@@ -59,10 +68,11 @@ const BookDetailsPage = ({
                             <a className="yellow-btn tp-btn-hover alt-color mt-20 wow animate__fadeInUp" data-wow-duration="1.1s" target='_blank' rel='noreferrer' href={publisherLink}><span>{isPublished ? 'Buy Now' : 'Preorder Now'}</span><b></b></a>
                             <div className="product-details__social-box mt-35 wow animate__fadeInUp" data-wow-duration="1.1s">
                                 <span>Share:</span>
-                                <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                <a href="#"><i className="fab fa-twitter"></i></a>
-                                <a href="#"><i className="fab fa-google-plus-g"></i></a>
-                                <a href="#"><i className="fab fa-pinterest-p"></i></a>
+                                <a href={facebookShare} target='_blank' rel='noreferrer'><i className="fab fa-facebook-f"></i></a>
+                                <a href={linkedInShare} target='_blank' rel='noreferrer'><i className="fab fa-linkedin-in"></i></a>
+                                <a href={xShare} target='_blank' rel='noreferrer'><i className="fab fa-twitter"></i></a>
+                                <a href={instagramShare} target='_blank' rel='noreferrer'><i className="fab fa-instagram"></i></a>
+                                <a href={whatsappShare} target='_blank' rel='noreferrer'><i className="fab fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Globals from '../../Globals';
 import images from '../../assets/images';
 
@@ -19,20 +18,16 @@ const Banner = () => {
 
     return (
         <div className="slider__area grey-bg slider__space slider__plr p-relative z-index fix">
-            <div className="slider__shape-top-1 d-none d-xl-block wow animate__fadeInUp" data-wow-duration="1.1s"
-            >
+            <div className="slider__shape-top-1 d-none d-xl-block wow animate__fadeInUp" data-wow-duration="1.1s">
                 <img src={shapeImg1} alt="" />
             </div>
-            <div className="slider__shape-top-2 d-none d-xl-block wow animate__fadeInLeft" data-wow-duration="1.1s"
-            >
+            <div className="slider__shape-top-2 d-none d-xl-block wow animate__fadeInLeft" data-wow-duration="1.1s">
                 <img src={shapeImg2} alt="" />
             </div>
-            <div className="slider__shape-top-3 d-none d-xl-block wow animate__fadeInRight" data-wow-duration="1.1s"
-            >
+            <div className="slider__shape-top-3 d-none d-xl-block wow animate__fadeInRight" data-wow-duration="1.1s">
                 <img src={shapeImg3} alt="" />
             </div>
-            <div className="slider__shape-top-4 d-none d-xl-block wow animate__fadeInRight" data-wow-duration="1.1s"
-            >
+            <div className="slider__shape-top-4 d-none d-xl-block wow animate__fadeInRight" data-wow-duration="1.1s">
                 <img src={shapeImg4} alt="" />
             </div>
             <div className="slider__shape-top-5 d-none d-xxl-block">
@@ -60,19 +55,21 @@ const Banner = () => {
                 <div className="row align-items-center">
                     <div className="col-xl-6 col-lg-6">
                         <div className="slider__section-box">
-                            <h4 className="section-subtitle char-anim wow animate__fadeInUp" data-wow-duration="1.1s"
-                            >{Globals.homePageShortTagLine}</h4>
-                            <h3 className="hero-title-2 char-anim wow animate__fadeInUp" data-wow-duration="1.1s"
-                            >{Globals.homePageTagline}</h3>
+                            <h4 className="section-subtitle char-anim wow animate__fadeInUp" data-wow-duration="1.1s">
+                                {Globals.homePageShortTagLine}
+                            </h4>
+                            <h3 className="hero-title-2 char-anim wow animate__fadeInUp" data-wow-duration="1.1s">
+                                {Globals.homePageTagline}
+                            </h3>
                         </div>
-                        <div className="slider__content wow animate__fadeInUp para-justi" data-wow-duration="1.1s" >
+                        <div className="slider__content wow animate__fadeInUp para-justi" data-wow-duration="1.1s">
                             <p className="char-anim-2">{Globals.homePageHeaderDescription}</p>
                         </div>
                         <div className="slider__btn wow animate__fadeInUp" data-wow-duration="1.1s">
-                            <Link to="/appointments" className="main-btn tp-btn-hover alt-color">
+                            <a href="#about" className="main-btn tp-btn-hover alt-color">
                                 <span>Get Started</span>
                                 <b></b>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 wow animate__fadeInRight" data-wow-duration="1.1s">

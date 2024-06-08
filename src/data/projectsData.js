@@ -1,4 +1,3 @@
-// projectsData.js
 import images from '../assets/images';
 
 const projects = [
@@ -14,11 +13,17 @@ const projects = [
             { icon: images.icons.javascriptIcon, name: 'JavaScript' },
             { icon: images.icons.nodeIcon, name: 'NodeJS' },
         ],
-        location: 'Remote',
-        duration: '6 months',
-        startDate: '2022-05-01',
-        completionDate: '2022-09-01',
-        client: 'Michel Jordan',
+        fieldsToShow: ['duration', 'client', 'start_date', 'status', 'budget'],
+        projectMetaData: [
+            { id: 'location', title: "Location", value: "Remote" },
+            { id: 'duration', title: "Duration", value: "6 months" },
+            { id: 'start_date', title: "Start Date", value: "2022-05-01" },
+            { id: 'completion_date', title: "Completion Date", value: "2022-09-01" },
+            { id: 'client', title: "Client", value: "Michel Jordan" },
+            { id: 'status', title: "Status", value: "Completed" },
+            { id: 'project_manager', title: "Project Manager", value: "Narayan Vyas" },
+            { id: 'budget', title: "Budget", value: "$20,000" }
+        ],
         researchOutcomeDois: [],
         featuredDescription: 'For Easy Access of Health Record',
         descriptionParagraphs: [
@@ -35,9 +40,6 @@ const projects = [
                 content: "Track My Care envisions empowered patients managing their health information seamlessly. Effortless report access, secure sharing, and streamlined requests will improve communication and efficiency across the healthcare ecosystem. Track My Care aims to become a leader in health information management, fostering trust and collaboration for a better healthcare experience for all."
             }
         ],
-        status: 'Completed',
-        projectManager: 'Narayan Vyas',
-        budget: '$20,000'
     },
     {
         id: 'manuka-services',
@@ -51,11 +53,17 @@ const projects = [
             { icon: images.icons.nodeIcon, name: 'NodeJS' },
             { icon: images.icons.mySQLIcon, name: 'MySQL' },
         ],
-        location: 'Remote',
-        duration: '6 months',
-        startDate: '2022-10-01',
-        completionDate: '2023-04-01',
-        client: 'Rajiv Sharma',
+        fieldsToShow: ['duration', 'client', 'start_date', 'status', 'budget'],
+        projectMetaData: [
+            { id: 'location', title: "Location", value: "Remote" },
+            { id: 'duration', title: "Duration", value: "6 months" },
+            { id: 'start_date', title: "Start Date", value: "2022-10-01" },
+            { id: 'completion_date', title: "Completion Date", value: "2023-04-01" },
+            { id: 'client', title: "Client", value: "Rajiv Sharma" },
+            { id: 'status', title: "Status", value: "Completed" },
+            { id: 'project_manager', title: "Project Manager", value: "Narayan Vyas" },
+            { id: 'budget', title: "Budget", value: "$15,000" }
+        ],
         researchOutcomeDois: [],
         featuredDescription: 'For Easy Access to Salon Services',
         descriptionParagraphs: [
@@ -65,22 +73,18 @@ const projects = [
             },
             {
                 title: "About the app",
-                content: "This user-friendly app features an intuitive interface for both customers and salon owners. Customers can search for salons based on location, services, stylist expertise, and ratings.  Salon owners can list services with descriptions, pricing, and photos, and manage appointments"
+                content: "This user-friendly app features an intuitive interface for both customers and salon owners. Customers can search for salons based on location, services, stylist expertise, and ratings. Salon owners can list services with descriptions, pricing, and photos, and manage appointments"
             },
             {
                 title: "",
                 content: "Manuka Services highlights the skills in UI/UX design, front-end and back-end development, and responsive design for web and mobile platforms. It represents the commitment to creating user-centric applications that address real-world problems."
             }
         ],
-        status: 'Completed',
-        projectManager: 'Narayan Vyas',
-        budget: '$15,000'
     },
     {
         id: 'worldotutor',
         images: [images.projects.worldOTutorImg1, images.projects.worldOTutorImg2],
         featuredImage: images.projects.worldOTutorImg1,
-
         title: 'WorldOTutor',
         techStack: [
             { icon: images.icons.flutterIcon, name: 'Flutter' },
@@ -89,11 +93,17 @@ const projects = [
             { icon: images.icons.nodeIcon, name: 'NodeJS' },
             { icon: images.icons.googleCloudIcon, name: 'Google Cloud' },
         ],
-        location: 'Remote',
-        duration: '5 months',
-        startDate: '2023-01-01',
-        completionDate: '2023-06-01',
-        client: 'Emil Williams',
+        fieldsToShow: ['duration', 'client', 'start_date', 'status', 'budget'],
+        projectMetaData: [
+            { id: 'location', title: "Location", value: "Remote" },
+            { id: 'duration', title: "Duration", value: "5 months" },
+            { id: 'start_date', title: "Start Date", value: "2023-01-01" },
+            { id: 'completion_date', title: "Completion Date", value: "2023-06-01" },
+            { id: 'client', title: "Client", value: "Emil Williams" },
+            { id: 'status', title: "Status", value: "Completed" },
+            { id: 'project_manager', title: "Project Manager", value: "Narayan Vyas" },
+            { id: 'budget', title: "Budget", value: "$30,000" }
+        ],
         researchOutcomeDois: [],
         featuredDescription: 'Explore Inspiring Online Courses',
         descriptionParagraphs: [
@@ -110,9 +120,6 @@ const projects = [
                 content: "WorldOTutor's strategy centers on building a strong user base through targeted marketing for students and aggressive tutor recruitment with a focus on verification and diverse expertise. This two-pronged approach ensures a rich learning environment that caters to a wide range of student needs."
             }
         ],
-        status: 'Completed',
-        projectManager: 'Narayan Vyas',
-        budget: '$30,000'
     },
     {
         id: 'scusi-now',
@@ -126,11 +133,17 @@ const projects = [
             { icon: images.icons.javascriptIcon, name: 'JavaScript' },
             { icon: images.icons.mySQLIcon, name: 'MySQL' }
         ],
-        location: 'Remote',
-        duration: '7 months',
-        startDate: '2023-03-01',
-        completionDate: '2023-10-01',
-        client: 'Wincent Philips',
+        fieldsToShow: ['duration', 'client', 'start_date', 'status', 'budget'],
+        projectMetaData: [
+            { id: 'location', title: "Location", value: "Remote" },
+            { id: 'duration', title: "Duration", value: "7 months" },
+            { id: 'start_date', title: "Start Date", value: "2023-03-01" },
+            { id: 'completion_date', title: "Completion Date", value: "2023-10-01" },
+            { id: 'client', title: "Client", value: "Wincent Philips" },
+            { id: 'status', title: "Status", value: "Ongoing" },
+            { id: 'project_manager', title: "Project Manager", value: "Narayan Vyas" },
+            { id: 'budget', title: "Budget", value: "$50,000" }
+        ],
         researchOutcomeDois: [],
         featuredDescription: 'A SaaS app with modern technologies',
         descriptionParagraphs: [
@@ -151,9 +164,6 @@ const projects = [
                 content: "ScusiNow will prioritize attracting restaurants with a strong dine-in and takeout presence.  Offering marketing partnerships and commission-based incentives can encourage restaurant adoption.  The platform will prioritize user-friendliness and focus on features that enhance the dine-in experience, such as table reservations and digital menus. Maintaining robust security features will solidify ScusiNow's value proposition within the competitive dine-in and takeout market."
             }
         ],
-        status: 'Ongoing',
-        projectManager: 'Narayan Vyas',
-        budget: '$50,000'
     },
 ];
 

@@ -10,13 +10,13 @@ const sortedBooks = booksData.sort((a, b) => new Date(b.releaseDate) - new Date(
 
 const Slider2 = () => {
   // const loopEnabled = sortedBooks.length >= 7; // Enable loop only if there are at least 7 items
-  const initialSlide = Math.floor(sortedBooks.length / 2)+1;
+  const initialSlide = Math.floor(sortedBooks.length / 2) + 1;
   return (
     <div className="d-flex row justify-content-center flex-col h-[900px] bg-[#6c34af]">
 
       <Swiper
         loop={true}
-        initialSlide={initialSlide-1}
+        initialSlide={initialSlide - 1}
         centeredSlides={true}
         slidesPerView={'auto'}
         breakpoints={{
@@ -31,27 +31,27 @@ const Slider2 = () => {
           640: {
 
             slidesPerView: '2',
-            spaceBetween:"15px"
+            spaceBetween: "15px"
 
           },
           768: {
 
             slidesPerView: '3',
-            spaceBetween:"15px"
+            spaceBetween: "15px"
 
           },
           1024: {
             slidesPerView: '4',
-            spaceBetween:"15px",
-            centeredSlides: true,
-            
-            
-          },1400:{
-            slidesPerView: '5',
-            spaceBetween:"15px",
+            spaceBetween: "15px",
             centeredSlides: true,
 
-            
+
+          }, 1400: {
+            slidesPerView: '5',
+            spaceBetween: "15px",
+            centeredSlides: true,
+
+
           }
         }}
         freeMode={true}

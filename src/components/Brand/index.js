@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import techData from '../../data/techData'; // Import techData
 
 import 'swiper/css';
@@ -14,23 +14,25 @@ const Brand = (props) => {
         spaceBetween: 40,
         slidesPerView: 12,
         centeredSlides: true,
+        speed: 3000, // Adjust the speed to your preference
+        autoplay: {
+            delay: 0, // No delay
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false,
+        },
         breakpoints: {
             0: {
-                slidesPerView: 1,
-            },
-            576: {
-                slidesPerView: 2,
-            },
-            991: {
                 slidesPerView: 4,
             },
-            1200: {
-                slidesPerView: 5,
+            576: {
+                slidesPerView: 6,
             },
-        },
-        autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
+            991: {
+                slidesPerView: 7,
+            },
+            1200: {
+                slidesPerView: 11,
+            },
         },
     };
 
@@ -43,8 +45,9 @@ const Brand = (props) => {
                             <Swiper
                                 {...sliderOption}
                                 className="swiper-wrapper mySwiper"
-                                modules={[Autoplay, Pagination, Navigation]}
-                            >
+                                modules={[Autoplay, Navigation]}
+                                freeMode={true}
+                                grabCursor={true}>
                                 {techData.map((tech) => (
                                     <SwiperSlide key={tech.id} className="swiper-slide wow animate__fadeInUp" data-wow-duration=".7s">
                                         <div className="brand__img">

@@ -41,30 +41,29 @@ const PublicationsMain = () => {
 							</div>
 							<p className='publication-contributors'>
 								<div>
-
-								<i className="fas fa-user" style={{ color: '#c0392b' }}></i>
-								<strong>{pub.type === 'Book' ? 'Editors' : 'Authors'}:</strong>
-								<span dangerouslySetInnerHTML={{ __html: highlightContributors(pub.contributors) }} />
+									<i className="fas fa-user" style={{ color: '#c0392b' }}></i>
+									<strong>{pub.type === 'Book' ? 'Editors' : 'Authors'}:</strong>
+									<span dangerouslySetInnerHTML={{ __html: highlightContributors(pub.contributors) }} />
 								</div>
 							</p>
 							<p className='publication-info'>
 								<div>
 
-								<i className="far fa-calendar-alt" style={{ color: '#f39c12' }}></i> {pub.date}
-								<span className="separator">|</span>
+									<i className="far fa-calendar-alt" style={{ color: '#f39c12' }}></i> {pub.date}
+									<span className="separator">|</span>
 								</div>
 
-								
-								<div>
-
-								<i className="fas fa-book" style={{ color: '#27ae60' }}></i> {pub.type}
-								<span className="separator">|</span>
-								</div>
 
 								<div>
 
-								<i className="far fa-building" style={{ color: '#2980b9' }}></i> {pub.publisher}
-								<span className="separator">|</span>
+									<i className="fas fa-book" style={{ color: '#27ae60' }}></i> {pub.type}
+									<span className="separator">|</span>
+								</div>
+
+								<div>
+
+									<i className="far fa-building" style={{ color: '#2980b9' }}></i> {pub.publisher}
+									<span className="separator">|</span>
 
 								</div>
 

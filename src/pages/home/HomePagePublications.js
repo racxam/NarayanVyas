@@ -52,8 +52,12 @@ const HomePagePublications = () => {
                                     <a href={pub.link} target="_blank" rel="noopener noreferrer" className="publication-title">
                                         {pub.title}
                                     </a>
-                                    <p className="publication-contributors">
-                                        <i className="fas fa-user" style={{ color: '#c0392b', fontSize: '0.9em' }}></i> <strong>{pub.type === 'Book' ? 'Editors' : 'Authors'}:</strong> <span dangerouslySetInnerHTML={{ __html: highlightContributors(pub.contributors) }} />
+                                    <p className='publication-contributors'>
+                                        <div>
+                                            <i className="fas fa-user" style={{ color: '#c0392b' }}></i>
+                                            <strong>{pub.type === 'Book' ? 'Editors' : 'Authors'}:</strong>
+                                            <span dangerouslySetInnerHTML={{ __html: highlightContributors(pub.contributors) }} />
+                                        </div>
                                     </p>
                                     <p className="publication-date-type-publisher">
                                         <i className="far fa-calendar-alt" style={{ color: '#f39c12', fontSize: '0.9em' }}></i> {pub.date} &nbsp;

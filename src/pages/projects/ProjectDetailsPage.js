@@ -1,11 +1,14 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/swiper-bundle.css';
 import Breadcrumb from '../../components/Breadcrumb';
 import CTA from '../../components/CTA';
 import projectsData from '../../data/projectsData';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Error from '../error'
+import Error from '../error';
 
 const ProjectDetailsPage = () => {
     const { projectId } = useParams();
@@ -17,7 +20,6 @@ const ProjectDetailsPage = () => {
 
     return (
         <>
-
             <main>
                 <Header
                     parentMenu='project'
@@ -25,13 +27,34 @@ const ProjectDetailsPage = () => {
                 />
                 <div id="smooth-wrapper">
                     <div id="smooth-content">
-                        <Breadcrumb pageTitle={serviceDetails.pageTitle} />
+                        <Breadcrumb pageTitle='Project Details' />
                         <div className="service-details__area service-details__plr mt-110 mb-30">
                             <div className="container-fluid">
                                 <div className="row">
                                     <div className="col-xl-8 col-lg-7 wow animate__fadeInLeft" data-wow-duration="1.1s">
                                         <div className="service-details__main-img">
-                                            <img src={serviceDetails.featuredImage} alt={serviceDetails.pageTitle} />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                                                spaceBetween={0}
+                                                slidesPerView={1}
+                                                autoplay={true}
+                                                loop={true}
+                                                freeMode={true}
+                                                grabCursor={true}
+                                                navigation={{
+                                                    nextEl: '.swiper-button-next2',
+                                                    prevEl: '.swiper-button-prev2',
+                                                    clickable: true,
+                                                }}
+                                                pagination={{ el: '.swiper-pagination2', clickable: true }}
+                                                scrollbar={{ draggable: true }}
+                                            >
+                                                {serviceDetails.images.map((image, index) => (
+                                                    <SwiperSlide key={index}>
+                                                        <img src={image} alt={`${serviceDetails.pageTitle} ${index + 1}`} />
+                                                    </SwiperSlide>
+                                                ))}
+                                            </Swiper>
                                         </div>
                                     </div>
                                     <div className="col-xl-4 col-lg-5 wow animate__fadeInRight" data-wow-duration="1.1s">
@@ -39,9 +62,38 @@ const ProjectDetailsPage = () => {
                                             <h4>{serviceDetails.subheaderHeading}</h4>
                                             <ul>
                                                 {serviceDetails.techStack.map((item, index) => (
-                                                    <li key={index}><img src={item.icon} alt={item.name} Icon width='22' height='22' />{item.name}</li>
+                                                    <li key={index}><img src={item.icon} alt={item.name} width='22' height='22' />{item.name}</li>
                                                 ))}
                                             </ul>
+                                        </div>
+                                        <div className='table-cell-style mt-30 ml-20'>
+                                            <table className="table table-bordered" style={{ border: '1px solid #DEE2E6' }}>
+                                                <thead>
+                                                    <tr>
+                                                        <th colSpan="2" className="text-center" style={{ backgroundColor: '#FFF2CD', fontSize: '18px' }}>Project Details</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    {serviceDetails.projectMetaData
+                                                        .filter(item => serviceDetails.fieldsToShow.includes(item.id))
+                                                        .map((item, index) => (
+                                                            <tr key={index}>
+                                                                <td>{item.title}</td>
+                                                                <td>
+                                                                    {Array.isArray(item.value) ? (
+                                                                        <ul>
+                                                                            {item.value.map((line, idx) => (
+                                                                                <li key={idx}>{line.heading}: {line.details}</li>
+                                                                            ))}
+                                                                        </ul>
+                                                                    ) : (
+                                                                        item.value
+                                                                    )}
+                                                                </td>
+                                                            </tr>
+                                                        ))}
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>

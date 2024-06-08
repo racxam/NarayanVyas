@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-
 import images from '../../assets/images';
 import shapeImg1 from '../../assets/img/about/about-shape-3.png';
 import shapeImg2 from '../../assets/img/about/about-shape-4.png';
@@ -8,9 +7,8 @@ import shapeImg3 from '../../assets/img/about/about-shape-5.png';
 import Globals from '../../Globals';
 
 const About = () => {
-
     return (
-        <div className="about-2__area pt-10 pb-10 p-relative fix">
+        <div id='about' className="about-2__area pt-10 pb-10 p-relative fix">
             <div className="about-2__shape-1 d-none d-xl-block">
                 <img src={shapeImg1} alt="" />
             </div>
@@ -58,9 +56,7 @@ const About = () => {
                             </div>
                             <div className="about-2__button wow animate__fadeInUp" data-wow-duration="1.1s">
                                 <Link to="/appointments" className="it-btn tp-btn-hover alt-color">
-                                    <span>
-                                        Book Appointment
-                                    </span>
+                                    <span>Book Appointment</span>
                                     <b></b>
                                 </Link>
                             </div>
