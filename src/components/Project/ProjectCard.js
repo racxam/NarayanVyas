@@ -17,7 +17,7 @@ const ProjectCard = ({ project, Url }) => {
             </Link>
             <CardContent>
                 <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 2 }}>
-                    <p className="product__title"><Link to={project.title}>{project.title}</Link></p>
+                    <p className="product__title"><Link to={Url}>{project.title}</Link></p>
                     <p className="product__title">{project.featuredDescription}</p>
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 2 }}>

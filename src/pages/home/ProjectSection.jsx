@@ -91,7 +91,7 @@ const Project = ({ subTitle, title }) => {
                         {projectsData.map(project => (
                             <SwiperSlide key={project.id} className="swiper-slide">
                                 <div className="project__item">
-                                    <ProjectCard project={project} />
+                                    <ProjectCard project={project} Url={`/projects/${project.id}`} />
                                 </div>
                             </SwiperSlide>
                         ))}
