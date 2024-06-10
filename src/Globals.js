@@ -8,10 +8,10 @@ class Globals {
     // Counts
     static totalExperience = 8;
     static projectsCount = 40;
-    static publicationCount = 36;
+    static publicationCount = 33;
     static scopusPublicationCount = 33;
     static citationCount = 200;
-    static hIndexCount = 8;
+    static hIndexCount = 9;
     static studentsTaughtCount = 1000;
     static totalBooksCount = 10;
     static workshopCount = 10;

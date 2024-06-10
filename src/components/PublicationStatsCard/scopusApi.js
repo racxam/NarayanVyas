@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '6dd68cc0a9b5300686e59849b38d56d9';
+const API_KEY = '5e97bbb460f8db3ab05343e0ddf391ed';
 const BASE_URL = 'https://api.elsevier.com/content/author/author_id/';
 
 export const fetchScopusStats = async (authorId) => {

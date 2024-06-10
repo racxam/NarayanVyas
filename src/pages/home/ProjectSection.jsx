@@ -90,9 +90,7 @@ const Project = ({ subTitle, title }) => {
                     <Swiper {...sliderOption} className="swiper-wrapper">
                         {projectsData.map(project => (
                             <SwiperSlide key={project.id} className="swiper-slide">
-                                <div className="project__item">
-                                    <ProjectCard project={project} Url={`/projects/${project.id}`} />
-                                </div>
+                                <ProjectCard project={project} Url={`/projects/${project.id}`} />
                             </SwiperSlide>
                         ))}
                     </Swiper>
