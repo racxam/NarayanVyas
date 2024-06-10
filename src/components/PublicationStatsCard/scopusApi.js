@@ -35,6 +35,7 @@ export const fetchScopusStats = async (authorId) => {
         console.log('Fetched Scopus stats:', response.data);
         return response.data;
     } catch (error) {
+        console.log(error);
         console.error('Error fetching Scopus stats:', error);
         throw error;
     }
