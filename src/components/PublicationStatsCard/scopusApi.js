@@ -89,6 +89,7 @@ export const fetchScopusCitationImage = async (documentId) => {
             reader.readAsDataURL(blob);
         });
 
+        console.log('Image source:', imageSrc);
         return imageSrc;
     } catch (error) {
         console.error('Error fetching Scopus citation image:', error);

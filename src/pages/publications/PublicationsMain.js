@@ -70,7 +70,6 @@ const PublicationsMain = () => {
 								<div className='badges ml-20'>
 									{pub.wosIndexed && <span className='badge badge-sci'>SCI</span>}
 									{pub.scopusIndexed && <span className='badge badge-success'>Scopus</span>}
-									{(!pub.scopusIndexed && !pub.wosIndexed) && <span className='badge badge-success'>Peer-Reviewed</span>}
 								</div>
 							</div>
 							<p className='publication-contributors'>
