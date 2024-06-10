@@ -26,26 +26,25 @@ const PublicationsMain = () => {
 
 	useEffect(() => {
 		const updateCitationCounts = async () => {
-			const updatedPublications = [];
-
 			for (const pub of publications) {
 				if (pub.doi) {
 					try {
 						console.log('Fetching data for publication:', pub.title);
 						const citationImage = await fetchScopusCitationImage(pub.doi);
 						console.log('Fetched data for publication:', pub.title, citationImage);
-						updatedPublications.push({ ...pub, citationImage });
+
+						// Update the state incrementally
+						setPublications(prevPublications =>
+							prevPublications.map(p =>
+								p.doi === pub.doi ? { ...p, citationImage } : p
+							)
+						);
 					} catch (error) {
 						console.error('Failed to fetch citation image for:', pub.title, error);
-						updatedPublications.push(pub);
 					}
 					await delay(1000); // delay of 1 second between each request
-				} else {
-					updatedPublications.push(pub);
 				}
 			}
-
-			setPublications(updatedPublications);
 		};
 
 		updateCitationCounts();
