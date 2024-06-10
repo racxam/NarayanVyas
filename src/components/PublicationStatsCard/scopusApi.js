@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '5e97bbb460f8db3ab05343e0ddf391ed';
+const API_KEY = process.env.REACT_APP_SCOPUS_API_KEY || '5e97bbb460f8db3ab05343e0ddf391ed';
 const AUTHOR_BASE_URL = 'https://api.elsevier.com/content/author/author_id/';
 const DOCUMENT_BASE_URL = 'https://api.elsevier.com/content/search/scopus';
 const CITATION_COUNT_URL = 'https://api.elsevier.com/content/abstract/citation-count';
@@ -35,8 +35,10 @@ export const fetchScopusStats = async (authorId) => {
         console.log('Fetched Scopus stats:', response.data);
         return response.data;
     } catch (error) {
-        console.log(error);
         console.error('Error fetching Scopus stats:', error);
+        console.error('Error response data:', error.response ? error.response.data : 'No response data');
+        console.error('Error response headers:', error.response ? error.response.headers : 'No response headers');
+        console.error('Error request:', error.request ? error.request : 'No request data');
         throw error;
     }
 };
