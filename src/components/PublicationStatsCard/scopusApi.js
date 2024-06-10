@@ -22,6 +22,7 @@ axiosInstance.interceptors.response.use(null, async (error) => {
 // Function to fetch Scopus stats for an author
 export const fetchScopusStats = async (authorId) => {
     try {
+        console.log('Fetching Scopus stats for author ID:', authorId);
         const response = await axiosInstance.get(`${AUTHOR_BASE_URL}${authorId}`, {
             headers: {
                 'X-ELS-APIKey': API_KEY,
@@ -31,9 +32,10 @@ export const fetchScopusStats = async (authorId) => {
                 view: 'ENHANCED'
             }
         });
+        console.log('Fetched Scopus stats:', response.data);
         return response.data;
     } catch (error) {
-        console.error('Error fetching Scopus data:', error);
+        console.error('Error fetching Scopus stats:', error);
         throw error;
     }
 };
@@ -41,6 +43,7 @@ export const fetchScopusStats = async (authorId) => {
 // Function to fetch Scopus citation count for a document
 export const fetchScopusCitationCount = async (documentId) => {
     try {
+        console.log('Fetching Scopus citation count for document ID:', documentId);
         const response = await axiosInstance.get(`${DOCUMENT_BASE_URL}`, {
             headers: {
                 'X-ELS-APIKey': API_KEY,
@@ -50,6 +53,7 @@ export const fetchScopusCitationCount = async (documentId) => {
                 query: `DOI(${documentId})` // Adjust this based on the type of document ID you are using
             }
         });
+        console.log('Fetched Scopus citation count:', response.data);
 
         // Extract citation count from the response
         const entry = response.data['search-results'].entry[0];
@@ -57,7 +61,7 @@ export const fetchScopusCitationCount = async (documentId) => {
 
         return citationCount;
     } catch (error) {
-        console.error('Error fetching Scopus data:', error);
+        console.error('Error fetching Scopus citation count:', error);
         throw error;
     }
 };
