@@ -45,10 +45,10 @@ const PublicationStatsCard = () => {
                 // Fallback to local variables
                 setStats([
                     { icon: <Star style={{ color: '#FFDC60' }} />, heading: 'Author ID', text: '57221967474', link: 'https://www.scopus.com/authid/detail.uri?authorId=57221967474' },
-                    { icon: <Person style={{ color: '#FFDC60' }} />, heading: 'h-index', text: Globals.scopusHIndex },
-                    { icon: <Article style={{ color: '#FFDC60' }} />, heading: 'Documents', text: Globals.scopusDocumentCount },
+                    { icon: <Person style={{ color: '#FFDC60' }} />, heading: 'h-index', text: Globals.hIndexCount },
+                    { icon: <Article style={{ color: '#FFDC60' }} />, heading: 'Documents', text: Globals.publicationCount },
                     { icon: <LibraryBooks style={{ color: '#FFDC60' }} />, heading: 'Citations', text: Globals.scopusCitationCount },
-                    { icon: <Person style={{ color: '#FFDC60' }} />, heading: 'Co-Authors', text: Globals.scopusCoauthorCount },
+                    { icon: <Person style={{ color: '#FFDC60' }} />, heading: 'Co-Authors', text: Globals.scopusCoAuthorsCount },
                 ]);
             } finally {
                 setLoading(false);
