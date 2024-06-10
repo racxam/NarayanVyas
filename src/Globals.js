@@ -10,6 +10,8 @@ class Globals {
     static projectsCount = 40;
     static publicationCount = 33;
     static scopusPublicationCount = 33;
+    static scopusCitationCount = 160;
+    static scopusCoAuthorsCount = 47;
     static citationCount = 200;
     static hIndexCount = 9;
     static studentsTaughtCount = 1000;
