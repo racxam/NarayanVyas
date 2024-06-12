@@ -10,8 +10,8 @@ class Globals {
     static projectsCount = 40;
     static publicationCount = 33;
     static scopusPublicationCount = 33;
-    static scopusCitationCount = 160;
-    static scopusCoAuthorsCount = 47;
+    static scopusCitationCount = 176;
+    static scopusCoAuthorsCount = 51;
     static citationCount = 200;
     static hIndexCount = 9;
     static studentsTaughtCount = 1000;
@@ -19,8 +19,8 @@ class Globals {
     static workshopCount = 10;
 
     // Current Department and Organization
-    static currentDepartment = 'Department of CSE';
-    static currentOrganization = 'Chandigarh University';
+    static currentDepartment = 'Department of Computer Science & Application';
+    static currentOrganization = 'Vivekananda Global University';
 
     // Global Email
     static globalEmail = 'contact@narayanvyas.com';
