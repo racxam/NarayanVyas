@@ -260,7 +260,7 @@ const callForChapterBooksData = [
         consentFormMessage: 'This book requires a Copyright Transmittal Form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
         isAbstractSubmissionClosed: false,
         isFullChapterSubmissionClosed: false,
-        submissionEmails: ['narayanvyas87@gmail.com']
+        submissionEmails: ['narayanvyas87@gmail.com', 'dankan.v@bmsit.in']
     },
     {
         id: 'radar-ai-remote-sensing',
