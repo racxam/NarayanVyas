@@ -3,7 +3,7 @@ import './app.css';
 // import 'devicon/devicon.min.css';
 
 import React, { useState, useEffect } from "react";
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import WOW from 'wowjs';
 
 // Utility Components
@@ -51,6 +51,12 @@ import Appointments from '../pages/appointments';
 // Publications
 import Publications from '../pages/publications';
 
+const Redirect = ({ to }) => {
+    useEffect(() => {
+        window.location.href = to;
+    }, [to]);
+    return null;
+};
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -119,6 +125,9 @@ const App = () => {
                     <Route path="/appointments" element={<Appointments />} />
                     <Route path="/:pageId" element={<ContentPage />} />
                     <Route path="*" element={<Error />} />
+
+                    {/* Redirect */}
+                    <Route path="/iot-rs-aap" element={<Redirect to="https://narayanvyas.com/call-for-chapters/iot-remote-sensing-precision-agriculture" />} />
                 </Routes>
             </>
         </div>
