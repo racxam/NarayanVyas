@@ -8,7 +8,7 @@ const generateSubmissionId = (bookTitle) => {
     return `${bookCode}${randomNumber}`;
 };
 
-const CFCSubmissionFormContainer = ({ itemClass, chapters, bookTitle, publisher }) => {
+const CFCSubmissionFormContainer = ({ itemClass, chapters, bookTitle, publisher, submissionEmails }) => {
     const [authors, setAuthors] = useState([{ name: '', email: '', department: '', institution: '', isCorresponding: true }]);
     const [loading, setLoading] = useState(false);
     const [successMessage, setSuccessMessage] = useState('');
@@ -68,10 +68,10 @@ const CFCSubmissionFormContainer = ({ itemClass, chapters, bookTitle, publisher 
             authors,
         };
 
-        const from = 'contact@narayanvyas.com'; // Update this if needed
+        const from = 'contact@narayanvyas.com';
         const to = authors.map(author => author.email);
-        const cc = ['narayanvyas87@gmail.com']; // Add CC addresses here
-        const bcc = []; // Add BCC addresses here if needed
+        const cc = submissionEmails;
+        const bcc = [];
 
         try {
             const emailData = await getEmailData(formData, null, from, to, cc, bcc, false, publisher);
@@ -81,7 +81,7 @@ const CFCSubmissionFormContainer = ({ itemClass, chapters, bookTitle, publisher 
             setSuccessMessage('Your abstract has been submitted successfully!');
             setTimeout(() => {
                 clearMessages();
-            }, 10000); // Display success message for 10 seconds
+            }, 10000);
         } catch (error) {
             setLoading(false);
             setErrorMessage('There was an error submitting your abstract. Please try again later.');

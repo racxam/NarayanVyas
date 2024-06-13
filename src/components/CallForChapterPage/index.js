@@ -23,7 +23,8 @@ const CallForChapterPage = ({
     consentFormName = '',
     consentFormMessage = '',
     isAbstractSubmissionClosed = false,
-    isFullChapterSubmissionClosed = false
+    isFullChapterSubmissionClosed = false,
+    submissionEmails = []
 }) => {
     const tabStyle = 'nav nav-tabs pro-details-nav-btn';
     const [abstractModalIsOpen, setAbstractModalIsOpen] = useState(false);
@@ -195,13 +196,14 @@ const CallForChapterPage = ({
                 </div>
             </div>
             <CustomModal isOpen={abstractModalIsOpen} onRequestClose={closeAbstractModal} contentLabel="Submit Abstract">
-                <CFCSubmissionFormContainer itemClass="some-class" chapters={chapters} bookTitle={title.text} publisher={publisher} />
+                <CFCSubmissionFormContainer itemClass="some-class" chapters={chapters} bookTitle={title.text} publisher={publisher} submissionEmails={submissionEmails} />
             </CustomModal>
             <CustomModal isOpen={chapterModalIsOpen} onRequestClose={closeChapterModal} contentLabel="Upload Chapter">
                 <FinalChapterSubmissionFormContainer
                     itemClass="some-class"
                     chapters={chapters}
                     publisher={publisher}
+                    submissionEmails={submissionEmails}
                     bookTitle={title.text}
                     isConsentFormRequired={isConsentFormRequired}
                     consentFormLink={consentFormLink}
