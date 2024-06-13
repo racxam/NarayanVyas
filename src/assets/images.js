@@ -17,7 +17,7 @@ import quantumMachineLearningDeGruyterImg from '../assets/img/books/quantum-mach
 import productImgIoMSmartHealthcareWiley from '../assets/img/cfc/iomt-wiley.jpg';
 import productImgMultimodalDataFusionWiley from '../assets/img/cfc/multimodal-wiley.jpg';
 import productImgSecureEnergyWiley from '../assets/img/cfc/secure-energy-wiley.jpg';
-import productImgRadarAiDegruyter from '../assets/img/cfc/radar_ai_degruyter.png';
+import productImgRadarAiDegruyter from '../assets/img/cfc/radar_ai_degruyter.jpg';
 import productImgIoTRadarAAP from '../assets/img/cfc/iot-rs-aap.jpg';
 
 // Awards Certificates
