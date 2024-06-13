@@ -210,7 +210,7 @@ const callForChapterBooksData = [
         categories: ['Agriculture', 'Technology', 'IoT'],
         abstractAcceptanceNotification: '30 August 2024',
         fullChapterSubmissionDeadline: '30 September 2024',
-        chapterAcceptanceNotification: 'December 2024',
+        chapterAcceptanceNotification: '30 November 2024',
         descriptionParagraphs: [
             "IoT and Remote Sensing Technologies for Precision Agriculture offers a thorough exploration of how advanced technologies are transforming modern agriculture. This book covers the integration of Internet of Things (IoT) and remote sensing technologies, focusing on their applications and benefits for crop monitoring and yield prediction. The chapters build a solid foundation, beginning with an introduction to the basics of IoT and remote sensing, and then delve into core principles of crop monitoring and yield prediction within precision agriculture."
         ],
