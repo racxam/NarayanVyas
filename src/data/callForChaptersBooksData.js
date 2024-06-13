@@ -62,8 +62,8 @@ const callForChapterBooksData = [
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',
         consentFormName: 'Author\'s Agreement Form',
         consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
-        isAbstractSubmissionClosed: false,
-        isFullChapterSubmissionClosed: false,
+        isAbstractSubmissionClosed: true,
+        isFullChapterSubmissionClosed: true,
         submissionEmails: ['narayanvyas87@gmail.com']
 
     },
@@ -128,8 +128,8 @@ const callForChapterBooksData = [
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',
         consentFormName: 'Author\'s Agreement Form',
         consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
-        isAbstractSubmissionClosed: false,
-        isFullChapterSubmissionClosed: false,
+        isAbstractSubmissionClosed: true,
+        isFullChapterSubmissionClosed: true,
         submissionEmails: ['narayanvyas87@gmail.com']
     },
     {
@@ -144,8 +144,8 @@ const callForChapterBooksData = [
         abstractSubmissionDeadline: '2 January 2024',
         categories: ['Healthcare', 'Technology', 'AI'],
         abstractAcceptanceNotification: 'February 2024',
-        fullChapterSubmissionDeadline: '2 March 2024',
-        chapterAcceptanceNotification: 'May 2024',
+        fullChapterSubmissionDeadline: '15 July 2024',
+        chapterAcceptanceNotification: '15 Setpember 2024',
         descriptionParagraphs: ["Explore the synergy of IoT and AI in revolutionizing energy management and security. This comprehensive guide unveils the principles, applications, and challenges of integrating these technologies for efficient energy use. Discover real-world case studies, cybersecurity insights, and practical solutions to enhance energy efficiency and sustainability while ensuring a secure energy future."],
         editors: [
             'abhishek-kumar',
@@ -193,8 +193,8 @@ const callForChapterBooksData = [
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',
         consentFormName: 'Consent Form',
         consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
-        isAbstractSubmissionClosed: true,
-        isFullChapterSubmissionClosed: true,
+        isAbstractSubmissionClosed: false,
+        isFullChapterSubmissionClosed: false,
         submissionEmails: ['narayanvyas87@gmail.com']
     },
     {
@@ -255,9 +255,9 @@ const callForChapterBooksData = [
             }
         ],
         isConsentFormRequired: true,
-        consentFormLink: 'https://example.com/path_to_consent_form.pdf',
-        consentFormName: 'Author\'s Agreement Form',
-        consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
+        consentFormLink: 'https://drive.google.com/uc?export=download&id=1dt9T2H19FsHeVpOfQqGUuIOYJeAFGY3R',
+        consentFormName: 'Copyright Transmittal Form',
+        consentFormMessage: 'This book requires a Copyright Transmittal Form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
         isAbstractSubmissionClosed: false,
         isFullChapterSubmissionClosed: false,
         submissionEmails: ['narayanvyas87@gmail.com']
