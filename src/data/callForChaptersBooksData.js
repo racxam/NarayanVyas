@@ -208,11 +208,11 @@ const callForChapterBooksData = [
         publisher: 'Wiley',
         publisherLink: 'https://www.scrivenerpublishing.com/',
         projectedReleaseDate: 'August 2024',
-        abstractSubmissionDeadline: '2 January 2024',
+        abstractSubmissionDeadline: '30 April 2024',
         categories: ['Healthcare', 'Technology', 'AI'],
         abstractAcceptanceNotification: 'February 2024',
-        fullChapterSubmissionDeadline: '15 July 2024',
-        chapterAcceptanceNotification: '15 Setpember 2024',
+        fullChapterSubmissionDeadline: '30 August 2024',
+        chapterAcceptanceNotification: '30 Setpember 2024',
         descriptionParagraphs: ["Explore the synergy of IoT and AI in revolutionizing energy management and security. This comprehensive guide unveils the principles, applications, and challenges of integrating these technologies for efficient energy use. Discover real-world case studies, cybersecurity insights, and practical solutions to enhance energy efficiency and sustainability while ensuring a secure energy future."],
         editors: [
             'abhishek-kumar',
@@ -256,7 +256,7 @@ const callForChapterBooksData = [
                 ]
             }
         ],
-        isConsentFormRequired: true,
+        isConsentFormRequired: false,
         consentFormLink: 'https://example.com/path_to_consent_form.pdf',
         consentFormName: 'Consent Form',
         consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
