@@ -68,6 +68,73 @@ const callForChapterBooksData = [
 
     },
     {
+        id: 'ml-bioinformatics-fewshot-zeroshot-igi',
+        title: {
+            text: "Applying Machine Learning Techniques to Bioinformatics: Few-Shot and Zero-Shot Methods",
+            image: images.cfc.productImgMLFewZeroShotIGI
+        },
+        publisher: 'IGI Global',
+        publisherLink: 'https://www.igi-global.com/',
+        projectedReleaseDate: 'April 2024',
+        abstractSubmissionDeadline: '15 November 2023',
+        abstractAcceptanceNotification: '15 December 2023',
+        categories: ['Bioinformatics', 'Machine Learning', 'AI'],
+        fullChapterSubmissionDeadline: '15 January 2024',
+        chapterAcceptanceNotification: '15 February 2024',
+        descriptionParagraphs: [
+            "This book provides an in-depth look at how cutting-edge data science methods might be applied to biological studies. We explore how bioinformatics, few-shot learning, and zero-shot learning interact with one another, and how this dynamic has had a significant effect on our knowledge of biological systems, customized medicine, and biomarker identification. Our goal is to provide a comprehensive analysis of these emerging disciplines."
+        ],
+        editors: [
+            'umesh-kumar-lilhore',
+            'abhishek-kumar',
+            'sarita-simaiya',
+            'narayan-vyas',
+            'vishal-dutt'
+        ],
+        chapters: [
+            { index: 1, title: "Introduction to Bioinformatics and Machine Learning" },
+            { index: 2, title: "Overview of Bioinformatics and its potential applications" },
+            { index: 3, title: "Few-Shot Learning and Zero-Shot Learning Paradigms" },
+            { index: 4, title: "Unlocking the Future of Healthcare - Biomarkers and Personalized Medicine" },
+            { index: 5, title: "From Fields to Conservation - Bioinformatics in Agriculture and Ecology" },
+            { index: 6, title: "Few-Shot Learning Techniques for Bioinformatics" },
+            { index: 7, title: "Zero-Shot Learning Techniques in Biological Contexts" },
+            { index: 8, title: "AI-Driven Drug Discovery - Pioneering Bioinformatics and Advanced Learning" },
+            { index: 9, title: "Exploration of Deep Learning & Transfer Learning techniques in Bioinformatics" },
+            { index: 10, title: "Integration of Domain-Specific Knowledge" },
+            { index: 11, title: "Evaluating and Benchmarking Few-Shot and Zero-Shot Models" },
+            { index: 12, title: "Guidelines & Ethical Consideration for Responsible Use of AI in Bioinformatics" },
+            { index: 13, title: "Future Directions and Emerging Trends" },
+            { index: 14, title: "Case Studies on Few-Shot and Zero-Shot Learning in Bioinformatics" },
+            { index: 15, title: "Limitations and Future Research Scope in Bioinformatics" }
+        ],
+        guidelines: [
+            { title: "Citation Style", guideline: "APA (7th Edition)" },
+            { title: "Formatting", guideline: "11 pt Times Roman, 1.5 line spacing" },
+            {
+                title: "Originality", guideline: "Plagiarism Under 10%, 0% AI Generated Content"
+            },
+            {
+                title: "Headings",
+                guideline: [
+                    { heading: "Heading 1", details: "ALL BOLD CAPS" },
+                    { heading: "Heading 2", details: "Bold Title Case" },
+                    { heading: "Heading 3", details: "Bold Italic Title Case" },
+                    { heading: "Heading 4", details: "Bold Italic Sentence case" },
+                    { heading: "Heading 5", details: "Light Italic Sentence case" },
+                    { heading: "Paragraphs", details: "Should be Numbered (1.1, 1.1.1, etc.)" }
+                ]
+            }
+        ],
+        isConsentFormRequired: false,
+        consentFormLink: 'https://example.com/path_to_consent_form.pdf',
+        consentFormName: 'Author\'s Agreement Form',
+        consentFormMessage: 'This book requires a consent form. Please download it from the link below and upload it along with your final chapter. Upload a Word file of the consent form only; do not upload a scanned copy.',
+        isAbstractSubmissionClosed: true,
+        isFullChapterSubmissionClosed: true,
+        submissionEmails: ['narayanvyas87@gmail.com']
+    },
+    {
         id: 'multimodal-data-fusion-wiley',
         title: {
             text: "Multimodal Data Fusion for Bioinformatics AI",

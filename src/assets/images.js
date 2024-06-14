@@ -19,6 +19,7 @@ import productImgMultimodalDataFusionWiley from '../assets/img/cfc/multimodal-wi
 import productImgSecureEnergyWiley from '../assets/img/cfc/secure-energy-wiley.jpg';
 import productImgRadarAiDegruyter from '../assets/img/cfc/radar-ai-degruyter.jpg';
 import productImgIoTRadarAAP from '../assets/img/cfc/iot-rs-aap.jpg';
+import productImgMLFewZeroShotIGI from '../assets/img/cfc/ml-few-zero-shot-igi.jpg';
 
 // Awards Certificates
 import icaiihi_2023_session_chair from '../assets/img/certificates/awards/icaiihi_2023_session_chair.jpg';
@@ -190,6 +191,7 @@ const images = {
         productImgSecureEnergyWiley,
         productImgRadarAiDegruyter,
         productImgIoTRadarAAP,
+        productImgMLFewZeroShotIGI,
     },
     certificates: {
         awards: {
