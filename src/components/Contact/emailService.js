@@ -92,4 +92,39 @@ const getEmailData = async (formData, files = [], from, to = [], cc = [], bcc = 
     return emailData;
 };
 
-export { getEmailData, readFileAsBase64 };
+const getAcceptanceEmailData = async (formData, files = [], from, to = [], cc = [], bcc = [], isFinalChapter = false, publisher, isContactForm = false, emailTemplateFunc) => {
+    let emailSubject = '';
+    let htmlContent = '';
+
+    const mergeInfo = {
+        submissionId: formData.submissionId,
+        book: formData.book,
+        chapter: formData.chapter,
+        message: formData.message,
+        authors: formData.authors.map(author => ({
+            ...author,
+            isCorresponding: author.isCorresponding ? 'Yes' : 'No',
+        })),
+    };
+
+    htmlContent = emailTemplateFunc ? emailTemplateFunc(mergeInfo) : getEmailTemplate(mergeInfo, isFinalChapter);
+    emailSubject = `Acceptance for Chapter Submission: ${formData.chapter}`;
+
+    const emailData = {
+        from,
+        to,
+        cc,
+        bcc,
+        subject: emailSubject,
+        html: htmlContent,
+        attachments: []
+    };
+
+    console.log('Constructed Email Data:', emailData); // Log constructed email data for debugging
+
+    return emailData;
+};
+
+export { getEmailData, getAcceptanceEmailData, readFileAsBase64 };
+
+

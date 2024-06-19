@@ -25,6 +25,7 @@ import MLNotes from '../pages/notes/ml-notes';
 import JavaNotes from '../pages/notes/java-notes';
 
 // Miscellaneous
+import Acceptance from '../pages/acceptance';
 import Error from '../pages/error';
 
 // Projects
@@ -122,6 +123,7 @@ const App = () => {
 
                     {/* Miscellaneous */}
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/acceptance" element={<Acceptance />} />
                     <Route path="/appointments" element={<Appointments />} />
                     <Route path="/:pageId" element={<ContentPage />} />
                     <Route path="*" element={<Error />} />

@@ -1,0 +1,52 @@
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.upload-email-page {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.upload-email-page h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.upload-email-page .email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sample-file-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sample-file-link a {
+    color: #007bff;
+    text-decoration: underline;
+    font-size: 16px;
+}

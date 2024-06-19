@@ -3,7 +3,9 @@ import pdfIcon from '../../assets/icons/pdf-icon.png';
 import wordIcon from '../../assets/icons/word-icon.png';
 import './FileUpload.css';
 
-const FileUpload = ({ file, handleFileDrop, handleFileRemove, dragOver, setDragOver, label, acceptedFileTypes, inputId }) => {
+const FileUpload = ({ file, handleFileDrop, handleFileRemove, label, acceptedFileTypes, inputId }) => {
+    const [dragOver, setDragOver] = React.useState(false);
+
     const handleDragOver = (e) => {
         e.preventDefault();
         setDragOver(true);
@@ -18,10 +20,10 @@ const FileUpload = ({ file, handleFileDrop, handleFileRemove, dragOver, setDragO
         setDragOver(false);
         if (e.dataTransfer.files.length) {
             const file = e.dataTransfer.files[0];
-            if (acceptedFileTypes.includes(file.type)) {
+            if (acceptedFileTypes.includes(file.type) || acceptedFileTypes.includes(`.${file.name.split('.').pop()}`)) {
                 handleFileDrop({ target: { files: e.dataTransfer.files } });
             } else {
-                alert('Invalid file type. Only PDF and Word files are allowed.');
+                alert(`Invalid file type. Only ${acceptedFileTypes.join(', ')} files are allowed.`);
             }
         }
     };
@@ -45,7 +47,7 @@ const FileUpload = ({ file, handleFileDrop, handleFileRemove, dragOver, setDragO
         >
             <input
                 type="file"
-                id={inputId} // Use the unique input ID here
+                id={inputId}
                 style={{ display: 'none' }}
                 accept={acceptedFileTypes.join(',')}
                 onChange={handleFileDrop}
